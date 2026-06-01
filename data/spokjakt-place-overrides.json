@@ -1,0 +1,273 @@
+{
+  "_comment": "Merged onto Haunted Sweden places by slug at load. Paranormal claims are not proven.",
+  "borgvattnets-prastgard": {
+    "featuredInSpokjakt": true,
+    "spokjaktPriority": "LEGENDARY",
+    "spokjaktData": {
+      "season": 2,
+      "episode": 1,
+      "year": 2020,
+      "investigators": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Andreas Österlund"
+      ],
+      "investigationSummary": "Season 2 premiere in Sweden after COVID cancelled the planned US season. The team investigated Borgvattnets Prästgård and the nearby haunted hostel (Borgvattnets Vandrarhem) in the same episode — often described as one of the most iconic Spökjakt investigations.",
+      "videoLinks": [],
+      "streamingLinks": [],
+      "archiveSlug": "borgvattnets-prastgard-s2",
+      "priority": "LEGENDARY"
+    }
+  },
+  "osterbybruks-herrgard": {
+    "featuredInSpokjakt": true,
+    "spokjaktPriority": "LEGENDARY",
+    "spokjaktData": {
+      "season": 2,
+      "episode": 2,
+      "year": 2020,
+      "investigators": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Andreas Österlund"
+      ],
+      "investigationSummary": "Historic Roslagen manor with Tamms séance table — witnesses warned the team before investigation. The night escalated after activity at the table and the visit was cut short; revisited in Season 6.",
+      "videoLinks": [],
+      "streamingLinks": [],
+      "archiveSlug": "osterbybruks-herrgard-s2",
+      "priority": "LEGENDARY"
+    }
+  },
+  "nasby-slott": {
+    "featuredInSpokjakt": true,
+    "spokjaktPriority": "HIGH_PRIORITY",
+    "spokjaktData": {
+      "season": 2,
+      "episode": 3,
+      "year": 2020,
+      "investigators": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Andreas Österlund"
+      ],
+      "investigationSummary": "Castle hotel environment in Skåne — overnight investigation with reports of footsteps and presence in historic wings.",
+      "videoLinks": [],
+      "streamingLinks": [],
+      "archiveSlug": "nasby-slott-s2",
+      "priority": "HIGH_PRIORITY"
+    }
+  },
+  "kullaberg": {
+    "featuredInSpokjakt": true,
+    "spokjaktPriority": "HIGH_PRIORITY",
+    "spokjaktData": {
+      "season": 2,
+      "episode": 4,
+      "year": 2020,
+      "investigators": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Andreas Österlund"
+      ],
+      "investigationSummary": "Outdoor night investigation at Kullaberg nature reserve — caves, cliffs, and coastal folklore rather than a single building.",
+      "videoLinks": [],
+      "streamingLinks": [],
+      "archiveSlug": "kullaberg-s2",
+      "priority": "HIGH_PRIORITY"
+    }
+  },
+  "backaskogs-kloster": {
+    "featuredInSpokjakt": true,
+    "spokjaktPriority": "LEGENDARY",
+    "spokjaktData": {
+      "season": 2,
+      "episode": 5,
+      "year": 2020,
+      "investigators": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Andreas Österlund"
+      ],
+      "investigationSummary": "Medieval monastery and royal estate in Skåne — centuries of religious history and reported experiences in older wings.",
+      "videoLinks": [],
+      "streamingLinks": [],
+      "archiveSlug": "backaskogs-kloster-s2",
+      "priority": "LEGENDARY"
+    }
+  },
+  "frammegarden": {
+    "featuredInSpokjakt": true,
+    "spokjaktPriority": "LEGENDARY",
+    "spokjaktData": {
+      "season": 2,
+      "episode": 6,
+      "year": 2020,
+      "investigators": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Andreas Österlund"
+      ],
+      "investigationSummary": "Värmland ghost farm where many overnight guests leave before midnight — national booking demand after Spökjakt and earlier Lundell YouTube visits.",
+      "videoLinks": [],
+      "streamingLinks": [],
+      "archiveSlug": "frammegarden-s2",
+      "priority": "LEGENDARY"
+    }
+  },
+  "malilla-sanatorium": {
+    "featuredInSpokjakt": true,
+    "spokjaktPriority": "LEGENDARY",
+    "spokjaktData": {
+      "season": 3,
+      "episode": 1,
+      "year": 2021,
+      "investigators": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Serafia Andersson",
+        "Johanna Öholm"
+      ],
+      "investigationSummary": "Season 3 premiere — abandoned tuberculosis sanatorium with preserved wards and strong medical-history atmosphere.",
+      "videoLinks": [],
+      "streamingLinks": [],
+      "archiveSlug": "malilla-sanatorium-s3",
+      "priority": "LEGENDARY"
+    }
+  },
+  "norrsvedje-gastgiveri": {
+    "featuredInSpokjakt": true,
+    "spokjaktPriority": "HIGH_PRIORITY",
+    "spokjaktData": {
+      "season": 3,
+      "episode": 2,
+      "year": 2021,
+      "investigators": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Serafia Andersson",
+        "Johanna Öholm"
+      ],
+      "investigationSummary": "Historic Skåne coach inn — guest-room ghost stories, knocking, and overnight recordings.",
+      "videoLinks": [],
+      "streamingLinks": [],
+      "archiveSlug": "norrsvedje-gastgiveri-s3",
+      "priority": "HIGH_PRIORITY"
+    }
+  },
+  "stora-takstens": {
+    "featuredInSpokjakt": true,
+    "spokjaktPriority": "DISCOVERY",
+    "spokjaktData": {
+      "season": 3,
+      "episode": 3,
+      "year": 2021,
+      "investigators": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Serafia Andersson",
+        "Johanna Öholm"
+      ],
+      "investigationSummary": "Rural farmstead episode — barns, isolation, and local paranormal legends.",
+      "videoLinks": [],
+      "streamingLinks": [],
+      "archiveSlug": "stora-takstens-s3",
+      "priority": "DISCOVERY"
+    }
+  },
+  "blombacka-herrgard": {
+    "featuredInSpokjakt": true,
+    "spokjaktPriority": "HIGH_PRIORITY",
+    "spokjaktData": {
+      "season": 3,
+      "episode": 4,
+      "year": 2021,
+      "investigators": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Serafia Andersson",
+        "Johanna Öholm"
+      ],
+      "investigationSummary": "Swedish manor investigation — corridor figures, sounds in guest wings, and EVP-focused night sessions.",
+      "videoLinks": [],
+      "streamingLinks": [],
+      "archiveSlug": "blombacka-herrgard-s3",
+      "priority": "HIGH_PRIORITY"
+    }
+  },
+  "verkon": {
+    "featuredInSpokjakt": true,
+    "spokjaktPriority": "DISCOVERY",
+    "spokjaktData": {
+      "season": 3,
+      "episode": 5,
+      "year": 2021,
+      "investigators": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Serafia Andersson",
+        "Johanna Öholm"
+      ],
+      "investigationSummary": "Archipelago island setting — boat access, isolation, and outdoor night sweeps.",
+      "videoLinks": [],
+      "streamingLinks": [],
+      "archiveSlug": "verkon-s3",
+      "priority": "DISCOVERY"
+    }
+  },
+  "bogesunds-slott": {
+    "featuredInSpokjakt": true,
+    "spokjaktPriority": "LEGENDARY",
+    "spokjaktData": {
+      "season": 3,
+      "episode": 6,
+      "year": 2021,
+      "investigators": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Serafia Andersson",
+        "Johanna Öholm"
+      ],
+      "investigationSummary": "Värmdö events castle — tower rooms, great halls, and accessible Stockholm-area haunted tourism.",
+      "videoLinks": [],
+      "streamingLinks": [],
+      "archiveSlug": "bogesunds-slott-s3",
+      "priority": "LEGENDARY"
+    }
+  }
+}

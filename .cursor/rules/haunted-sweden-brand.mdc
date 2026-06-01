@@ -1,0 +1,21 @@
+---
+description: Haunted Sweden brand naming and editorial field conventions
+alwaysApply: true
+---
+
+# Haunted Sweden brand
+
+The product name is always **Haunted Sweden**.
+
+Never write: Swedish Hauntings, Sweden Hauntings, Haunted Sweden App Project, Swedish Haunted Locations.
+
+## Editorial database fields (JSON)
+
+- `hauntedSwedenScore` — label: Haunted Sweden Score
+- `suggestedHauntedSwedenTags` — label: Suggested Haunted Sweden Tags
+- `hauntedSwedenAppSummary` — label: Haunted Sweden App Summary
+- `whyItFitsHauntedSweden` — label: Why It Fits Haunted Sweden
+
+All UI, SEO, descriptions, investigations, and articles use the **Haunted Sweden** brand.
+
+See `docs/BRAND.md` and `lib/brand.ts`.

@@ -1,0 +1,863 @@
+{
+  "version": 1,
+  "title": "Spökjakt Archive",
+  "description": "Searchable index of Swedish haunted locations investigated in the TV series Spökjakt (Joakim & Jonna Lundell, LaxTon Ghost Sweden, and team). Facts, witness reports, and folklore are kept separate.",
+  "showInfo": {
+    "name": "Spökjakt",
+    "network": "Discovery+ / Kanal 5 / Max / TV4 (later seasons)",
+    "producers": [
+      "ITV Studios"
+    ],
+    "coreTeam": [
+      "Joakim Lundell",
+      "Jonna Lundell",
+      "Danjal Kanani",
+      "Tony Martinsson",
+      "Niclas Laaksonen (LaxTon Ghost Sweden)",
+      "Johanna Öholm (select seasons)"
+    ]
+  },
+  "investigationTypes": [
+    "EVP",
+    "Spirit Box",
+    "Thermal Camera",
+    "Overnight Stay",
+    "Drone Exploration",
+    "Historical Documentary",
+    "Witness Interviews"
+  ],
+  "priorities": {
+    "LEGENDARY": {
+      "label": "Legendary",
+      "description": "Most famous Spökjakt locations in Sweden — major viewer recognition and strong Haunted Sweden potential."
+    },
+    "HIGH_PRIORITY": {
+      "label": "High priority",
+      "description": "Strong paranormal reputation, historical weight, or high visitor interest."
+    },
+    "DISCOVERY": {
+      "label": "Discovery",
+      "description": "Lesser-known but compelling Swedish locations worth exploring on Haunted Sweden."
+    }
+  },
+  "entries": [
+    {
+      "id": "sj-s2-01",
+      "slug": "borgvattnets-prastgard-s2",
+      "locationName": "Borgvattnets Prästgård",
+      "country": "Sweden",
+      "season": 2,
+      "seasonEpisode": 1,
+      "seriesEpisode": 7,
+      "year": 2020,
+      "locationType": "Haunted vicarage / accommodation cluster",
+      "shortDescription": "Season 2 premiere — one of the world's most famous haunted houses, investigated alongside nearby Borgvattnets Vandrarhem.",
+      "documentedHistory": "19th-century vicarage in Borgvattnet, Jämtland; decades of documented guest and staff reports. Part of a two-site cluster with Borgvattnets Vandrarhem (~200 m). Open for guided visits and overnight stays at the hostel.",
+      "witnessReports": "Decades of visitor and staff accounts: apparitions, voices, moving objects, temperature shifts. Spökjakt team documented reactions during overnight investigation.",
+      "paranormalClaims": "Widely described as among Sweden's most active haunted buildings; global paranormal tourism destination. Claims remain anecdotal — not scientifically verified.",
+      "whyConsideredHaunted": "Extremely long report history, international documentaries, and intense visitor experiences.",
+      "hauntedSwedenPotential": "Flagship trust anchor — pair with hostel entry on map cluster; ideal for Haunted Sweden verified investigation content.",
+      "visitedBy": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Andreas Österlund"
+      ],
+      "investigationHighlights": "S2 Swedish premiere after COVID cancelled US plans; team also investigated Borgvattnets Vandrarhem in same episode; overnight equipment sessions.",
+      "currentStatus": "Active haunted tourism — guided visits and hostel accommodation.",
+      "latitude": 63.7002,
+      "longitude": 16.3378,
+      "visitorsCanAccess": true,
+      "accessNotes": "Booked visits and hostel stays; respect house rules.",
+      "hauntedSwedenScore": 9.5,
+      "priority": "LEGENDARY",
+      "suggestedHauntedSwedenTags": [
+        "borgvattnet",
+        "prastgard",
+        "spokjakt",
+        "overnight_investigation",
+        "jamtland"
+      ],
+      "suggestedInvestigationTypes": [
+        "Overnight Stay",
+        "EVP",
+        "Spirit Box",
+        "Thermal Camera",
+        "Witness Interviews"
+      ],
+      "featuredIn": [
+        "spokjakt",
+        "laxton-youtube"
+      ],
+      "hauntedSwedenPlaceSlug": "borgvattnets-prastgard"
+    },
+    {
+      "id": "sj-s2-02",
+      "slug": "osterbybruks-herrgard-s2",
+      "locationName": "Österbybruks Herrgård",
+      "country": "Sweden",
+      "season": 2,
+      "seasonEpisode": 2,
+      "seriesEpisode": 8,
+      "year": 2020,
+      "locationType": "Ironworks manor / haunted mansion",
+      "shortDescription": "Roslagen manor where a historic séance table triggered one of Spökjakt's most intense nights.",
+      "documentedHistory": "Monumental herrgård at Österby bruk, Östhammar (Uppland); 18th-century ironworks estate linked to De Geer and Grill families. Managed as cultural heritage (Stiftelsen Österbybruks herrgård).",
+      "witnessReports": "Multiple witnesses warned the team about Tamms old séance table; owners and visitors describe long-term strange activity in the building.",
+      "paranormalClaims": "Episode reports escalated after Joakim invoked activity through the table; night described as spiralling out of control and investigation aborted. Interpretations vary — televised drama vs local belief.",
+      "whyConsideredHaunted": "Combination of séance folklore, witness warnings, and documented on-camera team distress.",
+      "hauntedSwedenPotential": "Top-tier storytelling revisit location (returned S6); strong manor category entry for Uppland.",
+      "visitedBy": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Andreas Österlund"
+      ],
+      "investigationHighlights": "Infamous séance table session; team urged to stop; became recurring 'worst night' reference in later seasons.",
+      "currentStatus": "Heritage manor — public events and visits per foundation schedule.",
+      "latitude": 60.327,
+      "longitude": 17.913,
+      "coordinatesNote": "Österbybruk, Herrgårdsvägen area",
+      "visitorsCanAccess": true,
+      "accessNotes": "Check Stiftelsen Österbybruks herrgård for opening times and tours.",
+      "hauntedSwedenScore": 9.3,
+      "priority": "LEGENDARY",
+      "suggestedHauntedSwedenTags": [
+        "osterbybruk",
+        "herrgard",
+        "spokjakt",
+        "seance",
+        "roslagen"
+      ],
+      "suggestedInvestigationTypes": [
+        "EVP",
+        "Spirit Box",
+        "Overnight Stay",
+        "Witness Interviews",
+        "Historical Documentary"
+      ],
+      "featuredIn": [
+        "spokjakt"
+      ],
+      "hauntedSwedenPlaceSlug": "osterbybruks-herrgard"
+    },
+    {
+      "id": "sj-s2-03",
+      "slug": "nasby-slott-s2",
+      "locationName": "Näsby Slott",
+      "country": "Sweden",
+      "season": 2,
+      "seasonEpisode": 3,
+      "seriesEpisode": 9,
+      "year": 2020,
+      "locationType": "Castle / manor hotel",
+      "shortDescription": "Skåne castle hotel with centuries of estate history investigated in early Swedish Spökjakt season.",
+      "documentedHistory": "Näsbyholm estate near Skurup (Skåne); castle architecture and long aristocratic history; operates as hospitality and event venue.",
+      "witnessReports": "Hotel guests and staff traditions of unexplained sounds and presence in older wings (general estate folklore).",
+      "paranormalClaims": "Featured as classic 'Swedish haunted castle' episode; specific claims in broadcast should be treated as reported experiences, not proven.",
+      "whyConsideredHaunted": "Castle atmosphere plus hospitality ghost stories typical of Swedish manor tourism.",
+      "hauntedSwedenPotential": "Strong castle category; south Sweden balance to northern S2 sites.",
+      "visitedBy": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Andreas Österlund"
+      ],
+      "investigationHighlights": "Overnight investigation in commercial castle setting; equipment sweeps of historic interiors.",
+      "currentStatus": "Active hotel and event venue — Näsby Slott / Näsbyholm.",
+      "latitude": 55.375,
+      "longitude": 13.319,
+      "coordinatesNote": "Näsbyholm, Skurup municipality",
+      "visitorsCanAccess": true,
+      "accessNotes": "Book accommodation or events; respect hotel guests.",
+      "hauntedSwedenScore": 8.5,
+      "priority": "HIGH_PRIORITY",
+      "suggestedHauntedSwedenTags": [
+        "nasby_slott",
+        "skane",
+        "castle",
+        "spokjakt",
+        "hotel"
+      ],
+      "suggestedInvestigationTypes": [
+        "Overnight Stay",
+        "EVP",
+        "Thermal Camera",
+        "Witness Interviews"
+      ],
+      "featuredIn": [
+        "spokjakt"
+      ],
+      "hauntedSwedenPlaceSlug": "nasby-slott"
+    },
+    {
+      "id": "sj-s2-04",
+      "slug": "kullaberg-s2",
+      "locationName": "Kullaberg",
+      "country": "Sweden",
+      "season": 2,
+      "seasonEpisode": 4,
+      "seriesEpisode": 10,
+      "year": 2020,
+      "locationType": "Nature reserve / caves / coastal folklore",
+      "shortDescription": "Dramatic Skåne peninsula — caves, cliffs, and legends in an outdoor Spökjakt investigation.",
+      "documentedHistory": "Kullaberg nature reserve (Höganäs municipality); famous caves including Kullabergsgrottorna; lighthouse and Bronze Age heritage; protected coastal landscape.",
+      "witnessReports": "Hikers and locals describe unease in caves and misty trails; historical smuggling and accident folklore.",
+      "paranormalClaims": "Legends of lights, voices, and figures along cliffs; episode focused on outdoor night investigation rather than single building.",
+      "whyConsideredHaunted": "Landscape-scale folklore and extreme atmosphere — rare non-building Spökjakt format.",
+      "hauntedSwedenPotential": "Forest/Nature Site category; pairs with Skåne castle episodes for regional routes.",
+      "visitedBy": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Andreas Österlund"
+      ],
+      "investigationHighlights": "Night exploration of trails and cave areas; drone-friendly coastal visuals.",
+      "currentStatus": "Public nature reserve — marked trails; cave access rules apply.",
+      "latitude": 56.301,
+      "longitude": 12.447,
+      "visitorsCanAccess": true,
+      "accessNotes": "Follow Naturvårdsverket rules; stay on trails after dark with proper gear.",
+      "hauntedSwedenScore": 8.4,
+      "priority": "HIGH_PRIORITY",
+      "suggestedHauntedSwedenTags": [
+        "kullaberg",
+        "skane",
+        "caves",
+        "nature",
+        "spokjakt"
+      ],
+      "suggestedInvestigationTypes": [
+        "Drone Exploration",
+        "EVP",
+        "Witness Interviews",
+        "Historical Documentary"
+      ],
+      "featuredIn": [
+        "spokjakt"
+      ],
+      "hauntedSwedenPlaceSlug": "kullaberg"
+    },
+    {
+      "id": "sj-s2-05",
+      "slug": "backaskogs-kloster-s2",
+      "locationName": "Bäckaskogs Kloster",
+      "country": "Sweden",
+      "season": 2,
+      "seasonEpisode": 5,
+      "seriesEpisode": 11,
+      "year": 2020,
+      "locationType": "Medieval monastery / royal estate",
+      "shortDescription": "Historic monastery and royal residence in Skåne — religion, power, and monastery folklore.",
+      "documentedHistory": "Bäckaskog slott/kloster at Fjälkinge (Kristianstad); medieval Cistercian foundation, later royal estate; today heritage destination and event venue.",
+      "witnessReports": "Staff and visitors mention cold spots and presence feelings in older wings; monastery burial traditions.",
+      "paranormalClaims": "Ghost stories tied to monastic history and later aristocratic use; TV episode presented as haunted heritage site.",
+      "whyConsideredHaunted": "Deep religious history plus centuries of death and ritual on one estate.",
+      "hauntedSwedenPotential": "Church/estate crossover content; strong photography and guided tour access.",
+      "visitedBy": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Andreas Österlund"
+      ],
+      "investigationHighlights": "Interior night investigation of monastery and castle rooms; historical context segments.",
+      "currentStatus": "Visitor destination — Bäckaskogs slott; guided tours and events.",
+      "latitude": 56.028,
+      "longitude": 14.231,
+      "visitorsCanAccess": true,
+      "accessNotes": "Check visitor opening hours; event bookings available.",
+      "hauntedSwedenScore": 8.6,
+      "priority": "LEGENDARY",
+      "suggestedHauntedSwedenTags": [
+        "backaskog",
+        "kloster",
+        "skane",
+        "medieval",
+        "spokjakt"
+      ],
+      "suggestedInvestigationTypes": [
+        "EVP",
+        "Spirit Box",
+        "Witness Interviews",
+        "Historical Documentary"
+      ],
+      "featuredIn": [
+        "spokjakt"
+      ],
+      "hauntedSwedenPlaceSlug": "backaskogs-kloster"
+    },
+    {
+      "id": "sj-s2-06",
+      "slug": "frammegarden-s2",
+      "locationName": "Frammegården",
+      "country": "Sweden",
+      "season": 2,
+      "seasonEpisode": 6,
+      "seriesEpisode": 12,
+      "year": 2020,
+      "locationType": "Haunted farmhouse / hembygdsgård",
+      "shortDescription": "Värmland 'ghost farm' where many guests leave before midnight — explosive bookings after Spökjakt.",
+      "documentedHistory": "1700s hembygdsgård in Skillingmark, Eda kommun; managed by Skillingmarks hembygdsförening since 1941 donation. Documented child deaths 1865 (diphtheria) — folklore differs on details.",
+      "witnessReports": "Guestbook decades of crying, furniture sounds, lights, figures at windows; staff report attic dread; many overnight guests abandon stay mid-night (SVT interviews).",
+      "paranormalClaims": "Legend of witch-execution ground beneath farm; 'death room' and moving rocking chair; Jocke & Jonna YouTube 2017 predates TV boom.",
+      "whyConsideredHaunted": "Extremely high guest dropout rate and national media coverage of overnight stays.",
+      "hauntedSwedenPotential": "LEGENDARY overnight case study; pair with S6 revisit entry.",
+      "visitedBy": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Andreas Österlund"
+      ],
+      "investigationHighlights": "S2 season finale location before recap episode; established Frammegården as national ghost-house brand.",
+      "currentStatus": "Bookable overnight ghost stays (often fully booked seasons ahead).",
+      "latitude": 59.948,
+      "longitude": 12.182,
+      "coordinatesNote": "Skillingmark, near Skillingsfors — access via Spinnhjulet turnoff",
+      "visitorsCanAccess": true,
+      "accessNotes": "Book via Skillingmarks hembygdsförening; bring sleeping gear; May–October season typical.",
+      "hauntedSwedenScore": 9.4,
+      "priority": "LEGENDARY",
+      "suggestedHauntedSwedenTags": [
+        "frammegarden",
+        "varmland",
+        "spokjakt",
+        "overnight_investigation",
+        "spokhus"
+      ],
+      "suggestedInvestigationTypes": [
+        "Overnight Stay",
+        "EVP",
+        "Spirit Box",
+        "Witness Interviews"
+      ],
+      "featuredIn": [
+        "spokjakt",
+        "laxton-youtube"
+      ],
+      "hauntedSwedenPlaceSlug": "frammegarden"
+    },
+    {
+      "id": "sj-s3-01",
+      "slug": "malilla-sanatorium-s3",
+      "locationName": "Målilla Sanatorium",
+      "country": "Sweden",
+      "season": 3,
+      "seasonEpisode": 1,
+      "seriesEpisode": 14,
+      "year": 2021,
+      "locationType": "Abandoned sanatorium / medical museum",
+      "shortDescription": "Season 3 premiere — iconic tuberculosis sanatorium with decaying wards and medical darkness.",
+      "documentedHistory": "Sanatorium founded 1910s at Målilla, Hultsfred (Småland); treated pulmonary patients until closure; later museum and heritage tours of preserved buildings.",
+      "witnessReports": "Visitors describe heaviness, sounds in corridors, and apparitions in ward folklore; museum guides share anecdotal accounts.",
+      "paranormalClaims": "Among Sweden's best-known abandoned medical sites; episode used decaying interiors for maximum atmosphere.",
+      "whyConsideredHaunted": "Death, isolation, and preserved hospital architecture create powerful emotional triggers.",
+      "hauntedSwedenPotential": "Abandoned/medical category flagship; high photography and documentary value.",
+      "visitedBy": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Serafia Andersson",
+        "Johanna Öholm"
+      ],
+      "investigationHighlights": "S3 opener with medium Serafia Andersson; equipment in long corridors and treatment rooms.",
+      "currentStatus": "Museum and guided heritage visits — Målilla sanatoriums museum.",
+      "latitude": 57.3906,
+      "longitude": 15.7772,
+      "visitorsCanAccess": true,
+      "accessNotes": "Book museum tours; respect preserved medical heritage.",
+      "hauntedSwedenScore": 9.2,
+      "priority": "LEGENDARY",
+      "suggestedHauntedSwedenTags": [
+        "malilla",
+        "sanatorium",
+        "abandoned",
+        "spokjakt",
+        "smaland"
+      ],
+      "suggestedInvestigationTypes": [
+        "Overnight Stay",
+        "EVP",
+        "Thermal Camera",
+        "Historical Documentary",
+        "Witness Interviews"
+      ],
+      "featuredIn": [
+        "spokjakt"
+      ],
+      "hauntedSwedenPlaceSlug": "malilla-sanatorium"
+    },
+    {
+      "id": "sj-s3-02",
+      "slug": "norrsvedje-gastgiveri-s3",
+      "locationName": "Norrsvedje Gästgiveri",
+      "country": "Sweden",
+      "season": 3,
+      "seasonEpisode": 2,
+      "seriesEpisode": 15,
+      "year": 2021,
+      "locationType": "Historic inn / guest house",
+      "shortDescription": "Skåne roadside inn with period rooms and innkeeper ghost folklore.",
+      "documentedHistory": "Traditional gästgiveri (coach inn) environment in Skåne; travel-stop heritage architecture and local rural history.",
+      "witnessReports": "Inn ghost stories from staff and guests — footsteps, knocking, presence in guest rooms.",
+      "paranormalClaims": "Classic Swedish inn haunting narrative; broadcast presented witness interviews and night recordings.",
+      "whyConsideredHaunted": "Inns combine death-on-the-road folklore with overnight guest experiences.",
+      "hauntedSwedenPotential": "Haunted accommodation-adjacent urban/rural inn entry.",
+      "visitedBy": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Serafia Andersson",
+        "Johanna Öholm"
+      ],
+      "investigationHighlights": "Same premiere week as Målilla — dual release 25 June 2021.",
+      "currentStatus": "Historic inn — verify current operations before visiting.",
+      "latitude": 56.125,
+      "longitude": 13.62,
+      "coordinatesNote": "Approximate — Norrsvedje, Skåne",
+      "visitorsCanAccess": true,
+      "accessNotes": "Contact venue for accommodation and access.",
+      "hauntedSwedenScore": 8.2,
+      "priority": "DISCOVERY",
+      "suggestedHauntedSwedenTags": [
+        "norrsvedje",
+        "gastgiveri",
+        "skane",
+        "inn",
+        "spokjakt"
+      ],
+      "suggestedInvestigationTypes": [
+        "Overnight Stay",
+        "EVP",
+        "Witness Interviews"
+      ],
+      "featuredIn": [
+        "spokjakt"
+      ],
+      "hauntedSwedenPlaceSlug": "norrsvedje-gastgiveri"
+    },
+    {
+      "id": "sj-s3-03",
+      "slug": "stora-takstens-s3",
+      "locationName": "Stora Takstens",
+      "country": "Sweden",
+      "season": 3,
+      "seasonEpisode": 3,
+      "seriesEpisode": 16,
+      "year": 2021,
+      "locationType": "Historic farm / rural haunting",
+      "shortDescription": "Rural Swedish farmstead episode — isolation, outbuildings, and countryside folklore.",
+      "documentedHistory": "Historic farm environment (Stora Taksten/Takstens) in southern Sweden; generational rural settlement and agricultural buildings.",
+      "witnessReports": "Family and local stories of activity in main house and barns; typical Swedish farm ghost narratives.",
+      "paranormalClaims": "Episode explored classic 'haunted farm' tropes — night sounds, shadows in barns, generational tragedy folklore.",
+      "whyConsideredHaunted": "Farmsteads bundle family tragedy stories with isolated night acoustics.",
+      "hauntedSwedenPotential": "Discovery-tier manor/farm content; good for regional road-trip mapping.",
+      "visitedBy": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Serafia Andersson",
+        "Johanna Öholm"
+      ],
+      "investigationHighlights": "Barn and residential wing sweeps; Serafia Andersson medium sessions.",
+      "currentStatus": "Private farm — do not visit without permission.",
+      "latitude": 56.35,
+      "longitude": 14.95,
+      "coordinatesNote": "Approximate — confirm property before visit",
+      "visitorsCanAccess": false,
+      "accessNotes": "Private property; archive entry for TV reference only unless owner grants access.",
+      "hauntedSwedenScore": 7.8,
+      "priority": "DISCOVERY",
+      "suggestedHauntedSwedenTags": [
+        "stora_takstens",
+        "farm",
+        "rural",
+        "spokjakt"
+      ],
+      "suggestedInvestigationTypes": [
+        "EVP",
+        "Overnight Stay",
+        "Witness Interviews"
+      ],
+      "featuredIn": [
+        "spokjakt"
+      ],
+      "hauntedSwedenPlaceSlug": null
+    },
+    {
+      "id": "sj-s3-04",
+      "slug": "blombacka-herrgard-s3",
+      "locationName": "Blombacka Herrgård",
+      "country": "Sweden",
+      "season": 3,
+      "seasonEpisode": 4,
+      "seriesEpisode": 17,
+      "year": 2021,
+      "locationType": "Manor house",
+      "shortDescription": "Swedish manor investigation with period interiors and aristocratic ghost lore.",
+      "documentedHistory": "Blombacka herrgård — country manor setting with 18th–19th century estate context (regional Småland/Blekinge border traditions).",
+      "witnessReports": "Manor staff and visitors describe figures in corridors and unexplained sounds in guest wings.",
+      "paranormalClaims": "Standard Swedish herrgård haunting package — white ladies, cold wings, night footsteps.",
+      "whyConsideredHaunted": "Manor architecture amplifies sound and shadow — reliable TV atmosphere.",
+      "hauntedSwedenPotential": "Manor/Estate category; good companion to Näsby and Österbybruk.",
+      "visitedBy": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Serafia Andersson",
+        "Johanna Öholm"
+      ],
+      "investigationHighlights": "Interior EVP focus; Johanna Öholm joined S3 cast.",
+      "currentStatus": "Verify current ownership and tour access before visiting.",
+      "latitude": 56.55,
+      "longitude": 15.05,
+      "coordinatesNote": "Approximate — Blombacka area",
+      "visitorsCanAccess": false,
+      "accessNotes": "Contact property for access; may be private events venue.",
+      "hauntedSwedenScore": 8.1,
+      "priority": "HIGH_PRIORITY",
+      "suggestedHauntedSwedenTags": [
+        "blombacka",
+        "herrgard",
+        "manor",
+        "spokjakt"
+      ],
+      "suggestedInvestigationTypes": [
+        "EVP",
+        "Spirit Box",
+        "Overnight Stay",
+        "Historical Documentary"
+      ],
+      "featuredIn": [
+        "spokjakt"
+      ],
+      "hauntedSwedenPlaceSlug": "blombacka-herrgard"
+    },
+    {
+      "id": "sj-s3-05",
+      "slug": "verkon-s3",
+      "locationName": "Verkön",
+      "country": "Sweden",
+      "season": 3,
+      "seasonEpisode": 5,
+      "seriesEpisode": 18,
+      "year": 2021,
+      "locationType": "Island / isolated residence",
+      "shortDescription": "Island setting — isolation, water sounds, and Swedish archipelago ghost folklore.",
+      "documentedHistory": "Verkön island environment in the Stockholm archipelago tradition; seasonal residences and nautical access.",
+      "witnessReports": "Island isolation stories — boat access only, sounds carrying over water, empty summer houses.",
+      "paranormalClaims": "Episode used geographic isolation as horror device; local shadow and voice folklore.",
+      "whyConsideredHaunted": "Islands intensify vulnerability and auditory pareidolia at night.",
+      "hauntedSwedenPotential": "Unique island tag; connects Gothenburg–Stockholm coastal discovery route.",
+      "visitedBy": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Serafia Andersson",
+        "Johanna Öholm"
+      ],
+      "investigationHighlights": "Boat transport and night exterior sweeps; archipelago fog potential.",
+      "currentStatus": "Private island properties — no public access without owner consent.",
+      "latitude": 59.25,
+      "longitude": 18.55,
+      "coordinatesNote": "Approximate — archipelago",
+      "visitorsCanAccess": false,
+      "accessNotes": "Respect private island rules.",
+      "hauntedSwedenScore": 8,
+      "priority": "DISCOVERY",
+      "suggestedHauntedSwedenTags": [
+        "verkon",
+        "island",
+        "archipelago",
+        "spokjakt"
+      ],
+      "suggestedInvestigationTypes": [
+        "Drone Exploration",
+        "EVP",
+        "Overnight Stay"
+      ],
+      "featuredIn": [
+        "spokjakt"
+      ],
+      "hauntedSwedenPlaceSlug": null
+    },
+    {
+      "id": "sj-s3-06",
+      "slug": "bogesunds-slott-s3",
+      "locationName": "Bogesunds Slott",
+      "country": "Sweden",
+      "season": 3,
+      "seasonEpisode": 6,
+      "seriesEpisode": 19,
+      "year": 2021,
+      "locationType": "Castle / events venue",
+      "shortDescription": "Värmdö castle — dramatic interiors and Stockholm archipelago accessibility.",
+      "documentedHistory": "Bogesunds slott on Värmdö; 19th-century castle built for Ulrik Sparre; today concerts, events, and guided visits.",
+      "witnessReports": "Event staff and visitors mention presence in towers and corridors; castle tourism ghost stories.",
+      "paranormalClaims": "TV investigation in tower rooms and great halls; claims remain folkloric.",
+      "whyConsideredHaunted": "Castle scale + event-staff anecdotes + easy access from Stockholm.",
+      "hauntedSwedenPotential": "High visitor access near capital; strong premium investigation visuals.",
+      "visitedBy": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Serafia Andersson",
+        "Johanna Öholm"
+      ],
+      "investigationHighlights": "S3 finale location before recap; castle tower focus.",
+      "currentStatus": "Active events castle — Bogesunds slott visitor program.",
+      "latitude": 59.402,
+      "longitude": 18.716,
+      "visitorsCanAccess": true,
+      "accessNotes": "Book tours and events via official castle channels.",
+      "hauntedSwedenScore": 8.7,
+      "priority": "HIGH_PRIORITY",
+      "suggestedHauntedSwedenTags": [
+        "bogesunds_slott",
+        "varmdo",
+        "castle",
+        "spokjakt",
+        "stockholm"
+      ],
+      "suggestedInvestigationTypes": [
+        "EVP",
+        "Spirit Box",
+        "Thermal Camera",
+        "Drone Exploration",
+        "Witness Interviews"
+      ],
+      "featuredIn": [
+        "spokjakt"
+      ],
+      "hauntedSwedenPlaceSlug": "bogesunds-slott"
+    },
+    {
+      "id": "sj-s6-04",
+      "slug": "osterbybruks-herrgard-s6",
+      "locationName": "Österbybruks Herrgård",
+      "country": "Sweden",
+      "season": 6,
+      "seasonEpisode": 4,
+      "seriesEpisode": 39,
+      "year": 2024,
+      "locationType": "Ironworks manor (revisit)",
+      "shortDescription": "S6 return to the séance-table manor — team confronts unfinished business from 2020.",
+      "documentedHistory": "Same documented estate as S2 — Österby bruk herrgård heritage site.",
+      "witnessReports": "Prior witnesses and S2 cast reference ongoing unease around séance table and east wing.",
+      "paranormalClaims": "Revisit framed as answering whether prior demonic invocation followed the team; outcomes presented as inconclusive/reported.",
+      "whyConsideredHaunted": "Most emotionally referenced Swedish revisit in franchise history.",
+      "hauntedSwedenPotential": "Cross-season narrative for Haunted Sweden editorial and verified return mission.",
+      "visitedBy": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Pierre Hesselbrandt",
+        "Johanna Öholm"
+      ],
+      "investigationHighlights": "S6 'worst places' season; medium Pierre Hesselbrandt; direct callback to aborted S2 night.",
+      "currentStatus": "Heritage manor — foundation-managed access.",
+      "latitude": 60.327,
+      "longitude": 17.913,
+      "visitorsCanAccess": true,
+      "isRevisit": true,
+      "revisitOfSeason": 2,
+      "hauntedSwedenScore": 9.3,
+      "priority": "LEGENDARY",
+      "suggestedHauntedSwedenTags": [
+        "osterbybruk",
+        "spokjakt",
+        "revisit",
+        "seance"
+      ],
+      "suggestedInvestigationTypes": [
+        "EVP",
+        "Spirit Box",
+        "Witness Interviews",
+        "Overnight Stay"
+      ],
+      "featuredIn": [
+        "spokjakt"
+      ],
+      "hauntedSwedenPlaceSlug": "osterbybruks-herrgard"
+    },
+    {
+      "id": "sj-s6-05",
+      "slug": "frammegarden-s6",
+      "locationName": "Frammegården",
+      "country": "Sweden",
+      "season": 6,
+      "seasonEpisode": 5,
+      "seriesEpisode": 40,
+      "year": 2024,
+      "locationType": "Haunted farmhouse (revisit)",
+      "shortDescription": "S6 return to Sweden's most famous bookable ghost house in Värmland.",
+      "documentedHistory": "Same Skillingmark hembygdsgård as S2; booking demand remains extremely high per regional press.",
+      "witnessReports": "Continued guestbook entries of mid-night departures; staff maintain attic is avoided.",
+      "paranormalClaims": "Revisit tested whether prior phenomena repeat for new cast/medium; claims unverified.",
+      "whyConsideredHaunted": "National reputation + measurable guest abandonment behavior.",
+      "hauntedSwedenPotential": "Pair archive entries S2+S6 on future Frammegården place page.",
+      "visitedBy": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Pierre Hesselbrandt",
+        "Johanna Öholm"
+      ],
+      "investigationHighlights": "S6 episode between international returns; validates Frammegården as franchise pillar.",
+      "currentStatus": "Fully booked ghost overnights most seasons.",
+      "latitude": 59.948,
+      "longitude": 12.182,
+      "visitorsCanAccess": true,
+      "isRevisit": true,
+      "revisitOfSeason": 2,
+      "hauntedSwedenScore": 9.4,
+      "priority": "LEGENDARY",
+      "suggestedHauntedSwedenTags": [
+        "frammegarden",
+        "spokjakt",
+        "revisit",
+        "overnight"
+      ],
+      "suggestedInvestigationTypes": [
+        "Overnight Stay",
+        "EVP",
+        "Witness Interviews"
+      ],
+      "featuredIn": [
+        "spokjakt",
+        "laxton-youtube"
+      ],
+      "hauntedSwedenPlaceSlug": "frammegarden"
+    },
+    {
+      "id": "sj-s6-06",
+      "slug": "lundellhuset-s6",
+      "locationName": "Lundellhuset",
+      "country": "Sweden",
+      "season": 6,
+      "seasonEpisode": 6,
+      "seriesEpisode": 41,
+      "year": 2024,
+      "locationType": "Private home / creator residence",
+      "shortDescription": "Investigation at the Lundell family home — meta urban haunting and personal history.",
+      "documentedHistory": "Private residence linked to Joakim and Jonna Lundell; personal and family history rather than public heritage site.",
+      "witnessReports": "Family-reported unexplained activity referenced in series narrative; primary witnesses are residents.",
+      "paranormalClaims": "Episode explored whether phenomena follow people not buildings; interpretations symbolic vs literal.",
+      "whyConsideredHaunted": "Unique 'haunted home of the investigators' angle — rare in Swedish paranormal TV.",
+      "hauntedSwedenPotential": "Urban Legend category; ethical boundaries for public visitation (private).",
+      "visitedBy": [
+        "Joakim Lundell",
+        "Jonna Lundell",
+        "Danjal Kanani",
+        "Tony Martinsson",
+        "Niclas Laaksonen",
+        "Pierre Hesselbrandt",
+        "Johanna Öholm",
+        "Haishan Qui Mylläri (healer, episode 6)"
+      ],
+      "investigationHighlights": "S6 penultimate episode; healer participation; personal objects and home rooms.",
+      "currentStatus": "Private home — not a public haunted tourism site.",
+      "latitude": 59.35,
+      "longitude": 18.02,
+      "coordinatesNote": "Approximate — greater Stockholm area; exact address not public",
+      "visitorsCanAccess": false,
+      "accessNotes": "No public access — archive documents TV investigation only.",
+      "hauntedSwedenScore": 8.3,
+      "priority": "HIGH_PRIORITY",
+      "suggestedHauntedSwedenTags": [
+        "lundellhuset",
+        "urban",
+        "spokjakt",
+        "private_home"
+      ],
+      "suggestedInvestigationTypes": [
+        "EVP",
+        "Witness Interviews",
+        "Spirit Box"
+      ],
+      "featuredIn": [
+        "spokjakt"
+      ],
+      "hauntedSwedenPlaceSlug": null
+    }
+  ],
+  "top10SwedishLocations": [
+    {
+      "rank": 1,
+      "archiveId": "sj-s2-01",
+      "rationale": "Sweden's most famous haunted house — S2 premiere; on Haunted Sweden map."
+    },
+    {
+      "rank": 2,
+      "archiveId": "sj-s2-06",
+      "rationale": "National ghost-farm brand; overnight guest dropouts; S2 + S6 revisit."
+    },
+    {
+      "rank": 3,
+      "archiveId": "sj-s3-06",
+      "rationale": "Famous haunted castle near Stockholm; major visitor access."
+    },
+    {
+      "rank": 4,
+      "archiveId": "sj-s3-01",
+      "rationale": "Iconic abandoned sanatorium; S3 premiere."
+    },
+    {
+      "rank": 5,
+      "archiveId": "sj-s2-02",
+      "rationale": "Séance-table manor; one of the strongest early investigations."
+    },
+    {
+      "rank": 6,
+      "archiveId": "sj-s2-05",
+      "rationale": "Ancient monastery; centuries of religious history and folklore."
+    },
+    {
+      "rank": 7,
+      "archiveId": "sj-s2-03",
+      "rationale": "Castle hotel; footsteps and presence reports."
+    },
+    {
+      "rank": 8,
+      "archiveId": "sj-s3-04",
+      "rationale": "Historic manor; witness accounts and EVP-focused episode."
+    },
+    {
+      "rank": 9,
+      "archiveId": "sj-s3-02",
+      "rationale": "Historic guesthouse; inn ghost stories and witness reports."
+    },
+    {
+      "rank": 10,
+      "archiveId": "sj-s3-05",
+      "rationale": "Remote island; isolation and atmospheric value."
+    }
+  ]
+}
