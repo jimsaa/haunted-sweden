@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
+import { readFile } from "fs/promises";
+import path from "path";
 import { convertPlaceSubmissionToDraft } from "@/lib/submissions/actions";
 import { forbidden, requireAdminUser } from "@/lib/admin/api-auth";
+import { notifyIndexNowAfterPlacesPublish } from "@/lib/indexnow/notify";
+import type { HauntedPlacesFile } from "@/lib/types/place";
 import { userHasPermission } from "@/lib/admin/permissions";
 import { getSubmissionByKindAndId } from "@/lib/submissions/store";
 import type { PlaceSubmission } from "@/lib/submissions/types";
@@ -41,10 +45,20 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Submission not found" }, { status: 404 });
     }
 
-    const { place } = await convertPlaceSubmissionToDraft(
+    const placesPath = path.join(process.cwd(), "data", "haunted-places.json");
+    let before: HauntedPlacesFile = { version: 0, places: [] };
+    try {
+      before = JSON.parse(await readFile(placesPath, "utf8")) as HauntedPlacesFile;
+    } catch {
+      /* first place */
+    }
+
+    const { place, file } = await convertPlaceSubmissionToDraft(
       existing as PlaceSubmission,
       body.reviewedBy
     );
+
+    void notifyIndexNowAfterPlacesPublish(before, file);
 
     return NextResponse.json({
       ok: true,

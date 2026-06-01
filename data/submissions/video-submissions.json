@@ -1,3 +1,14 @@
 {
-  "submissions": []
+  "submissions": [
+    {
+      "id": "video-1780333974382-z7n7ap5",
+      "status": "pending",
+      "url": "https://www.youtube.com/watch?v=test",
+      "submittedAt": "2026-06-01T17:12:54.382Z",
+      "reviewedAt": null,
+      "reviewedBy": null,
+      "adminNotes": null,
+      "attachedToPlaceId": null
+    }
+  ]
 }

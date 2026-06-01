@@ -1,20 +1,24 @@
 import { NextResponse } from "next/server";
 import {
-  isSubmissionsWriteEnabled,
-  submissionsWriteDisabled,
-} from "@/lib/submissions/api-guard";
+  submissionErrorResponse,
+  submissionSuccessResponse,
+} from "@/lib/submissions/public-api";
 import { appendMediaSubmission, newSubmissionId } from "@/lib/submissions/store";
 import type { MediaSubmission } from "@/lib/submissions/types";
 
 export async function POST(request: Request) {
-  if (!isSubmissionsWriteEnabled()) return submissionsWriteDisabled();
-
   try {
     const body = (await request.json()) as Partial<MediaSubmission>;
     const url = body.url?.trim();
 
     if (!url) {
-      return NextResponse.json({ error: "Image URL is required" }, { status: 400 });
+      return NextResponse.json(
+        {
+          error: "Image URL is required.",
+          errorSv: "Bild-URL krävs.",
+        },
+        { status: 400 }
+      );
     }
 
     const submission: MediaSubmission = {
@@ -35,12 +39,8 @@ export async function POST(request: Request) {
     };
 
     await appendMediaSubmission(submission);
-    return NextResponse.json({ ok: true, id: submission.id });
+    return submissionSuccessResponse(submission.id);
   } catch (err) {
-    console.error("[submit-media]", err);
-    return NextResponse.json(
-      { error: "Failed to save submission" },
-      { status: 500 }
-    );
+    return submissionErrorResponse(err, "submit-media");
   }
 }

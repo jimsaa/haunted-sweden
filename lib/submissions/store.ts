@@ -1,5 +1,3 @@
-import { mkdir, readFile, writeFile } from "fs/promises";
-import path from "path";
 import type {
   MediaSubmission,
   MediaSubmissionsFile,
@@ -10,44 +8,25 @@ import type {
   VideoSubmission,
   VideoSubmissionsFile,
 } from "@/lib/submissions/types";
-
-const SUBMISSIONS_DIR = path.join(process.cwd(), "data", "submissions");
-
-const PLACE_PATH = path.join(SUBMISSIONS_DIR, "place-submissions.json");
-const MEDIA_PATH = path.join(SUBMISSIONS_DIR, "media-submissions.json");
-const VIDEO_PATH = path.join(SUBMISSIONS_DIR, "video-submissions.json");
+import {
+  readSubmissionJson,
+  writeSubmissionJson,
+} from "@/lib/submissions/storage-backend";
 
 export function newSubmissionId(prefix: string): string {
   return `${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
 }
 
-async function readJson<T>(filePath: string, empty: T): Promise<T> {
-  try {
-    const raw = await readFile(filePath, "utf8");
-    return JSON.parse(raw) as T;
-  } catch (err) {
-    const code = (err as NodeJS.ErrnoException).code;
-    if (code === "ENOENT") return empty;
-    throw err;
-  }
-}
-
-async function writeJson(filePath: string, data: unknown): Promise<void> {
-  await mkdir(path.dirname(filePath), { recursive: true });
-  const json = `${JSON.stringify(data, null, 2)}\n`;
-  await writeFile(filePath, json, "utf8");
-}
-
 export async function readPlaceSubmissions(): Promise<PlaceSubmissionsFile> {
-  return readJson<PlaceSubmissionsFile>(PLACE_PATH, { submissions: [] });
+  return readSubmissionJson<PlaceSubmissionsFile>("place", { submissions: [] });
 }
 
 export async function readMediaSubmissions(): Promise<MediaSubmissionsFile> {
-  return readJson<MediaSubmissionsFile>(MEDIA_PATH, { submissions: [] });
+  return readSubmissionJson<MediaSubmissionsFile>("media", { submissions: [] });
 }
 
 export async function readVideoSubmissions(): Promise<VideoSubmissionsFile> {
-  return readJson<VideoSubmissionsFile>(VIDEO_PATH, { submissions: [] });
+  return readSubmissionJson<VideoSubmissionsFile>("video", { submissions: [] });
 }
 
 export async function appendPlaceSubmission(
@@ -55,7 +34,7 @@ export async function appendPlaceSubmission(
 ): Promise<void> {
   const file = await readPlaceSubmissions();
   file.submissions.push(submission);
-  await writeJson(PLACE_PATH, file);
+  await writeSubmissionJson("place", file);
 }
 
 export async function appendMediaSubmission(
@@ -63,7 +42,7 @@ export async function appendMediaSubmission(
 ): Promise<void> {
   const file = await readMediaSubmissions();
   file.submissions.push(submission);
-  await writeJson(MEDIA_PATH, file);
+  await writeSubmissionJson("media", file);
 }
 
 export async function appendVideoSubmission(
@@ -71,7 +50,7 @@ export async function appendVideoSubmission(
 ): Promise<void> {
   const file = await readVideoSubmissions();
   file.submissions.push(submission);
-  await writeJson(VIDEO_PATH, file);
+  await writeSubmissionJson("video", file);
 }
 
 export async function updatePlaceSubmission(
@@ -82,7 +61,7 @@ export async function updatePlaceSubmission(
   const idx = file.submissions.findIndex((s) => s.id === id);
   if (idx < 0) return null;
   file.submissions[idx] = { ...file.submissions[idx]!, ...patch };
-  await writeJson(PLACE_PATH, file);
+  await writeSubmissionJson("place", file);
   return file.submissions[idx]!;
 }
 
@@ -94,7 +73,7 @@ export async function updateMediaSubmission(
   const idx = file.submissions.findIndex((s) => s.id === id);
   if (idx < 0) return null;
   file.submissions[idx] = { ...file.submissions[idx]!, ...patch };
-  await writeJson(MEDIA_PATH, file);
+  await writeSubmissionJson("media", file);
   return file.submissions[idx]!;
 }
 
@@ -106,7 +85,7 @@ export async function updateVideoSubmission(
   const idx = file.submissions.findIndex((s) => s.id === id);
   if (idx < 0) return null;
   file.submissions[idx] = { ...file.submissions[idx]!, ...patch };
-  await writeJson(VIDEO_PATH, file);
+  await writeSubmissionJson("video", file);
   return file.submissions[idx]!;
 }
 

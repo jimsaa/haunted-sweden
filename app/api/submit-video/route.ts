@@ -1,21 +1,25 @@
 import { NextResponse } from "next/server";
 import { detectVideoPlatform } from "@/lib/submissions/detect-platform";
 import {
-  isSubmissionsWriteEnabled,
-  submissionsWriteDisabled,
-} from "@/lib/submissions/api-guard";
+  submissionErrorResponse,
+  submissionSuccessResponse,
+} from "@/lib/submissions/public-api";
 import { appendVideoSubmission, newSubmissionId } from "@/lib/submissions/store";
 import type { VideoSubmission } from "@/lib/submissions/types";
 
 export async function POST(request: Request) {
-  if (!isSubmissionsWriteEnabled()) return submissionsWriteDisabled();
-
   try {
     const body = (await request.json()) as Partial<VideoSubmission>;
     const url = body.url?.trim();
 
     if (!url) {
-      return NextResponse.json({ error: "Video URL is required" }, { status: 400 });
+      return NextResponse.json(
+        {
+          error: "Video URL is required.",
+          errorSv: "Video-URL krävs.",
+        },
+        { status: 400 }
+      );
     }
 
     const submission: VideoSubmission = {
@@ -36,12 +40,8 @@ export async function POST(request: Request) {
     };
 
     await appendVideoSubmission(submission);
-    return NextResponse.json({ ok: true, id: submission.id });
+    return submissionSuccessResponse(submission.id);
   } catch (err) {
-    console.error("[submit-video]", err);
-    return NextResponse.json(
-      { error: "Failed to save submission" },
-      { status: 500 }
-    );
+    return submissionErrorResponse(err, "submit-video");
   }
 }

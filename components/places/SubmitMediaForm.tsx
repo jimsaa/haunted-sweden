@@ -5,12 +5,13 @@ import Link from "next/link";
 import { PlaceOptionSelect } from "@/components/places/PlaceOptionSelect";
 import { useLanguage } from "@/lib/language-context";
 import type { PlaceOption } from "@/lib/submit-place-options";
+import { getSubmitApiError } from "@/lib/submit-api-error";
 
 const inputClass =
   "w-full rounded-xl border border-white/15 bg-white/[0.05] px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/30";
 
 export function SubmitMediaForm({ places }: { places: PlaceOption[] }) {
-  const { t } = useLanguage();
+  const { locale, t } = useLanguage();
   const mf = t.submitMediaForm;
   const sf = t.submitForm;
   const [placeId, setPlaceId] = useState("");
@@ -55,10 +56,11 @@ export function SubmitMediaForm({ places }: { places: PlaceOption[] }) {
             }),
           });
           if (!res.ok) {
-            const data = await res.json().catch(() => ({}));
-            throw new Error(
-              (data as { error?: string }).error ?? sf.error
-            );
+            const data = (await res.json().catch(() => ({}))) as {
+              error?: string;
+              errorSv?: string;
+            };
+            throw new Error(getSubmitApiError(data, locale, sf.error));
           }
           setSubmitted(true);
         } catch (err) {

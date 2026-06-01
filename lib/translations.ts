@@ -282,11 +282,11 @@ export const translations = {
       legend: "Legends & folklore",
       submit: "Submit for review",
       success:
-        "Thank you! Your submission has been received and will be reviewed.",
+        "Thank you! Your submission has been sent for review.",
       required: "Required field",
       submitterName: "Your name (optional)",
       submitterEmail: "Email (optional)",
-      error: "Could not send submission. Try again later.",
+      error: "Could not save your submission. Please try again.",
       sending: "Sending…",
     },
     submitPage: {
@@ -307,7 +307,7 @@ export const translations = {
       locationName: "Place name (if not listed)",
       submit: "Submit image for review",
       success:
-        "Thank you! Your image suggestion has been sent for review.",
+        "Thank you! Your submission has been sent for review.",
     },
     submitVideoForm: {
       title: "Suggest a video",
@@ -320,7 +320,7 @@ export const translations = {
       locationName: "Place name (if not listed)",
       submit: "Submit video for review",
       success:
-        "Thank you! Your video suggestion has been sent for review.",
+        "Thank you! Your submission has been sent for review.",
     },
     adminSubmissions: {
       tab: "Submissions",
@@ -792,11 +792,11 @@ export const translations = {
       history: "Historia",
       legend: "Legender & folklore",
       submit: "Skicka in för granskning",
-      success: "Tack! Ditt tips har skickats in för granskning.",
+      success: "Tack! Ditt tips har skickats för granskning.",
       required: "Obligatoriskt fält",
       submitterName: "Ditt namn (valfritt)",
       submitterEmail: "E-post (valfritt)",
-      error: "Kunde inte skicka tipset. Försök igen senare.",
+      error: "Kunde inte spara tipset. Försök igen.",
       sending: "Skickar…",
     },
     submitPage: {
@@ -816,7 +816,7 @@ export const translations = {
       locationUnknown: "Annan / finns inte i listan",
       locationName: "Platsens namn (om den saknas i listan)",
       submit: "Skicka bild för granskning",
-      success: "Tack! Ditt bildförslag har skickats in för granskning.",
+      success: "Tack! Ditt tips har skickats för granskning.",
     },
     submitVideoForm: {
       title: "Föreslå en video",
@@ -828,7 +828,7 @@ export const translations = {
       locationUnknown: "Annan / finns inte i listan",
       locationName: "Platsens namn (om den saknas i listan)",
       submit: "Skicka video för granskning",
-      success: "Tack! Ditt videoförslag har skickats in för granskning.",
+      success: "Tack! Ditt tips har skickats för granskning.",
     },
     adminSubmissions: {
       tab: "Tips",

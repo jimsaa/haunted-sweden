@@ -1,3 +1,15 @@
 {
-  "submissions": []
+  "submissions": [
+    {
+      "id": "media-1780333974381-jxy2g6z",
+      "status": "pending",
+      "mediaType": "image",
+      "url": "https://example.com/test.jpg",
+      "submittedAt": "2026-06-01T17:12:54.381Z",
+      "reviewedAt": null,
+      "reviewedBy": null,
+      "adminNotes": null,
+      "attachedToPlaceId": null
+    }
+  ]
 }

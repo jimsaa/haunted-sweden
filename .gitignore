@@ -37,6 +37,13 @@ yarn-error.log*
 /data/admin-security/*.json
 /data/admin-security/*.log
 
+# IndexNow (keep key.txt out of git — use INDEXNOW_KEY on Vercel)
+/data/indexnow/key.txt
+/data/indexnow/state.json
+/data/indexnow/env.example.txt
+/public/*.txt
+!public/audio/
+
 # vercel
 .vercel
 

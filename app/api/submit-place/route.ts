@@ -1,15 +1,13 @@
 import { NextResponse } from "next/server";
 import { PLACE_CATEGORIES } from "@/lib/categories";
 import {
-  isSubmissionsWriteEnabled,
-  submissionsWriteDisabled,
-} from "@/lib/submissions/api-guard";
+  submissionErrorResponse,
+  submissionSuccessResponse,
+} from "@/lib/submissions/public-api";
 import { appendPlaceSubmission, newSubmissionId } from "@/lib/submissions/store";
 import type { PlaceSubmission } from "@/lib/submissions/types";
 
 export async function POST(request: Request) {
-  if (!isSubmissionsWriteEnabled()) return submissionsWriteDisabled();
-
   try {
     const body = (await request.json()) as Partial<PlaceSubmission>;
     const name = body.name?.trim();
@@ -20,13 +18,19 @@ export async function POST(request: Request) {
 
     if (!name || !category || !city || !region || !description) {
       return NextResponse.json(
-        { error: "Missing required fields" },
+        {
+          error: "Missing required fields.",
+          errorSv: "Obligatoriska fält saknas.",
+        },
         { status: 400 }
       );
     }
 
     if (!PLACE_CATEGORIES.includes(category as (typeof PLACE_CATEGORIES)[number])) {
-      return NextResponse.json({ error: "Invalid category" }, { status: 400 });
+      return NextResponse.json(
+        { error: "Invalid category.", errorSv: "Ogiltig kategori." },
+        { status: 400 }
+      );
     }
 
     const submission: PlaceSubmission = {
@@ -50,12 +54,8 @@ export async function POST(request: Request) {
     };
 
     await appendPlaceSubmission(submission);
-    return NextResponse.json({ ok: true, id: submission.id });
+    return submissionSuccessResponse(submission.id);
   } catch (err) {
-    console.error("[submit-place]", err);
-    return NextResponse.json(
-      { error: "Failed to save submission" },
-      { status: 500 }
-    );
+    return submissionErrorResponse(err, "submit-place");
   }
 }

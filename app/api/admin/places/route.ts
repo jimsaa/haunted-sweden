@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { readFile, writeFile } from "fs/promises";
 import path from "path";
 import { requireAdminUser } from "@/lib/admin/api-auth";
+import { notifyIndexNowAfterPlacesPublish } from "@/lib/indexnow/notify";
 import type { HauntedPlacesFile } from "@/lib/types/place";
 
 const DATA_PATH = path.join(process.cwd(), "data", "haunted-places.json");
@@ -28,6 +29,14 @@ export async function POST(request: Request) {
   if (!auth.ok) return auth.response;
 
   try {
+    let before: HauntedPlacesFile = { version: 0, places: [] };
+    try {
+      const raw = await readFile(DATA_PATH, "utf8");
+      before = JSON.parse(raw) as HauntedPlacesFile;
+    } catch {
+      /* first save */
+    }
+
     const body = (await request.json()) as HauntedPlacesFile;
     if (!body || !Array.isArray(body.places)) {
       return NextResponse.json({ error: "Invalid payload" }, { status: 400 });
@@ -35,6 +44,8 @@ export async function POST(request: Request) {
 
     const json = `${JSON.stringify(body, null, 2)}\n`;
     await writeFile(DATA_PATH, json, "utf8");
+
+    void notifyIndexNowAfterPlacesPublish(before, body);
 
     return NextResponse.json({ ok: true, version: body.version });
   } catch (err) {
