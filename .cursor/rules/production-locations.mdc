@@ -1,0 +1,37 @@
+---
+description: Production rules when adding or editing Haunted Sweden locations for hauntedsweden.se
+alwaysApply: true
+---
+
+# Production locations (hauntedsweden.se)
+
+The live site reads **only** `data/haunted-places.json` via `lib/places.ts`. There is no separate mock or staging catalog.
+
+## When adding a location
+
+1. **Edit** `data/haunted-places.json` — append to `places[]` with the same shape as existing entries.
+2. **Public visibility:** `"status": "approved"` (required for map, search, detail pages, SSG).
+3. **Map:** set `latitude` and `longitude` (non-null numbers).
+4. **i18n:** include `shortDescriptionSv`, `historySv`, `legendSv`, `safetyNote` + `safetyNoteSv` (or update `data/place-safety-sv.json` and run `npx tsx scripts/apply-safety-sv.ts`).
+5. **Cover (optional):** `public/places/{slug}-cover.png` + `"coverImage": "/places/{slug}-cover.png"`.
+6. **Swedish static copy:** add slug to `lib/place-swedish-content.ts` when using autofill.
+7. **Do not** use `place-schema.reference.json` as data — reference only.
+8. **Do not** create example-only JSON, mock arrays, or duplicate location files.
+
+## After every add or edit
+
+```bash
+npm run validate:places
+npm run build
+```
+
+Deploy so production serves the updated JSON and `public/places/` assets.
+
+## How the app exposes places
+
+| Surface | Source |
+|---------|--------|
+| Map | `getMapPlaces()` — approved + coordinates |
+| Search/filters | `getMapPlaces()` + `lib/place-filters.ts` |
+| `/places/[slug]` | `getApprovedPlaces()` → `generateStaticParams` |
+| Homepage | `getApprovedPlaces()` / `getFeaturedPlaces()` |

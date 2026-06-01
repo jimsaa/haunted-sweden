@@ -1,0 +1,56 @@
+{
+  "submissions": [
+    {
+      "id": "place-1780329305001-9kw6nj2",
+      "status": "pending",
+      "name": "sdsds",
+      "englishName": "sdsds",
+      "category": "Haunted Accommodation",
+      "city": "gbg",
+      "region": "V Götaland",
+      "description": "sxsdx",
+      "history": "sdsd",
+      "legend": "sdsdsd",
+      "submitterName": "Hoppla",
+      "submittedAt": "2026-06-01T15:55:05.001Z",
+      "reviewedAt": null,
+      "reviewedBy": null,
+      "adminNotes": null,
+      "convertedPlaceId": null
+    },
+    {
+      "id": "place-1780329450515-na6g07b",
+      "status": "pending",
+      "name": "HEjdå",
+      "englishName": "engl",
+      "category": "Other",
+      "city": "Göteborg",
+      "region": "V Götaland",
+      "description": "wdwdwd",
+      "history": "wdwd",
+      "legend": "wdwd",
+      "submitterName": "Pippi",
+      "submittedAt": "2026-06-01T15:57:30.515Z",
+      "reviewedAt": null,
+      "reviewedBy": null,
+      "adminNotes": null,
+      "convertedPlaceId": null
+    },
+    {
+      "id": "place-1780329741423-pw2mwc2",
+      "status": "pending",
+      "name": "ifk",
+      "englishName": "ifk",
+      "category": "Other",
+      "city": "gbg",
+      "region": "gbgb",
+      "description": "gbgb",
+      "submitterName": "peppe",
+      "submittedAt": "2026-06-01T16:02:21.423Z",
+      "reviewedAt": null,
+      "reviewedBy": null,
+      "adminNotes": null,
+      "convertedPlaceId": null
+    }
+  ]
+}

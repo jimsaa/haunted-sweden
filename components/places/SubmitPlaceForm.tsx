@@ -13,6 +13,8 @@ export function SubmitPlaceForm() {
   const { locale, t } = useLanguage();
   const sf = t.submitForm;
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [sending, setSending] = useState(false);
 
   if (submitted) {
     return (
@@ -31,11 +33,48 @@ export function SubmitPlaceForm() {
   return (
     <form
       className="space-y-5"
-      onSubmit={(e) => {
+      onSubmit={async (e) => {
         e.preventDefault();
-        setSubmitted(true);
+        setError(null);
+        setSending(true);
+        const fd = new FormData(e.currentTarget);
+        try {
+          const res = await fetch("/api/submit-place", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              name: fd.get("name"),
+              englishName: fd.get("englishName"),
+              category: fd.get("category"),
+              city: fd.get("city"),
+              region: fd.get("region"),
+              description: fd.get("description"),
+              history: fd.get("history"),
+              legend: fd.get("legend"),
+              submitterName: fd.get("submitterName"),
+              submitterEmail: fd.get("submitterEmail"),
+            }),
+          });
+          if (!res.ok) {
+            const data = await res.json().catch(() => ({}));
+            throw new Error(
+              (data as { error?: string }).error ?? sf.error
+            );
+          }
+          setSubmitted(true);
+        } catch (err) {
+          setError(err instanceof Error ? err.message : sf.error);
+        } finally {
+          setSending(false);
+        }
       }}
     >
+      {error ? (
+        <p className="text-sm text-red-300/90 rounded-lg border border-red-500/30 bg-red-950/20 px-3 py-2">
+          {error}
+        </p>
+      ) : null}
+
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-white/80 mb-1.5">
           {sf.name} <span className="text-violet-400">*</span>
@@ -115,11 +154,32 @@ export function SubmitPlaceForm() {
         <textarea id="legend" name="legend" rows={4} className={`${inputClass} resize-y`} />
       </div>
 
+      <div className="grid gap-5 sm:grid-cols-2">
+        <div>
+          <label htmlFor="submitterName" className="block text-sm font-medium text-white/80 mb-1.5">
+            {sf.submitterName}
+          </label>
+          <input id="submitterName" name="submitterName" className={inputClass} />
+        </div>
+        <div>
+          <label htmlFor="submitterEmail" className="block text-sm font-medium text-white/80 mb-1.5">
+            {sf.submitterEmail}
+          </label>
+          <input
+            id="submitterEmail"
+            name="submitterEmail"
+            type="email"
+            className={inputClass}
+          />
+        </div>
+      </div>
+
       <button
         type="submit"
-        className="w-full sm:w-auto min-h-[48px] rounded-xl bg-violet-600 px-8 py-3 text-sm font-semibold text-white hover:bg-violet-500 transition-colors"
+        disabled={sending}
+        className="w-full sm:w-auto min-h-[48px] rounded-xl bg-violet-600 px-8 py-3 text-sm font-semibold text-white hover:bg-violet-500 transition-colors disabled:opacity-60"
       >
-        {sf.submit}
+        {sending ? sf.sending : sf.submit}
       </button>
     </form>
   );

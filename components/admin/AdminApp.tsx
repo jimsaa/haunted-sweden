@@ -4,25 +4,50 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Copy, LogOut, RefreshCw, Save } from "lucide-react";
 import hauntedPlacesFile from "@/data/haunted-places.json";
 import {
-  getStoredAdminPassword,
+  clearAdminSession,
+  clientHasPermission,
+  getAdminAuthHeaders,
+  getStoredAdminUser,
   isAdminSessionActive,
   setAdminSession,
-  setStoredAdminPassword,
+  setStoredAdminCredentials,
+  setStoredAdminUser,
 } from "@/lib/admin/auth";
+import { getSubmissionCapabilities } from "@/lib/admin/capabilities";
+import {
+  canAccessPlacesTab,
+  getPlaceEditorAccess,
+} from "@/lib/admin/editor-access";
+import { ROLE_LABELS } from "@/lib/admin/permissions";
 import {
   adminStateToFile,
   exportJsonString,
   fileToAdminState,
 } from "@/lib/admin/serialize";
 import type { AdminPlaceDraft, AdminPlacesState } from "@/lib/admin/types";
+import type { AdminPublicUser } from "@/lib/admin/users-types";
 import type { HauntedPlace, HauntedPlacesFile } from "@/lib/types/place";
 import { AdminLogin } from "@/components/admin/AdminLogin";
 import { AdminPlaceList } from "@/components/admin/AdminPlaceList";
 import { AdminPlaceEditor } from "@/components/admin/AdminPlaceEditor";
+import { AdminSubmissionsInbox } from "@/components/admin/AdminSubmissionsInbox";
+import { AdminUsersPanel } from "@/components/admin/AdminUsersPanel";
+import { getTranslations } from "@/lib/i18n";
 
 const initialFile = hauntedPlacesFile as HauntedPlacesFile;
 
+type AdminMainTab = "places" | "submissions" | "users";
+
+function defaultTabForUser(user: AdminPublicUser): AdminMainTab {
+  if (clientHasPermission(user, "view_submissions")) return "submissions";
+  if (canAccessPlacesTab(user)) return "places";
+  if (clientHasPermission(user, "manage_users")) return "users";
+  return "submissions";
+}
+
 export function AdminApp() {
+  const adminT = getTranslations("sv").adminSubmissions;
+  const [currentUser, setCurrentUser] = useState<AdminPublicUser | null>(null);
   const [unlocked, setUnlocked] = useState(false);
   const [loading, setLoading] = useState(true);
   const [state, setState] = useState<AdminPlacesState | null>(null);
@@ -35,10 +60,20 @@ export function AdminApp() {
   const [copyOpen, setCopyOpen] = useState(false);
   const [copyText, setCopyText] = useState("");
   const [saving, setSaving] = useState(false);
+  const [mainTab, setMainTab] = useState<AdminMainTab>("submissions");
+
+  const submissionCaps = useMemo(
+    () => getSubmissionCapabilities(currentUser),
+    [currentUser]
+  );
+  const editorAccess = useMemo(
+    () => getPlaceEditorAccess(currentUser),
+    [currentUser]
+  );
 
   const loadPlaces = useCallback(async () => {
-    const password = getStoredAdminPassword();
-    if (!password) {
+    const headers = getAdminAuthHeaders();
+    if (!Object.keys(headers).length) {
       setState(fileToAdminState(initialFile));
       originalsRef.current = initialFile.places;
       setLoading(false);
@@ -46,9 +81,7 @@ export function AdminApp() {
     }
 
     try {
-      const res = await fetch("/api/admin/places", {
-        headers: { "X-Admin-Password": password },
-      });
+      const res = await fetch("/api/admin/places", { headers });
       if (res.ok) {
         const data = (await res.json()) as HauntedPlacesFile;
         setState(fileToAdminState(data));
@@ -68,8 +101,11 @@ export function AdminApp() {
   }, []);
 
   useEffect(() => {
-    if (isAdminSessionActive()) {
+    const stored = getStoredAdminUser();
+    if (isAdminSessionActive() && stored) {
+      setCurrentUser(stored);
       setUnlocked(true);
+      setMainTab(defaultTabForUser(stored));
       loadPlaces();
     } else {
       setLoading(false);
@@ -91,17 +127,23 @@ export function AdminApp() {
   };
 
   const handleLogout = () => {
-    setAdminSession(false);
-    setStoredAdminPassword(null);
+    clearAdminSession();
     setUnlocked(false);
+    setCurrentUser(null);
     setState(null);
   };
 
+  const handleLoginSuccess = (user: AdminPublicUser) => {
+    setCurrentUser(user);
+    setUnlocked(true);
+    setMainTab(defaultTabForUser(user));
+    setLoading(true);
+    loadPlaces();
+  };
+
   const handleSaveFile = async () => {
-    if (!state) return;
-    const password = getStoredAdminPassword();
-    if (!password) {
-      setMessage("No admin password in session.");
+    if (!state || !clientHasPermission(currentUser, "edit_locations")) {
+      setMessage("You do not have permission to save locations.");
       return;
     }
 
@@ -113,7 +155,7 @@ export function AdminApp() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "X-Admin-Password": password,
+          ...getAdminAuthHeaders(),
         },
         body: JSON.stringify(file),
       });
@@ -150,22 +192,19 @@ export function AdminApp() {
     }
   };
 
+  const showPlacesTab = canAccessPlacesTab(currentUser);
+  const showSubmissionsTab = submissionCaps.canView;
+  const showUsersTab = clientHasPermission(currentUser, "manage_users");
+  const canSavePlaces = clientHasPermission(currentUser, "edit_locations");
+
   if (!unlocked) {
-    return (
-      <AdminLogin
-        onSuccess={() => {
-          setUnlocked(true);
-          setLoading(true);
-          loadPlaces();
-        }}
-      />
-    );
+    return <AdminLogin onSuccess={handleLoginSuccess} />;
   }
 
   if (loading || !state) {
     return (
       <div className="flex min-h-[50vh] items-center justify-center text-white/50">
-        Loading locations…
+        Loading…
       </div>
     );
   }
@@ -185,34 +224,52 @@ export function AdminApp() {
           </p>
         </div>
         <div className="flex flex-wrap items-center gap-2">
-          <button
-            type="button"
-            onClick={() => {
-              setLoading(true);
-              loadPlaces().finally(() => setLoading(false));
-            }}
-            className="admin-btn admin-btn--ghost"
-            title="Reload from file"
-          >
-            <RefreshCw className="h-4 w-4" aria-hidden />
-          </button>
-          <button
-            type="button"
-            onClick={handleSaveFile}
-            disabled={saving}
-            className="admin-btn admin-btn--primary"
-          >
-            <Save className="h-4 w-4" aria-hidden />
-            {saving ? "Saving…" : "Save to JSON file"}
-          </button>
-          <button
-            type="button"
-            onClick={handleCopyJson}
-            className="admin-btn admin-btn--ghost"
-          >
-            <Copy className="h-4 w-4" aria-hidden />
-            Copy updated JSON
-          </button>
+          {currentUser ? (
+            <div className="admin-user-badge mr-1">
+              <span className="admin-user-badge-name">
+                {currentUser.displayName}
+              </span>
+              <span
+                className={`admin-role-pill admin-role-pill--${currentUser.role}`}
+              >
+                {ROLE_LABELS[currentUser.role]}
+              </span>
+            </div>
+          ) : null}
+          {showPlacesTab ? (
+            <button
+              type="button"
+              onClick={() => {
+                setLoading(true);
+                loadPlaces().finally(() => setLoading(false));
+              }}
+              className="admin-btn admin-btn--ghost"
+              title="Reload from file"
+            >
+              <RefreshCw className="h-4 w-4" aria-hidden />
+            </button>
+          ) : null}
+          {showPlacesTab && canSavePlaces ? (
+            <button
+              type="button"
+              onClick={handleSaveFile}
+              disabled={saving}
+              className="admin-btn admin-btn--primary"
+            >
+              <Save className="h-4 w-4" aria-hidden />
+              {saving ? "Saving…" : "Save to JSON file"}
+            </button>
+          ) : null}
+          {showPlacesTab ? (
+            <button
+              type="button"
+              onClick={handleCopyJson}
+              className="admin-btn admin-btn--ghost"
+            >
+              <Copy className="h-4 w-4" aria-hidden />
+              Copy updated JSON
+            </button>
+          ) : null}
           <button
             type="button"
             onClick={handleLogout}
@@ -230,26 +287,86 @@ export function AdminApp() {
         </p>
       ) : null}
 
-      <div className="flex flex-1 min-h-0 flex-col lg:flex-row">
-        <div className="lg:w-72 shrink-0 max-h-[40vh] lg:max-h-none">
-          <AdminPlaceList
-            places={state.places}
-            selectedId={selectedId}
-            query={listQuery}
-            onQueryChange={setListQuery}
-            onSelect={setSelectedId}
-          />
+      <nav
+        className="flex gap-1 px-4 py-2 border-b border-white/10 bg-[#080810]"
+        aria-label="Admin sections"
+      >
+        {showPlacesTab ? (
+          <button
+            type="button"
+            onClick={() => setMainTab("places")}
+            className={`admin-tab ${mainTab === "places" ? "admin-tab--active" : ""}`}
+          >
+            Locations
+          </button>
+        ) : null}
+        {showSubmissionsTab ? (
+          <button
+            type="button"
+            onClick={() => setMainTab("submissions")}
+            className={`admin-tab ${mainTab === "submissions" ? "admin-tab--active" : ""}`}
+          >
+            {adminT.tab}
+          </button>
+        ) : null}
+        {showUsersTab ? (
+          <button
+            type="button"
+            onClick={() => setMainTab("users")}
+            className={`admin-tab ${mainTab === "users" ? "admin-tab--active" : ""}`}
+          >
+            Users
+          </button>
+        ) : null}
+      </nav>
+
+      {mainTab === "users" && showUsersTab ? (
+        <AdminUsersPanel
+          onUserUpdated={() => {
+            const stored = getStoredAdminUser();
+            if (stored) setCurrentUser(stored);
+          }}
+        />
+      ) : null}
+
+      {mainTab === "submissions" && showSubmissionsTab ? (
+        <AdminSubmissionsInbox
+          placeOptions={state.places}
+          labels={adminT}
+          capabilities={submissionCaps}
+          onPlacesChanged={() => {
+            setLoading(true);
+            loadPlaces().finally(() => setLoading(false));
+          }}
+        />
+      ) : null}
+
+      {mainTab === "places" && showPlacesTab ? (
+        <div className="flex flex-1 min-h-0 flex-col lg:flex-row">
+          <div className="lg:w-72 shrink-0 max-h-[40vh] lg:max-h-none">
+            <AdminPlaceList
+              places={state.places}
+              selectedId={selectedId}
+              query={listQuery}
+              onQueryChange={setListQuery}
+              onSelect={setSelectedId}
+            />
+          </div>
+          <div className="flex flex-1 min-h-0 min-w-0">
+            {selectedDraft ? (
+              <AdminPlaceEditor
+                draft={selectedDraft}
+                onChange={updateDraft}
+                access={editorAccess}
+              />
+            ) : (
+              <div className="flex flex-1 items-center justify-center text-white/40 text-sm">
+                Select a location
+              </div>
+            )}
+          </div>
         </div>
-        <div className="flex flex-1 min-h-0 min-w-0">
-          {selectedDraft ? (
-            <AdminPlaceEditor draft={selectedDraft} onChange={updateDraft} />
-          ) : (
-            <div className="flex flex-1 items-center justify-center text-white/40 text-sm">
-              Select a location
-            </div>
-          )}
-        </div>
-      </div>
+      ) : null}
 
       {copyOpen ? (
         <div

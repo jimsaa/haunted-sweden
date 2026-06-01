@@ -38,7 +38,7 @@ function isInteractiveTarget(target: EventTarget | null): boolean {
     target instanceof Element &&
     Boolean(
       target.closest(
-        "button, a, [role='dialog'], .sweden-view-controls, .sweden-view-modal-layer"
+        "button, a, [role='dialog'], .sweden-view-controls, .sweden-view-modal-layer, .sweden-view-cluster-sheet"
       )
     )
   );
@@ -521,6 +521,7 @@ export function useSwedenViewViewport() {
 
   return {
     viewportRef,
+    viewportSize,
     metrics,
     transform,
     mapStyle,
@@ -529,6 +530,7 @@ export function useSwedenViewViewport() {
     resetView,
     zoomIn,
     zoomOut,
+    applyTransform,
     flyToPlace,
     flyToCluster,
     onPointerEnter,

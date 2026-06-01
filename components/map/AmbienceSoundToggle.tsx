@@ -3,6 +3,10 @@
 import { Volume2, VolumeX } from "lucide-react";
 import { useHauntedAmbience } from "@/components/map/HauntedAmbienceContext";
 import { useLanguage } from "@/lib/language-context";
+import { getTranslations } from "@/lib/i18n";
+import { useClientMounted } from "@/lib/use-client-mounted";
+
+const SSR_LABELS = getTranslations("en");
 
 export function AmbienceSoundToggle({
   className = "",
@@ -13,11 +17,13 @@ export function AmbienceSoundToggle({
 }) {
   const ctx = useHauntedAmbience();
   const { t } = useLanguage();
+  const mounted = useClientMounted();
+  const labels = mounted ? t : SSR_LABELS;
 
   if (!ctx) return null;
 
   const { isPlaying, toggle } = ctx;
-  const label = isPlaying ? t.ambience.on : t.ambience.off;
+  const label = isPlaying ? labels.ambience.on : labels.ambience.off;
 
   return (
     <button
@@ -29,7 +35,7 @@ export function AmbienceSoundToggle({
           : "px-2.5 py-1.5 text-xs font-semibold sm:px-3"
       } ${className}`}
       aria-pressed={isPlaying}
-      aria-label={t.ambience.toggleAria}
+      aria-label={labels.ambience.toggleAria}
       title={label}
     >
       {isPlaying ? (

@@ -5,7 +5,7 @@ Editorial field naming: see [BRAND.md](BRAND.md) (`hauntedSwedenScore`, `suggest
 ## Stack
 
 - **Next.js** (App Router) — web-first, mobile-optimized  
-- **Local JSON** — `data/haunted-places.json` (MVP data source)  
+- **Local JSON** — `data/haunted-places.json` (production data source for hauntedsweden.se)  
 - **Leaflet** — map-first discovery  
 - **EN/SV** — `lib/translations.ts` + `LanguageProvider`
 

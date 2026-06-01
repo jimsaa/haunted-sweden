@@ -47,64 +47,73 @@ export function SwedenPlacePopupCard({
 
   return (
     <article ref={popupRef} className="sweden-view-popup haunted-popup">
-      <button
-        type="button"
-        onClick={onClose}
-        className="sweden-view-popup-close"
-        aria-label={labels.close}
-      >
-        <X className="h-4 w-4" aria-hidden />
-      </button>
-      <header className="haunted-popup-header sweden-popup-header">
-        <h3 id="sweden-view-popup-title" className="haunted-popup-title">
-          {name}
-        </h3>
-        {popupBadges.length > 0 ? (
-          <SwedenPopupStatusBadges
-            place={place}
-            labels={labels}
-            popupRef={popupRef}
-          />
-        ) : null}
-      </header>
-      <dl className="haunted-popup-meta">
-        <div className="haunted-popup-row">
-          <dt className="haunted-popup-label">{labels.cityRegion}</dt>
-          <dd className="haunted-popup-value">
-            {place.city}
-            <span className="text-white/35"> · </span>
-            {place.region}
-          </dd>
-        </div>
-        <div className="haunted-popup-row">
-          <dt className="haunted-popup-label">{labels.category}</dt>
-          <dd className="haunted-popup-value">
-            <span className="haunted-popup-category">{category}</span>
-          </dd>
-        </div>
-        <div className="haunted-popup-row">
-          <dt className="haunted-popup-label">{labels.hauntingLevel}</dt>
-          <dd className="haunted-popup-value">
-            <HauntingStars level={place.hauntingLevel} />
-          </dd>
-        </div>
-        <div className="haunted-popup-row">
-          <dt className="haunted-popup-label">{labels.verification}</dt>
-          <dd className="haunted-popup-value">
-            <span className="sweden-popup-verification">{verification}</span>
-          </dd>
-        </div>
-      </dl>
+      <div className="sweden-view-popup-toolbar">
+        <button
+          type="button"
+          onClick={onClose}
+          className="sweden-view-popup-close"
+          aria-label={labels.close}
+        >
+          <X className="h-4 w-4" aria-hidden />
+        </button>
+      </div>
 
-      <p className="sweden-popup-description">{summary}</p>
+      <div className="sweden-view-popup-scroll">
+        <header className="haunted-popup-header sweden-popup-header">
+          <h3 id="sweden-view-popup-title" className="haunted-popup-title">
+            {name}
+          </h3>
+          {popupBadges.length > 0 ? (
+            <SwedenPopupStatusBadges
+              place={place}
+              labels={labels}
+              popupRef={popupRef}
+            />
+          ) : null}
+        </header>
+        <dl className="haunted-popup-meta">
+          <div className="haunted-popup-row">
+            <dt className="haunted-popup-label">{labels.cityRegion}</dt>
+            <dd className="haunted-popup-value">
+              {place.city}
+              <span className="text-white/35"> · </span>
+              {place.region}
+            </dd>
+          </div>
+          <div className="haunted-popup-row">
+            <dt className="haunted-popup-label">{labels.category}</dt>
+            <dd className="haunted-popup-value">
+              <span className="haunted-popup-category">{category}</span>
+            </dd>
+          </div>
+          <div className="haunted-popup-row">
+            <dt className="haunted-popup-label">{labels.hauntingLevel}</dt>
+            <dd className="haunted-popup-value">
+              <HauntingStars level={place.hauntingLevel} />
+            </dd>
+          </div>
+          <div className="haunted-popup-row">
+            <dt className="haunted-popup-label">{labels.verification}</dt>
+            <dd className="haunted-popup-value">
+              <span className="sweden-popup-verification">{verification}</span>
+            </dd>
+          </div>
+        </dl>
 
-      <Link
-        href={`/places/${place.slug}`}
-        className="haunted-popup-btn"
-        onClick={(e) => e.stopPropagation()}
-      >
-        {labels.viewDetails}
-      </Link>
+        <p className="sweden-popup-description sweden-popup-description--preview">
+          {summary}
+        </p>
+      </div>
+
+      <footer className="sweden-view-popup-footer">
+        <Link
+          href={`/places/${place.slug}`}
+          className="haunted-popup-btn"
+          onClick={(e) => e.stopPropagation()}
+        >
+          {labels.viewDetails}
+        </Link>
+      </footer>
     </article>
   );
 }

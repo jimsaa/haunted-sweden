@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": "jim",
+      "username": "Jim",
+      "displayName": "Jim",
+      "role": "owner",
+      "password": "3513",
+      "enabled": true,
+      "permissions": {
+        "view_submissions": true,
+        "approve_place_tips": true,
+        "reject_place_tips": true,
+        "approve_image_suggestions": true,
+        "reject_image_suggestions": true,
+        "approve_video_suggestions": true,
+        "reject_video_suggestions": true,
+        "edit_locations": true,
+        "create_new_locations": true,
+        "delete_locations": true,
+        "edit_swedish_text": true,
+        "edit_english_text": true,
+        "upload_images": true,
+        "upload_videos": true,
+        "manage_featured_locations": true,
+        "manage_verification_status": true,
+        "view_analytics": true,
+        "manage_users": true,
+        "access_admin_settings": true
+      }
+    },
+    {
+      "id": "maria",
+      "username": "Maria",
+      "displayName": "Maria",
+      "role": "co_admin",
+      "password": "4455",
+      "enabled": true,
+      "permissions": {
+        "view_submissions": true,
+        "approve_place_tips": true,
+        "reject_place_tips": true,
+        "approve_image_suggestions": true,
+        "reject_image_suggestions": true,
+        "approve_video_suggestions": true,
+        "reject_video_suggestions": true,
+        "edit_locations": false,
+        "create_new_locations": false,
+        "delete_locations": false,
+        "edit_swedish_text": false,
+        "edit_english_text": false,
+        "upload_images": false,
+        "upload_videos": false,
+        "manage_featured_locations": false,
+        "manage_verification_status": false,
+        "view_analytics": false,
+        "manage_users": false,
+        "access_admin_settings": false
+      }
+    }
+  ]
+}

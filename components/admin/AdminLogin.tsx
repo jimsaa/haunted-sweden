@@ -2,22 +2,38 @@
 
 import { useState } from "react";
 import { Lock } from "lucide-react";
-import { setAdminSession, setStoredAdminPassword } from "@/lib/admin/auth";
-import { verifyAdminPasswordClient } from "@/lib/admin/auth-client";
+import {
+  setAdminSession,
+  setStoredAdminCredentials,
+  setStoredAdminUser,
+} from "@/lib/admin/auth";
+import { loginAdminClient } from "@/lib/admin/auth-client";
+import type { AdminPublicUser } from "@/lib/admin/users-types";
 
-export function AdminLogin({ onSuccess }: { onSuccess: () => void }) {
+export function AdminLogin({
+  onSuccess,
+}: {
+  onSuccess: (user: AdminPublicUser) => void;
+}) {
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!verifyAdminPasswordClient(password)) {
-      setError("Incorrect password");
+    setLoading(true);
+    setError("");
+    const result = await loginAdminClient(username, password);
+    setLoading(false);
+    if (!result.ok) {
+      setError(result.error);
       return;
     }
-    setAdminSession(true);
-    setStoredAdminPassword(password);
-    onSuccess();
+    setAdminSession(true, result.user.id);
+    setStoredAdminCredentials(username, password);
+    setStoredAdminUser(result.user);
+    onSuccess(result.user);
   };
 
   return (
@@ -41,7 +57,21 @@ export function AdminLogin({ onSuccess }: { onSuccess: () => void }) {
           </div>
         </div>
         <label className="admin-label">
-          Admin password
+          Username
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => {
+              setUsername(e.target.value);
+              setError("");
+            }}
+            className="admin-input mt-1"
+            autoComplete="username"
+            autoFocus
+          />
+        </label>
+        <label className="admin-label mt-4 block">
+          Password
           <input
             type="password"
             value={password}
@@ -51,7 +81,6 @@ export function AdminLogin({ onSuccess }: { onSuccess: () => void }) {
             }}
             className="admin-input mt-1"
             autoComplete="current-password"
-            autoFocus
           />
         </label>
         {error ? (
@@ -59,12 +88,16 @@ export function AdminLogin({ onSuccess }: { onSuccess: () => void }) {
             {error}
           </p>
         ) : null}
-        <button type="submit" className="admin-btn admin-btn--primary mt-6 w-full">
-          Unlock admin
+        <button
+          type="submit"
+          disabled={loading}
+          className="admin-btn admin-btn--primary mt-6 w-full"
+        >
+          {loading ? "Signing in…" : "Sign in"}
         </button>
         <p className="mt-4 text-[11px] leading-relaxed text-white/35">
-          TODO: Replace with proper authentication before production. This gate
-          is not secure for public deployment.
+          TODO: Replace local password admin with real authentication (Supabase
+          Auth) before scaling. Default users: Jim (Owner), Maria (Co-Admin).
         </p>
       </form>
     </div>

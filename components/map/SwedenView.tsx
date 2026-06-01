@@ -7,17 +7,30 @@ import {
   SWEDEN_OUTLINE_VIEWBOX,
 } from "@/lib/sweden-outline";
 import { buildSwedenViewMarkers } from "@/lib/sweden-view-clusters";
+import { getClusterFocusTransforms } from "@/lib/sweden-view-cluster-focus";
 import { latLonToSwedenView } from "@/lib/sweden-view-projection";
+import {
+  clusterPlacesKey,
+  computeSpiderfyLayout,
+  isSpiderfySeparatedOnScreen,
+  type SpiderfyLayout,
+} from "@/lib/sweden-view-spiderfy";
 import type { MapBadgeLabels } from "@/lib/map-marker-badges";
 import type { SwedenPopupLabels } from "@/lib/sweden-popup-labels";
 import type { Locale } from "@/lib/translations";
+import { getTranslations } from "@/lib/i18n";
 import {
   HauntedClusterPinMarker,
   HauntedMapPinMarker,
 } from "@/components/map/HauntedMapPinMarker";
+import { SwedenViewClusterList } from "@/components/map/SwedenViewClusterList";
 import { SwedenViewControls } from "@/components/map/SwedenViewControls";
 import { SwedenViewPlaceModal } from "@/components/map/SwedenViewPlaceModal";
 import { useSwedenViewViewport } from "@/components/map/useSwedenViewViewport";
+
+type ClusterUiState =
+  | { mode: "spiderfy"; key: string; layout: SpiderfyLayout }
+  | { mode: "list"; key: string; places: HauntedPlace[] };
 
 export function SwedenView({
   places,
@@ -46,23 +59,43 @@ export function SwedenView({
   locale: Locale;
   clusterAriaLabel: (count: string) => string;
 }) {
+  const t = getTranslations(locale);
   const [popupPlaceId, setPopupPlaceId] = useState<string | null>(null);
-  const [expandedClusterKey, setExpandedClusterKey] = useState<string | null>(
-    null
-  );
+  const [clusterUi, setClusterUi] = useState<ClusterUiState | null>(null);
 
   const viewport = useSwedenViewViewport();
-  const { resetView } = viewport;
+  const {
+    resetView,
+    flyToPlace,
+    applyTransform,
+    viewportSize,
+    metrics,
+  } = viewport;
 
   const markers = useMemo(() => {
-    if (expandedClusterKey) {
-      const clusterPlaces = places.filter((p) =>
-        expandedClusterKey.split(",").includes(p.id)
-      );
-      return buildSwedenViewMarkers(clusterPlaces, 0);
+    const base = buildSwedenViewMarkers(places);
+
+    if (clusterUi?.mode !== "spiderfy") {
+      return base;
     }
-    return buildSwedenViewMarkers(places);
-  }, [places, expandedClusterKey]);
+
+    const expandedKey = clusterUi.key;
+    const withoutExpanded = base.filter((m) => {
+      if (m.kind === "cluster") {
+        return clusterPlacesKey(m.places) !== expandedKey;
+      }
+      return true;
+    });
+
+    const spiderPins = clusterUi.layout.places.map((sp) => ({
+      kind: "place" as const,
+      place: sp.place,
+      xPercent: sp.xPercent,
+      yPercent: sp.yPercent,
+    }));
+
+    return [...withoutExpanded, ...spiderPins];
+  }, [places, clusterUi]);
 
   const activePlaceId =
     popupPlaceId ?? selectedPlaceId ?? focusedPlace?.id ?? null;
@@ -85,21 +118,32 @@ export function SwedenView({
     [onSelectPlace]
   );
 
+  const clearClusterUi = useCallback(() => {
+    setClusterUi(null);
+  }, []);
+
   const resetAll = useCallback(() => {
     resetView();
     closePopup();
-    setExpandedClusterKey(null);
-  }, [resetView, closePopup]);
+    clearClusterUi();
+  }, [resetView, closePopup, clearClusterUi]);
 
   useEffect(() => {
     if (!focusedPlace?.id || focusedPlace.latitude == null) return;
-    setExpandedClusterKey(null);
+    clearClusterUi();
+    const { xPercent, yPercent } = latLonToSwedenView(
+      focusedPlace.latitude,
+      focusedPlace.longitude!
+    );
+    flyToPlace(xPercent, yPercent);
     openPlacePopup(focusedPlace);
   }, [
     focusedPlace?.id,
     focusedPlace?.latitude,
     focusedPlace?.longitude,
+    flyToPlace,
     openPlacePopup,
+    clearClusterUi,
   ]);
 
   useEffect(() => {
@@ -115,30 +159,105 @@ export function SwedenView({
     openPlacePopup(place);
   };
 
-  const handleClusterClick = (clusterPlaces: HauntedPlace[]) => {
-    const key = clusterPlaces
-      .map((p) => p.id)
-      .sort()
-      .join(",");
+  const handleSelectFromClusterList = useCallback(
+    (place: HauntedPlace) => {
+      if (place.latitude == null || place.longitude == null) return;
+      clearClusterUi();
+      const { xPercent, yPercent } = latLonToSwedenView(
+        place.latitude,
+        place.longitude
+      );
+      flyToPlace(xPercent, yPercent);
+      openPlacePopup(place);
+    },
+    [clearClusterUi, flyToPlace, openPlacePopup]
+  );
 
-    if (clusterPlaces.length === 1) {
-      openPlacePopup(clusterPlaces[0]!);
-      setExpandedClusterKey(null);
-      return;
-    }
+  const handleClusterClick = useCallback(
+    (clusterPlaces: HauntedPlace[]) => {
+      const key = clusterPlacesKey(clusterPlaces);
 
-    if (expandedClusterKey === key) {
-      setExpandedClusterKey(null);
+      if (clusterPlaces.length === 1) {
+        const place = clusterPlaces[0]!;
+        if (place.latitude == null || place.longitude == null) return;
+        clearClusterUi();
+        const { xPercent, yPercent } = latLonToSwedenView(
+          place.latitude,
+          place.longitude
+        );
+        flyToPlace(xPercent, yPercent);
+        openPlacePopup(place);
+        return;
+      }
+
+      if (clusterUi?.key === key) {
+        clearClusterUi();
+        closePopup();
+        return;
+      }
+
       closePopup();
-      return;
-    }
 
-    closePopup();
-    setExpandedClusterKey(key);
-  };
+      const projected = clusterPlaces
+        .filter((p) => p.latitude != null && p.longitude != null)
+        .map((p) => latLonToSwedenView(p.latitude!, p.longitude!));
+
+      if (projected.length === 0) return;
+
+      if (!metrics || viewportSize.width <= 0) {
+        setClusterUi({ mode: "list", key, places: clusterPlaces });
+        return;
+      }
+
+      const { initial, maxZoom } = getClusterFocusTransforms(
+        projected,
+        viewportSize,
+        metrics
+      );
+      const layout = computeSpiderfyLayout(clusterPlaces);
+
+      let target = initial;
+      if (!isSpiderfySeparatedOnScreen(layout, initial, metrics)) {
+        target = maxZoom;
+      }
+
+      applyTransform(target, true);
+
+      if (!isSpiderfySeparatedOnScreen(layout, target, metrics)) {
+        setClusterUi({ mode: "list", key, places: clusterPlaces });
+        return;
+      }
+
+      setClusterUi({ mode: "spiderfy", key, layout });
+    },
+    [
+      clusterUi?.key,
+      clearClusterUi,
+      closePopup,
+      flyToPlace,
+      metrics,
+      viewportSize,
+      openPlacePopup,
+      applyTransform,
+    ]
+  );
 
   const handleViewportPointerUp = (e: React.PointerEvent) => {
     viewport.onPointerUp(e);
+  };
+
+  const spiderfyLayout =
+    clusterUi?.mode === "spiderfy" ? clusterUi.layout : null;
+
+  const clusterListPlaces =
+    clusterUi?.mode === "list" ? clusterUi.places : null;
+
+  const clusterListLabels = {
+    title: t.swedenClusterList.title,
+    count: t.swedenClusterList.count,
+    view: t.swedenClusterList.view,
+    close: t.swedenClusterList.close,
+    hauntingLevel: t.mapPopup.hauntingLevel,
   };
 
   return (
@@ -224,13 +343,29 @@ export function SwedenView({
               </span>
             </div>
 
+            {spiderfyLayout ? (
+              <svg
+                className="sweden-view-spiderfy-lines"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                aria-hidden
+              >
+                {spiderfyLayout.places.map((sp) => (
+                  <line
+                    key={sp.place.id}
+                    x1={spiderfyLayout.center.xPercent}
+                    y1={spiderfyLayout.center.yPercent}
+                    x2={sp.xPercent}
+                    y2={sp.yPercent}
+                  />
+                ))}
+              </svg>
+            ) : null}
+
             <div className="sweden-view-pins absolute inset-0">
               {markers.map((marker) => {
                 if (marker.kind === "cluster") {
-                  const key = marker.places
-                    .map((p) => p.id)
-                    .sort()
-                    .join(",");
+                  const key = clusterPlacesKey(marker.places);
                   return (
                     <div
                       key={`cluster-${key}`}
@@ -274,6 +409,16 @@ export function SwedenView({
               })}
             </div>
           </div>
+        ) : null}
+
+        {clusterListPlaces ? (
+          <SwedenViewClusterList
+            places={clusterListPlaces}
+            locale={locale}
+            labels={clusterListLabels}
+            onSelectPlace={handleSelectFromClusterList}
+            onClose={clearClusterUi}
+          />
         ) : null}
 
         {popupPlace ? (

@@ -16,6 +16,7 @@ import type {
   AdminVideoDraft,
 } from "@/lib/admin/types";
 import { autofillSwedishFromEnglish } from "@/lib/admin/autofill-swedish";
+import type { PlaceEditorAccess } from "@/lib/admin/editor-access";
 
 const TABS: { id: AdminTabId; label: string }[] = [
   { id: "basic", label: "Basic Info" },
@@ -109,16 +110,23 @@ function Checkbox({
   label,
   checked,
   onChange,
+  disabled = false,
 }: {
   label: string;
   checked: boolean;
   onChange: (v: boolean) => void;
+  disabled?: boolean;
 }) {
   return (
-    <label className="flex items-center gap-2 text-sm text-white/80 cursor-pointer">
+    <label
+      className={`flex items-center gap-2 text-sm text-white/80 ${
+        disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"
+      }`}
+    >
       <input
         type="checkbox"
         checked={checked}
+        disabled={disabled}
         onChange={(e) => onChange(e.target.checked)}
         className="rounded border-white/20 bg-black/40 text-violet-500 focus:ring-violet-500/50"
       />
@@ -127,17 +135,57 @@ function Checkbox({
   );
 }
 
+const FULL_EDITOR_ACCESS: PlaceEditorAccess = {
+  editLocations: true,
+  editSwedish: true,
+  editEnglish: true,
+  uploadImages: true,
+  uploadVideos: true,
+  manageFeatured: true,
+  manageVerification: true,
+  deleteLocations: true,
+};
+
+function tabAllowed(id: AdminTabId, access: PlaceEditorAccess): boolean {
+  switch (id) {
+    case "basic":
+      return access.editLocations;
+    case "swedish":
+      return access.editSwedish;
+    case "english":
+      return access.editEnglish;
+    case "media":
+      return access.uploadImages || access.uploadVideos;
+    case "verification":
+      return access.manageVerification;
+    case "access":
+    case "google":
+      return access.editLocations;
+    default:
+      return access.editLocations;
+  }
+}
+
 export function AdminPlaceEditor({
   draft,
   onChange,
+  access = FULL_EDITOR_ACCESS,
 }: {
   draft: AdminPlaceDraft;
   onChange: (next: AdminPlaceDraft) => void;
+  access?: PlaceEditorAccess;
 }) {
-  const [tab, setTab] = useState<AdminTabId>("basic");
+  const visibleTabs = TABS.filter((t) => tabAllowed(t.id, access));
+  const [tab, setTab] = useState<AdminTabId>(
+    visibleTabs[0]?.id ?? "basic"
+  );
 
-  const patch = (partial: Partial<AdminPlaceDraft>) =>
+  const patch = (partial: Partial<AdminPlaceDraft>) => {
+    if (!access.editLocations && !access.editSwedish && !access.editEnglish) {
+      return;
+    }
     onChange({ ...draft, ...partial });
+  };
 
   const confirmArchive = (item: string) =>
     window.confirm(
@@ -221,20 +269,22 @@ export function AdminPlaceEditor({
           </h2>
           <p className="text-xs text-white/40 font-mono">{draft.slug}</p>
         </div>
-        <button
-          type="button"
-          onClick={archivePlace}
-          className="admin-btn admin-btn--ghost text-xs"
-        >
-          Archive location
-        </button>
+        {access.deleteLocations ? (
+          <button
+            type="button"
+            onClick={archivePlace}
+            className="admin-btn admin-btn--ghost text-xs"
+          >
+            Archive location
+          </button>
+        ) : null}
       </div>
 
       <div
         className="flex gap-1 overflow-x-auto border-b border-white/10 px-2 py-2 admin-tabs"
         role="tablist"
       >
-        {TABS.map((t) => (
+        {visibleTabs.map((t) => (
           <button
             key={t.id}
             type="button"
@@ -334,6 +384,7 @@ export function AdminPlaceEditor({
               <Checkbox
                 label="Featured"
                 checked={draft.featured}
+                disabled={!access.manageFeatured}
                 onChange={(v) => patch({ featured: v })}
               />
               <Checkbox
@@ -437,15 +488,17 @@ export function AdminPlaceEditor({
             <section>
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-sm font-semibold text-violet-200">Images</h3>
-                <button
-                  type="button"
-                  className="admin-btn admin-btn--ghost text-xs"
-                  onClick={() =>
-                    patch({ images: [...draft.images, createEmptyImage()] })
-                  }
-                >
-                  + Add image
-                </button>
+                {access.uploadImages ? (
+                  <button
+                    type="button"
+                    className="admin-btn admin-btn--ghost text-xs"
+                    onClick={() =>
+                      patch({ images: [...draft.images, createEmptyImage()] })
+                    }
+                  >
+                    + Add image
+                  </button>
+                ) : null}
               </div>
               <div className="space-y-4">
                 {draft.images.map((img) => (
@@ -521,15 +574,17 @@ export function AdminPlaceEditor({
             <section>
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-sm font-semibold text-violet-200">Videos</h3>
-                <button
-                  type="button"
-                  className="admin-btn admin-btn--ghost text-xs"
-                  onClick={() =>
-                    patch({ videos: [...draft.videos, createEmptyVideo()] })
-                  }
-                >
-                  + Add video
-                </button>
+                {access.uploadVideos ? (
+                  <button
+                    type="button"
+                    className="admin-btn admin-btn--ghost text-xs"
+                    onClick={() =>
+                      patch({ videos: [...draft.videos, createEmptyVideo()] })
+                    }
+                  >
+                    + Add video
+                  </button>
+                ) : null}
               </div>
               <div className="space-y-4">
                 {draft.videos.map((vid) => (

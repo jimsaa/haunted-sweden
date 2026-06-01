@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import type { HauntedPlace } from "@/lib/types/place";
 import type { SwedenPopupLabels } from "@/lib/sweden-popup-labels";
 import { SwedenPlacePopupCard } from "@/components/map/SwedenPlacePopupCard";
@@ -14,6 +15,15 @@ export function SwedenViewPlaceModal({
   labels: SwedenPopupLabels;
   onClose: () => void;
 }) {
+  useEffect(() => {
+    const scrollY = window.scrollY;
+    document.body.classList.add("sweden-view-modal-open");
+    return () => {
+      document.body.classList.remove("sweden-view-modal-open");
+      window.scrollTo(0, scrollY);
+    };
+  }, []);
+
   return (
     <div
       className="sweden-view-modal-layer"

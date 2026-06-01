@@ -1,32 +1,14 @@
 import { NextResponse } from "next/server";
 import { readFile, writeFile } from "fs/promises";
 import path from "path";
-import { verifyAdminPassword, isAdminApiEnabled } from "@/lib/admin/auth";
+import { requireAdminUser } from "@/lib/admin/api-auth";
 import type { HauntedPlacesFile } from "@/lib/types/place";
 
 const DATA_PATH = path.join(process.cwd(), "data", "haunted-places.json");
 
-function unauthorized() {
-  return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-}
-
-function notAvailable() {
-  return NextResponse.json(
-    { error: "Admin API is disabled in production" },
-    { status: 403 }
-  );
-}
-
-function getPasswordFromRequest(request: Request): string | null {
-  const header = request.headers.get("x-admin-password");
-  if (header) return header;
-  return null;
-}
-
 export async function GET(request: Request) {
-  if (!isAdminApiEnabled()) return notAvailable();
-  const password = getPasswordFromRequest(request);
-  if (!password || !verifyAdminPassword(password)) return unauthorized();
+  const auth = await requireAdminUser(request);
+  if (!auth.ok) return auth.response;
 
   try {
     const raw = await readFile(DATA_PATH, "utf8");
@@ -42,9 +24,8 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
-  if (!isAdminApiEnabled()) return notAvailable();
-  const password = getPasswordFromRequest(request);
-  if (!password || !verifyAdminPassword(password)) return unauthorized();
+  const auth = await requireAdminUser(request, "edit_locations");
+  if (!auth.ok) return auth.response;
 
   try {
     const body = (await request.json()) as HauntedPlacesFile;

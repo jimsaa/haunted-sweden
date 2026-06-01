@@ -1,3 +1,4 @@
+/** Production location catalog for hauntedsweden.se — edit data/haunted-places.json only. */
 import hauntedPlacesFile from "@/data/haunted-places.json";
 import type { PlaceCategory } from "@/lib/categories";
 import { normalizePlace } from "@/lib/place-normalize";

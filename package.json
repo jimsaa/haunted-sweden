@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate:places": "npx --yes tsx scripts/validate-production-places.ts"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
