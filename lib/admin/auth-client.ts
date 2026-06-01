@@ -1,5 +1,6 @@
 /**
- * TODO: Replace with Supabase Auth session after migration.
+ * Client login helper — passwords are only sent to POST /api/admin/login (server validation).
+ * TODO: Replace with Supabase Auth after migration.
  */
 import type { AdminPublicUser } from "@/lib/admin/users-types";
 
@@ -7,10 +8,6 @@ export async function loginAdminClient(
   username: string,
   password: string
 ): Promise<{ ok: true; user: AdminPublicUser } | { ok: false; error: string }> {
-  if (process.env.NODE_ENV === "production") {
-    return { ok: false, error: "Admin login is disabled in production" };
-  }
-
   try {
     const res = await fetch("/api/admin/login", {
       method: "POST",

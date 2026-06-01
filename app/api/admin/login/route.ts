@@ -1,16 +1,12 @@
 import { NextResponse } from "next/server";
-import { isAdminApiEnabled } from "@/lib/admin/auth";
 import { toPublicUser } from "@/lib/admin/users-types";
 import { findAdminUserByCredentials } from "@/lib/admin/users-store";
 
+/**
+ * MVP admin login — validates against data/admin-users.json on the server.
+ * TODO: Replace with Supabase Auth; use hashed passwords and secure sessions.
+ */
 export async function POST(request: Request) {
-  if (!isAdminApiEnabled()) {
-    return NextResponse.json(
-      { error: "Admin login is disabled in production" },
-      { status: 403 }
-    );
-  }
-
   try {
     const body = (await request.json()) as {
       username?: string;

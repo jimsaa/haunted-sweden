@@ -1,16 +1,8 @@
 import { NextResponse } from "next/server";
-import { isAdminApiEnabled } from "@/lib/admin/auth";
 import type { AdminPermission } from "@/lib/admin/permissions";
 import { userHasPermission } from "@/lib/admin/permissions";
 import type { AdminUserRecord } from "@/lib/admin/users-types";
 import { findAdminUserByCredentials } from "@/lib/admin/users-store";
-
-export function adminNotAvailable() {
-  return NextResponse.json(
-    { error: "Admin API is disabled in production" },
-    { status: 403 }
-  );
-}
 
 export function unauthorized() {
   return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -30,10 +22,10 @@ export function getAdminCredentialsFromRequest(request: Request): {
   return { username, password };
 }
 
+/** Validates username/password against data/admin-users.json (server only). */
 export async function authenticateAdminRequest(
   request: Request
 ): Promise<AdminUserRecord | null> {
-  if (!isAdminApiEnabled()) return null;
   const creds = getAdminCredentialsFromRequest(request);
   if (!creds) return null;
   return findAdminUserByCredentials(creds.username, creds.password);
@@ -47,10 +39,6 @@ export async function requireAdminUser(
   request: Request,
   permission?: AdminPermission
 ): Promise<AdminAuthResult> {
-  if (!isAdminApiEnabled()) {
-    return { ok: false, response: adminNotAvailable() };
-  }
-
   const user = await authenticateAdminRequest(request);
   if (!user) {
     return { ok: false, response: unauthorized() };

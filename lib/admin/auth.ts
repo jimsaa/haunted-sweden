@@ -1,8 +1,9 @@
 /**
- * TODO: Replace local username/password auth with Supabase Auth (or similar)
- * before scaling. Store hashed passwords and JWT sessions — never commit secrets.
+ * MVP admin session (client). Login is validated server-side via POST /api/admin/login.
+ * Credentials are sent on each API request via sessionStorage headers — not embedded in JS.
  *
- * LOCAL DEVELOPMENT ONLY — admin gate for /admin.
+ * TODO: Replace with Supabase Auth (or similar): hashed passwords, httpOnly cookies,
+ * short-lived tokens. Do not rely on plaintext passwords in data/admin-users.json long term.
  */
 import type { AdminPermission } from "@/lib/admin/permissions";
 import { userHasPermission } from "@/lib/admin/permissions";
@@ -12,10 +13,6 @@ export const ADMIN_SESSION_STORAGE_KEY = "haunted-sweden-admin-session";
 export const ADMIN_USER_STORAGE_KEY = "haunted-sweden-admin-user";
 const ADMIN_USERNAME_KEY = "haunted-sweden-admin-username";
 const ADMIN_PASSWORD_KEY = "haunted-sweden-admin-password";
-
-export function isAdminApiEnabled(): boolean {
-  return process.env.NODE_ENV !== "production";
-}
 
 export function isAdminSessionActive(): boolean {
   if (typeof window === "undefined") return false;
@@ -31,10 +28,11 @@ export function setAdminSession(active: boolean, userId?: string): void {
   try {
     if (active && userId) {
       localStorage.setItem(ADMIN_SESSION_STORAGE_KEY, "unlocked");
-      localStorage.setItem(ADMIN_SESSION_STORAGE_KEY + "-id", userId);
+      localStorage.setItem(`${ADMIN_SESSION_STORAGE_KEY}-id`, userId);
     } else {
       localStorage.removeItem(ADMIN_SESSION_STORAGE_KEY);
-      localStorage.removeItem(ADMIN_SESSION_STORAGE_KEY + "-id");
+      localStorage.removeItem(`${ADMIN_SESSION_STORAGE_KEY}-id`);
+      localStorage.removeItem(ADMIN_USER_STORAGE_KEY);
     }
   } catch {
     /* ignore */
@@ -89,10 +87,18 @@ export function setStoredAdminPassword(password: string | null): void {
   }
 }
 
+/** Role and permissions (no password) — persisted in localStorage for MVP. */
 export function getStoredAdminUser(): AdminPublicUser | null {
   if (typeof window === "undefined") return null;
   try {
-    const raw = sessionStorage.getItem(ADMIN_USER_STORAGE_KEY);
+    let raw = localStorage.getItem(ADMIN_USER_STORAGE_KEY);
+    if (!raw) {
+      raw = sessionStorage.getItem(ADMIN_USER_STORAGE_KEY);
+      if (raw) {
+        localStorage.setItem(ADMIN_USER_STORAGE_KEY, raw);
+        sessionStorage.removeItem(ADMIN_USER_STORAGE_KEY);
+      }
+    }
     if (!raw) return null;
     return JSON.parse(raw) as AdminPublicUser;
   } catch {
@@ -104,9 +110,9 @@ export function setStoredAdminUser(user: AdminPublicUser | null): void {
   if (typeof window === "undefined") return;
   try {
     if (user) {
-      sessionStorage.setItem(ADMIN_USER_STORAGE_KEY, JSON.stringify(user));
+      localStorage.setItem(ADMIN_USER_STORAGE_KEY, JSON.stringify(user));
     } else {
-      sessionStorage.removeItem(ADMIN_USER_STORAGE_KEY);
+      localStorage.removeItem(ADMIN_USER_STORAGE_KEY);
     }
   } catch {
     /* ignore */

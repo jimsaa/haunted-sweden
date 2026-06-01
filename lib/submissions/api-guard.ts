@@ -3,9 +3,7 @@ import {
   forbidden,
   requireAdminUser,
   unauthorized,
-  adminNotAvailable,
 } from "@/lib/admin/api-auth";
-import { isAdminApiEnabled } from "@/lib/admin/auth";
 import type { AdminPermission } from "@/lib/admin/permissions";
 
 /** Local prototype: JSON file writes only in non-production. */
@@ -23,7 +21,7 @@ export function submissionsWriteDisabled() {
   );
 }
 
-export { unauthorized, adminNotAvailable, forbidden };
+export { unauthorized, forbidden };
 
 /** Any authenticated admin (e.g. load place list for attach dropdown). */
 export async function requireAdmin(request: Request) {

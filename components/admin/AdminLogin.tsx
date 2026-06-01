@@ -53,7 +53,7 @@ export function AdminLogin({
             >
               Haunted Sweden Admin
             </h1>
-            <p className="text-xs text-white/45">Local development only</p>
+            <p className="text-xs text-white/45">Authorized users only</p>
           </div>
         </div>
         <label className="admin-label">
@@ -96,8 +96,8 @@ export function AdminLogin({
           {loading ? "Signing in…" : "Sign in"}
         </button>
         <p className="mt-4 text-[11px] leading-relaxed text-white/35">
-          TODO: Replace local password admin with real authentication (Supabase
-          Auth) before scaling. Default users: Jim (Owner), Maria (Co-Admin).
+          MVP authentication — replace with Supabase Auth before scaling.
+          Passwords are checked on the server, not in this page&apos;s code.
         </p>
       </form>
     </div>

@@ -1,3 +1,7 @@
+/**
+ * Admin users loaded from data/admin-users.json (server-side only).
+ * TODO: Supabase Auth + hashed passwords; avoid plaintext passwords in repo for production scale.
+ */
 import { readFile, writeFile } from "fs/promises";
 import path from "path";
 import {
