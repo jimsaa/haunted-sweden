@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { attachMediaToPlace, attachVideoToPlace } from "@/lib/submissions/actions";
 import { forbidden, requireAdminUser } from "@/lib/admin/api-auth";
+import { formatSubmissionApiError } from "@/lib/submissions/api-error";
 import {
   userCanApproveKind,
   userCanAttachMedia,
@@ -72,14 +73,29 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: true, attachedPlaceId: place.id });
     }
 
+    const reviewedBy =
+      body.reviewedBy?.trim() ||
+      auth.user.displayName ||
+      auth.user.username;
+
     const updated = await setSubmissionStatus(body.kind, body.id, "approved", {
-      reviewedBy: body.reviewedBy,
+      reviewedBy,
       adminNotes: body.adminNotes,
     });
+
+    if (!updated) {
+      return NextResponse.json(
+        { error: "Failed to update submission file" },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json({ ok: true, submission: updated });
   } catch (err) {
     console.error("[admin/submissions/approve]", err);
-    return NextResponse.json({ error: "Approve failed" }, { status: 500 });
+    return NextResponse.json(
+      { error: formatSubmissionApiError(err, "Approve failed") },
+      { status: 500 }
+    );
   }
 }

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { forbidden, requireAdminUser } from "@/lib/admin/api-auth";
 import { userCanRejectKind } from "@/lib/submissions/admin-permissions";
+import { formatSubmissionApiError } from "@/lib/submissions/api-error";
 import {
   getSubmissionByKindAndId,
   setSubmissionStatus,
@@ -8,8 +9,8 @@ import {
 import type { SubmissionKind } from "@/lib/submissions/types";
 
 type Body = {
-  kind: SubmissionKind;
-  id: string;
+  kind?: SubmissionKind;
+  id?: string;
   reviewedBy?: string;
   adminNotes?: string;
 };
@@ -20,27 +21,64 @@ export async function POST(request: Request) {
 
   try {
     const body = (await request.json()) as Body;
-    if (!body.kind || !body.id) {
-      return NextResponse.json({ error: "kind and id required" }, { status: 400 });
+    const kind = body.kind;
+    const id = body.id?.trim();
+
+    if (!kind || !id) {
+      return NextResponse.json(
+        { error: "kind and id are required" },
+        { status: 400 }
+      );
     }
 
-    if (!userCanRejectKind(auth.user, body.kind)) {
+    if (kind !== "place" && kind !== "media" && kind !== "video") {
+      return NextResponse.json(
+        { error: "kind must be place, media, or video" },
+        { status: 400 }
+      );
+    }
+
+    if (!userCanRejectKind(auth.user, kind)) {
       return forbidden("Missing reject permission");
     }
 
-    const existing = await getSubmissionByKindAndId(body.kind, body.id);
+    const existing = await getSubmissionByKindAndId(kind, id);
     if (!existing) {
       return NextResponse.json({ error: "Submission not found" }, { status: 404 });
     }
 
-    const updated = await setSubmissionStatus(body.kind, body.id, "rejected", {
-      reviewedBy: body.reviewedBy,
+    if (existing.status !== "pending") {
+      return NextResponse.json(
+        { error: "Only pending submissions can be rejected" },
+        { status: 409 }
+      );
+    }
+
+    const reviewedBy =
+      body.reviewedBy?.trim() ||
+      auth.user.displayName ||
+      auth.user.username;
+
+    const updated = await setSubmissionStatus(kind, id, "rejected", {
+      reviewedBy,
       adminNotes: body.adminNotes,
     });
+
+    if (!updated) {
+      return NextResponse.json(
+        { error: "Failed to update submission file" },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json({ ok: true, submission: updated });
   } catch (err) {
     console.error("[admin/submissions/reject]", err);
-    return NextResponse.json({ error: "Reject failed" }, { status: 500 });
+    return NextResponse.json(
+      {
+        error: formatSubmissionApiError(err, "Reject failed"),
+      },
+      { status: 500 }
+    );
   }
 }

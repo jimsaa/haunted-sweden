@@ -1,13 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Lock } from "lucide-react";
+import { AdminTurnstile } from "@/components/admin/AdminTurnstile";
+import {
+  LOGIN_ERROR_INVALID,
+  LOGIN_ERROR_RATE_LIMIT,
+} from "@/lib/admin/messages";
 import {
   setAdminSession,
-  setStoredAdminCredentials,
+  setStoredAdminSessionToken,
   setStoredAdminUser,
+  setStoredAdminCredentials,
 } from "@/lib/admin/auth";
-import { loginAdminClient } from "@/lib/admin/auth-client";
+import {
+  fetchLoginConfig,
+  loginAdminClient,
+} from "@/lib/admin/auth-client";
 import type { AdminPublicUser } from "@/lib/admin/users-types";
 
 export function AdminLogin({
@@ -19,22 +28,63 @@ export function AdminLogin({
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [requireCaptcha, setRequireCaptcha] = useState(false);
+  const [turnstileSiteKey, setTurnstileSiteKey] = useState<string | null>(null);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+  const [failedAttempts, setFailedAttempts] = useState(0);
+
+  useEffect(() => {
+    void fetchLoginConfig().then((cfg) => {
+      setTurnstileSiteKey(cfg.turnstileSiteKey);
+    });
+  }, []);
+
+  const showCaptcha =
+    Boolean(turnstileSiteKey) &&
+    (requireCaptcha || failedAttempts >= 2);
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setError("");
-    const result = await loginAdminClient(username, password);
-    setLoading(false);
-    if (!result.ok) {
-      setError(result.error);
+
+    if (showCaptcha && !turnstileToken) {
+      setError(LOGIN_ERROR_INVALID);
+      setLoading(false);
       return;
     }
-    setAdminSession(true, result.user.id);
-    setStoredAdminCredentials(username, password);
+
+    const result = await loginAdminClient(
+      username,
+      password,
+      turnstileToken ?? undefined
+    );
+    setLoading(false);
+
+    if (!result.ok) {
+      const nextFails = failedAttempts + 1;
+      setFailedAttempts(nextFails);
+      setRequireCaptcha(
+        result.requireCaptcha ?? nextFails >= 2
+      );
+      setError(
+        result.rateLimited ? LOGIN_ERROR_RATE_LIMIT : result.error
+      );
+      setTurnstileToken(null);
+      return;
+    }
+
+    setAdminSession(true, result.user.id, result.expiresAt);
+    setStoredAdminSessionToken(result.sessionToken);
+    setStoredAdminCredentials(null, null);
     setStoredAdminUser(result.user);
     onSuccess(result.user);
   };
+
+  const onTurnstileToken = useCallback((token: string | null) => {
+    setTurnstileToken(token);
+    if (token) setError("");
+  }, []);
 
   return (
     <div className="admin-login flex min-h-[70vh] items-center justify-center px-4">
@@ -53,11 +103,11 @@ export function AdminLogin({
             >
               Haunted Sweden Admin
             </h1>
-            <p className="text-xs text-white/45">Authorized users only</p>
+            <p className="text-xs text-white/45">Endast behöriga användare</p>
           </div>
         </div>
         <label className="admin-label">
-          Username
+          Användarnamn
           <input
             type="text"
             value={username}
@@ -71,7 +121,7 @@ export function AdminLogin({
           />
         </label>
         <label className="admin-label mt-4 block">
-          Password
+          Lösenord
           <input
             type="password"
             value={password}
@@ -83,6 +133,15 @@ export function AdminLogin({
             autoComplete="current-password"
           />
         </label>
+
+        {showCaptcha && turnstileSiteKey ? (
+          <AdminTurnstile
+            siteKey={turnstileSiteKey}
+            onToken={onTurnstileToken}
+            onExpire={() => setTurnstileToken(null)}
+          />
+        ) : null}
+
         {error ? (
           <p className="mt-2 text-sm text-red-400" role="alert">
             {error}
@@ -90,14 +149,14 @@ export function AdminLogin({
         ) : null}
         <button
           type="submit"
-          disabled={loading}
+          disabled={loading || (showCaptcha && !turnstileToken)}
           className="admin-btn admin-btn--primary mt-6 w-full"
         >
-          {loading ? "Signing in…" : "Sign in"}
+          {loading ? "Loggar in…" : "Logga in"}
         </button>
         <p className="mt-4 text-[11px] leading-relaxed text-white/35">
-          MVP authentication — replace with Supabase Auth before scaling.
-          Passwords are checked on the server, not in this page&apos;s code.
+          Sessionen gäller i 8 timmar. Inloggning är begränsad till Sverige i
+          produktion.
         </p>
       </form>
     </div>

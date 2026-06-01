@@ -2,7 +2,7 @@
   "submissions": [
     {
       "id": "place-1780329305001-9kw6nj2",
-      "status": "pending",
+      "status": "rejected",
       "name": "sdsds",
       "englishName": "sdsds",
       "category": "Haunted Accommodation",
@@ -13,14 +13,15 @@
       "legend": "sdsdsd",
       "submitterName": "Hoppla",
       "submittedAt": "2026-06-01T15:55:05.001Z",
-      "reviewedAt": null,
-      "reviewedBy": null,
+      "reviewedAt": "2026-06-01T16:39:56.785Z",
+      "reviewedBy": "Test",
       "adminNotes": null,
-      "convertedPlaceId": null
+      "convertedPlaceId": null,
+      "rejectedAt": "2026-06-01T16:39:56.786Z"
     },
     {
       "id": "place-1780329450515-na6g07b",
-      "status": "pending",
+      "status": "rejected",
       "name": "HEjdå",
       "englishName": "engl",
       "category": "Other",
@@ -31,14 +32,14 @@
       "legend": "wdwd",
       "submitterName": "Pippi",
       "submittedAt": "2026-06-01T15:57:30.515Z",
-      "reviewedAt": null,
-      "reviewedBy": null,
-      "adminNotes": null,
+      "reviewedAt": "2026-06-01T16:41:17.055Z",
+      "reviewedBy": "Jim",
+      "adminNotes": "reject test",
       "convertedPlaceId": null
     },
     {
       "id": "place-1780329741423-pw2mwc2",
-      "status": "pending",
+      "status": "rejected",
       "name": "ifk",
       "englishName": "ifk",
       "category": "Other",
@@ -47,10 +48,11 @@
       "description": "gbgb",
       "submitterName": "peppe",
       "submittedAt": "2026-06-01T16:02:21.423Z",
-      "reviewedAt": null,
-      "reviewedBy": null,
+      "reviewedAt": "2026-06-01T16:42:36.483Z",
+      "reviewedBy": "Maria",
       "adminNotes": null,
-      "convertedPlaceId": null
+      "convertedPlaceId": null,
+      "rejectedAt": "2026-06-01T16:42:36.483Z"
     }
   ]
 }

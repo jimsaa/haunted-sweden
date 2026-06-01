@@ -1,4 +1,4 @@
-import { readFile, writeFile } from "fs/promises";
+import { mkdir, readFile, writeFile } from "fs/promises";
 import path from "path";
 import type {
   MediaSubmission,
@@ -33,6 +33,7 @@ async function readJson<T>(filePath: string, empty: T): Promise<T> {
 }
 
 async function writeJson(filePath: string, data: unknown): Promise<void> {
+  await mkdir(path.dirname(filePath), { recursive: true });
   const json = `${JSON.stringify(data, null, 2)}\n`;
   await writeFile(filePath, json, "utf8");
 }
@@ -132,12 +133,15 @@ export async function setSubmissionStatus(
   review: { reviewedBy?: string; adminNotes?: string }
 ): Promise<PlaceSubmission | MediaSubmission | VideoSubmission | null> {
   const reviewedAt = new Date().toISOString();
-  const patch = {
+  const patch: Partial<PlaceSubmission> = {
     status,
     reviewedAt,
-    reviewedBy: review.reviewedBy ?? null,
-    adminNotes: review.adminNotes ?? null,
+    reviewedBy: review.reviewedBy?.trim() || null,
+    adminNotes: review.adminNotes?.trim() || null,
   };
+  if (status === "rejected") {
+    patch.rejectedAt = reviewedAt;
+  }
   if (kind === "place") return updatePlaceSubmission(id, patch);
   if (kind === "media") return updateMediaSubmission(id, patch);
   return updateVideoSubmission(id, patch);

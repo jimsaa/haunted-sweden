@@ -19,7 +19,7 @@ type InboxData = {
   videos: VideoSubmission[];
 };
 
-type QueueFilter = "pending" | "all";
+type QueueFilter = "pending" | "rejected" | "all";
 
 function formatDate(iso: string): string {
   try {
@@ -51,14 +51,41 @@ async function postAdmin(
   path: string,
   body: Record<string, unknown>
 ): Promise<Response> {
+  const authHeaders = getAdminAuthHeaders();
+  if (!Object.keys(authHeaders).length) {
+    throw new Error("AUTH_REQUIRED");
+  }
   return fetch(path, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      ...getAdminAuthHeaders(),
+      ...authHeaders,
     },
     body: JSON.stringify(body),
   });
+}
+
+function applySubmissionUpdate(
+  prev: InboxData,
+  kind: SubmissionKind,
+  updated: PlaceSubmission | MediaSubmission | VideoSubmission
+): InboxData {
+  if (kind === "place") {
+    return {
+      ...prev,
+      places: prev.places.map((s) => (s.id === updated.id ? (updated as PlaceSubmission) : s)),
+    };
+  }
+  if (kind === "media") {
+    return {
+      ...prev,
+      media: prev.media.map((s) => (s.id === updated.id ? (updated as MediaSubmission) : s)),
+    };
+  }
+  return {
+    ...prev,
+    videos: prev.videos.map((s) => (s.id === updated.id ? (updated as VideoSubmission) : s)),
+  };
 }
 
 function canApproveKind(
@@ -102,6 +129,13 @@ export function AdminSubmissionsInbox({
     reviewer: string;
     approve: string;
     reject: string;
+    rejectedSuccess: string;
+    approveSuccess: string;
+    archiveSuccess: string;
+    actionFailed: string;
+    filterPending: string;
+    filterRejected: string;
+    filterAll: string;
     archive: string;
     convertDraft: string;
     attachToPlace: string;
@@ -155,10 +189,15 @@ export function AdminSubmissionsInbox({
     );
   }
 
-  const filterList = <T extends { status: SubmissionStatus }>(items: T[]) =>
-    filter === "pending"
-      ? items.filter((s) => s.status === "pending")
-      : items;
+  const filterList = <T extends { status: SubmissionStatus }>(items: T[]) => {
+    if (filter === "pending") {
+      return items.filter((s) => s.status === "pending");
+    }
+    if (filter === "rejected") {
+      return items.filter((s) => s.status === "rejected");
+    }
+    return items;
+  };
 
   const places = useMemo(
     () => filterList(data?.places ?? []),
@@ -184,25 +223,66 @@ export function AdminSubmissionsInbox({
   const runAction = async (
     path: string,
     body: Record<string, unknown>,
-    successMsg: string
+    successMsg: string,
+    options?: { kind?: SubmissionKind; onSuccess?: () => void }
   ) => {
     setMessage(null);
-    const res = await postAdmin(path, body);
-    if (!res.ok) {
-      const err = await res.json().catch(() => ({}));
-      setMessage((err as { error?: string }).error ?? "Action failed");
-      return;
-    }
-    setMessage(successMsg);
-    await load();
-    if (path.includes("convert") || path.includes("attach")) {
-      onPlacesChanged();
+    try {
+      const res = await postAdmin(path, body);
+      const data = (await res.json().catch(() => ({}))) as {
+        error?: string;
+        submission?: PlaceSubmission | MediaSubmission | VideoSubmission;
+        ok?: boolean;
+      };
+
+      if (!res.ok) {
+        const apiError = data.error ?? labels.actionFailed;
+        if (process.env.NODE_ENV !== "production") {
+          console.error("[admin/submissions]", path, res.status, data);
+        }
+        setMessage(apiError);
+        return;
+      }
+
+      if (options?.kind && data.submission && data.ok) {
+        setData((prev) =>
+          prev ? applySubmissionUpdate(prev, options.kind!, data.submission!) : prev
+        );
+        if (filter === "pending") {
+          setExpandedId(null);
+        }
+      }
+
+      setMessage(successMsg);
+      await load();
+      options?.onSuccess?.();
+      if (path.includes("convert") || path.includes("attach")) {
+        onPlacesChanged();
+      }
+    } catch (e) {
+      if (e instanceof Error && e.message === "AUTH_REQUIRED") {
+        setMessage(
+          process.env.NODE_ENV === "production"
+            ? labels.actionFailed
+            : "Session expired — log in again."
+        );
+        return;
+      }
+      if (process.env.NODE_ENV !== "production") {
+        console.error("[admin/submissions]", path, e);
+      }
+      setMessage(
+        e instanceof Error && process.env.NODE_ENV !== "production"
+          ? `${labels.actionFailed} (${e.message})`
+          : labels.actionFailed
+      );
     }
   };
 
   const renderMeta = (item: {
     submittedAt: string;
     reviewedAt?: string | null;
+    rejectedAt?: string | null;
     reviewedBy?: string | null;
     adminNotes?: string | null;
     submitterName?: string;
@@ -218,6 +298,12 @@ export function AdminSubmissionsInbox({
           <span className="text-white/35">{labels.reviewed}: </span>
           {formatDate(item.reviewedAt)}
           {item.reviewedBy ? ` · ${item.reviewedBy}` : ""}
+        </div>
+      ) : null}
+      {item.rejectedAt ? (
+        <div>
+          <span className="text-white/35">{labels.reject}: </span>
+          {formatDate(item.rejectedAt)}
         </div>
       ) : null}
       {item.submitterName ? (
@@ -321,7 +407,8 @@ export function AdminSubmissionsInbox({
                 reviewedBy: reviewer || undefined,
                 adminNotes: adminNotes || undefined,
               },
-              labels.approve)
+              labels.approveSuccess,
+                { kind })
             }
           >
             {labels.approve}
@@ -352,13 +439,17 @@ export function AdminSubmissionsInbox({
               type="button"
               className="admin-btn admin-btn--ghost text-xs"
               onClick={() =>
-                runAction("/api/admin/submissions/reject", {
-                  kind,
-                  id,
-                  reviewedBy: reviewer || undefined,
-                  adminNotes: adminNotes || undefined,
-                },
-                labels.reject)
+                runAction(
+                  "/api/admin/submissions/reject",
+                  {
+                    kind,
+                    id,
+                    reviewedBy: reviewer || undefined,
+                    adminNotes: adminNotes || undefined,
+                  },
+                  labels.rejectedSuccess,
+                  { kind }
+                )
               }
             >
               {labels.reject}
@@ -367,13 +458,17 @@ export function AdminSubmissionsInbox({
               type="button"
               className="admin-btn admin-btn--ghost text-xs"
               onClick={() =>
-                runAction("/api/admin/submissions/archive", {
-                  kind,
-                  id,
-                  reviewedBy: reviewer || undefined,
-                  adminNotes: adminNotes || undefined,
-                },
-                labels.archive)
+                runAction(
+                  "/api/admin/submissions/archive",
+                  {
+                    kind,
+                    id,
+                    reviewedBy: reviewer || undefined,
+                    adminNotes: adminNotes || undefined,
+                  },
+                  labels.archiveSuccess,
+                  { kind }
+                )
               }
             >
               {labels.archive}
@@ -440,8 +535,9 @@ export function AdminSubmissionsInbox({
             onChange={(e) => setFilter(e.target.value as QueueFilter)}
             className="admin-input text-xs py-1.5"
           >
-            <option value="pending">Pending only</option>
-            <option value="all">All statuses</option>
+            <option value="pending">{labels.filterPending}</option>
+            <option value="rejected">{labels.filterRejected}</option>
+            <option value="all">{labels.filterAll}</option>
           </select>
           <button
             type="button"

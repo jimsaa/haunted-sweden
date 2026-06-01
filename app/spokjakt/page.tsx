@@ -1,10 +1,13 @@
 import { SpokjaktArchiveClient } from "@/components/spokjakt/SpokjaktArchiveClient";
+import { buildPageMetadata } from "@/lib/seo/build-metadata";
+import { getSpokjaktDescription } from "@/lib/seo/descriptions";
+import { SEO_TITLES } from "@/lib/seo/titles";
 
-export const metadata = {
-  title: "Spökjakt Locations — Haunted Sweden",
-  description:
-    "Explore haunted locations from Spökjakt with Joakim Lundell, Jonna Lundell and LaxTon Ghost Sweden. Watch the official playlist and discover places on Haunted Sweden.",
-};
+export const metadata = buildPageMetadata({
+  title: SEO_TITLES.spokjakt,
+  description: getSpokjaktDescription("sv"),
+  path: "/spokjakt",
+});
 
 export default function SpokjaktArchivePage() {
   return <SpokjaktArchiveClient />;

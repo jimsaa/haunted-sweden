@@ -90,10 +90,15 @@ export function HomeMediaSection({ items }: { items: HomepageMediaItem[] }) {
                 >
                   <Image
                     src={item.url}
-                    alt={item.caption || item.placeName}
+                    alt={
+                      item.caption
+                        ? `${item.caption} — ${item.placeName}`
+                        : `${item.placeName} — hemsökt plats i Sverige`
+                    }
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 640px) 200px, 280px"
+                    loading="lazy"
                     unoptimized={isRemoteCoverUrl(item.url)}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />

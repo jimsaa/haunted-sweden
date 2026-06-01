@@ -9,9 +9,7 @@ import {
   getAdminAuthHeaders,
   getStoredAdminUser,
   isAdminSessionActive,
-  setAdminSession,
-  setStoredAdminCredentials,
-  setStoredAdminUser,
+  isAdminSessionExpired,
 } from "@/lib/admin/auth";
 import { getSubmissionCapabilities } from "@/lib/admin/capabilities";
 import {
@@ -33,6 +31,7 @@ import { AdminPlaceEditor } from "@/components/admin/AdminPlaceEditor";
 import { AdminSubmissionsInbox } from "@/components/admin/AdminSubmissionsInbox";
 import { AdminUsersPanel } from "@/components/admin/AdminUsersPanel";
 import { getTranslations } from "@/lib/i18n";
+import { useLanguage } from "@/lib/language-context";
 
 const initialFile = hauntedPlacesFile as HauntedPlacesFile;
 
@@ -46,7 +45,8 @@ function defaultTabForUser(user: AdminPublicUser): AdminMainTab {
 }
 
 export function AdminApp() {
-  const adminT = getTranslations("sv").adminSubmissions;
+  const { locale } = useLanguage();
+  const adminT = getTranslations(locale).adminSubmissions;
   const [currentUser, setCurrentUser] = useState<AdminPublicUser | null>(null);
   const [unlocked, setUnlocked] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -71,6 +71,15 @@ export function AdminApp() {
     [currentUser]
   );
 
+  const expireSession = useCallback((reason?: string) => {
+    clearAdminSession();
+    setUnlocked(false);
+    setCurrentUser(null);
+    setState(null);
+    if (reason) setMessage(reason);
+    setLoading(false);
+  }, []);
+
   const loadPlaces = useCallback(async () => {
     const headers = getAdminAuthHeaders();
     if (!Object.keys(headers).length) {
@@ -82,6 +91,10 @@ export function AdminApp() {
 
     try {
       const res = await fetch("/api/admin/places", { headers });
+      if (res.status === 401) {
+        expireSession("Sessionen har gått ut. Logga in igen.");
+        return;
+      }
       if (res.ok) {
         const data = (await res.json()) as HauntedPlacesFile;
         setState(fileToAdminState(data));
@@ -98,10 +111,15 @@ export function AdminApp() {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [expireSession]);
 
   useEffect(() => {
     const stored = getStoredAdminUser();
+    if (isAdminSessionExpired()) {
+      clearAdminSession();
+      setLoading(false);
+      return;
+    }
     if (isAdminSessionActive() && stored) {
       setCurrentUser(stored);
       setUnlocked(true);
@@ -111,6 +129,16 @@ export function AdminApp() {
       setLoading(false);
     }
   }, [loadPlaces]);
+
+  useEffect(() => {
+    if (!unlocked) return;
+    const tick = () => {
+      if (isAdminSessionExpired()) expireSession();
+    };
+    tick();
+    const id = window.setInterval(tick, 60_000);
+    return () => window.clearInterval(id);
+  }, [unlocked, expireSession]);
 
   const selectedDraft = useMemo(() => {
     if (!state || !selectedId) return null;
@@ -127,10 +155,7 @@ export function AdminApp() {
   };
 
   const handleLogout = () => {
-    clearAdminSession();
-    setUnlocked(false);
-    setCurrentUser(null);
-    setState(null);
+    expireSession();
   };
 
   const handleLoginSuccess = (user: AdminPublicUser) => {
@@ -276,7 +301,7 @@ export function AdminApp() {
             className="admin-btn admin-btn--ghost"
           >
             <LogOut className="h-4 w-4" aria-hidden />
-            Logout
+            Logga ut
           </button>
         </div>
       </header>

@@ -12,6 +12,8 @@ export interface SubmissionReviewMeta {
   reviewedAt?: string | null;
   reviewedBy?: string | null;
   adminNotes?: string | null;
+  /** Set when status becomes rejected. */
+  rejectedAt?: string | null;
 }
 
 export interface PlaceSubmission extends SubmissionReviewMeta {

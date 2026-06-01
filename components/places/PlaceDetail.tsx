@@ -44,6 +44,10 @@ import {
   getVideoCaption,
   getVideoTitle,
 } from "@/lib/place-locale-text";
+import {
+  getPlaceGalleryImageAlt,
+  getPlaceImageAlt,
+} from "@/lib/seo/image-alt";
 
 function placeDisplayName(place: HauntedPlace, locale: Locale): string {
   return locale === "en" && place.englishName ? place.englishName : place.name;
@@ -146,6 +150,7 @@ export function PlaceDetail({
   const { locale, t } = useLanguage();
   const pt = t.placePage;
   const title = placeDisplayName(place, locale);
+  const heroImageAlt = getPlaceImageAlt(place, locale);
   const categoryLabel = getPlaceCategoryLabel(place.category, locale);
   const clusterDisplay = getClusterDisplayName(
     place.clusterId,
@@ -180,7 +185,7 @@ export function PlaceDetail({
           variant="hero"
           priority
           placeholderLabel={t.coverPlaceholder}
-          alt={title}
+          alt={heroImageAlt}
         />
         <div
           className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/25 pointer-events-none"
@@ -334,9 +339,14 @@ export function PlaceDetail({
                 >
                   <Image
                     src={img.url}
-                    alt={getImageCaption(img, locale) ?? ""}
+                    alt={
+                      getImageCaption(img, locale) ??
+                      getPlaceGalleryImageAlt(place, i)
+                    }
                     fill
                     className="object-cover"
+                    sizes="(max-width: 640px) 50vw, 240px"
+                    loading="lazy"
                     unoptimized
                   />
                 </div>
@@ -355,7 +365,13 @@ export function PlaceDetail({
                   key={i}
                   src={vid.url}
                   controls
+                  preload="none"
                   className="w-full rounded-xl border border-white/10"
+                  aria-label={
+                    getVideoTitle(vid, locale) ??
+                    getVideoCaption(vid, locale) ??
+                    `${title} — video ${i + 1}`
+                  }
                 />
               ))}
             </div>

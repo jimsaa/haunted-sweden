@@ -1,8 +1,14 @@
 import { NextResponse } from "next/server";
 import type { AdminPermission } from "@/lib/admin/permissions";
 import { userHasPermission } from "@/lib/admin/permissions";
+import { getClientIp, getCountryCode } from "@/lib/admin/request-context";
+import { logSecurityEvent } from "@/lib/admin/security-log";
+import { verifyAdminSessionToken } from "@/lib/admin/session-token";
 import type { AdminUserRecord } from "@/lib/admin/users-types";
-import { findAdminUserByCredentials } from "@/lib/admin/users-store";
+import {
+  findAdminUserByCredentials,
+  findAdminUserById,
+} from "@/lib/admin/users-store";
 
 export function unauthorized() {
   return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
@@ -22,10 +28,44 @@ export function getAdminCredentialsFromRequest(request: Request): {
   return { username, password };
 }
 
-/** Validates username/password against data/admin-users.json (server only). */
+function getSessionTokenFromRequest(request: Request): string | null {
+  const header = request.headers.get("x-admin-session");
+  if (header?.trim()) return header.trim();
+  return null;
+}
+
+async function userFromSessionToken(
+  token: string,
+  request: Request
+): Promise<AdminUserRecord | null> {
+  const payload = verifyAdminSessionToken(token);
+  if (!payload) {
+    logSecurityEvent({
+      type: "session_expired",
+      ip: getClientIp(request),
+      country: getCountryCode(request),
+      path: new URL(request.url).pathname,
+      reason: "invalid_or_expired_token",
+    });
+    return null;
+  }
+  const user = await findAdminUserById(payload.userId);
+  if (!user || !user.enabled) return null;
+  if (user.username.trim().toLowerCase() !== payload.username.trim().toLowerCase()) {
+    return null;
+  }
+  return user;
+}
+
+/** Validates session token or username/password (legacy). */
 export async function authenticateAdminRequest(
   request: Request
 ): Promise<AdminUserRecord | null> {
+  const sessionToken = getSessionTokenFromRequest(request);
+  if (sessionToken) {
+    return userFromSessionToken(sessionToken, request);
+  }
+
   const creds = getAdminCredentialsFromRequest(request);
   if (!creds) return null;
   return findAdminUserByCredentials(creds.username, creds.password);
@@ -41,6 +81,13 @@ export async function requireAdminUser(
 ): Promise<AdminAuthResult> {
   const user = await authenticateAdminRequest(request);
   if (!user) {
+    logSecurityEvent({
+      type: "unauthorized_api",
+      ip: getClientIp(request),
+      country: getCountryCode(request),
+      path: new URL(request.url).pathname,
+      reason: "auth_failed",
+    });
     return { ok: false, response: unauthorized() };
   }
 

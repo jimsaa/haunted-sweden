@@ -20,6 +20,7 @@ import {
   hasCoverImage,
   isRemoteCoverUrl,
 } from "@/lib/place-cover";
+import { getPlaceImageAlt } from "@/lib/seo/image-alt";
 
 export type CoverVariant = "thumb" | "card" | "hero";
 
@@ -130,7 +131,7 @@ export function PlaceCoverImage({
   priority?: boolean;
 }) {
   const src = getCoverImageSrc(place);
-  const imageAlt = alt ?? place.englishName ?? place.name;
+  const imageAlt = alt ?? getPlaceImageAlt(place);
 
   if (!hasCoverImage(src)) {
     return (
@@ -162,6 +163,7 @@ export function PlaceCoverImage({
         className="object-cover"
         sizes={sizes}
         priority={priority}
+        loading={priority ? undefined : "lazy"}
         unoptimized={remote}
       />
       <div
