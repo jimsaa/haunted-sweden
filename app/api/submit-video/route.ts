@@ -40,7 +40,7 @@ export async function POST(request: Request) {
     };
 
     await appendVideoSubmission(submission);
-    return submissionSuccessResponse(submission.id);
+    return submissionSuccessResponse(submission.id, "video");
   } catch (err) {
     return submissionErrorResponse(err, "submit-video");
   }

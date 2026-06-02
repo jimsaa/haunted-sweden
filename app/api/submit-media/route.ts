@@ -39,7 +39,7 @@ export async function POST(request: Request) {
     };
 
     await appendMediaSubmission(submission);
-    return submissionSuccessResponse(submission.id);
+    return submissionSuccessResponse(submission.id, "media");
   } catch (err) {
     return submissionErrorResponse(err, "submit-media");
   }

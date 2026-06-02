@@ -54,7 +54,7 @@ export async function POST(request: Request) {
     };
 
     await appendPlaceSubmission(submission);
-    return submissionSuccessResponse(submission.id);
+    return submissionSuccessResponse(submission.id, "place");
   } catch (err) {
     return submissionErrorResponse(err, "submit-place");
   }

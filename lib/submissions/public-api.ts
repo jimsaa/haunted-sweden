@@ -1,12 +1,39 @@
 import { NextResponse } from "next/server";
+import {
+  getSubmissionStorageBackend,
+  isBlobTokenConfigured,
+} from "@/lib/submissions/storage-backend";
+import type { SubmissionFileKey } from "@/lib/submissions/storage-backend";
 
-export function logSubmissionReceived(id: string): void {
+export type SubmissionTypeLabel = SubmissionFileKey;
+
+/** DEBUG: temporary — logs receipt + storage backend. */
+export function logSubmissionReceived(
+  id: string,
+  type: SubmissionTypeLabel
+): void {
+  const backend = getSubmissionStorageBackend();
   console.log("New submission received:", id);
+  console.log("[submissions] Submission type:", type);
+  console.log("[submissions] Storage backend used:", backend);
+  if (process.env.NODE_ENV === "production") {
+    console.log(
+      "[submissions] BLOB_READ_WRITE_TOKEN:",
+      isBlobTokenConfigured() ? "detected" : "MISSING"
+    );
+  }
 }
 
-export function submissionSuccessResponse(id: string): NextResponse {
-  logSubmissionReceived(id);
-  return NextResponse.json({ ok: true, id });
+export function submissionSuccessResponse(
+  id: string,
+  type: SubmissionTypeLabel
+): NextResponse {
+  logSubmissionReceived(id, type);
+  return NextResponse.json({
+    ok: true,
+    id,
+    storage: getSubmissionStorageBackend(),
+  });
 }
 
 type SubmissionErrorBody = {
@@ -21,7 +48,7 @@ export function mapSubmissionWriteError(err: unknown): SubmissionErrorBody & {
 
   if (code === "EROFS" || code === "EPERM") {
     console.error(
-      "[submissions] Filesystem not writable — configure BLOB_READ_WRITE_TOKEN on Vercel"
+      "[submissions] Filesystem not writable — connect Vercel Blob (BLOB_READ_WRITE_TOKEN)"
     );
     return {
       status: 503,
