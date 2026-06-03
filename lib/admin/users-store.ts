@@ -5,6 +5,7 @@ import {
   getAdminUsersStorageBackend,
   readAdminUsersFromStore,
   readBundledAdminUsersJson,
+  usesAdminUsersBlob,
   writeAdminUsersToStore,
 } from "@/lib/admin/admin-users-storage";
 import {
@@ -66,7 +67,25 @@ export async function readAdminUsersFile(): Promise<AdminUsersFile> {
     await readBundledAdminUsersJson<AdminUsersFile>(EMPTY_FILE)
   );
   if (bundled.users.length > 0) {
-    if (process.env.NODE_ENV !== "production") {
+    if (usesAdminUsersBlob()) {
+      try {
+        await writeAdminUsersFile(bundled);
+        const fromBlob = normalizeFile(
+          await readAdminUsersFromStore<AdminUsersFile>(EMPTY_FILE)
+        );
+        if (fromBlob.users.length > 0) {
+          console.log(
+            `[admin-users] Seeded ${fromBlob.users.length} user(s) into Blob store`
+          );
+          return fromBlob;
+        }
+        console.warn(
+          "[admin-users] Blob seed write succeeded but read-back was empty"
+        );
+      } catch (err) {
+        console.warn("[admin-users] Could not seed Blob from bundled file:", err);
+      }
+    } else if (process.env.NODE_ENV !== "production") {
       console.log(
         `[admin-users] Bootstrapped ${bundled.users.length} user(s) from bundled data/admin-users.json`
       );

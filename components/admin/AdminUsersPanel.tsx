@@ -42,6 +42,7 @@ export function AdminUsersPanel({
   const [message, setMessage] = useState<string | null>(null);
   const [messageKind, setMessageKind] = useState<MessageKind>(null);
   const [saving, setSaving] = useState(false);
+  const [dirty, setDirty] = useState(false);
 
   const selected = users.find((u) => u.id === selectedId) ?? null;
   const canEditTarget =
@@ -101,7 +102,10 @@ export function AdminUsersPanel({
     setDraftPerms({ ...selected.permissions });
     setEnabled(selected.enabled);
     setNewPassword("");
+    setDirty(false);
   }, [selected?.id, selected?.permissions, selected?.enabled]);
+
+  const markDirty = () => setDirty(true);
 
   const save = async () => {
     if (!selected || !draftPerms) return;
@@ -153,6 +157,7 @@ export function AdminUsersPanel({
 
       setMessage(t.saved);
       setMessageKind("success");
+      setDirty(false);
       setNewPassword("");
       await load();
       onUserUpdated?.();
@@ -211,35 +216,41 @@ export function AdminUsersPanel({
         </ul>
       </aside>
 
-      <div className="flex-1 overflow-y-auto p-4 sm:p-6 min-h-0">
-        {message ? (
-          <p
-            role="status"
-            className={`mb-4 text-sm rounded-lg px-3 py-2 ${
-              messageKind === "success"
-                ? "text-emerald-200/95 bg-emerald-950/30 border border-emerald-500/25"
-                : "text-red-200/95 bg-red-950/30 border border-red-500/25"
-            }`}
-          >
-            {message}
-          </p>
-        ) : null}
-
+      <div className="flex flex-1 flex-col min-h-0 min-w-0">
         {selected && draftPerms ? (
-          <div className="max-w-2xl space-y-6">
+          <div className="shrink-0 flex flex-wrap items-center justify-between gap-3 border-b border-white/10 px-4 sm:px-6 py-3 bg-[#0a0a12]/90">
             <header>
               <h3 className="text-lg font-semibold text-violet-100">
                 {selected.displayName}
               </h3>
-              <p className="text-sm text-white/45 mt-1">
+              <p className="text-sm text-white/45 mt-0.5">
                 @{selected.username} ·{" "}
                 <span
                   className={`admin-role-pill admin-role-pill--${selected.role}`}
                 >
                   {ROLE_LABELS[selected.role]}
                 </span>
+                {dirty ? (
+                  <span className="ml-2 text-amber-300/90 text-xs">
+                    · {locale === "sv" ? "Osparade ändringar" : "Unsaved changes"}
+                  </span>
+                ) : null}
               </p>
             </header>
+            <button
+              type="button"
+              onClick={save}
+              disabled={saving || !canEditTarget}
+              className="admin-btn admin-btn--primary shrink-0"
+            >
+              {saving ? t.saving : t.saveUser}
+            </button>
+          </div>
+        ) : null}
+
+        <div className="flex-1 overflow-y-auto p-4 sm:p-6 min-h-0">
+        {selected && draftPerms ? (
+          <div className="max-w-2xl space-y-6 pb-24">
 
             {isOwnerAccount ? (
               <p className="text-sm text-amber-200/80 rounded-lg border border-amber-500/25 bg-amber-950/20 px-3 py-2">
@@ -253,7 +264,10 @@ export function AdminUsersPanel({
                 type="checkbox"
                 checked={enabled}
                 disabled={isOwnerAccount || !canEditTarget}
-                onChange={(e) => setEnabled(e.target.checked)}
+                onChange={(e) => {
+                  setEnabled(e.target.checked);
+                  markDirty();
+                }}
                 className="rounded border-white/20"
               />
               <span className="text-sm text-white/80">Account enabled</span>
@@ -265,7 +279,10 @@ export function AdminUsersPanel({
                 type="password"
                 value={newPassword}
                 disabled={!canEditTarget}
-                onChange={(e) => setNewPassword(e.target.value)}
+                onChange={(e) => {
+                  setNewPassword(e.target.value);
+                  if (e.target.value.trim()) markDirty();
+                }}
                 placeholder="Leave blank to keep current"
                 className="admin-input w-full max-w-xs"
               />
@@ -286,12 +303,13 @@ export function AdminUsersPanel({
                       type="checkbox"
                       checked={isOwnerAccount ? true : draftPerms[key]}
                       disabled={isOwnerAccount || !canEditTarget}
-                      onChange={(e) =>
+                      onChange={(e) => {
                         setDraftPerms({
                           ...draftPerms,
                           [key]: e.target.checked,
-                        })
-                      }
+                        });
+                        markDirty();
+                      }}
                       className="mt-0.5 rounded border-white/20"
                     />
                     <span>{PERMISSION_LABELS[key as AdminPermission]}</span>
@@ -300,16 +318,8 @@ export function AdminUsersPanel({
               </div>
             </fieldset>
 
-            <div className="flex flex-wrap gap-2 pt-2">
-              <button
-                type="button"
-                onClick={save}
-                disabled={saving || !canEditTarget}
-                className="admin-btn admin-btn--primary"
-              >
-                {saving ? t.saving : t.saveUser}
-              </button>
-              {selected.id !== OWNER_USER_ID && canDeleteUser(selected.id) ? (
+            {selected.id !== OWNER_USER_ID && canDeleteUser(selected.id) ? (
+              <div className="flex flex-wrap gap-2 pt-2">
                 <button
                   type="button"
                   className="admin-btn admin-btn--ghost text-red-300/90"
@@ -360,12 +370,44 @@ export function AdminUsersPanel({
                 >
                   Delete user
                 </button>
-              ) : null}
-            </div>
+              </div>
+            ) : null}
           </div>
         ) : (
           <p className="text-white/40 text-sm">{t.selectUser}</p>
         )}
+        </div>
+
+        {selected && draftPerms ? (
+          <div className="shrink-0 sticky bottom-0 z-10 border-t border-white/10 bg-[#0a0a12]/95 backdrop-blur-sm px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+            {message ? (
+              <p
+                role="status"
+                className={`text-sm flex-1 min-w-[12rem] ${
+                  messageKind === "success"
+                    ? "text-emerald-200/95"
+                    : "text-red-200/95"
+                }`}
+              >
+                {message}
+              </p>
+            ) : (
+              <p className="text-xs text-white/35 flex-1">
+                {locale === "sv"
+                  ? "Klicka Spara för att behålla ändringar."
+                  : "Click Save to keep your changes."}
+              </p>
+            )}
+            <button
+              type="button"
+              onClick={save}
+              disabled={saving || !canEditTarget}
+              className="admin-btn admin-btn--primary shrink-0"
+            >
+              {saving ? t.saving : t.saveUser}
+            </button>
+          </div>
+        ) : null}
       </div>
     </div>
   );

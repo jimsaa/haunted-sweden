@@ -7,24 +7,20 @@ const LOCAL_PATH = path.join(process.cwd(), "data", "admin-users.json");
 
 export type AdminUsersStorageBackend = "BLOB" | "JSON";
 
+/** Blob only in production — local `next dev` always uses data/admin-users.json. */
 export function usesAdminUsersBlob(): boolean {
-  return Boolean(process.env.BLOB_READ_WRITE_TOKEN?.trim());
+  return (
+    process.env.NODE_ENV === "production" &&
+    Boolean(process.env.BLOB_READ_WRITE_TOKEN?.trim())
+  );
 }
 
 export function getAdminUsersStorageBackend(): AdminUsersStorageBackend {
   return usesAdminUsersBlob() ? "BLOB" : "JSON";
 }
 
-function logDev(message: string): void {
-  if (process.env.NODE_ENV === "production") return;
+function logStorage(message: string): void {
   console.log(`[admin-users-storage] ${message}`);
-}
-
-function logOperation(operation: "read" | "write"): void {
-  const backend = getAdminUsersStorageBackend();
-  const target =
-    backend === "BLOB" ? ADMIN_USERS_BLOB_PATH : "data/admin-users.json";
-  logDev(`${operation.toUpperCase()} backend=${backend} target=${target}`);
 }
 
 function assertWritableStorageConfigured(): void {
@@ -52,38 +48,53 @@ async function writeLocalJson(filePath: string, data: unknown): Promise<void> {
   await writeFile(filePath, json, "utf8");
 }
 
-async function readBlobJson<T>(empty: T): Promise<T> {
-  const { BlobNotFoundError, head } = await import("@vercel/blob");
-  let meta;
+async function readBlobText(): Promise<string | null> {
+  const { BlobNotFoundError, get, list } = await import("@vercel/blob");
+
   try {
-    meta = await head(ADMIN_USERS_BLOB_PATH);
+    const result = await get(ADMIN_USERS_BLOB_PATH, {
+      access: "private",
+      useCache: false,
+    });
+    if (!result || result.statusCode !== 200 || !result.stream) return null;
+    const text = await new Response(result.stream).text();
+    return text.trim() ? text : null;
   } catch (err) {
-    if (err instanceof BlobNotFoundError) return empty;
-    throw err;
+    if (!(err instanceof BlobNotFoundError)) throw err;
   }
-  if (!meta?.url) return empty;
-  const res = await fetch(meta.url);
-  if (!res.ok) return empty;
+
+  const { blobs } = await list({ prefix: "admin/", limit: 20 });
+  const match = blobs.find((b) => b.pathname === ADMIN_USERS_BLOB_PATH);
+  if (!match?.url) return null;
+
+  const res = await fetch(match.url);
+  if (!res.ok) return null;
   const text = await res.text();
-  if (!text.trim()) return empty;
+  return text.trim() ? text : null;
+}
+
+async function readBlobJson<T>(empty: T): Promise<T> {
+  const text = await readBlobText();
+  if (!text) return empty;
   return JSON.parse(text) as T;
 }
 
 async function writeBlobJson(data: unknown): Promise<void> {
   const { put } = await import("@vercel/blob");
   const json = `${JSON.stringify(data, null, 2)}\n`;
-  await put(ADMIN_USERS_BLOB_PATH, json, {
+  const result = await put(ADMIN_USERS_BLOB_PATH, json, {
     access: "private",
     addRandomSuffix: false,
     allowOverwrite: true,
     contentType: "application/json",
   });
+  logStorage(`Wrote Blob pathname=${result.pathname} size=${json.length}`);
 }
 
 /** Writable store: Vercel Blob in production when configured, else local JSON. */
 export async function readAdminUsersFromStore<T>(empty: T): Promise<T> {
-  logDev(`Storage backend: ${getAdminUsersStorageBackend()}`);
-  logOperation("read");
+  const backend = getAdminUsersStorageBackend();
+  logStorage(`READ backend=${backend} target=${backend === "BLOB" ? ADMIN_USERS_BLOB_PATH : "data/admin-users.json"}`);
 
   if (usesAdminUsersBlob()) {
     return readBlobJson(empty);
@@ -98,22 +109,27 @@ export async function readAdminUsersFromStore<T>(empty: T): Promise<T> {
   return readLocalJson(LOCAL_PATH, empty);
 }
 
-/** Bundled/read-only copy shipped with the app (for bootstrap when Blob is empty). */
+/** Bundled copy shipped with the app (bootstrap when Blob is empty). */
 export async function readBundledAdminUsersJson<T>(empty: T): Promise<T> {
   return readLocalJson(LOCAL_PATH, empty);
 }
 
 export async function writeAdminUsersToStore(data: unknown): Promise<void> {
   assertWritableStorageConfigured();
-  logDev(`Saving user settings — backend: ${getAdminUsersStorageBackend()}`);
-  logOperation("write");
+  const backend = getAdminUsersStorageBackend();
+  logStorage(`WRITE backend=${backend}`);
 
   if (usesAdminUsersBlob()) {
     await writeBlobJson(data);
-    logDev("Save success (BLOB)");
+    const verify = await readBlobText();
+    if (!verify) {
+      throw new Error(
+        "Admin users were written to Blob but could not be read back. Check Vercel Blob configuration."
+      );
+    }
+    logStorage("WRITE verified (read-back OK)");
     return;
   }
 
   await writeLocalJson(LOCAL_PATH, data);
-  logDev("Save success (JSON)");
 }

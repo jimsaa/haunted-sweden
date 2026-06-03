@@ -63,6 +63,7 @@ export async function GET(request: Request) {
     return NextResponse.json({
       users: file.users.map((u) => toPublicUser(u)),
       updatedAt: file.updatedAt ?? null,
+      storage: getAdminUsersStorageBackend(),
     });
   } catch (err) {
     console.error("[admin/users GET]", err);
@@ -151,16 +152,18 @@ export async function POST(request: Request) {
     file.users[idx] = target;
     await writeAdminUsersFile(file);
 
-    if (process.env.NODE_ENV !== "production") {
-      console.log(
-        "[admin/users POST] Saved user",
-        target.id,
-        "— backend:",
-        getAdminUsersStorageBackend()
-      );
-    }
+    console.log(
+      "[admin/users POST] Saved user",
+      target.id,
+      "— backend:",
+      getAdminUsersStorageBackend()
+    );
 
-    return NextResponse.json({ ok: true, user: toPublicUser(target) });
+    return NextResponse.json({
+      ok: true,
+      user: toPublicUser(target),
+      storage: getAdminUsersStorageBackend(),
+    });
   } catch (err) {
     console.error("[admin/users POST]", err);
     const mapped = mapUsersWriteError(err);
