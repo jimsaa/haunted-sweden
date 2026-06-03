@@ -322,6 +322,16 @@ export const translations = {
       success:
         "Thank you! Your submission has been sent for review.",
     },
+    adminUsers: {
+      saved: "User settings saved",
+      saveFailed: "Could not save user settings.",
+      loadFailed: "Could not load users.",
+      saving: "Saving…",
+      saveUser: "Save user",
+      loading: "Loading users…",
+      noPermission: "You do not have permission to manage users.",
+      selectUser: "Select a user",
+    },
     adminSubmissions: {
       tab: "Submissions",
       tabSv: "Tips",
@@ -829,6 +839,16 @@ export const translations = {
       locationName: "Platsens namn (om den saknas i listan)",
       submit: "Skicka video för granskning",
       success: "Tack! Ditt tips har skickats för granskning.",
+    },
+    adminUsers: {
+      saved: "Användarinställningar sparade",
+      saveFailed: "Kunde inte spara användarinställningar.",
+      loadFailed: "Kunde inte läsa användare.",
+      saving: "Sparar…",
+      saveUser: "Spara användare",
+      loading: "Laddar användare…",
+      noPermission: "Du har inte behörighet att hantera användare.",
+      selectUser: "Välj en användare",
     },
     adminSubmissions: {
       tab: "Tips",

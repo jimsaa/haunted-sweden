@@ -12,6 +12,7 @@ export interface AdminUserRecord {
 
 export interface AdminUsersFile {
   users: AdminUserRecord[];
+  updatedAt?: string;
 }
 
 /** Safe user payload for client (no password). */

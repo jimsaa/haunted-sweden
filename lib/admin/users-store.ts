@@ -1,9 +1,12 @@
 /**
- * Admin users loaded from data/admin-users.json (server-side only).
- * TODO: Supabase Auth + hashed passwords; avoid plaintext passwords in repo for production scale.
+ * Admin users — local JSON in dev, Vercel Blob in production (when BLOB_READ_WRITE_TOKEN is set).
  */
-import { readFile, writeFile } from "fs/promises";
-import path from "path";
+import {
+  getAdminUsersStorageBackend,
+  readAdminUsersFromStore,
+  readBundledAdminUsersJson,
+  writeAdminUsersToStore,
+} from "@/lib/admin/admin-users-storage";
 import {
   ADMIN_PERMISSION_KEYS,
   OWNER_USER_ID,
@@ -13,7 +16,7 @@ import {
 import type { AdminPermissionsMap } from "@/lib/admin/permissions";
 import type { AdminUserRecord, AdminUsersFile } from "@/lib/admin/users-types";
 
-const USERS_PATH = path.join(process.cwd(), "data", "admin-users.json");
+const EMPTY_FILE: AdminUsersFile = { users: [] };
 
 function normalizePermissions(
   raw: Partial<AdminPermissionsMap> | undefined,
@@ -32,32 +35,60 @@ function normalizePermissions(
   return out;
 }
 
-export async function readAdminUsersFile(): Promise<AdminUsersFile> {
-  try {
-    const raw = await readFile(USERS_PATH, "utf8");
-    const parsed = JSON.parse(raw) as AdminUsersFile;
-    if (!Array.isArray(parsed.users)) {
-      return { users: getDefaultUsers() };
-    }
-    return {
-      users: parsed.users.map((u) => ({
-        ...u,
-        permissions: normalizePermissions(u.permissions, u.role),
-      })),
-    };
-  } catch (err) {
-    const code = (err as NodeJS.ErrnoException).code;
-    if (code === "ENOENT") {
-      const defaults = { users: getDefaultUsers() };
-      await writeAdminUsersFile(defaults);
-      return defaults;
-    }
-    throw err;
+function normalizeFile(file: AdminUsersFile): AdminUsersFile {
+  if (!Array.isArray(file.users)) {
+    return { users: getDefaultUsers(), updatedAt: file.updatedAt };
   }
+  return {
+    updatedAt: file.updatedAt,
+    users: file.users.map((u) => ({
+      ...u,
+      permissions: normalizePermissions(u.permissions, u.role),
+    })),
+  };
+}
+
+export async function readAdminUsersFile(): Promise<AdminUsersFile> {
+  const fromStore = normalizeFile(
+    await readAdminUsersFromStore<AdminUsersFile>(EMPTY_FILE)
+  );
+
+  if (fromStore.users.length > 0) {
+    if (process.env.NODE_ENV !== "production") {
+      console.log(
+        `[admin-users] Loaded ${fromStore.users.length} user(s) from ${getAdminUsersStorageBackend()}`
+      );
+    }
+    return fromStore;
+  }
+
+  const bundled = normalizeFile(
+    await readBundledAdminUsersJson<AdminUsersFile>(EMPTY_FILE)
+  );
+  if (bundled.users.length > 0) {
+    if (process.env.NODE_ENV !== "production") {
+      console.log(
+        `[admin-users] Bootstrapped ${bundled.users.length} user(s) from bundled data/admin-users.json`
+      );
+    }
+    return bundled;
+  }
+
+  const defaults: AdminUsersFile = {
+    users: getDefaultUsers(),
+    updatedAt: new Date().toISOString(),
+  };
+  try {
+    await writeAdminUsersFile(defaults);
+  } catch (err) {
+    console.warn("[admin-users] Could not persist default users:", err);
+  }
+  return defaults;
 }
 
 export async function writeAdminUsersFile(file: AdminUsersFile): Promise<void> {
   const sanitized: AdminUsersFile = {
+    updatedAt: new Date().toISOString(),
     users: file.users.map((u) => {
       const permissions =
         u.role === "owner" || u.id === OWNER_USER_ID
@@ -66,8 +97,7 @@ export async function writeAdminUsersFile(file: AdminUsersFile): Promise<void> {
       return { ...u, permissions };
     }),
   };
-  const json = `${JSON.stringify(sanitized, null, 2)}\n`;
-  await writeFile(USERS_PATH, json, "utf8");
+  await writeAdminUsersToStore(sanitized);
 }
 
 export function getDefaultUsers(): AdminUserRecord[] {

@@ -1,4 +1,8 @@
 import { NextResponse } from "next/server";
+import {
+  getAdminUsersStorageBackend,
+  usesAdminUsersBlob,
+} from "@/lib/admin/admin-users-storage";
 import { requireAdminUser } from "@/lib/admin/api-auth";
 import {
   ADMIN_PERMISSION_KEYS,
@@ -8,24 +12,67 @@ import {
 } from "@/lib/admin/permissions";
 import type { AdminPermissionsMap } from "@/lib/admin/permissions";
 import { toPublicUser } from "@/lib/admin/users-types";
-import type { AdminUserRecord } from "@/lib/admin/users-types";
 import {
   readAdminUsersFile,
   writeAdminUsersFile,
 } from "@/lib/admin/users-store";
+
+function mapUsersWriteError(err: unknown): {
+  status: number;
+  error: string;
+  errorSv: string;
+} {
+  const message = err instanceof Error ? err.message : String(err);
+  if (message.includes("BLOB_READ_WRITE_TOKEN")) {
+    return {
+      status: 503,
+      error: "User storage is not configured. Please try again later.",
+      errorSv: "Lagring för användare är inte konfigurerad. Försök igen senare.",
+    };
+  }
+  const code = (err as NodeJS.ErrnoException).code;
+  if (code === "EROFS" || code === "EPERM") {
+    return {
+      status: 503,
+      error: "Could not save user settings. Storage is read-only.",
+      errorSv: "Kunde inte spara användarinställningar. Lagringen är skrivskyddad.",
+    };
+  }
+  return {
+    status: 500,
+    error: "Could not save user settings.",
+    errorSv: "Kunde inte spara användarinställningar.",
+  };
+}
 
 export async function GET(request: Request) {
   const auth = await requireAdminUser(request, "manage_users");
   if (!auth.ok) return auth.response;
 
   try {
+    if (process.env.NODE_ENV !== "production") {
+      console.log(
+        "[admin/users GET] backend:",
+        getAdminUsersStorageBackend(),
+        "| blob token:",
+        usesAdminUsersBlob() ? "yes" : "no"
+      );
+    }
+
     const file = await readAdminUsersFile();
     return NextResponse.json({
       users: file.users.map((u) => toPublicUser(u)),
+      updatedAt: file.updatedAt ?? null,
     });
   } catch (err) {
     console.error("[admin/users GET]", err);
-    return NextResponse.json({ error: "Failed to read users" }, { status: 500 });
+    return NextResponse.json(
+      {
+        error: "Failed to read users",
+        errorSv: "Kunde inte läsa användare",
+      },
+      { status: 500 }
+    );
   }
 }
 
@@ -104,9 +151,22 @@ export async function POST(request: Request) {
     file.users[idx] = target;
     await writeAdminUsersFile(file);
 
+    if (process.env.NODE_ENV !== "production") {
+      console.log(
+        "[admin/users POST] Saved user",
+        target.id,
+        "— backend:",
+        getAdminUsersStorageBackend()
+      );
+    }
+
     return NextResponse.json({ ok: true, user: toPublicUser(target) });
   } catch (err) {
     console.error("[admin/users POST]", err);
-    return NextResponse.json({ error: "Update failed" }, { status: 500 });
+    const mapped = mapUsersWriteError(err);
+    return NextResponse.json(
+      { error: mapped.error, errorSv: mapped.errorSv },
+      { status: mapped.status }
+    );
   }
 }

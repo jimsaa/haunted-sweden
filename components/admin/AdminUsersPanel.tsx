@@ -14,15 +14,22 @@ import {
   clientHasPermission,
   getAdminAuthHeaders,
   getStoredAdminUser,
+  setStoredAdminUser,
 } from "@/lib/admin/auth";
 import type { AdminPublicUser } from "@/lib/admin/users-types";
 import type { AdminPermissionsMap } from "@/lib/admin/permissions";
+import { getTranslations } from "@/lib/i18n";
+import { useLanguage } from "@/lib/language-context";
+
+type MessageKind = "success" | "error" | null;
 
 export function AdminUsersPanel({
   onUserUpdated,
 }: {
   onUserUpdated?: () => void;
 }) {
+  const { locale } = useLanguage();
+  const t = getTranslations(locale).adminUsers;
   const actor = getStoredAdminUser();
   const [users, setUsers] = useState<AdminPublicUser[]>([]);
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -33,6 +40,7 @@ export function AdminUsersPanel({
   const [newPassword, setNewPassword] = useState("");
   const [loading, setLoading] = useState(true);
   const [message, setMessage] = useState<string | null>(null);
+  const [messageKind, setMessageKind] = useState<MessageKind>(null);
   const [saving, setSaving] = useState(false);
 
   const selected = users.find((u) => u.id === selectedId) ?? null;
@@ -48,19 +56,38 @@ export function AdminUsersPanel({
       const res = await fetch("/api/admin/users", {
         headers: getAdminAuthHeaders(),
       });
-      if (!res.ok) throw new Error("Failed to load users");
-      const data = (await res.json()) as { users: AdminPublicUser[] };
-      setUsers(data.users);
-      if (!selectedId && data.users[0]) {
-        setSelectedId(data.users[0].id);
+      const data = (await res.json().catch(() => ({}))) as {
+        users?: AdminPublicUser[];
+        error?: string;
+        errorSv?: string;
+      };
+      if (!res.ok) {
+        throw new Error(
+          locale === "sv"
+            ? data.errorSv ?? data.error ?? t.loadFailed
+            : data.error ?? t.loadFailed
+        );
       }
+      const list = data.users ?? [];
+      setUsers(list);
+      if (process.env.NODE_ENV === "development") {
+        console.log("[AdminUsersPanel] Loaded users:", list.length);
+      }
+      setSelectedId((prev) => {
+        if (prev && list.some((u) => u.id === prev)) return prev;
+        return list[0]?.id ?? null;
+      });
       setMessage(null);
+      setMessageKind(null);
     } catch (e) {
-      setMessage(e instanceof Error ? e.message : "Load failed");
+      const errMsg = e instanceof Error ? e.message : t.loadFailed;
+      console.error("[AdminUsersPanel] Load failed:", e);
+      setMessage(errMsg);
+      setMessageKind("error");
     } finally {
       setLoading(false);
     }
-  }, [selectedId]);
+  }, [locale, t.loadFailed]);
 
   useEffect(() => {
     load();
@@ -80,7 +107,12 @@ export function AdminUsersPanel({
     if (!selected || !draftPerms) return;
     setSaving(true);
     setMessage(null);
+    setMessageKind(null);
     try {
+      if (process.env.NODE_ENV === "development") {
+        console.log("[AdminUsersPanel] Saving user settings:", selected.id);
+      }
+
       const res = await fetch("/api/admin/users", {
         method: "POST",
         headers: {
@@ -94,16 +126,41 @@ export function AdminUsersPanel({
           permissions: isOwnerAccount ? undefined : draftPerms,
         }),
       });
-      const data = await res.json().catch(() => ({}));
+      const data = (await res.json().catch(() => ({}))) as {
+        error?: string;
+        errorSv?: string;
+        user?: AdminPublicUser;
+      };
       if (!res.ok) {
-        throw new Error((data as { error?: string }).error ?? "Save failed");
+        const errMsg =
+          locale === "sv"
+            ? data.errorSv ?? data.error ?? t.saveFailed
+            : data.error ?? t.saveFailed;
+        console.error("[AdminUsersPanel] Save failed:", data);
+        throw new Error(errMsg);
       }
-      setMessage("User saved");
+
+      if (process.env.NODE_ENV === "development") {
+        console.log("[AdminUsersPanel] Save success:", selected.id);
+      }
+
+      if (data.user) {
+        const stored = getStoredAdminUser();
+        if (stored?.id === data.user.id) {
+          setStoredAdminUser(data.user);
+        }
+      }
+
+      setMessage(t.saved);
+      setMessageKind("success");
       setNewPassword("");
       await load();
       onUserUpdated?.();
     } catch (e) {
-      setMessage(e instanceof Error ? e.message : "Save failed");
+      const errMsg = e instanceof Error ? e.message : t.saveFailed;
+      console.error("[AdminUsersPanel] Save error:", e);
+      setMessage(errMsg);
+      setMessageKind("error");
     } finally {
       setSaving(false);
     }
@@ -112,7 +169,7 @@ export function AdminUsersPanel({
   if (!actor || !clientHasPermission(actor, "manage_users")) {
     return (
       <div className="flex flex-1 items-center justify-center p-8 text-white/40 text-sm">
-        You do not have permission to manage users.
+        {t.noPermission}
       </div>
     );
   }
@@ -120,7 +177,7 @@ export function AdminUsersPanel({
   if (loading) {
     return (
       <div className="flex flex-1 items-center justify-center text-white/40 text-sm">
-        Loading users…
+        {t.loading}
       </div>
     );
   }
@@ -156,7 +213,16 @@ export function AdminUsersPanel({
 
       <div className="flex-1 overflow-y-auto p-4 sm:p-6 min-h-0">
         {message ? (
-          <p className="mb-4 text-sm text-violet-200/90">{message}</p>
+          <p
+            role="status"
+            className={`mb-4 text-sm rounded-lg px-3 py-2 ${
+              messageKind === "success"
+                ? "text-emerald-200/95 bg-emerald-950/30 border border-emerald-500/25"
+                : "text-red-200/95 bg-red-950/30 border border-red-500/25"
+            }`}
+          >
+            {message}
+          </p>
         ) : null}
 
         {selected && draftPerms ? (
@@ -241,7 +307,7 @@ export function AdminUsersPanel({
                 disabled={saving || !canEditTarget}
                 className="admin-btn admin-btn--primary"
               >
-                {saving ? "Saving…" : "Save user"}
+                {saving ? t.saving : t.saveUser}
               </button>
               {selected.id !== OWNER_USER_ID && canDeleteUser(selected.id) ? (
                 <button
@@ -256,20 +322,39 @@ export function AdminUsersPanel({
                     ) {
                       return;
                     }
-                    const res = await fetch("/api/admin/users", {
-                      method: "POST",
-                      headers: {
-                        "Content-Type": "application/json",
-                        ...getAdminAuthHeaders(),
-                      },
-                      body: JSON.stringify({
-                        userId: selected.id,
-                        delete: true,
-                      }),
-                    });
-                    if (res.ok) {
+                    setMessage(null);
+                    setMessageKind(null);
+                    try {
+                      const res = await fetch("/api/admin/users", {
+                        method: "POST",
+                        headers: {
+                          "Content-Type": "application/json",
+                          ...getAdminAuthHeaders(),
+                        },
+                        body: JSON.stringify({
+                          userId: selected.id,
+                          delete: true,
+                        }),
+                      });
+                      const data = (await res.json().catch(() => ({}))) as {
+                        error?: string;
+                        errorSv?: string;
+                      };
+                      if (!res.ok) {
+                        throw new Error(
+                          locale === "sv"
+                            ? data.errorSv ?? data.error ?? t.saveFailed
+                            : data.error ?? t.saveFailed
+                        );
+                      }
                       setSelectedId(null);
                       await load();
+                    } catch (e) {
+                      console.error("[AdminUsersPanel] Delete failed:", e);
+                      setMessage(
+                        e instanceof Error ? e.message : t.saveFailed
+                      );
+                      setMessageKind("error");
                     }
                   }}
                 >
@@ -279,7 +364,7 @@ export function AdminUsersPanel({
             </div>
           </div>
         ) : (
-          <p className="text-white/40 text-sm">Select a user</p>
+          <p className="text-white/40 text-sm">{t.selectUser}</p>
         )}
       </div>
     </div>

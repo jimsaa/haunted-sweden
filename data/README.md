@@ -30,7 +30,7 @@ This file is imported at build time by `lib/places.ts` and powers:
 | `submissions/place-submissions.json` | Pending place tips from `/submit` |
 | `submissions/media-submissions.json` | Pending image suggestions |
 | `submissions/video-submissions.json` | Pending video link suggestions |
-| `admin-users.json` | Admin users, roles, and permissions (local dev) |
+| `admin-users.json` | Admin users bootstrap (local dev; production uses Vercel Blob `admin/admin-users.json`) |
 | `spokjakt-place-overrides.json` | Spökjakt map metadata |
 
 Do not create mock, example, or duplicate location lists elsewhere.
