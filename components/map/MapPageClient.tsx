@@ -35,7 +35,6 @@ import { SwedenView } from "@/components/map/SwedenView";
 import { MapViewToggle, type MapViewMode } from "@/components/map/MapViewToggle";
 import { MapFilterPanel } from "@/components/map/MapFilterPanel";
 import { MapLoadingFallback } from "@/components/map/MapLoadingFallback";
-import { AmbienceSoundToggle } from "@/components/map/AmbienceSoundToggle";
 import { MapAmbienceToast } from "@/components/map/MapAmbienceToast";
 import { useHauntedAmbience } from "@/components/map/HauntedAmbienceContext";
 
@@ -176,9 +175,6 @@ export function MapPageClient({ places }: { places: HauntedPlace[] }) {
             ariaLabel={t.a11y.mapViewMode}
             overlay
           />
-        </div>
-        <div className="pointer-events-auto">
-          <AmbienceSoundToggle compact />
         </div>
       </div>
 
