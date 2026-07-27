@@ -1,0 +1,189 @@
+{
+  "archiveId": "hs-a73fd9e2",
+  "bookNumber": 1,
+  "title": "Haunted Sweden: Volume I",
+  "titleSv": "Haunted Sweden: Volym I",
+  "subtitle": "Investigations from the North",
+  "subtitleSv": "Utredningar från norr",
+  "publishedYear": 2026,
+  "status": "published",
+  "access": {
+    "mode": "public_url"
+  },
+  "intro": {
+    "thankYou": "Thank you for reading.",
+    "thankYouSv": "Tack för att du läser.",
+    "description": "You have unlocked the investigation archive.\n\nThis page contains additional historical research, photographs, sources, maps, and background material that did not fit inside the book."
+  },
+  "sections": [
+    {
+      "kind": "historicalBackground",
+      "blockType": "richtext",
+      "paragraphs": [
+        "The locations in Volume I were selected after years of field notes, archival research, and conversations with local historians. What appears in the printed book is only the surface layer — the archive preserves the longer context we could not fit on the page.",
+        "Many of these sites sit at the intersection of documented history and living folklore. Where possible, we separate verified records from oral tradition, but both shape how a place is experienced today."
+      ],
+      "paragraphsSv": [
+        "Platserna i Volym I valdes efter år av fältanteckningar, arkivresearch och samtal med lokala historiker. Det som finns i den tryckta boken är bara ytan — arkivet bevarar det längre sammanhang som inte fick plats på sidorna.",
+        "Många av dessa platser ligger i skärningspunkten mellan dokumenterad historia och levande folklore. Där det är möjligt skiljer vi verifierade källor från muntlig tradition, men båda formar hur en plats upplevs idag."
+      ]
+    },
+    {
+      "kind": "verifiedFacts",
+      "blockType": "facts",
+      "facts": [
+        {
+          "label": "Primary research period",
+          "labelSv": "Primär forskningsperiod",
+          "value": "2019–2025",
+          "valueSv": "2019–2025"
+        },
+        {
+          "label": "Archival sources consulted",
+          "labelSv": "Arkivkällor",
+          "value": "Regional museums, church records, local press (19th–20th c.)",
+          "valueSv": "Regionala museer, kyrkböcker, lokalpress (1800–1900-tal)"
+        },
+        {
+          "label": "Field documentation",
+          "labelSv": "Fältdokumentation",
+          "value": "Photography, audio notes, GPS logs (where permitted)",
+          "valueSv": "Fotografi, ljudanteckningar, GPS-loggar (där tillåtet)"
+        }
+      ]
+    },
+    {
+      "kind": "folkloreLegends",
+      "blockType": "richtext",
+      "paragraphs": [
+        "Swedish ghost lore often clusters around manor houses, vicarages, and industrial ruins — places where private grief and public memory overlap. The legends in the book are presented with their known earliest written references where we could trace them.",
+        "We do not treat folklore as proof of haunting. We treat it as cultural evidence: a map of what a community has chosen to remember, warn about, or retell."
+      ],
+      "paragraphsSv": [
+        "Svensk spökfolklore samlas ofta kring herrgårdar, prästgårdar och industriruiner — platser där privat sorg och kollektivt minne möts. Legender i boken presenteras med tidigaste kända skriftliga referenser där vi kunnat spåra dem.",
+        "Vi behandlar inte folklore som bevis för hemsökelse. Vi behandlar den som kulturellt material: en karta över vad en ort valt att minnas, varna för eller berätta vidare."
+      ]
+    },
+    {
+      "kind": "investigationTimeline",
+      "blockType": "timeline",
+      "timeline": [
+        {
+          "date": "2019",
+          "title": "Initial site survey — Jämtland cluster",
+          "titleSv": "Första platsinventering — Jämtland",
+          "description": "First coordinated visits to Borgvattnet and surrounding documented sites.",
+          "descriptionSv": "Första samordnade besök i Borgvattnet och närliggande dokumenterade platser."
+        },
+        {
+          "date": "2021",
+          "title": "Archival pass — regional records",
+          "titleSv": "Arkivgenomgång — regionala källor",
+          "description": "Cross-referencing parish records with published paranormal literature.",
+          "descriptionSv": "Korsreferens mellan kyrkböcker och publicerad paranormal litteratur."
+        },
+        {
+          "date": "2024",
+          "title": "Manuscript lock — Volume I",
+          "titleSv": "Manus låst — Volym I",
+          "description": "Final selection of locations and narratives for print.",
+          "descriptionSv": "Slutligt urval av platser och berättelser för tryck."
+        }
+      ]
+    },
+    {
+      "kind": "historicPhotographs",
+      "blockType": "gallery",
+      "images": [
+        {
+          "url": "/places/borgvattnets-prastgard-cover.png",
+          "alt": "Borgvattnets Prästgård — historic vicarage",
+          "caption": "Borgvattnets Prästgård — one of Sweden's most documented haunted houses.",
+          "captionSv": "Borgvattnets prästgård — ett av Sveriges mest dokumenterade spökhus."
+        }
+      ]
+    },
+    {
+      "kind": "locationGallery",
+      "blockType": "gallery",
+      "images": [
+        {
+          "url": "/places/borgvattnets-prastgard-cover.png",
+          "alt": "Exterior — Borgvattnet vicarage",
+          "caption": "Field reference photograph used during manuscript fact-checking.",
+          "captionSv": "Fältreferensfoto använt vid faktakontroll av manus."
+        }
+      ]
+    },
+    {
+      "kind": "maps",
+      "blockType": "map",
+      "map": {
+        "label": "Borgvattnet — primary Volume I anchor site",
+        "labelSv": "Borgvattnet — primär ankarpunkt i Volym I",
+        "latitude": 63.7002,
+        "longitude": 16.3378,
+        "googleMapsUrl": "https://maps.google.com/?q=63.7002,16.3378"
+      }
+    },
+    {
+      "kind": "sourcesReferences",
+      "blockType": "sources",
+      "sources": [
+        {
+          "title": "Haunted Sweden — public location catalog",
+          "titleSv": "Haunted Sweden — offentlig platskatalog",
+          "url": "https://hauntedsweden.se/map"
+        },
+        {
+          "title": "Regional museum collections (Jämtland)",
+          "titleSv": "Regionala museumsamlingar (Jämtland)",
+          "note": "On-site archive visits; citations in print edition.",
+          "noteSv": "Besök i arkiv; fullständiga hänvisningar i tryckt upplaga."
+        }
+      ]
+    },
+    {
+      "kind": "visitingInformation",
+      "blockType": "visiting",
+      "visiting": {
+        "accessNotes": "Many sites in Volume I are private property or operate on guided-visit schedules. Always confirm access before travelling.",
+        "accessNotesSv": "Många platser i Volym I är privat egendom eller kräver guidade besök. Bekräfta alltid tillträde före resa.",
+        "safetyNote": "Do not enter buildings without permission. Respect residents, staff, and posted rules.",
+        "safetyNoteSv": "Gå inte in i byggnader utan tillstånd. Respektera boende, personal och skyltade regler."
+      }
+    },
+    {
+      "kind": "researchNotes",
+      "blockType": "notes",
+      "paragraphs": [
+        "Editorial note: passages marked as \"community-reported\" in the book were not independently verified as paranormal events. They are included because of their historical footprint in local storytelling.",
+        "Additional primary sources and extended footnotes are reserved for future volumes where space allows."
+      ],
+      "paragraphsSv": [
+        "Redaktionell not: avsnitt märkta \"community-reported\" i boken har inte verifierats som paranormala händelser. De ingår på grund av sin historiska närvaro i lokala berättelser.",
+        "Ytterligare primärkällor och utökade fotnoter reserveras för framtida volymer."
+      ]
+    },
+    {
+      "kind": "bonusMaterial",
+      "blockType": "download",
+      "paragraphs": [
+        "Supplementary material may be added to this archive without notice as new research is cleared for release."
+      ],
+      "paragraphsSv": [
+        "Kompletterande material kan läggas till i detta arkiv utan förvarning när ny research godkänts för publicering."
+      ],
+      "downloads": []
+    }
+  ],
+  "nextBook": {
+    "mode": "coming_soon",
+    "headline": "The next investigation is currently underway…",
+    "headlineSv": "Nästa utredning pågår…",
+    "body": "Book 2 is in production.",
+    "bodySv": "Bok 2 är under produktion.",
+    "emailSignupPlaceholder": "Your email address",
+    "emailSignupPlaceholderSv": "Din e-postadress"
+  }
+}

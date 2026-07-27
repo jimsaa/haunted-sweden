@@ -10,7 +10,8 @@
     "validate:places": "npx --yes tsx scripts/validate-production-places.ts",
     "indexnow:generate-key": "npx --yes tsx scripts/generate-indexnow-key.ts",
     "indexnow:notify-catalog": "npx --yes tsx scripts/notify-indexnow-catalog.ts",
-    "verify:submissions": "npx --yes tsx scripts/verify-submission-pipeline.ts"
+    "verify:submissions": "npx --yes tsx scripts/verify-submission-pipeline.ts",
+    "book-archive:generate-id": "npx --yes tsx scripts/generate-book-archive-id.ts"
   },
   "dependencies": {
     "@vercel/blob": "^2.4.0",

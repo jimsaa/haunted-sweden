@@ -19,6 +19,9 @@ export function SiteHeader() {
   const pathname = usePathname();
   const onMapPage = pathname === "/map";
   const onSubmitPage = pathname === "/submit";
+  const onArchivePage = pathname?.startsWith("/archive/");
+
+  if (onArchivePage) return null;
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/90 backdrop-blur-md">
