@@ -16,7 +16,12 @@ Editorial field naming: see [BRAND.md](BRAND.md) (`hauntedSwedenScore`, `suggest
 | `/map` | **Primary product** — explore all approved locations |
 | `/places/[slug]` | Location detail (hero, history, legends, media placeholders) |
 | `/` | Landing — drives users to the map |
-| `/submit` | Community submission form (review queue — future backend) |
+| `/community` | Public Community landing (email signup) |
+| `/archive/[archiveId]` | Secret book investigation archive (noindex) |
+
+## Phase 2 (future)
+
+See **[PHASE_2_MEMBERS_PLATFORM.md](PHASE_2_MEMBERS_PLATFORM.md)** — blueprint only (Members, UGC, premium, auth). Do not implement until Phase 2 kickoff.
 
 ## Data Model
 
