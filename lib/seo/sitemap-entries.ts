@@ -55,6 +55,12 @@ export async function buildSitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.5,
     },
     {
+      url: `${SITE_URL}/community`,
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
       url: `${SITE_URL}/investigations`,
       lastModified,
       changeFrequency: "weekly",

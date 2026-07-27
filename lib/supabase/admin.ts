@@ -23,6 +23,18 @@ export type ArchiveCommunityRow = {
   status: string;
 };
 
+export type CommunityMemberRow = {
+  id: string;
+  email: string;
+  created_at: string;
+  source: string;
+  status: string;
+  verified: boolean;
+  consent: boolean;
+  interests: string[] | null;
+  membership_tier: string;
+};
+
 let adminClient: SupabaseClient | null = null;
 
 export function isSupabaseConfigured(): boolean {

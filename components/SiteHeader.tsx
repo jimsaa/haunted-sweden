@@ -49,6 +49,12 @@ export function SiteHeader() {
           >
             {labels.navSpokjakt}
           </Link>
+          <Link
+            href="/community"
+            className="text-sm text-white/70 hover:text-white transition-colors hidden sm:inline"
+          >
+            {labels.navCommunity}
+          </Link>
           <div className="site-header-submit-wrap">
             <Link
               href="/submit"

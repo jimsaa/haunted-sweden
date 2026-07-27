@@ -22,8 +22,10 @@ Never expose the service role key in client-side code.
 
 - `newsletter_subscribers` — archive email signups
 - `archive_community_responses` — visit polls and private stories (admin review)
+- `community_members` — `/community` landing page signups (source = Community Landing Page)
 
 ## Future
 
 - Double opt-in: set `verified = true` after confirmation email
 - Password/unlock codes: see `access` field in book JSON
+- Premium memberships: `membership_tier` on `community_members` (`free` | `premium` | `founder`)

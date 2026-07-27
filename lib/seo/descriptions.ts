@@ -25,6 +25,12 @@ const SPOKJAKT_DESCRIPTION_SV =
 const SPOKJAKT_DESCRIPTION_EN =
   "Ghost hunting Sweden — Spökjakt investigations with Joakim Lundell, Jonna Lundell and LaxTon Ghost Sweden. Watch episodes and explore haunted places Sweden.";
 
+const COMMUNITY_DESCRIPTION_SV =
+  "Gå med i Haunted Sweden Community. Fortsätt utredningarna kring svensk historia, folklore och hemsökta platser — respektfullt, nyfiket och utan sensationalism.";
+
+const COMMUNITY_DESCRIPTION_EN =
+  "Join the Haunted Sweden Community. Continue investigations into Swedish history, folklore and haunted places — curious, respectful and free of sensationalism.";
+
 function truncate(text: string, max: number): string {
   const t = text.replace(/\s+/g, " ").trim();
   if (t.length <= max) return t;
@@ -45,6 +51,10 @@ export function getSubmitDescription(locale: "sv" | "en" = "sv"): string {
 
 export function getSpokjaktDescription(locale: "sv" | "en" = "sv"): string {
   return locale === "en" ? SPOKJAKT_DESCRIPTION_EN : SPOKJAKT_DESCRIPTION_SV;
+}
+
+export function getCommunityDescription(locale: "sv" | "en" = "sv"): string {
+  return locale === "en" ? COMMUNITY_DESCRIPTION_EN : COMMUNITY_DESCRIPTION_SV;
 }
 
 /** Auto-generated place meta description (SV-first, natural keywords). */

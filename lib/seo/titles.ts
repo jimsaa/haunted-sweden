@@ -7,6 +7,7 @@ export const SEO_TITLES = {
   submit: `Tipsa om hemsökt plats | Haunted Sweden`,
   spokjakt: `Spökjakt | Paranormala utredningar | Haunted Sweden`,
   investigations: `Spökjakt | Paranormala utredningar | Haunted Sweden`,
+  community: `Haunted Sweden Community | Gå med i utredningen`,
 } as const;
 
 export function getPlaceSeoTitle(place: HauntedPlace): string {

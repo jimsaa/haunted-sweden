@@ -31,12 +31,18 @@ import { AdminPlaceEditor } from "@/components/admin/AdminPlaceEditor";
 import { AdminSubmissionsInbox } from "@/components/admin/AdminSubmissionsInbox";
 import { AdminUsersPanel } from "@/components/admin/AdminUsersPanel";
 import { AdminNewsletterPanel } from "@/components/admin/AdminNewsletterPanel";
+import { AdminCommunityMembersPanel } from "@/components/admin/AdminCommunityMembersPanel";
 import { getTranslations } from "@/lib/i18n";
 import { useLanguage } from "@/lib/language-context";
 
 const initialFile = hauntedPlacesFile as HauntedPlacesFile;
 
-type AdminMainTab = "places" | "submissions" | "users" | "newsletter";
+type AdminMainTab =
+  | "places"
+  | "submissions"
+  | "users"
+  | "newsletter"
+  | "community";
 
 function defaultTabForUser(user: AdminPublicUser): AdminMainTab {
   if (clientHasPermission(user, "view_submissions")) return "submissions";
@@ -355,10 +361,23 @@ export function AdminApp() {
             Newsletter
           </button>
         ) : null}
+        {showNewsletterTab ? (
+          <button
+            type="button"
+            onClick={() => setMainTab("community")}
+            className={`admin-tab ${mainTab === "community" ? "admin-tab--active" : ""}`}
+          >
+            Community
+          </button>
+        ) : null}
       </nav>
 
       {mainTab === "newsletter" && showNewsletterTab ? (
         <AdminNewsletterPanel />
+      ) : null}
+
+      {mainTab === "community" && showNewsletterTab ? (
+        <AdminCommunityMembersPanel />
       ) : null}
 
       {mainTab === "users" && showUsersTab ? (

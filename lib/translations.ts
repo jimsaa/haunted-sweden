@@ -45,6 +45,7 @@ export const translations = {
     exploreMap: "Explore Map",
     navMap: "Map",
     navSpokjakt: "Spökjakt",
+    navCommunity: "Community",
     navSubmit: "Submit",
     navSubmitBadge: "Community",
     navSubmitAria:
@@ -565,6 +566,7 @@ export const translations = {
     exploreMap: "Utforska kartan",
     navMap: "Karta",
     navSpokjakt: "Spökjakt",
+    navCommunity: "Community",
     navSubmit: "Tipsa",
     navSubmitBadge: "Nytt",
     navSubmitAria:

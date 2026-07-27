@@ -1,0 +1,407 @@
+{
+  "hero": {
+    "headline": {
+      "en": "Become part of Haunted Sweden.",
+      "sv": "Bli en del av Haunted Sweden."
+    },
+    "subheadline": {
+      "en": "The books are only the beginning.\n\nContinue the investigations together with thousands of readers who share an interest in Swedish history, folklore and haunted places.",
+      "sv": "Böckerna är bara början.\n\nFortsätt utredningarna tillsammans med tusentals läsare som delar intresset för svensk historia, folklore och hemsökta platser."
+    },
+    "primaryCta": {
+      "en": "Join the Community",
+      "sv": "Gå med i communityt"
+    },
+    "secondaryCta": {
+      "en": "Read more",
+      "sv": "Läs mer"
+    }
+  },
+  "whyJoin": {
+    "title": {
+      "en": "Why join?",
+      "sv": "Varför gå med?"
+    },
+    "cards": [
+      {
+        "id": "continue",
+        "title": {
+          "en": "Continue the investigations after every book",
+          "sv": "Fortsätt utredningarna efter varje bok"
+        }
+      },
+      {
+        "id": "articles",
+        "title": {
+          "en": "Exclusive historical articles",
+          "sv": "Exklusiva historiska artiklar"
+        }
+      },
+      {
+        "id": "bts",
+        "title": {
+          "en": "Behind-the-scenes research",
+          "sv": "Research bakom kulisserna"
+        }
+      },
+      {
+        "id": "photos",
+        "title": {
+          "en": "Extra photographs",
+          "sv": "Extra fotografier"
+        }
+      },
+      {
+        "id": "discussions",
+        "title": {
+          "en": "Community discussions",
+          "sv": "Communitydiskussioner"
+        }
+      },
+      {
+        "id": "early",
+        "title": {
+          "en": "Early access to future books",
+          "sv": "Tidig tillgång till framtida böcker"
+        }
+      },
+      {
+        "id": "submit",
+        "title": {
+          "en": "Submit your own haunted locations",
+          "sv": "Tipsa om egna hemsökta platser"
+        }
+      },
+      {
+        "id": "share",
+        "title": {
+          "en": "Share your own experiences",
+          "sv": "Dela egna upplevelser"
+        }
+      }
+    ]
+  },
+  "philosophy": {
+    "title": {
+      "en": "The Community Philosophy",
+      "sv": "Communityts filosofi"
+    },
+    "intro": {
+      "en": "Haunted Sweden is not about proving ghosts.",
+      "sv": "Haunted Sweden handlar inte om att bevisa spöken."
+    },
+    "points": [
+      {
+        "en": "History",
+        "sv": "Historia"
+      },
+      {
+        "en": "Folklore",
+        "sv": "Folklore"
+      },
+      {
+        "en": "Mystery",
+        "sv": "Mysterium"
+      },
+      {
+        "en": "Critical thinking",
+        "sv": "Kritiskt tänkande"
+      },
+      {
+        "en": "Respect for historical facts",
+        "sv": "Respekt för historiska fakta"
+      }
+    ],
+    "closing": {
+      "en": "We explore carefully. We document honestly. We never confuse local legend with verified history — and we avoid sensationalism.",
+      "sv": "Vi utforskar noggrant. Vi dokumenterar ärligt. Vi blandar aldrig lokal legend med verifierad historia — och vi undviker sensationalism."
+    }
+  },
+  "whatMembersCanDo": {
+    "title": {
+      "en": "What members can do",
+      "sv": "Vad medlemmar kan göra"
+    },
+    "cards": [
+      {
+        "id": "stories",
+        "title": {
+          "en": "Upload your own stories",
+          "sv": "Ladda upp egna berättelser"
+        },
+        "description": {
+          "en": "Share experiences for review — never published without care.",
+          "sv": "Dela upplevelser för granskning — publiceras aldrig utan omsorg."
+        }
+      },
+      {
+        "id": "photos",
+        "title": {
+          "en": "Share photographs",
+          "sv": "Dela fotografier"
+        },
+        "description": {
+          "en": "Contribute images that deepen the archive.",
+          "sv": "Bidra med bilder som fördjupar arkivet."
+        }
+      },
+      {
+        "id": "recommend",
+        "title": {
+          "en": "Recommend locations",
+          "sv": "Rekommendera platser"
+        },
+        "description": {
+          "en": "Suggest places worth investigating next.",
+          "sv": "Föreslå platser värda att utreda härnäst."
+        }
+      },
+      {
+        "id": "discuss",
+        "title": {
+          "en": "Discuss investigations",
+          "sv": "Diskutera utredningar"
+        },
+        "description": {
+          "en": "Talk about research, sources and questions that remain open.",
+          "sv": "Prata om research, källor och frågor som fortfarande är öppna."
+        }
+      },
+      {
+        "id": "vote",
+        "title": {
+          "en": "Vote for future locations",
+          "sv": "Rösta på framtida platser"
+        },
+        "description": {
+          "en": "Help shape where the next investigations go.",
+          "sv": "Var med och påverka vart nästa utredningar går."
+        }
+      },
+      {
+        "id": "comment",
+        "title": {
+          "en": "Comment on investigations",
+          "sv": "Kommentera utredningar"
+        },
+        "description": {
+          "en": "Add context, corrections and careful observations.",
+          "sv": "Lägg till kontext, rättelser och omsorgsfulla observationer."
+        }
+      },
+      {
+        "id": "research",
+        "title": {
+          "en": "Participate in research projects",
+          "sv": "Delta i researchprojekt"
+        },
+        "description": {
+          "en": "Join structured work on history and folklore.",
+          "sv": "Delta i strukturerat arbete kring historia och folklore."
+        }
+      },
+      {
+        "id": "newsletter",
+        "title": {
+          "en": "Receive newsletters",
+          "sv": "Få nyhetsbrev"
+        },
+        "description": {
+          "en": "Stay informed when new books and archives are released.",
+          "sv": "Få besked när nya böcker och arkiv släpps."
+        }
+      },
+      {
+        "id": "map",
+        "title": {
+          "en": "Future member map",
+          "sv": "Framtida medlemskarta"
+        },
+        "description": {
+          "en": "A planned map of member contributions and visited sites.",
+          "sv": "En planerad karta över medlemsbidrag och besökta platser."
+        }
+      }
+    ]
+  },
+  "testimonials": {
+    "title": {
+      "en": "Reader Stories",
+      "sv": "Läsarberättelser"
+    },
+    "items": [
+      {
+        "id": "t1",
+        "quote": {
+          "en": "[Placeholder] The book made me want to keep exploring — the community feels like the natural next step.",
+          "sv": "[Platshållare] Boken fick mig att vilja fortsätta utforska — communityt känns som det naturliga nästa steget."
+        },
+        "name": "Reader A",
+        "location": {
+          "en": "Sweden",
+          "sv": "Sverige"
+        },
+        "role": {
+          "en": "Book reader",
+          "sv": "Bokläsare"
+        }
+      },
+      {
+        "id": "t2",
+        "quote": {
+          "en": "[Placeholder] I value that history and folklore are kept separate. That honesty is rare.",
+          "sv": "[Platshållare] Jag uppskattar att historia och folklore hålls isär. Den ärligheten är ovanlig."
+        },
+        "name": "Reader B",
+        "location": {
+          "en": "Sweden",
+          "sv": "Sverige"
+        },
+        "role": {
+          "en": "Book reader",
+          "sv": "Bokläsare"
+        }
+      },
+      {
+        "id": "t3",
+        "quote": {
+          "en": "[Placeholder] Looking forward to more investigations and quieter, careful discussion.",
+          "sv": "[Platshållare] Ser fram emot fler utredningar och lugna, omsorgsfulla diskussioner."
+        },
+        "name": "Reader C",
+        "location": {
+          "en": "Sweden",
+          "sv": "Sverige"
+        },
+        "role": {
+          "en": "Book reader",
+          "sv": "Bokläsare"
+        }
+      }
+    ]
+  },
+  "books": {
+    "title": {
+      "en": "The books",
+      "sv": "Böckerna"
+    },
+    "items": [
+      {
+        "id": "book-1",
+        "number": 1,
+        "title": {
+          "en": "Haunted Sweden – De första vittnesmålen",
+          "sv": "Haunted Sweden – De första vittnesmålen"
+        },
+        "status": "published",
+        "subtitle": {
+          "en": "Book I — available now",
+          "sv": "Bok I — ute nu"
+        },
+        "archiveId": "hs-a73fd9e2"
+      },
+      {
+        "id": "book-2",
+        "number": 2,
+        "title": {
+          "en": "Haunted Sweden – Book II",
+          "sv": "Haunted Sweden – Bok II"
+        },
+        "status": "coming_soon",
+        "subtitle": {
+          "en": "In production",
+          "sv": "Under produktion"
+        }
+      },
+      {
+        "id": "book-3",
+        "number": 3,
+        "title": {
+          "en": "Haunted Sweden – Book III",
+          "sv": "Haunted Sweden – Bok III"
+        },
+        "status": "planned",
+        "subtitle": {
+          "en": "Planned",
+          "sv": "Planerad"
+        }
+      }
+    ]
+  },
+  "signup": {
+    "title": {
+      "en": "Join the ongoing investigation",
+      "sv": "Gå med i den pågående utredningen"
+    },
+    "body": {
+      "en": "Join the Haunted Sweden Community and stay connected as new books, archives and research are released.",
+      "sv": "Gå med i Haunted Sweden Community och håll dig uppdaterad när nya böcker, arkiv och research publiceras."
+    },
+    "emailPlaceholder": {
+      "en": "Your email address",
+      "sv": "Din e-postadress"
+    },
+    "button": {
+      "en": "Join the Community",
+      "sv": "Gå med i communityt"
+    },
+    "consent": {
+      "en": "I agree to receive updates from Haunted Sweden. I can unsubscribe at any time.",
+      "sv": "Jag godkänner att få uppdateringar från Haunted Sweden. Jag kan avprenumerera när som helst."
+    },
+    "success": {
+      "en": "Welcome. You are now part of the Haunted Sweden Community.",
+      "sv": "Välkommen. Du är nu en del av Haunted Sweden Community."
+    }
+  },
+  "social": {
+    "title": {
+      "en": "Follow the investigation",
+      "sv": "Följ utredningen"
+    },
+    "links": [
+      {
+        "platform": "facebook",
+        "label": { "en": "Facebook", "sv": "Facebook" },
+        "url": "",
+        "enabled": false
+      },
+      {
+        "platform": "instagram",
+        "label": { "en": "Instagram", "sv": "Instagram" },
+        "url": "",
+        "enabled": false
+      },
+      {
+        "platform": "youtube",
+        "label": { "en": "YouTube", "sv": "YouTube" },
+        "url": "",
+        "enabled": false
+      },
+      {
+        "platform": "podcast",
+        "label": { "en": "Podcast", "sv": "Podcast" },
+        "url": "",
+        "enabled": false
+      },
+      {
+        "platform": "discord",
+        "label": { "en": "Discord", "sv": "Discord" },
+        "url": "",
+        "enabled": false
+      }
+    ]
+  },
+  "membership": {
+    "enabled": false,
+    "tiers": ["free", "premium", "founder"],
+    "featuresPlanned": [
+      "Premium articles",
+      "Exclusive investigations",
+      "Early book releases",
+      "Live events",
+      "Digital downloads",
+      "Private discussion groups"
+    ]
+  }
+}
