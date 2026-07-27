@@ -1,6 +1,7 @@
 import { readdir, readFile } from "fs/promises";
 import path from "path";
 import type { BookArchive } from "@/lib/types/book-archive";
+import { validateBook } from "@/lib/book-archive/validate";
 
 const BOOKS_DIR = path.join(process.cwd(), "content", "books");
 
@@ -14,18 +15,14 @@ async function readBookFile(filePath: string): Promise<BookArchive | null> {
   try {
     const raw = await readFile(filePath, "utf8");
     const parsed = JSON.parse(raw) as BookArchive;
-    if (!parsed.archiveId || !isValidArchiveId(parsed.archiveId)) {
-      console.warn(
-        `[book-archive] Invalid archiveId in ${filePath} — must match hs-xxxxxxxx`
-      );
-      return null;
-    }
-    if (parsed.archiveId !== path.basename(filePath, ".json")) {
+    const book = validateBook(parsed);
+    if (!book) return null;
+    if (book.archiveId !== path.basename(filePath, ".json")) {
       console.warn(
         `[book-archive] Filename must match archiveId: ${parsed.archiveId}`
       );
     }
-    return parsed;
+    return book;
   } catch (err) {
     console.error(`[book-archive] Failed to read ${filePath}:`, err);
     return null;

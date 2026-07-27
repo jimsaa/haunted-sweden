@@ -30,16 +30,18 @@ import { AdminPlaceList } from "@/components/admin/AdminPlaceList";
 import { AdminPlaceEditor } from "@/components/admin/AdminPlaceEditor";
 import { AdminSubmissionsInbox } from "@/components/admin/AdminSubmissionsInbox";
 import { AdminUsersPanel } from "@/components/admin/AdminUsersPanel";
+import { AdminNewsletterPanel } from "@/components/admin/AdminNewsletterPanel";
 import { getTranslations } from "@/lib/i18n";
 import { useLanguage } from "@/lib/language-context";
 
 const initialFile = hauntedPlacesFile as HauntedPlacesFile;
 
-type AdminMainTab = "places" | "submissions" | "users";
+type AdminMainTab = "places" | "submissions" | "users" | "newsletter";
 
 function defaultTabForUser(user: AdminPublicUser): AdminMainTab {
   if (clientHasPermission(user, "view_submissions")) return "submissions";
   if (canAccessPlacesTab(user)) return "places";
+  if (clientHasPermission(user, "view_analytics")) return "newsletter";
   if (clientHasPermission(user, "manage_users")) return "users";
   return "submissions";
 }
@@ -220,6 +222,7 @@ export function AdminApp() {
   const showPlacesTab = canAccessPlacesTab(currentUser);
   const showSubmissionsTab = submissionCaps.canView;
   const showUsersTab = clientHasPermission(currentUser, "manage_users");
+  const showNewsletterTab = clientHasPermission(currentUser, "view_analytics");
   const canSavePlaces = clientHasPermission(currentUser, "edit_locations");
 
   if (!unlocked) {
@@ -343,7 +346,20 @@ export function AdminApp() {
             Users
           </button>
         ) : null}
+        {showNewsletterTab ? (
+          <button
+            type="button"
+            onClick={() => setMainTab("newsletter")}
+            className={`admin-tab ${mainTab === "newsletter" ? "admin-tab--active" : ""}`}
+          >
+            Newsletter
+          </button>
+        ) : null}
       </nav>
+
+      {mainTab === "newsletter" && showNewsletterTab ? (
+        <AdminNewsletterPanel />
+      ) : null}
 
       {mainTab === "users" && showUsersTab ? (
         <div className="flex flex-1 min-h-0 flex-col overflow-hidden">

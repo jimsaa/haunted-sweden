@@ -1,44 +1,14 @@
 /**
- * Book Archive — exclusive bonus material for book purchasers.
- * Content lives in content/books/{archiveId}.json
+ * Haunted Sweden Investigation Archive — data model for content/books/{archiveId}.json
  */
 
-/** Reserved for future password / one-time unlock codes (not implemented). */
 export type BookArchiveAccessMode = "public_url" | "password" | "unlock_code";
 
 export interface BookArchiveAccessConfig {
   mode: BookArchiveAccessMode;
-  /** bcrypt or similar — future use only */
   passwordHash?: string;
   unlockCodes?: string[];
 }
-
-export type BookArchiveSectionKind =
-  | "historicalBackground"
-  | "verifiedFacts"
-  | "folkloreLegends"
-  | "investigationTimeline"
-  | "historicPhotographs"
-  | "locationGallery"
-  | "maps"
-  | "sourcesReferences"
-  | "visitingInformation"
-  | "researchNotes"
-  | "bonusMaterial";
-
-export type BookArchiveBlockType =
-  | "richtext"
-  | "facts"
-  | "timeline"
-  | "gallery"
-  | "map"
-  | "sources"
-  | "visiting"
-  | "notes"
-  | "evidence"
-  | "video"
-  | "audio"
-  | "download";
 
 export interface BookArchiveImage {
   url: string;
@@ -46,33 +16,6 @@ export interface BookArchiveImage {
   caption?: string;
   captionSv?: string;
   credit?: string;
-}
-
-export interface BookArchiveVideo {
-  platform: "youtube" | "vimeo" | "other";
-  url: string;
-  title?: string;
-  titleSv?: string;
-}
-
-export interface BookArchiveAudio {
-  url: string;
-  title?: string;
-  titleSv?: string;
-}
-
-export interface BookArchiveDownload {
-  url: string;
-  label: string;
-  labelSv?: string;
-  fileType?: "pdf" | "image" | "document" | "other";
-}
-
-export interface BookArchiveFact {
-  label: string;
-  labelSv?: string;
-  value: string;
-  valueSv?: string;
 }
 
 export interface BookArchiveTimelineEvent {
@@ -89,6 +32,7 @@ export interface BookArchiveSource {
   url?: string;
   note?: string;
   noteSv?: string;
+  type?: "museum" | "archive" | "book" | "academic" | "web" | "other";
 }
 
 export interface BookArchiveMapEmbed {
@@ -97,15 +41,8 @@ export interface BookArchiveMapEmbed {
   latitude?: number;
   longitude?: number;
   googleMapsUrl?: string;
+  directionsUrl?: string;
   embedUrl?: string;
-}
-
-export interface BookArchiveEvidenceItem {
-  title: string;
-  titleSv?: string;
-  summary?: string;
-  summarySv?: string;
-  images?: BookArchiveImage[];
 }
 
 export interface BookArchiveVisitingInfo {
@@ -113,30 +50,35 @@ export interface BookArchiveVisitingInfo {
   addressSv?: string;
   hours?: string;
   hoursSv?: string;
+  directions?: string;
+  directionsSv?: string;
   accessNotes?: string;
   accessNotesSv?: string;
   safetyNote?: string;
   safetyNoteSv?: string;
 }
 
-export interface BookArchiveSection {
-  kind: BookArchiveSectionKind;
-  /** Override default section title */
-  title?: string;
-  titleSv?: string;
-  blockType: BookArchiveBlockType;
-  paragraphs?: string[];
+export interface BookArchiveTextBlock {
+  paragraphs: string[];
   paragraphsSv?: string[];
-  facts?: BookArchiveFact[];
+}
+
+/** One location / chapter from the printed book. */
+export interface BookArchiveInvestigation {
+  id: string;
+  number: number;
+  title: string;
+  titleSv?: string;
+  heroImage?: BookArchiveImage;
+  historicalBackground?: BookArchiveTextBlock;
+  verifiedHistory?: BookArchiveTextBlock;
+  folklore?: BookArchiveTextBlock;
   timeline?: BookArchiveTimelineEvent[];
-  images?: BookArchiveImage[];
-  videos?: BookArchiveVideo[];
-  audio?: BookArchiveAudio[];
-  downloads?: BookArchiveDownload[];
+  gallery?: BookArchiveImage[];
   map?: BookArchiveMapEmbed;
   sources?: BookArchiveSource[];
   visiting?: BookArchiveVisitingInfo;
-  evidence?: BookArchiveEvidenceItem[];
+  researchNotes?: BookArchiveTextBlock;
 }
 
 export type BookArchiveNextBookMode = "coming_soon" | "published";
@@ -149,11 +91,24 @@ export interface BookArchiveNextBook {
   bodySv?: string;
   emailSignupPlaceholder?: string;
   emailSignupPlaceholderSv?: string;
+  subscribeLabel?: string;
+  subscribeLabelSv?: string;
   buyLabel?: string;
   buyLabelSv?: string;
   buyUrl?: string;
   bookTitle?: string;
   bookTitleSv?: string;
+}
+
+export interface BookArchiveIntro {
+  archiveLabel?: string;
+  archiveLabelSv?: string;
+  thankYou?: string;
+  thankYouSv?: string;
+  description?: string;
+  descriptionSv?: string;
+  principles?: string[];
+  principlesSv?: string[];
 }
 
 export interface BookArchive {
@@ -163,16 +118,12 @@ export interface BookArchive {
   titleSv?: string;
   subtitle?: string;
   subtitleSv?: string;
+  investigators?: string;
+  investigatorsSv?: string;
   publishedYear?: number;
   status: "published" | "draft";
-  /** Future access gate — not enforced yet */
   access?: BookArchiveAccessConfig;
-  intro?: {
-    thankYou?: string;
-    thankYouSv?: string;
-    description?: string;
-    descriptionSv?: string;
-  };
-  sections: BookArchiveSection[];
+  intro?: BookArchiveIntro;
+  investigations: BookArchiveInvestigation[];
   nextBook: BookArchiveNextBook;
 }

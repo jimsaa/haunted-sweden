@@ -1,189 +1,183 @@
 {
   "archiveId": "hs-a73fd9e2",
   "bookNumber": 1,
-  "title": "Haunted Sweden: Volume I",
-  "titleSv": "Haunted Sweden: Volym I",
-  "subtitle": "Investigations from the North",
-  "subtitleSv": "Utredningar från norr",
+  "title": "Haunted Sweden – De första vittnesmålen",
+  "titleSv": "Haunted Sweden – De första vittnesmålen",
+  "subtitle": "Book I",
+  "subtitleSv": "Bok I",
+  "investigators": "Sofia & David",
+  "investigatorsSv": "Sofia & David",
   "publishedYear": 2026,
   "status": "published",
-  "access": {
-    "mode": "public_url"
-  },
+  "access": { "mode": "public_url" },
   "intro": {
+    "archiveLabel": "Sofia & David's Investigation Archive",
+    "archiveLabelSv": "Sofia & Davids utredningsarkiv",
     "thankYou": "Thank you for reading.",
     "thankYouSv": "Tack för att du läser.",
-    "description": "You have unlocked the investigation archive.\n\nThis page contains additional historical research, photographs, sources, maps, and background material that did not fit inside the book."
+    "description": "You have unlocked the official Haunted Sweden investigation archive.\n\nThis archive contains historical research, photographs, maps, timelines and references that did not fit inside the printed book.",
+    "descriptionSv": "Du har låst upp det officiella Haunted Sweden-utredningsarkivet.\n\nArkivet innehåller historisk research, fotografier, kartor, tidslinjer och referenser som inte fick plats i den tryckta boken.",
+    "principles": [
+      "Like the book itself we always separate:",
+      "• Documented history",
+      "• Local folklore",
+      "• Personal observations",
+      "We never present folklore as verified history."
+    ],
+    "principlesSv": [
+      "Precis som i boken skiljer vi alltid på:",
+      "• Dokumenterad historia",
+      "• Lokal folklore",
+      "• Personliga observationer",
+      "Vi presenterar aldrig folklore som verifierad historia."
+    ]
   },
-  "sections": [
+  "investigations": [
     {
-      "kind": "historicalBackground",
-      "blockType": "richtext",
-      "paragraphs": [
-        "The locations in Volume I were selected after years of field notes, archival research, and conversations with local historians. What appears in the printed book is only the surface layer — the archive preserves the longer context we could not fit on the page.",
-        "Many of these sites sit at the intersection of documented history and living folklore. Where possible, we separate verified records from oral tradition, but both shape how a place is experienced today."
-      ],
-      "paragraphsSv": [
-        "Platserna i Volym I valdes efter år av fältanteckningar, arkivresearch och samtal med lokala historiker. Det som finns i den tryckta boken är bara ytan — arkivet bevarar det längre sammanhang som inte fick plats på sidorna.",
-        "Många av dessa platser ligger i skärningspunkten mellan dokumenterad historia och levande folklore. Där det är möjligt skiljer vi verifierade källor från muntlig tradition, men båda formar hur en plats upplevs idag."
-      ]
-    },
-    {
-      "kind": "verifiedFacts",
-      "blockType": "facts",
-      "facts": [
-        {
-          "label": "Primary research period",
-          "labelSv": "Primär forskningsperiod",
-          "value": "2019–2025",
-          "valueSv": "2019–2025"
-        },
-        {
-          "label": "Archival sources consulted",
-          "labelSv": "Arkivkällor",
-          "value": "Regional museums, church records, local press (19th–20th c.)",
-          "valueSv": "Regionala museer, kyrkböcker, lokalpress (1800–1900-tal)"
-        },
-        {
-          "label": "Field documentation",
-          "labelSv": "Fältdokumentation",
-          "value": "Photography, audio notes, GPS logs (where permitted)",
-          "valueSv": "Fotografi, ljudanteckningar, GPS-loggar (där tillåtet)"
-        }
-      ]
-    },
-    {
-      "kind": "folkloreLegends",
-      "blockType": "richtext",
-      "paragraphs": [
-        "Swedish ghost lore often clusters around manor houses, vicarages, and industrial ruins — places where private grief and public memory overlap. The legends in the book are presented with their known earliest written references where we could trace them.",
-        "We do not treat folklore as proof of haunting. We treat it as cultural evidence: a map of what a community has chosen to remember, warn about, or retell."
-      ],
-      "paragraphsSv": [
-        "Svensk spökfolklore samlas ofta kring herrgårdar, prästgårdar och industriruiner — platser där privat sorg och kollektivt minne möts. Legender i boken presenteras med tidigaste kända skriftliga referenser där vi kunnat spåra dem.",
-        "Vi behandlar inte folklore som bevis för hemsökelse. Vi behandlar den som kulturellt material: en karta över vad en ort valt att minnas, varna för eller berätta vidare."
-      ]
-    },
-    {
-      "kind": "investigationTimeline",
-      "blockType": "timeline",
-      "timeline": [
-        {
-          "date": "2019",
-          "title": "Initial site survey — Jämtland cluster",
-          "titleSv": "Första platsinventering — Jämtland",
-          "description": "First coordinated visits to Borgvattnet and surrounding documented sites.",
-          "descriptionSv": "Första samordnade besök i Borgvattnet och närliggande dokumenterade platser."
-        },
-        {
-          "date": "2021",
-          "title": "Archival pass — regional records",
-          "titleSv": "Arkivgenomgång — regionala källor",
-          "description": "Cross-referencing parish records with published paranormal literature.",
-          "descriptionSv": "Korsreferens mellan kyrkböcker och publicerad paranormal litteratur."
-        },
-        {
-          "date": "2024",
-          "title": "Manuscript lock — Volume I",
-          "titleSv": "Manus låst — Volym I",
-          "description": "Final selection of locations and narratives for print.",
-          "descriptionSv": "Slutligt urval av platser och berättelser för tryck."
-        }
-      ]
-    },
-    {
-      "kind": "historicPhotographs",
-      "blockType": "gallery",
-      "images": [
-        {
-          "url": "/places/borgvattnets-prastgard-cover.png",
-          "alt": "Borgvattnets Prästgård — historic vicarage",
-          "caption": "Borgvattnets Prästgård — one of Sweden's most documented haunted houses.",
-          "captionSv": "Borgvattnets prästgård — ett av Sveriges mest dokumenterade spökhus."
-        }
-      ]
-    },
-    {
-      "kind": "locationGallery",
-      "blockType": "gallery",
-      "images": [
-        {
-          "url": "/places/borgvattnets-prastgard-cover.png",
-          "alt": "Exterior — Borgvattnet vicarage",
-          "caption": "Field reference photograph used during manuscript fact-checking.",
-          "captionSv": "Fältreferensfoto använt vid faktakontroll av manus."
-        }
-      ]
-    },
-    {
-      "kind": "maps",
-      "blockType": "map",
+      "id": "borgvattnets-prastgard",
+      "number": 1,
+      "title": "Borgvattnets Prästgård",
+      "titleSv": "Borgvattnets Prästgård",
+      "heroImage": {
+        "url": "/archive/books/hs-a73fd9e2/borgvattnets-prastgard-hero.png",
+        "alt": "Borgvattnets Prästgård",
+        "caption": "Field photograph — Borgvattnet vicarage.",
+        "captionSv": "Fältfoto — Borgvattnets prästgård."
+      },
+      "historicalBackground": {
+        "paragraphs": ["[Placeholder — historical background to be added from book research.]"],
+        "paragraphsSv": ["[Platshållare — historisk bakgrund läggs in från bokens research.]"]
+      },
+      "verifiedHistory": {
+        "paragraphs": ["[Placeholder — verified historical facts to be added.]"],
+        "paragraphsSv": ["[Platshållare — verifierad historia läggs in.]"]
+      },
+      "folklore": {
+        "paragraphs": ["[Placeholder — local folklore and legends to be added.]"],
+        "paragraphsSv": ["[Platshållare — lokal folklore och legender läggs in.]"]
+      },
+      "timeline": [],
+      "gallery": [],
       "map": {
-        "label": "Borgvattnet — primary Volume I anchor site",
-        "labelSv": "Borgvattnet — primär ankarpunkt i Volym I",
+        "label": "Borgvattnets Prästgård",
+        "labelSv": "Borgvattnets Prästgård",
         "latitude": 63.7002,
         "longitude": 16.3378,
-        "googleMapsUrl": "https://maps.google.com/?q=63.7002,16.3378"
-      }
-    },
-    {
-      "kind": "sourcesReferences",
-      "blockType": "sources",
-      "sources": [
-        {
-          "title": "Haunted Sweden — public location catalog",
-          "titleSv": "Haunted Sweden — offentlig platskatalog",
-          "url": "https://hauntedsweden.se/map"
-        },
-        {
-          "title": "Regional museum collections (Jämtland)",
-          "titleSv": "Regionala museumsamlingar (Jämtland)",
-          "note": "On-site archive visits; citations in print edition.",
-          "noteSv": "Besök i arkiv; fullständiga hänvisningar i tryckt upplaga."
-        }
-      ]
-    },
-    {
-      "kind": "visitingInformation",
-      "blockType": "visiting",
+        "googleMapsUrl": "https://maps.google.com/?q=63.7002,16.3378",
+        "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=63.7002,16.3378"
+      },
+      "sources": [],
       "visiting": {
-        "accessNotes": "Many sites in Volume I are private property or operate on guided-visit schedules. Always confirm access before travelling.",
-        "accessNotesSv": "Många platser i Volym I är privat egendom eller kräver guidade besök. Bekräfta alltid tillträde före resa.",
-        "safetyNote": "Do not enter buildings without permission. Respect residents, staff, and posted rules.",
-        "safetyNoteSv": "Gå inte in i byggnader utan tillstånd. Respektera boende, personal och skyltade regler."
+        "accessNotes": "[Placeholder — visitor information to be added.]",
+        "accessNotesSv": "[Platshållare — besöksinformation läggs in.]",
+        "safetyNote": "Respect private property and opening hours. Do not enter without permission.",
+        "safetyNoteSv": "Respektera privat område och öppettider. Gå inte in utan tillstånd."
+      },
+      "researchNotes": {
+        "paragraphs": ["[Placeholder — research notes to be added.]"],
+        "paragraphsSv": ["[Platshållare — forskningsanteckningar läggs in.]"]
       }
     },
     {
-      "kind": "researchNotes",
-      "blockType": "notes",
-      "paragraphs": [
-        "Editorial note: passages marked as \"community-reported\" in the book were not independently verified as paranormal events. They are included because of their historical footprint in local storytelling.",
-        "Additional primary sources and extended footnotes are reserved for future volumes where space allows."
-      ],
-      "paragraphsSv": [
-        "Redaktionell not: avsnitt märkta \"community-reported\" i boken har inte verifierats som paranormala händelser. De ingår på grund av sin historiska närvaro i lokala berättelser.",
-        "Ytterligare primärkällor och utökade fotnoter reserveras för framtida volymer."
-      ]
+      "id": "frammegarden",
+      "number": 2,
+      "title": "Frammegården",
+      "titleSv": "Frammegården",
+      "heroImage": {
+        "url": "/archive/books/hs-a73fd9e2/frammegarden-hero.png",
+        "alt": "Frammegården",
+        "caption": "Field photograph — Frammegården, Skillingmark.",
+        "captionSv": "Fältfoto — Frammegården, Skillingmark."
+      },
+      "historicalBackground": {
+        "paragraphs": ["[Placeholder — historical background to be added from book research.]"],
+        "paragraphsSv": ["[Platshållare — historisk bakgrund läggs in från bokens research.]"]
+      },
+      "verifiedHistory": {
+        "paragraphs": ["[Placeholder — verified historical facts to be added.]"],
+        "paragraphsSv": ["[Platshållare — verifierad historia läggs in.]"]
+      },
+      "folklore": {
+        "paragraphs": ["[Placeholder — local folklore and legends to be added.]"],
+        "paragraphsSv": ["[Platshållare — lokal folklore och legender läggs in.]"]
+      },
+      "timeline": [],
+      "gallery": [],
+      "map": {
+        "label": "Frammegården, Skillingmark",
+        "labelSv": "Frammegården, Skillingmark",
+        "latitude": 59.948,
+        "longitude": 12.182,
+        "googleMapsUrl": "https://maps.google.com/?q=59.948,12.182",
+        "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=59.948,12.182"
+      },
+      "sources": [],
+      "visiting": {
+        "accessNotes": "[Placeholder — visitor information to be added.]",
+        "accessNotesSv": "[Platshållare — besöksinformation läggs in.]",
+        "safetyNote": "Book visits through official channels. Do not enter without permission.",
+        "safetyNoteSv": "Boka besök via officiella kanaler. Gå inte in utan tillstånd."
+      },
+      "researchNotes": {
+        "paragraphs": ["[Placeholder — research notes to be added.]"],
+        "paragraphsSv": ["[Platshållare — forskningsanteckningar läggs in.]"]
+      }
     },
     {
-      "kind": "bonusMaterial",
-      "blockType": "download",
-      "paragraphs": [
-        "Supplementary material may be added to this archive without notice as new research is cleared for release."
-      ],
-      "paragraphsSv": [
-        "Kompletterande material kan läggas till i detta arkiv utan förvarning när ny research godkänts för publicering."
-      ],
-      "downloads": []
+      "id": "osterbybruks-herrgard",
+      "number": 3,
+      "title": "Österbybruks Herrgård",
+      "titleSv": "Österbybruks Herrgård",
+      "heroImage": {
+        "url": "/archive/books/hs-a73fd9e2/osterbybruks-herrgard-hero.png",
+        "alt": "Österbybruks Herrgård",
+        "caption": "Field photograph — Österbybruks Herrgård.",
+        "captionSv": "Fältfoto — Österbybruks herrgård."
+      },
+      "historicalBackground": {
+        "paragraphs": ["[Placeholder — historical background to be added from book research.]"],
+        "paragraphsSv": ["[Platshållare — historisk bakgrund läggs in från bokens research.]"]
+      },
+      "verifiedHistory": {
+        "paragraphs": ["[Placeholder — verified historical facts to be added.]"],
+        "paragraphsSv": ["[Platshållare — verifierad historia läggs in.]"]
+      },
+      "folklore": {
+        "paragraphs": ["[Placeholder — local folklore and legends to be added.]"],
+        "paragraphsSv": ["[Platshållare — lokal folklore och legender läggs in.]"]
+      },
+      "timeline": [],
+      "gallery": [],
+      "map": {
+        "label": "Österbybruks Herrgård",
+        "labelSv": "Österbybruks Herrgård",
+        "latitude": 60.327,
+        "longitude": 17.913,
+        "googleMapsUrl": "https://maps.google.com/?q=60.327,17.913",
+        "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=60.327,17.913"
+      },
+      "sources": [],
+      "visiting": {
+        "accessNotes": "[Placeholder — visitor information to be added.]",
+        "accessNotesSv": "[Platshållare — besöksinformation läggs in.]",
+        "safetyNote": "Respect private property and posted rules.",
+        "safetyNoteSv": "Respektera privat mark och skyltade regler."
+      },
+      "researchNotes": {
+        "paragraphs": ["[Placeholder — research notes to be added.]"],
+        "paragraphsSv": ["[Platshållare — forskningsanteckningar läggs in.]"]
+      }
     }
   ],
   "nextBook": {
     "mode": "coming_soon",
-    "headline": "The next investigation is currently underway…",
-    "headlineSv": "Nästa utredning pågår…",
-    "body": "Book 2 is in production.",
-    "bodySv": "Bok 2 är under produktion.",
+    "headline": "The investigation continues…",
+    "headlineSv": "Utredningen fortsätter…",
+    "body": "Book II is currently in production.\n\nSubscribe below and be notified when the next investigation is released.",
+    "bodySv": "Bok II är under produktion.\n\nPrenumerera nedan och få besked när nästa utredning släpps.",
     "emailSignupPlaceholder": "Your email address",
-    "emailSignupPlaceholderSv": "Din e-postadress"
+    "emailSignupPlaceholderSv": "Din e-postadress",
+    "subscribeLabel": "Subscribe",
+    "subscribeLabelSv": "Prenumerera"
   }
 }

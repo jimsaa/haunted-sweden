@@ -1,62 +1,44 @@
-# Book Archive
+# Haunted Sweden Investigation Archive
 
-Exclusive bonus material for readers who purchased a Haunted Sweden book.
+Exclusive companion material for book readers. Unlocked via QR code in each printed book.
 
-## URLs
-
-Each book has a **secret, randomly generated** archive ID:
+## URL
 
 ```
 https://hauntedsweden.se/archive/hs-a73fd9e2
 ```
 
-Never use predictable paths like `/book1` or `/archive/book-1`.
+Book 1: **Haunted Sweden – De första vittnesmålen**
 
 ## Adding a new book
 
-1. Generate an ID:
-   ```bash
-   npm run book-archive:generate-id
-   ```
-2. Copy `content/books/hs-a73fd9e2.json` as a template.
-3. Save as `content/books/{archiveId}.json` — filename must match `archiveId`.
-4. Set `"status": "published"` when ready.
-5. Deploy — no code changes required.
+```bash
+npm run book-archive:generate-id
+```
 
-## SEO
+1. Copy `hs-a73fd9e2.json` → `content/books/{new-id}.json`
+2. Update `archiveId`, `title`, `investigations[]`, images under `public/archive/books/{id}/`
+3. Set `"status": "published"`
+4. Deploy — no code changes
 
-Archive pages are **not indexed**:
+## Investigation structure
 
-- `noindex, nofollow` metadata
-- Excluded from `sitemap.xml`
-- `/archive/` disallowed in `robots.txt`
-- No navigation, footer, or search links
+Each book has an `investigations` array. Every investigation supports:
+
+- Hero image
+- Historical background, verified history, folklore (placeholder text until you add research)
+- Timeline, gallery (lightbox), map (GPS + Google Maps links)
+- Sources, visiting info, research notes
+- Community: visited poll + private story submission
 
 ## Next book block
 
-Edit `nextBook` in the JSON:
+Edit `nextBook` in JSON — switch `mode` from `coming_soon` to `published` when Book II launches.
 
-```json
-"nextBook": {
-  "mode": "coming_soon",
-  "headline": "The next investigation is currently underway…",
-  "body": "Book 2 is in production.",
-  "emailSignupPlaceholder": "Your email address"
-}
-```
+## Newsletter & community
 
-When Book 2 launches:
+Requires Supabase — see `supabase/README.md`.
 
-```json
-"nextBook": {
-  "mode": "published",
-  "headline": "Continue the journey.",
-  "bookTitle": "Haunted Sweden: Volume II",
-  "buyLabel": "Buy Book 2",
-  "buyUrl": "https://..."
-}
-```
+## SEO
 
-## Future access control
-
-The `access` field is reserved for password or unlock-code gates — not implemented yet.
+Hidden from search engines. No sitemap, nav, or public index.

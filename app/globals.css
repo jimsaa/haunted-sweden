@@ -2196,3 +2196,324 @@ body.sweden-view-modal-open {
   }
 }
 
+.book-archive-brand-line {
+  font-size: 0.65rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(167, 139, 250, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.book-archive-divider {
+  height: 1px;
+  width: 3rem;
+  background: rgba(212, 196, 168, 0.35);
+  margin: 1rem 0;
+}
+
+.book-archive-archive-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  color: rgba(232, 224, 212, 0.55);
+  margin-bottom: 0.35rem;
+}
+
+.book-archive-investigators {
+  font-family: var(--font-display), serif;
+  font-size: 0.95rem;
+  color: #d4c4a8;
+  margin-bottom: 1.25rem;
+}
+
+.book-archive-principles {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(212, 196, 168, 0.12);
+}
+
+.book-archive-principle-line {
+  font-size: 0.88rem;
+  color: rgba(232, 224, 212, 0.65);
+  margin-bottom: 0.25rem;
+}
+
+.book-archive-investigations {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.book-archive-investigation {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(212, 196, 168, 0.12);
+}
+
+.book-archive-investigation-header {
+  margin-bottom: 1.25rem;
+}
+
+.book-archive-investigation-num {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(167, 139, 250, 0.75);
+  margin-bottom: 0.35rem;
+}
+
+.book-archive-investigation-title {
+  font-family: var(--font-display), serif;
+  font-size: clamp(1.35rem, 4vw, 1.75rem);
+  font-weight: 600;
+  color: #f0e8dc;
+}
+
+.book-archive-hero {
+  margin-bottom: 1.75rem;
+}
+
+.book-archive-hero-frame {
+  border-radius: 0.35rem;
+  overflow: hidden;
+  border: 1px solid rgba(212, 196, 168, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+}
+
+.book-archive-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: sepia(0.12) contrast(1.03);
+}
+
+.book-archive-hero-caption {
+  font-size: 0.85rem;
+  color: rgba(232, 224, 212, 0.55);
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.book-archive-subsection {
+  margin-bottom: 1.75rem;
+}
+
+.book-archive-subsection-title {
+  font-family: var(--font-display), serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e0d4c0;
+  margin-bottom: 0.75rem;
+}
+
+.book-archive-figure-btn {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+}
+
+.book-archive-map-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.book-archive-coords {
+  font-size: 0.8rem;
+  color: rgba(232, 224, 212, 0.45);
+  font-family: ui-monospace, monospace;
+}
+
+.book-archive-source-type {
+  font-size: 0.75rem;
+  color: rgba(167, 139, 250, 0.65);
+  text-transform: uppercase;
+}
+
+.book-archive-safety {
+  margin-top: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.35rem;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  font-size: 0.88rem;
+}
+
+.book-archive-community {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(212, 196, 168, 0.12);
+  border-radius: 0.5rem;
+  background: rgba(245, 240, 232, 0.02);
+}
+
+.book-archive-community-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #e8dcc8;
+  margin-bottom: 1rem;
+}
+
+.book-archive-community-visited {
+  border: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.book-archive-radio {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: rgba(232, 224, 212, 0.8);
+  cursor: pointer;
+}
+
+.book-archive-label {
+  display: block;
+  font-size: 0.85rem;
+  color: rgba(232, 224, 212, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.book-archive-textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.9rem;
+  border: 1px solid rgba(212, 196, 168, 0.2);
+  border-radius: 0.35rem;
+  background: rgba(0, 0, 0, 0.35);
+  color: #e8e0d4;
+  resize: vertical;
+}
+
+.book-archive-community-btn {
+  margin-top: 0.75rem;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #5b21b6, #7c3aed);
+  border: none;
+  border-radius: 0.35rem;
+  cursor: pointer;
+}
+
+.book-archive-community-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.book-archive-community-msg {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #86efac;
+}
+
+.book-archive-community-msg--error {
+  color: #fca5a5;
+}
+
+.book-archive-community-note {
+  margin-top: 0.65rem;
+  font-size: 0.75rem;
+  color: rgba(232, 224, 212, 0.4);
+  font-style: italic;
+}
+
+.book-archive-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  color: rgba(232, 224, 212, 0.5);
+  max-width: 22rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.book-archive-email-btn--active {
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+.book-archive-email-btn--active:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.book-archive-next-msg {
+  margin-top: 0.75rem;
+  font-size: 0.88rem;
+  color: #86efac;
+}
+
+.book-archive-next-msg--error {
+  color: #fca5a5;
+}
+
+.book-archive-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.book-archive-lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 0.35rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.book-archive-lightbox-inner {
+  max-width: min(96vw, 1100px);
+  max-height: 90vh;
+}
+
+.book-archive-lightbox-img {
+  max-width: 100%;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.book-archive-lightbox-caption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(232, 224, 212, 0.7);
+  margin-top: 0.75rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
