@@ -8,6 +8,7 @@ import {
 } from "@/lib/members/auth-client";
 import type { MemberPublicProfile } from "@/lib/members/types";
 import badgesCatalog from "@/content/members/badges.json";
+import { memberTierLabel } from "@/lib/members/tiers";
 
 export function MembersProfilePage() {
   const [user, setUser] = useState<MemberPublicProfile | null>(null);
@@ -74,9 +75,11 @@ export function MembersProfilePage() {
   return (
     <div className="members-page">
       <header className="members-page-header">
-        <p className="members-eyebrow">My Investigation Profile</p>
+        <p className="members-eyebrow">Member identity</p>
         <h1 className="members-h1">{user.displayName}</h1>
-        <p className="members-lead">@{user.username}</p>
+        <p className="members-lead">
+          @{user.username} · {memberTierLabel(user.tier)}
+        </p>
       </header>
 
       <div className="members-grid members-grid--2">
@@ -87,7 +90,7 @@ export function MembersProfilePage() {
           <dl className="members-dl">
             <div>
               <dt>Membership</dt>
-              <dd>{user.tier}</dd>
+              <dd>{memberTierLabel(user.tier)}</dd>
             </div>
             <div>
               <dt>Country</dt>

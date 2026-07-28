@@ -7,8 +7,11 @@
       "title": "Haunted Sweden – De första vittnesmålen",
       "titleEn": "Haunted Sweden – The First Testimonies",
       "status": "available",
+      "releaseState": "LIVE",
       "archiveId": "hs-a73fd9e2",
-      "summary": "Investigation archive for Book I (Swedish edition).",
+      "coverImage": "/archive/books/hs-a73fd9e2/borgvattnets-prastgard-hero.png",
+      "coverTone": "ember",
+      "summary": "Sofia & David's investigation archive for Book I — photographs, maps, timelines, and research that did not fit the printed edition.",
       "supports": ["photos", "maps", "historicalResearch", "downloads", "extraMaterial"]
     },
     {
@@ -18,7 +21,10 @@
       "title": "Haunted Sweden – The First Testimonies",
       "titleEn": "Haunted Sweden – The First Testimonies",
       "status": "coming_soon",
+      "releaseState": "COMING SOON",
       "archiveId": null,
+      "coverImage": null,
+      "coverTone": "frost",
       "summary": "English edition archive — reserved for Book1E.",
       "supports": ["photos", "maps", "historicalResearch", "downloads", "extraMaterial"]
     },
@@ -29,8 +35,11 @@
       "title": "Haunted Sweden – Book II",
       "titleEn": "Haunted Sweden – Book II",
       "status": "planned",
+      "releaseState": "PLANNED",
       "archiveId": null,
-      "summary": "Future Swedish edition archive slot.",
+      "coverImage": null,
+      "coverTone": "pine",
+      "summary": "Next Swedish investigation volume — archive slot prepared.",
       "supports": ["photos", "maps", "historicalResearch", "downloads", "extraMaterial"]
     },
     {
@@ -40,8 +49,11 @@
       "title": "Haunted Sweden – Book II (English)",
       "titleEn": "Haunted Sweden – Book II (English)",
       "status": "planned",
+      "releaseState": "LOCKED",
       "archiveId": null,
-      "summary": "Future English edition archive slot.",
+      "coverImage": null,
+      "coverTone": "slate",
+      "summary": "Future English edition — sealed until release.",
       "supports": ["photos", "maps", "historicalResearch", "downloads", "extraMaterial"]
     },
     {
@@ -51,7 +63,10 @@
       "title": "Haunted Sweden – Book III",
       "titleEn": "Haunted Sweden – Book III",
       "status": "planned",
+      "releaseState": "PLANNED",
       "archiveId": null,
+      "coverImage": null,
+      "coverTone": "night",
       "summary": "Future Swedish edition archive slot.",
       "supports": ["photos", "maps", "historicalResearch", "downloads", "extraMaterial"]
     }

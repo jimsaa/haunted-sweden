@@ -76,7 +76,7 @@ export function MembersLoginForm({ mode }: { mode: "login" | "register" }) {
         <h1 className="members-auth-title">Haunted Sweden</h1>
         <p className="members-auth-lead">
           {mode === "login"
-            ? "Enter the Members investigation archive."
+            ? "Enter Sofia & David's private investigation archive."
             : "Request access to the private investigation platform."}
         </p>
 

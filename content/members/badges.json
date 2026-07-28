@@ -7,6 +7,7 @@
       "description": "Completed Haunted Sweden – The First Testimonies.",
       "descriptionSv": "Läst Haunted Sweden – De första vittnesmålen.",
       "icon": "book",
+      "category": "book",
       "rarity": "common"
     },
     {
@@ -16,6 +17,7 @@
       "description": "Early supporter of the Haunted Sweden platform.",
       "descriptionSv": "Tidig supporter av Haunted Sweden-plattformen.",
       "icon": "star",
+      "category": "founder",
       "rarity": "rare"
     },
     {
@@ -25,6 +27,7 @@
       "description": "Supported historical research projects.",
       "descriptionSv": "Stöttat historiska researchprojekt.",
       "icon": "scroll",
+      "category": "research",
       "rarity": "uncommon"
     },
     {
@@ -34,6 +37,7 @@
       "description": "Unlocked the Borgvattnet investigation archive.",
       "descriptionSv": "Låste upp Borgvattnets utredningsarkiv.",
       "icon": "map-pin",
+      "category": "location",
       "rarity": "uncommon"
     },
     {
@@ -43,33 +47,37 @@
       "description": "Discovered a hidden QR marker in the field.",
       "descriptionSv": "Upptäckte en dold QR-markör i fält.",
       "icon": "qr",
+      "category": "qr",
       "rarity": "rare"
     },
     {
       "id": "community-member",
-      "name": "Community Member",
-      "nameSv": "Communitymedlem",
+      "name": "Research Network",
+      "nameSv": "Research Network",
       "description": "Joined the Haunted Sweden Members platform.",
       "descriptionSv": "Gick med i Haunted Sweden Members.",
       "icon": "users",
+      "category": "community",
       "rarity": "common"
     },
     {
       "id": "moderator",
       "name": "Moderator",
       "nameSv": "Moderator",
-      "description": "Trusted community moderator.",
-      "descriptionSv": "Betrodd community-moderator.",
+      "description": "Trusted research network moderator.",
+      "descriptionSv": "Betrodd moderator i Research Network.",
       "icon": "shield",
+      "category": "community",
       "rarity": "epic"
     },
     {
       "id": "administrator",
-      "name": "Administrator",
-      "nameSv": "Administratör",
-      "description": "Platform administrator.",
-      "descriptionSv": "Plattformsadministratör.",
+      "name": "Archive Keeper",
+      "nameSv": "Archive Keeper",
+      "description": "Platform Archive Keeper.",
+      "descriptionSv": "Plattformens Archive Keeper.",
       "icon": "key",
+      "category": "founder",
       "rarity": "legendary"
     }
   ]

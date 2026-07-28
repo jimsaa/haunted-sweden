@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { getStoredMemberUser } from "@/lib/members/auth-client";
 import type { MemberPublicProfile } from "@/lib/members/types";
+import { memberTierLabel } from "@/lib/members/tiers";
 
 export function MembersSettingsPage() {
   const [user, setUser] = useState<MemberPublicProfile | null>(null);
@@ -33,12 +34,12 @@ export function MembersSettingsPage() {
             <dd>{user?.email ?? "—"}</dd>
           </div>
           <div>
-            <dt>Role</dt>
-            <dd>{user?.role ?? "—"}</dd>
+            <dt>Membership</dt>
+            <dd>{user ? memberTierLabel(user.tier) : "—"}</dd>
           </div>
           <div>
-            <dt>Tier</dt>
-            <dd>{user?.tier ?? "—"}</dd>
+            <dt>Role</dt>
+            <dd>{user?.role ?? "—"}</dd>
           </div>
         </dl>
       </section>

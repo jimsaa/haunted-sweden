@@ -8,9 +8,9 @@ import {
   BookOpen,
   LayoutDashboard,
   LogOut,
+  Network,
+  ScrollText,
   Settings,
-  ShoppingBag,
-  Users,
   UserCircle,
 } from "lucide-react";
 import type { ReactNode } from "react";
@@ -21,25 +21,22 @@ import {
 } from "@/lib/members/auth-client";
 import { useEffect, useState } from "react";
 import type { MemberPublicProfile } from "@/lib/members/types";
+import { memberTierLabel } from "@/lib/members/tiers";
 
 const NAV = [
   { href: "/members/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/members/profile", label: "My Profile", icon: UserCircle },
   {
     href: "/members/investigation",
-    label: "Investigation Profile",
+    label: "Case File",
     icon: BookOpen,
   },
   { href: "/members/archives", label: "Book Archives", icon: Archive },
   { href: "/members/badges", label: "Badges", icon: Award },
-  { href: "/members/community", label: "Community", icon: Users },
-  { href: "/members/shop", label: "Shop", icon: ShoppingBag },
-  { href: "/members/settings", label: "Account Settings", icon: Settings },
+  { href: "/members/community", label: "Research Network", icon: Network },
+  { href: "/members/shop", label: "Archive Store", icon: ScrollText },
+  { href: "/members/settings", label: "Account", icon: Settings },
 ] as const;
-
-function tierLabel(tier: string): string {
-  return tier.charAt(0).toUpperCase() + tier.slice(1);
-}
 
 export function MembersShell({ children }: { children: ReactNode }) {
   const pathname = usePathname();
@@ -65,7 +62,7 @@ export function MembersShell({ children }: { children: ReactNode }) {
   if (!ready) {
     return (
       <div className="members-shell members-shell--loading">
-        <p className="members-muted">Opening the investigation archive…</p>
+        <p className="members-muted">Opening Sofia &amp; David&apos;s archive…</p>
       </div>
     );
   }
@@ -78,7 +75,7 @@ export function MembersShell({ children }: { children: ReactNode }) {
           <Link href="/members/dashboard" className="members-brand-title">
             Haunted Sweden
           </Link>
-          <p className="members-brand-sub">Members Archive</p>
+          <p className="members-brand-sub">Private Investigation Archive</p>
         </div>
 
         <nav className="members-nav">
@@ -103,7 +100,9 @@ export function MembersShell({ children }: { children: ReactNode }) {
           {user ? (
             <div className="members-user-chip">
               <span className="members-user-name">{user.displayName}</span>
-              <span className="members-tier-pill">{tierLabel(user.tier)}</span>
+              <span className="members-tier-pill">
+                {memberTierLabel(user.tier)}
+              </span>
             </div>
           ) : null}
           <button
@@ -112,7 +111,7 @@ export function MembersShell({ children }: { children: ReactNode }) {
             className="members-logout-btn"
           >
             <LogOut className="h-4 w-4" aria-hidden />
-            Log out
+            Leave archive
           </button>
           <Link href="/" className="members-exit-link">
             ← Public site
@@ -122,10 +121,12 @@ export function MembersShell({ children }: { children: ReactNode }) {
 
       <div className="members-main">
         <header className="members-topbar">
-          <p className="members-topbar-label">Investigation Platform</p>
+          <p className="members-topbar-label">
+            Sofia &amp; David&apos;s Investigation Archive
+          </p>
           {user ? (
             <p className="members-topbar-user">
-              {user.displayName} · @{user.username}
+              {user.displayName} · {memberTierLabel(user.tier)}
             </p>
           ) : null}
         </header>

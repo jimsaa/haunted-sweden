@@ -2,24 +2,24 @@
 
 const MODULES = [
   {
-    title: "Stories",
-    note: "Member field stories — moderated before publish.",
+    title: "Field Reports",
+    note: "Documented encounters and observations — moderated before they enter the network.",
   },
   {
-    title: "Photos",
-    note: "Community photo submissions tied to places.",
+    title: "Archive Photographs",
+    note: "Member photographs tied to verified places and investigations.",
   },
   {
-    title: "Discussions",
-    note: "Threaded research discussions (not a social feed).",
+    title: "Research Threads",
+    note: "Threaded discussion for sources, history, and open questions — not a social feed.",
   },
   {
-    title: "Suggested places",
-    note: "Crowd-sourced location leads for review.",
+    title: "Suggested Places",
+    note: "Location leads submitted for review by the investigation team.",
   },
   {
-    title: "Voting",
-    note: "Priority voting on research and investigation topics.",
+    title: "Priority Voting",
+    note: "Help rank which sites and stories deserve deeper research next.",
   },
 ] as const;
 
@@ -27,10 +27,11 @@ export function MembersCommunityPage() {
   return (
     <div className="members-page">
       <header className="members-page-header">
-        <p className="members-eyebrow">Community</p>
-        <h1 className="members-h1">Investigation community</h1>
+        <p className="members-eyebrow">Shared investigation</p>
+        <h1 className="members-h1">Research Network</h1>
         <p className="members-lead">
-          Placeholder modules only in v1. Public conversion remains at{" "}
+          A private channel for investigators — field reports, photographs, and
+          research threads. Public interest signup remains at{" "}
           <a href="/community">/community</a>.
         </p>
       </header>
@@ -41,9 +42,10 @@ export function MembersCommunityPage() {
             key={m.title}
             className="members-panel members-panel--placeholder"
           >
+            <div className="members-panel-kicker">Module</div>
             <h2 className="members-h2">{m.title}</h2>
             <p className="members-muted">{m.note}</p>
-            <span className="members-status">Coming in v2+</span>
+            <span className="members-status">Opening later</span>
           </article>
         ))}
       </div>

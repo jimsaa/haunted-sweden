@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { RefreshCw } from "lucide-react";
 import { getAdminAuthHeaders } from "@/lib/admin/auth";
 import type { MemberPublicProfile } from "@/lib/members/types";
+import { memberTierLabel } from "@/lib/members/tiers";
 
 export function AdminMembersPanel() {
   const [users, setUsers] = useState<MemberPublicProfile[]>([]);
@@ -90,7 +91,7 @@ export function AdminMembersPanel() {
                   <td className="px-3 py-2 text-violet-200">@{u.username}</td>
                   <td className="px-3 py-2">{u.displayName}</td>
                   <td className="px-3 py-2 text-white/60">{u.email}</td>
-                  <td className="px-3 py-2 capitalize">{u.tier}</td>
+                  <td className="px-3 py-2">{memberTierLabel(u.tier)}</td>
                   <td className="px-3 py-2 capitalize">{u.role}</td>
                   <td className="px-3 py-2">{u.badges.length}</td>
                   <td className="px-3 py-2 text-white/50">
