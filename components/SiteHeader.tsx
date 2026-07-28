@@ -20,8 +20,9 @@ export function SiteHeader() {
   const onMapPage = pathname === "/map";
   const onSubmitPage = pathname === "/submit";
   const onArchivePage = pathname?.startsWith("/archive/");
+  const onMembersPage = pathname?.startsWith("/members");
 
-  if (onArchivePage) return null;
+  if (onArchivePage || onMembersPage) return null;
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-black/90 backdrop-blur-md">

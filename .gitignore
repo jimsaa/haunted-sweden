@@ -37,6 +37,9 @@ yarn-error.log*
 /data/admin-security/*.json
 /data/admin-security/*.log
 
+# members runtime store (local JSON; Blob in production)
+/data/members/*.json
+
 # IndexNow (keep key.txt out of git — use INDEXNOW_KEY on Vercel)
 /data/indexnow/key.txt
 /data/indexnow/state.json

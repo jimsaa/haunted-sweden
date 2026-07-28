@@ -1,0 +1,76 @@
+{
+  "badges": [
+    {
+      "id": "book-i-reader",
+      "name": "Book I Reader",
+      "nameSv": "Bok I-läsare",
+      "description": "Completed Haunted Sweden – The First Testimonies.",
+      "descriptionSv": "Läst Haunted Sweden – De första vittnesmålen.",
+      "icon": "book",
+      "rarity": "common"
+    },
+    {
+      "id": "founder",
+      "name": "Founder",
+      "nameSv": "Grundare",
+      "description": "Early supporter of the Haunted Sweden platform.",
+      "descriptionSv": "Tidig supporter av Haunted Sweden-plattformen.",
+      "icon": "star",
+      "rarity": "rare"
+    },
+    {
+      "id": "research-supporter",
+      "name": "Research Supporter",
+      "nameSv": "Research-supporter",
+      "description": "Supported historical research projects.",
+      "descriptionSv": "Stöttat historiska researchprojekt.",
+      "icon": "scroll",
+      "rarity": "uncommon"
+    },
+    {
+      "id": "borgvattnet-explorer",
+      "name": "Borgvattnet Explorer",
+      "nameSv": "Borgvattnet-utforskare",
+      "description": "Unlocked the Borgvattnet investigation archive.",
+      "descriptionSv": "Låste upp Borgvattnets utredningsarkiv.",
+      "icon": "map-pin",
+      "rarity": "uncommon"
+    },
+    {
+      "id": "hidden-marker",
+      "name": "Hidden Marker",
+      "nameSv": "Dold markör",
+      "description": "Discovered a hidden QR marker in the field.",
+      "descriptionSv": "Upptäckte en dold QR-markör i fält.",
+      "icon": "qr",
+      "rarity": "rare"
+    },
+    {
+      "id": "community-member",
+      "name": "Community Member",
+      "nameSv": "Communitymedlem",
+      "description": "Joined the Haunted Sweden Members platform.",
+      "descriptionSv": "Gick med i Haunted Sweden Members.",
+      "icon": "users",
+      "rarity": "common"
+    },
+    {
+      "id": "moderator",
+      "name": "Moderator",
+      "nameSv": "Moderator",
+      "description": "Trusted community moderator.",
+      "descriptionSv": "Betrodd community-moderator.",
+      "icon": "shield",
+      "rarity": "epic"
+    },
+    {
+      "id": "administrator",
+      "name": "Administrator",
+      "nameSv": "Administratör",
+      "description": "Platform administrator.",
+      "descriptionSv": "Plattformsadministratör.",
+      "icon": "key",
+      "rarity": "legendary"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 # Haunted Sweden — Phase 2 Architecture Blueprint
 
-**Status:** Planning only  
+**Status:** Members v1 foundation implemented (2026-07) — see `docs/Members_v1.md`  
 **Date:** 2026-07  
-**Scope:** Blueprint for Community, Members, UGC, and Premium — **do not implement yet**
+**Scope:** Blueprint for Community, Members, UGC, and Premium — **v1 Members shell is live**; interactive UGC / Stripe checkout remain future
 
 This document prepares expansion so Phase 2 can be added **without restructuring** the current site, Book Archive, or investigation content.
 

@@ -32,6 +32,7 @@ import { AdminSubmissionsInbox } from "@/components/admin/AdminSubmissionsInbox"
 import { AdminUsersPanel } from "@/components/admin/AdminUsersPanel";
 import { AdminNewsletterPanel } from "@/components/admin/AdminNewsletterPanel";
 import { AdminCommunityMembersPanel } from "@/components/admin/AdminCommunityMembersPanel";
+import { AdminMembersPanel } from "@/components/admin/AdminMembersPanel";
 import { getTranslations } from "@/lib/i18n";
 import { useLanguage } from "@/lib/language-context";
 
@@ -42,7 +43,8 @@ type AdminMainTab =
   | "submissions"
   | "users"
   | "newsletter"
-  | "community";
+  | "community"
+  | "members";
 
 function defaultTabForUser(user: AdminPublicUser): AdminMainTab {
   if (clientHasPermission(user, "view_submissions")) return "submissions";
@@ -370,6 +372,15 @@ export function AdminApp() {
             Community
           </button>
         ) : null}
+        {showNewsletterTab ? (
+          <button
+            type="button"
+            onClick={() => setMainTab("members")}
+            className={`admin-tab ${mainTab === "members" ? "admin-tab--active" : ""}`}
+          >
+            Members
+          </button>
+        ) : null}
       </nav>
 
       {mainTab === "newsletter" && showNewsletterTab ? (
@@ -378,6 +389,10 @@ export function AdminApp() {
 
       {mainTab === "community" && showNewsletterTab ? (
         <AdminCommunityMembersPanel />
+      ) : null}
+
+      {mainTab === "members" && showNewsletterTab ? (
+        <AdminMembersPanel />
       ) : null}
 
       {mainTab === "users" && showUsersTab ? (

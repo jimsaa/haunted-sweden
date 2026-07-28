@@ -1,0 +1,59 @@
+{
+  "archives": [
+    {
+      "id": "book1",
+      "bookNumber": 1,
+      "edition": "sv",
+      "title": "Haunted Sweden – De första vittnesmålen",
+      "titleEn": "Haunted Sweden – The First Testimonies",
+      "status": "available",
+      "archiveId": "hs-a73fd9e2",
+      "summary": "Investigation archive for Book I (Swedish edition).",
+      "supports": ["photos", "maps", "historicalResearch", "downloads", "extraMaterial"]
+    },
+    {
+      "id": "book1e",
+      "bookNumber": 1,
+      "edition": "en",
+      "title": "Haunted Sweden – The First Testimonies",
+      "titleEn": "Haunted Sweden – The First Testimonies",
+      "status": "coming_soon",
+      "archiveId": null,
+      "summary": "English edition archive — reserved for Book1E.",
+      "supports": ["photos", "maps", "historicalResearch", "downloads", "extraMaterial"]
+    },
+    {
+      "id": "book2",
+      "bookNumber": 2,
+      "edition": "sv",
+      "title": "Haunted Sweden – Book II",
+      "titleEn": "Haunted Sweden – Book II",
+      "status": "planned",
+      "archiveId": null,
+      "summary": "Future Swedish edition archive slot.",
+      "supports": ["photos", "maps", "historicalResearch", "downloads", "extraMaterial"]
+    },
+    {
+      "id": "book2e",
+      "bookNumber": 2,
+      "edition": "en",
+      "title": "Haunted Sweden – Book II (English)",
+      "titleEn": "Haunted Sweden – Book II (English)",
+      "status": "planned",
+      "archiveId": null,
+      "summary": "Future English edition archive slot.",
+      "supports": ["photos", "maps", "historicalResearch", "downloads", "extraMaterial"]
+    },
+    {
+      "id": "book3",
+      "bookNumber": 3,
+      "edition": "sv",
+      "title": "Haunted Sweden – Book III",
+      "titleEn": "Haunted Sweden – Book III",
+      "status": "planned",
+      "archiveId": null,
+      "summary": "Future Swedish edition archive slot.",
+      "supports": ["photos", "maps", "historicalResearch", "downloads", "extraMaterial"]
+    }
+  ]
+}
