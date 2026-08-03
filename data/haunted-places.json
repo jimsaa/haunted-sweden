@@ -1,5 +1,5 @@
 {
-  "version": 49,
+  "version": 50,
   "places": [
     {
       "id": "1",
@@ -4121,6 +4121,91 @@
       "legendSv": "FOLKLORE: Vita frun med lykta (ofta knuten till Anna Bielke — legend). Gråa damen. Spökpojke i moderna berättelser. Fängelseandar kopplade till fångars öden. OFFICIELLA SPÖKVANDRINGAR: t.ex. Svarta Damen / Tystad och begravd — blandar myt och mörk historia. VITTNESMÅL: fotsteg, viskningar, skuggor, dörrar, köld. OMRÅDEN: fängelse, kungavåningar, valv, borggård, slottskyrka.",
       "hauntedSwedenAppSummarySv": "Kalmar slott vid Kalmarsund är ett av Sveriges starkaste historiska mysteriemål — ca 800 år från kastal till Vasarenässans, länge kallat Rikets nyckel. Här knöts Kalmarunionen 1397; efter 1658 blev salarna fängelse. Domstolshandlingar 1645 dokumenterar Ölands-Jöddes terror bland medfångar. Folklore om Vita frun och Gråa damen samt slottets egna spökvandringar hålls isär från SFV:s och museets fakta. Besök utställningar året runt; boka officiella höstvandringar för mörkrets atmosfär.",
       "safetyNoteSv": "Aktivt museum och evenemang – besök under officiella tider via kalmarslott.se. Guidningar enligt entré; säsongens spökvandringar kräver egen biljett och åldersregler. Håll dig till tillåtna vägar; gå inte in i stängda torn eller fängelseytor utan guide. Respektera vallgrav, brandskydd och fotoregler. Ingen otillåten nattutredning inne i slottet."
+    },
+    {
+      "id": "50",
+      "slug": "furunaset",
+      "name": "Furunäset",
+      "englishName": "Furunäset (Former Furunäsets Sjukhus / Piteå Hospital och Asyl)",
+      "coverImage": "",
+      "category": "Haunted Accommodation",
+      "city": "Piteå",
+      "region": "Norrbotten",
+      "country": "Sweden",
+      "address": "Belonasvängen 2B, 941 52 Piteå, Sweden",
+      "latitude": 65.306,
+      "longitude": 21.454,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-submitted",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": true,
+      "hauntingLevel": 4,
+      "hauntedSwedenScore": 9.5,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "furunaset",
+        "pitea",
+        "former_asylum",
+        "psychiatric_hospital",
+        "historic_hospital",
+        "mental_health_history",
+        "ghost_legend",
+        "dark_history",
+        "norrbotten",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Furunäset in Piteå is northern Sweden's most significant former psychiatric hospital landscape — opened in 1893 as Piteå Hospital och Asyl, designed by Medicinalstyrelsen architect Axel Kumlien on Pitholmen, and for nearly a century the central institution for Upper Norrland. Thousands of patients passed through; many lived out decades behind its gates in a self-sufficient community of wards, workshops, farms and a landscaped park. A hospital cemetery (from 1898) holds roughly 900–970 burials — staff graves marked, most patient graves unmarked. Psychiatric care wound down around 1987 (centenary closure often dated 1993); today Furunäset Hotell och Konferens and a business village occupy the monumental brick complex. Guests and staff report shadows, footsteps and a watched feeling; TV paranormal programmes have filmed here. Haunted Sweden centres documented medical and social history — including isolation cells and long-term confinement — and treats ghost claims as anecdote. Walk the grounds; join Guidning i galenskapen / Journey into Madness when offered; book the hotel officially and respect patients' memory.",
+      "whyItFitsHauntedSweden": "Flagship Norrbotten dark-heritage site: 100 years of documented psychiatric care, nationally noted kulturmiljö, overnight hotel in former wards, patient cemetery, therapeutic park and pine waterfront, guided history storytelling (Journey into Madness). Visual 9.5/10, historical value 10/10, dark history 10/10, folklore strength 8.5/10, paranormal reputation 8.5/10 — Haunted Sweden Score 9.5. Premium content potential EXTREMELY HIGH; research confidence HIGH. Ideal verification mission: overnight, cemetery and park photography, Journey into Madness tour, archive research with ethical care, compare folklore with Piteå Museum / kulturmiljö sources.",
+      "shortDescription": "Piteå's 1893 Hospital och Asyl — Kumlien brick complex, patient cemetery and park, now hotel and conference amid Norrbotten pines.",
+      "history": "DOCUMENTED: Furunäset (historically Piteå hospital och asyl; later Furunäsets sjukhus) occupies Belonasvängen / Furunäset on western Pitholmen, Piteå, Norrbotten. FOUNDATION: Riksdag central-hospital policy from 1823; Serafimerordensgillet plan 1873 proposed care for Västerbotten–Norrbotten. In 1886 Medicinalstyrelsen director August Almén and architect Axel Kumlien surveyed sites; Pitholmen was chosen for ground, water, food supply and shelter from winds. Construction 1890–1893 (builder contract 1889); inaugurated 1893. First patient transfers included steamer arrivals of men and women from overcrowded hospitals elsewhere in Sweden (late October 1893 often cited). HOSPITAL vs ASYL: Under the 1858 Hospitalstadga, \"hospital\" meant a curative course institution; \"asyl\" meant long-term care for those judged incurable — both functions shared the same Piteå buildings. ARCHITECTURE: Axel Kumlien (Medicinalstyrelsen's hospital specialist; also Uppsala/Ulleråker, Kristinehamn/Marieberg, Lund/S:t Lars among others) designed a closed four-wing brick complex around a rectangular courtyard (\"Borgen\"), adapted to the northern climate; originally two storeys, third floor added 1927–30. Separate male/female wards; isolation and \"storm\" (agitated) departments; hospital church hall (now assembly space). Originally dozens of isolation cells (kulturmiljö sources cite on the order of 80+ isolationsrum). COMMUNITY & PARK: Large landscaped grounds in English-park tradition (grotto feature; later Belonaparken); farms, gardens, workshops and cold bathing supported a largely self-sufficient institutional economy and nature-oriented daily order. Cemetery laid out 1898; roughly 900–970 people buried (local tallies ~962–967) — staff memorial stones; patients largely unmarked. Peak mid-20th century around 800 patients. TREATMENTS (period medical practice): isolation and cell confinement; prolonged baths (långbad); later bed treatment, psychosurgery era and psychopharmacology (hibernal and related drugs quieting wards — remembered in local guided history). Third-party care on surrounding farms for capable patients. CLOSURE & REUSE: Large-scale psychiatric activity left around 1987; centenary/official end often given as 1993. Redeveloped as Furunäset Hotell och Konferens and företagsby (business village) while retaining high kulturhistoriskt value (Piteå Museum kulturmiljö analysis). DARK HISTORY (documented social/medical context — not paranormal claims): long-term forced institutionalisation; isolation wards; patients who remained for decades (media and tours highlight Anna Lindersson, admitted 1893, died 1960 — presented as among Sweden's longest involuntary confinements; diagnose details in press are secondary and journals remain partly sealed); deaths on site; cemetery of the forgotten; stigma of mental illness; hierarchical staff–patient life. Haunted Sweden approaches this as heritage of care and suffering, not entertainment at patients' expense.",
+      "legend": "FOLKLORE & MEDIA REPUTATION (not scientifically verified): Popular lists and local press call Furunäset one of Sweden's most haunted places, largely because of its asylum past. Anecdotes include shadow figures, footsteps in empty corridors, unexplained voices, feeling watched, cold spots and odd sounds in former wards and basements. Hotel guests and staff (including past owners quoted in Piteå-Tidningen) describe peripheral vision sightings and sensing someone who is not there. TV series Det okända filmed on site; SVT and local media have covered the haunted reputation alongside history. Museum educators have noted that many \"ghost\" stories cluster in basements — areas patients historically used least — a useful reminder to question folklore geography. GUIDED EXPERIENCES (documented cultural programming): \"Guidning i galenskapen\" / \"Journey into Madness\" — seasonal storytelling walking tour (Elin Johansson / Wabi-sabi via Visit Piteå), ~45 minutes from the marina by Heta Hyttan to the old patient cemetery, covering institutional history, care methods and individual fates. This is historical interpretation of a difficult past, not an official paranormal guarantee. Separate folklore ghost walks may be offered by storytellers; verify current programmes. SPECIAL AREAS: main hospital building (Borgen); former isolation / storm-cell corridors; historic park; cemetery; pine forest and Piteälven waterfront. ATMOSPHERE: Monumental brick, courtyard, park paths, ancient pines, quiet riverside — one of Sweden's strongest former-asylum environments. INVESTIGATION IDEAS: overnight hotel stay; Journey into Madness; cemetery documentation with respect; park EVP only where permitted; history vs folklore; mental-healthcare timeline. BEST CONDITIONS: autumn evenings, fog, rain after sunset, winter darkness, early morning mist. Keep DOCUMENTED hospital history separate from WITNESS anecdotes and media folklore above.",
+      "safetyNote": "Active hotel, conference centre and business village — book lodging only through official Furunäset Hotell channels. Respect private offices, residents and restricted wings. Cemetery and park: quiet, respectful behaviour; do not disturb graves or memorials. Guided history tours are bookable seasonally (Visit Piteå / Wabi-sabi); do not force entry to closed storm cells or basements. Night investigation only with permission; treat the site as a place of former patients' lives, not a thrill playground.",
+      "sourceLinks": [
+        "https://piteamuseum.nu/kulturmiljo/furunasets-sjukhus/",
+        "https://visitpitea.se/platser/furunaset-hotell-och-konferens/",
+        "https://visitpitea.se/en/products/journey-into-madness/",
+        "https://visitpitea.se/produkter/guidning-i-galenskapen/",
+        "https://psykmuseet.se/2015/04/pitea-hospital-furunasets-sjukhus-del-i/"
+      ],
+      "paranormalType": [
+        "Apparition",
+        "Footsteps",
+        "Voices",
+        "Temperature Changes",
+        "Heavy Atmosphere",
+        "Local Folklore"
+      ],
+      "accessType": "Paid Accommodation",
+      "familyFriendly": false,
+      "visitDifficulty": 1,
+      "nightAccess": true,
+      "parkingAvailable": true,
+      "guidedTours": true,
+      "publicAccess": false,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 0,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Belonasv%C3%A4ngen+2B,+941+52+Pite%C3%A5,+Sweden",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Piteås hospital och asyl från 1893 — Kumliens tegelkomplex, patientkyrkogård och park, idag hotell och konferens i norrbottnisk tallskog.",
+      "historySv": "DOKUMENTERAT: Furunäset (Piteå hospital och asyl; senare Furunäsets sjukhus), Pitholmen, Piteå. Platsval 1886 (Almén & Axel Kumlien); bygge 1890–93; invigt 1893. Hospital (botbara) och asyl (långvård) enligt 1858 års Hospitalsstadga i samma hus. Fyrlängad »Borgen«, tredje våning 1927–30. Isoleringsrum/stormavdelning; park, jordbruk, verkstäder; kyrkogård från 1898 (~900–970 begravda, patienter ofta omärkta). Topp ca 800 patienter. Behandlingar i tidens praxis: isolering, långbad, senare psykokirurgi/psykofarmaka. Psykiatrisk verksamhet avvecklad ca 1987 (jubileum/stängning ofta 1993). Idag hotell, konferens och företagsby — högt kulturhistoriskt värde (Piteå museum). Mörk historia: långvarig tvångsvård, isolering, dödsfall, stigma — inte spökbevis.",
+      "legendSv": "FOLKLORE & MEDIA: Ofta kallad en av Sveriges mest hemsökta platser. Vittnesmål: skuggor, fotsteg, röster, känsla av att bli iakttagen, köld. Det okända m.fl. har filmat. GUIDNING: Guidning i galenskapen / Journey into Madness (~45 min) till patientkyrkogården — historieberättelse, inte bevis för spöken. OMRÅDEN: Borgen, isoleringskorridorer, park, kyrkogård, tallskog/älv.",
+      "hauntedSwedenAppSummarySv": "Furunäset i Piteå är norra Sveriges viktigaste tidigare sinnessjukhusmiljö — invigd 1893 som Piteå hospital och asyl efter Axel Kumliens ritningar, upptagningsområde Övre Norrland i nästan hundra år. Tusentals patienter; kyrkogård med omkring tusen gravar; park och självförsörjande institutionsliv. Idag hotell och företagsby. Gäst- och personalberättelser om skuggor och fotsteg samt guidningen Guidning i galenskapen hålls isär från dokumenterad vårdhistoria. Boka officiellt; visa respekt för dem som levde och dog här.",
+      "safetyNoteSv": "Aktivt hotell, konferens och företagsby – boka endast via officiella kanaler. Respektera kontor, boende och stängda längor. Kyrkogård och park: tystnad och respekt; rör inte gravar. Historieguidningar bokas säsongsvis; tvinga dig inte in i stormceller eller källare. Nattutredning endast med tillstånd. Platsen är före detta patienters livsmiljö — inte en thrillpark."
     }
   ]
 }
