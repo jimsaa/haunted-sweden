@@ -1,5 +1,5 @@
 {
-  "version": 38,
+  "version": 39,
   "places": [
     {
       "id": "1",
@@ -3198,6 +3198,87 @@
       "legendSv": "FOLKLORE — PINTORPAFRUN (en av Sveriges mest kända slottsägner, ej fakta): Grym (eller missförstådd) fru som pinade tjänstefolk och torpare och går igen. Namnet knyts till Pintorp. Traditionen pekar på Anna Karlsdotter eller Beata von Yxkull; forskare betonar att det är en vandringssägen och att Beata saknar belägg för grymhet. VITTNESMÅL: kvinnlig gestalt, fotsteg, köld, känsla av att bli iakttagen. OMRÅDEN: slottsfasad, barockpark, gård, lindalléer. Håll isär från dokumenterad godshistoria.",
       "hauntedSwedenAppSummarySv": "Ericsbergs slott nära Katrineholm är ett av Sveriges finaste barockslott — dokumenterat som Pintorp 1508, ombyggt från 1650-talet under Gyllenstierna och Beata von Yxkull, senare Hildebrand och Bonde. Hit hör legenden om Pintorpafrun, Sveriges mest kända pinande slottsfru — folklore, inte bevisad historia. Park och visningar under öppettider; slottet privat. Haunted Sweden skiljer arkiv från sägen.",
       "safetyNoteSv": "Privatägt gods – slottsinteriören är i regel stängd. Använd endast officiella öppningar för barockparken, café och guidade visningar. Håll dig till tillåtna stigar; gå inte in i stängda byggnader eller områden efter stängning. Respektera privat egendom. Nattutredning endast i öppna/allmänna områden med tillstånd."
+    },
+    {
+      "id": "39",
+      "slug": "dylta-bruk",
+      "name": "Dylta Bruk",
+      "englishName": "Dylta Works",
+      "coverImage": "",
+      "category": "Manor / Estate",
+      "city": "Dyltabruk",
+      "region": "Närke",
+      "country": "Sweden",
+      "address": "718 97 Dyltabruk, Örebro County, Sweden",
+      "latitude": 59.387,
+      "longitude": 15.263,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-submitted",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": false,
+      "hauntingLevel": 4,
+      "hauntedSwedenScore": 8.8,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "dylta_bruk",
+        "industrial_heritage",
+        "sulfur_works",
+        "orebro",
+        "historic_manor",
+        "kung_jans_kalla",
+        "mines",
+        "folklore",
+        "historical_mystery",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Dylta Bruk, about 15 km north of Örebro in Axberg parish (Närke), is Sweden's oldest sulphur works — deposits found in the late 1570s under Duke Charles (later Charles IX), with industrial production starting in 1583. For centuries it was the country's only sulphur mill, also producing alum, vitriol and Dylta red pigment (from 1586, long before Falu rödfärg fame; red-paint production lasted into the 1940s). The landscape still holds mine openings, industrial remains, workers' buildings, a clock tower from the former bruk church, a historic cemetery, and a manor mainly of the 1700s remodelled in the 1850s. Local folklore centres on Kung Jans Källa — a Trinity spring tradition linked to King Johan III and healing water, even though the mill itself began after the legendary 1576 plague visit. Documented labour was harsh: underground mining, sulphur fumes and generations living at the works. Haunted Sweden separates industrial records from spring legends and atmospheric witness reports. Visit as cultural heritage — respect private manor areas and mine safety.",
+      "whyItFitsHauntedSweden": "A different Haunted Sweden destination beyond castles and churches: nationally significant industrial heritage (riksintresse), 400+ years of documented sulphur and pigment industry, preserved manor–mine–cemetery landscape, and Kung Jans Källa folklore. Visual 8.5/10, historical value and industrial heritage 10/10, folklore 8/10, paranormal reputation 7.5/10 — Haunted Sweden Score 8.8. Premium content potential HIGH; research confidence HIGH. Future mission: exterior and mine-entrance documentation, EVP near industrial buildings (safely), spring visit, local historians, drone of the estate.",
+      "shortDescription": "Sweden's first sulphur works (1583) north of Örebro — mines, manor, cemetery and the healing-spring lore of Kung Jans Källa.",
+      "history": "DOCUMENTED: Dylta Bruk (718 97 Dyltabruk, Axbergs socken, Örebro municipality, Närke) began after sulphur ore (svavelkis) was found southeast of Dylta village in the late 1570s within Duke Charles's duchy. The duke ordered a sulphur works; construction 1580–1582, production from 1583 — long Sweden's only sulphur mill and a key source for gunpowder sulphur, later export surplus. Vitriol, alum (Bastian Heisler from Germany, 1586) and red-paint burning (from 1586; continued until c. 1941–1942) made Dylta one of Sweden's earliest chemical industries. Crown, then leaseholders from Hans Leffler (1631); Henrik Barckhusen received privileges from Queen Christina (1649), including the right of the royal family to lodge at Dylta during epidemics because sulphur smoke was believed to keep contagion away — a documented privilege distinct from the Johan III spring legend. Later Casten Feif, then the Åkerhielm family for ~275 years from 1739; from 2014 related Roos ownership. The estate formed its own bruk parish/chapel congregation for periods (own preacher from early eras; parish roughly 1688–1818); church later demolished — clock tower (klockstapel, 1714) and cemetery (from 1712, still in use) remain. Manor (corps de logi) mainly 1700s, remodelled mid-1800s; 'Klostret' likely a 1500s storehouse, now museum. Mining and industrial traces survive as an industrimuseum within a riksintresse cultural environment; modern estate focuses on forestry, aquaculture, hunting and property. DARK HISTORY (documented context): centuries of dangerous underground mining, sulphur fumes, hard labour, industrial accidents, and workers who lived their lives at the isolated mill community — plus the historic cemetery of the bruk congregation — without inventing hauntings from these facts.",
+      "legend": "FOLKLORE — KUNG JANS KÄLLA (not verified as royal or medicinal fact): Local tradition says King Johan III (and sometimes Katarina Jagellonica) fled plague to Dylta around 1576 and visited a spring later called Kung Jans Källa. The spring became a Trefaldighetskälla — people gathered on Trinity Eve believing the water had healing powers. Site heritage texts note the tale's timing problem: the sulphur works did not exist until the early 1580s, so the 1576 'escape to the mill' story is legend, even if plague-refuge privileges appear later in 1649 documents for different reasons (sulphur smoke). WITNESS REPORTS & ATMOSPHERE (unverified): feeling watched near abandoned industrial buildings; unusual silence around old mines; strange sounds at the former sulphur works; heavy atmosphere in preserved buildings; local lore of former workers; cemetery and industrial landscape stories. SPECIAL AREAS: former sulphur works; old mine area (dangerous — do not enter workings); historic manor (private residence); cemetery; Kung Jans Källa. ATMOSPHERE: manor, mine mouths, industrial buildings, forest, quiet countryside, clock tower, fog on mill grounds. INVESTIGATION IDEAS: map industrial timeline vs spring folklore; safe exterior night walk; EVP near buildings not inside mines; photograph cemetery and tower with respect. BEST CONDITIONS: autumn evenings, heavy fog, rain, winter darkness, early morning mist. Keep DOCUMENTED industry separate from FOLKLORE above.",
+      "safetyNote": "Active private estate and cultural heritage site — follow official visitor information (dyltabruk.se). Do not enter mine openings, shafts or unstable industrial structures. Respect the private manor, cemetery etiquette and closed buildings. Stay on permitted paths; no trespassing after hours. Night investigation only in publicly accessible outdoor areas with permission.",
+      "sourceLinks": [
+        "https://dyltabruk.se/historik/",
+        "https://dyltabruk.se/kulturmiljovard/",
+        "https://sv.wikipedia.org/wiki/Dylta_bruk"
+      ],
+      "paranormalType": [
+        "Heavy Atmosphere",
+        "Local Folklore",
+        "Footsteps",
+        "Temperature Changes"
+      ],
+      "accessType": "Guided Visits",
+      "familyFriendly": true,
+      "visitDifficulty": 2,
+      "nightAccess": false,
+      "parkingAvailable": true,
+      "guidedTours": true,
+      "publicAccess": true,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 0,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Dylta+Bruk,+718+97+Dyltabruk,+Sweden",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Sveriges första svavelbruk (1583) norr om Örebro — gruvor, herrgård, kyrkogård och sägnen om Kung Jans källa.",
+      "historySv": "DOKUMENTERAT: Dylta bruk, Axbergs socken, Örebro kommun (Närke). Svavelkis hittades sent 1570-tal i hertig Karls hertigdöme; svavelbruk 1580–1582, drift från 1583 — länge landets enda. Även vitriol, alun och rödfärg (från 1586 till ca 1941–42). Privilegier 1649 (bl.a. kungligt logi vid farsoter p.g.a. svavelrök). Åkerhielm i ~275 år; idag släktägande. Bruksförsamling periodvis; klockstapel 1714 och kyrkogård från 1712 kvar. Herrgård 1700-tal, ombyggd 1850-tal. Riksintresse industrimiljö med museum. Mörk historia som kontext: farlig gruvdrift, svavelrök, slitsamt arbete och isolerat brukssamhälle — ej automatiska spökpåståenden.",
+      "legendSv": "FOLKLORE — KUNG JANS KÄLLA: Sägen om Johan III:s pestflykt till Dylta ca 1576 och en helgekälla (trefaldighetskälla). Kulturmiljötexter påpekar att svavelbruket inte fanns då — legenden är alltså tidsmässigt problematisk jämfört med dokumenterad drift från 1583. VITTNESMÅL/ATMOSFÄR: känsla av att bli iakttagen, tystnad vid gruvor, ljud vid industribyggnader, tung stämning — ej bevisat. OMRÅDEN: svavelverk, gruvområde (farligt), herrgård, kyrkogård, källan.",
+      "hauntedSwedenAppSummarySv": "Dylta bruk norr om Örebro är Sveriges äldsta svavelbruk — drift från 1583 under hertig Karl, med gruvor, rödfärg, herrgård, klockstapel och brukskyrkogård. Hit hör också sägnen om Kung Jans källa och trefaldighetsvatten, medan Haunted Sweden håller isär industrihistoria och folklore. Ett annorlunda Haunted Sweden-mål: industriarv, dimma och arbetarnas spår. Respektera privat herrgård och gruvsäkerhet.",
+      "safetyNoteSv": "Aktivt privat gods och kulturmiljö – följ officiell besöksinformation. Gå inte in i gruvhål, schakt eller ostadiga industrilämningar. Respektera privat herrgård, kyrkogårdsetikett och stängda byggnader. Håll dig till tillåtna stigar. Nattutredning endast i tillgängliga utomhusområden med tillstånd."
     }
   ]
 }
