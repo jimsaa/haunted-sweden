@@ -4,6 +4,7 @@ import type { MetadataRoute } from "next";
 import { getApprovedPlaces } from "@/lib/places";
 import { getSpokjaktEntries } from "@/lib/spokjakt-archive";
 import { SITE_URL } from "@/lib/seo/constants";
+import { isCommunityEnabled } from "@/lib/features";
 
 const DATA_FILES = [
   "data/haunted-places.json",
@@ -54,12 +55,16 @@ export async function buildSitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.5,
     },
-    {
-      url: `${SITE_URL}/community`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
+    ...(isCommunityEnabled()
+      ? [
+          {
+            url: `${SITE_URL}/community`,
+            lastModified,
+            changeFrequency: "weekly" as const,
+            priority: 0.8,
+          },
+        ]
+      : []),
     {
       url: `${SITE_URL}/investigations`,
       lastModified,

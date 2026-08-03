@@ -2,6 +2,17 @@
 
 Public conversion page: `/community`
 
+## Feature flag (temporary hide)
+
+Public Community is controlled by:
+
+```bash
+ENABLE_COMMUNITY=false   # default — hide nav, 404 /community, omit sitemap
+ENABLE_COMMUNITY=true    # restore public landing automatically
+```
+
+Set on Vercel / `.env.local`. No files are deleted — only gated.
+
 ## Content
 
 Edit `content/community/landing.json` — no code changes needed for:

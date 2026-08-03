@@ -31,8 +31,14 @@ export function MembersCommunityPage() {
         <h1 className="members-h1">Research Network</h1>
         <p className="members-lead">
           A private channel for investigators — field reports, photographs, and
-          research threads. Public interest signup remains at{" "}
-          <a href="/community">/community</a>.
+          research threads.
+          {process.env.NEXT_PUBLIC_ENABLE_COMMUNITY === "true" ? (
+            <>
+              {" "}
+              Public interest signup remains at{" "}
+              <a href="/community">/community</a>.
+            </>
+          ) : null}
         </p>
       </header>
 

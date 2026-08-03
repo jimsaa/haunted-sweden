@@ -8,6 +8,7 @@ import { LanguageToggle } from "@/components/LanguageToggle";
 import { useLanguage } from "@/lib/language-context";
 import { getTranslations } from "@/lib/i18n";
 import { useClientMounted } from "@/lib/use-client-mounted";
+import { isCommunityEnabled } from "@/lib/features";
 
 /** Matches server render (LanguageProvider initial state is always `en` on SSR). */
 const SSR_LABELS = getTranslations("en");
@@ -21,6 +22,7 @@ export function SiteHeader() {
   const onSubmitPage = pathname === "/submit";
   const onArchivePage = pathname?.startsWith("/archive/");
   const onMembersPage = pathname?.startsWith("/members");
+  const showCommunity = isCommunityEnabled();
 
   if (onArchivePage || onMembersPage) return null;
 
@@ -50,12 +52,14 @@ export function SiteHeader() {
           >
             {labels.navSpokjakt}
           </Link>
-          <Link
-            href="/community"
-            className="text-sm text-white/70 hover:text-white transition-colors hidden sm:inline"
-          >
-            {labels.navCommunity}
-          </Link>
+          {showCommunity ? (
+            <Link
+              href="/community"
+              className="text-sm text-white/70 hover:text-white transition-colors hidden sm:inline"
+            >
+              {labels.navCommunity}
+            </Link>
+          ) : null}
           <div className="site-header-submit-wrap">
             <Link
               href="/submit"

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { COMMUNITY_SOURCE } from "@/lib/community/landing";
+import { isCommunityEnabled } from "@/lib/features";
 import { getSupabaseAdmin, isSupabaseConfigured } from "@/lib/supabase/admin";
 
 type Body = {
@@ -12,6 +13,10 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function POST(request: Request) {
   try {
+    if (!isCommunityEnabled()) {
+      return NextResponse.json({ error: "Not found." }, { status: 404 });
+    }
+
     if (!isSupabaseConfigured()) {
       console.error("[community/join] Supabase not configured");
       return NextResponse.json(
