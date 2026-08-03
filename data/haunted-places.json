@@ -1,5 +1,5 @@
 {
-  "version": 39,
+  "version": 40,
   "places": [
     {
       "id": "1",
@@ -3279,6 +3279,88 @@
       "legendSv": "FOLKLORE — KUNG JANS KÄLLA: Sägen om Johan III:s pestflykt till Dylta ca 1576 och en helgekälla (trefaldighetskälla). Kulturmiljötexter påpekar att svavelbruket inte fanns då — legenden är alltså tidsmässigt problematisk jämfört med dokumenterad drift från 1583. VITTNESMÅL/ATMOSFÄR: känsla av att bli iakttagen, tystnad vid gruvor, ljud vid industribyggnader, tung stämning — ej bevisat. OMRÅDEN: svavelverk, gruvområde (farligt), herrgård, kyrkogård, källan.",
       "hauntedSwedenAppSummarySv": "Dylta bruk norr om Örebro är Sveriges äldsta svavelbruk — drift från 1583 under hertig Karl, med gruvor, rödfärg, herrgård, klockstapel och brukskyrkogård. Hit hör också sägnen om Kung Jans källa och trefaldighetsvatten, medan Haunted Sweden håller isär industrihistoria och folklore. Ett annorlunda Haunted Sweden-mål: industriarv, dimma och arbetarnas spår. Respektera privat herrgård och gruvsäkerhet.",
       "safetyNoteSv": "Aktivt privat gods och kulturmiljö – följ officiell besöksinformation. Gå inte in i gruvhål, schakt eller ostadiga industrilämningar. Respektera privat herrgård, kyrkogårdsetikett och stängda byggnader. Håll dig till tillåtna stigar. Nattutredning endast i tillgängliga utomhusområden med tillstånd."
+    },
+    {
+      "id": "40",
+      "slug": "graborg",
+      "name": "Gråborg",
+      "englishName": "Graborg Ringfort",
+      "coverImage": "",
+      "category": "Legend Site",
+      "city": "Färjestaden",
+      "region": "Öland",
+      "country": "Sweden",
+      "address": "Gråborg, 386 90 Färjestaden, Öland, Sweden",
+      "latitude": 56.603,
+      "longitude": 16.584,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-submitted",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": false,
+      "hauntingLevel": 5,
+      "hauntedSwedenScore": 9.5,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "graborg",
+        "oland",
+        "ringfort",
+        "iron_age",
+        "ancient_fort",
+        "st_knuts_chapel",
+        "archaeology",
+        "folklore",
+        "historical_mystery",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Gråborg, east of Färjestaden in Algutsrum parish on Öland, is the island's largest ancient ringfort (fornborg) — a massive limestone circuit roughly 210 m across (wall length about 640 m), begun in the Migration Period around AD 300–500 and used through turbulent Iron Age centuries until about AD 700. In the High Middle Ages it was reused as a strengthened administrative and trading centre (late 1100s–c. 1300), with higher walls and stone gate towers; the western medieval gateway still survives — unique among Öland's ringforts. Adjacent St. Knut's Chapel (late 12th century, abandoned in the 1500s) served the Borg–Gråborg community; altar furnishings now stand in Algutsrum church, and burials have been found near the chapel. Managed by the Royal Swedish Academy of Letters as a public heritage landscape with Borg village meadows and oaks. Folklore speaks of hidden treasure, ghostly lights, night sounds and ancient warriors — keep these separate from dig finds of houses, artefacts and coins. One of Sweden's most cinematic prehistoric places after sunset; stay on paths and respect the ruins.",
+      "whyItFitsHauntedSweden": "Öland flagship archaeology: Sweden's / Öland's largest ringfort, 1,500+ years of use from Migration Period defence to medieval trade, surviving medieval gate, St. Knut's Chapel ruins, Mittland forest setting. Visual, historical and archaeological importance 10/10; folklore 9/10; paranormal reputation 8/10 — Haunted Sweden Score 9.5. Premium content potential EXTREMELY HIGH; research confidence HIGH. Future mission: night photography, drone at blue hour, EVP inside walls with care, chapel ruins, historian interviews, treasure-legend documentation vs excavation records. Complements southern Öland's UNESCO agricultural landscape as a prehistoric storytelling destination on the same island.",
+      "shortDescription": "Öland's largest Iron Age ringfort — limestone walls, medieval St. Knut's Chapel ruins, and deep local folklore after dark.",
+      "history": "DOCUMENTED: Gråborg (also medieval Backa borg) stands by Borgs by, Algutsrum parish, ~10 km east of Färjestaden, Öland (Kalmar County), in the Mittlandsskogen. Built as a major fortification around AD 300 and used in unsettled times until about AD 700 (Migration Period / Iron Age). The ring is among Sweden's largest of its type — wall circuit c. 640 m, diameter on the order of 210 m; original walls of limestone were several metres high (sources cite up to ~7 m in reconstructed understanding of the massive circuit) with multiple small gateways. From the late 1100s to about 1300 the fort was reused, likely as a central Öland administrative and commercial hub: walls raised and thickened, stone gate towers added (western arched gateway survives). Medieval finds emphasise trade more than warfare; the site was taxed in salt when held by Vadstena monastery (c. 1450). It saw later military use, including during the 1677 war against Denmark. St. Knut's Chapel — nave, choir and apse, dedicated to the Danish saint Canute — was built in the late 12th century beside the fort complex, expanded in the Gothic period, abandoned in the 16th century (bell confiscated in the 1560s); a smaller graveyard is indicated by skeletons and stones nearby. Excavations and surveys (including 1920s gate work and later limited digs) have produced house foundations, artefacts, coins and occupation evidence, though deep layers remain incompletely explored. The Royal Swedish Academy of Letters acquired Borgs by in the 1940s to conserve and open the fort, chapel ruins, meadows and traditional farm landscape to the public. DARK HISTORY (documented context): Iron Age conflict climate that motivated fort-building, possible raids and invasions in the Migration Period Baltic world, medieval power struggles over Baltic trade, abandonment of the chapel and settlement thinning — without inventing specific battles from folklore alone.",
+      "legend": "FOLKLORE (not archaeological fact): Local and visitor tradition around Öland's fornborgar often includes hidden treasure under the walls, ghostly lights (lyktemän / unexplained lights), strange night sounds, legends of ancient warriors, and unease around abandoned chapel ruins — including beliefs that ancient forts should not be disturbed after sunset. Haunted Sweden records these as oral and popular lore unless tied to a specific published source. WITNESS REPORTS (unverified): feeling watched inside the ring; sudden silence; cold spots; unexplained lights; shadow-like figures; strange echoes; heavy atmosphere among the limestone walls — shared by visitors over the years. SPECIAL AREAS: main ring wall; St. Knut's Chapel ruins; central settlement area; southern / historic gates (local legend associations). ATMOSPHERE: circular limestone walls, open Öland landscape and oaks, chapel ruins, wide night skies, fog through the circuit, deep silence after sunset — highly cinematic. INVESTIGATION IDEAS: map folklore vs published digs; night photography from permitted paths; careful EVP; sunrise/sunset drone where legal; interview local historians. BEST CONDITIONS: autumn evenings, full moon, heavy fog, winter darkness, blue hour, early mist. Keep DOCUMENTED archaeology separate from FOLKLORE above.",
+      "safetyNote": "Open archaeological heritage site — stay on marked paths. Do not climb unstable wall sections, dig, remove stones or artefacts (protected ancient monument). Respect chapel ruins and any burial ground. Watch for uneven ground after dark; bring a torch. Follow guidance from the site manager (Vitterhetsakademien) and local Öland visitor rules. Night visits: keep noise low, leave no trace.",
+      "sourceLinks": [
+        "https://www.vitterhetsakademien.se/english/the-royal-swedish-academy-of-letters-history-and-antiquities/heritage-properties/borg-and-graborg.html",
+        "https://www.oland.se/en/graborg-st-knuts-chapel",
+        "https://www.naturkartan.se/en/kalmar-lan/graborg"
+      ],
+      "paranormalType": [
+        "Heavy Atmosphere",
+        "Local Folklore",
+        "Apparition",
+        "Temperature Changes",
+        "Shadow Figures"
+      ],
+      "accessType": "Public Landmark",
+      "familyFriendly": true,
+      "visitDifficulty": 2,
+      "nightAccess": true,
+      "parkingAvailable": true,
+      "guidedTours": false,
+      "publicAccess": true,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 0,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gr%C3%A5borg,+386+90+F%C3%A4rjestaden,+Sweden",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Ölands största järnåldersfornborg — kalkstensmurar, Sankt Knuts kapellruin och djup lokal folklore efter mörkrets inbrott.",
+      "historySv": "DOKUMENTERAT: Gråborg (medeltida Backa borg) vid Borgs by, Algutsrums socken, Öland — öns största fornborg, mur ca 640 m, diameter ca 210 m. Anlagd ca 300 e.Kr., brukad till ca 700; återanvänd sent 1100-tal–ca 1300 som förvaltnings- och handelscentrum med förstärkta murar och porttorn (västra portvalvet bevarat). Sankt Knuts kapell sent 1100-tal, övergivet på 1500-talet; gravfynd intill. Fynd av husgrunder, föremål och mynt. Vitterhetsakademien förvaltar. Mörk historia som kontext: folkvandringstidens oroligheter, medeltida maktkamp och övergivet kapell — utan påhittade slag från sägner.",
+      "legendSv": "FOLKLORE (ej arkeologisk fakta): Skatter under murarna, spökljus, nattljud, forntida krigare, oro kring kapellruinen och varningar mot att störa fornborgar efter solnedgång. VITTNESMÅL: känsla av att bli iakttagen, tystnad, köld, ljus, skuggor, ekon, tung atmosfär. OMRÅDEN: ringmuren, Sankt Knuts kapell, central yta, portar. Håll isär från dokumenterade utgrävningar.",
+      "hauntedSwedenAppSummarySv": "Gråborg öster om Färjestaden är Ölands största fornborg från folkvandringstiden — väldiga kalkstensmurar, medeltida återbruk och Sankt Knuts kapellruin. Arkeologi visar bosättning och handel; folklore talar om skatter, ljus och forntida krigare. Haunted Sweden skiljer fynd från sägen. Ett av Sveriges mest filmiska forntidsmål efter solnedgång — håll dig till stigar.",
+      "safetyNoteSv": "Öppen fornlämning – håll dig till markerade stigar. Klättra inte på ostadiga murpartier, gräv inte och ta inte stenar eller fynd. Respektera kapellruinen och eventuella gravområden. Ojämn mark i mörker — ta ficklampa. Följ Vitterhetsakademiens och Ölands besöksregler. Nattbesök: låg ljudnivå, lämna inga spår."
     }
   ]
 }
