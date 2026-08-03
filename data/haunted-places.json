@@ -1,5 +1,5 @@
 {
-  "version": 35,
+  "version": 36,
   "places": [
     {
       "id": "1",
@@ -2945,6 +2945,91 @@
       "legendSv": "FOLKLORE & VITTNESMÅL (ej vetenskapligt verifierat): Fotsteg i tomma korridorer, röster, dörrar som öppnas eller stängs, köldfläckar, känsla av att bli iakttagen, och figurer i munkvanor — ofta knutna till kartusianermunkar från Pax Mariae. Rum 115 och 210 samt vinkällaren nämns oftast; gäster berättar om täcken som rör sig som om de stoppas om. Slottsanekdoter i regionen (t.ex. rörliga dörrvred) behandlas som närliggande folklore, inte som bevis för värdshuset. Atmosfär: träinteriörer, antikt, ljusstakar, tysta korridorer efter midnatt — starkast höst, vinter och regn.",
       "hauntedSwedenAppSummarySv": "Gripsholms värdshus i Mariefred är ett av Sveriges äldsta värdshus i drift — privilegier 13 februari 1609 under Karl IX, invid Gripsholms slott på mark från klostret Pax Mariae. I över 400 år har resande och kungligheter gästat huset. Folklore och vittnesmål talar om fotsteg, röster, kalla fläckar och munkgestalter — särskilt rum 115, 210 och vinkällaren — medan Haunted Sweden håller isär dokumenterad historia och legend. Boka officiellt; höst- och vinternätter med promenad mot slottet gör platsen idealisk för övernattningsutredning.",
       "safetyNoteSv": "Aktivt historiskt hotell och restaurang – boka endast via officiella kanaler. Respektera gäster, personal, brandskydd och nattlig tystnad. Filma eller utred inte i korridorer, vinkällare eller andras rum utan tillstånd; önskemål om rum (t.ex. 115 eller 210) beror på tillgång. Vid nattpromenad till Gripsholms slott: håll dig till allmänna stigar och följ slottets regler."
+    },
+    {
+      "id": "36",
+      "slug": "home-hotel-bilan",
+      "name": "Home Hotel Bilan",
+      "englishName": "Home Hotel Bilan",
+      "coverImage": "",
+      "category": "Haunted Accommodation",
+      "city": "Karlstad",
+      "region": "Värmland",
+      "country": "Sweden",
+      "address": "Karlbergsgatan 3, 652 24 Karlstad, Sweden",
+      "latitude": 59.378,
+      "longitude": 13.503,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-submitted",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": true,
+      "hauntingLevel": 5,
+      "hauntedSwedenScore": 9.6,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "home_hotel_bilan",
+        "karlstad_prison",
+        "anders_lindback",
+        "arsenic_priest",
+        "former_prison",
+        "haunted_hotel",
+        "overnight_stay",
+        "ghost_legend",
+        "varmland",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Home Hotel Bilan in central Karlstad is one of Sweden's best-known haunted hotels — housed inside Värmland's former county cellular prison (Länscellfängelset), opened in 1847 with about 80 cells and closed as a prison in 1968. The building later served psychiatric care before conversion to a hotel (Hotell Bilan from 1985; today Home Hotel Bilan), preserving thick walls, iron-door atmosphere and a small prison museum in the basement. Documented dark history includes the Silbodal priest Anders Lindbäck: convicted of arsenic poisonings in the 1860s, sentenced to death, and dying by suicide in his cell on 20 November 1865 while awaiting execution. Folklore says his presence never left; hotel and media stories often link unexplained experiences to former cell areas — especially room 204 in contemporary marketing — with staff and guest reports of footsteps, cold spots, cell-door sounds and an oppressive feel in older vaults. Haunted Sweden separates court and prison records from witness accounts and legend. Book officially for one of Sweden's strongest overnight investigation settings.",
+      "whyItFitsHauntedSweden": "Flagship Värmland haunted accommodation: authentic former länsfängelse (1847–1968), preserved cellular architecture, prison museum, psychiatric-ward phase, and Sweden's signature Arsenic Priest legend tied to documented prisoner Anders Lindbäck. Visual rating 9/10, historical value and dark history 10/10, paranormal reputation 9/10, overnight investigation potential 10/10 — Haunted Sweden Score 9.6. Premium content potential EXTREMELY HIGH; research confidence HIGH. Ideal verification mission: overnight, EVP in former corridors and basement, museum visit, staff interviews, compare guest reports with historical records.",
+      "shortDescription": "Karlstad's former county prison (1847) turned hotel — original cells, prison museum, and the Arsenic Priest legend of Anders Lindbäck.",
+      "history": "DOCUMENTED: Home Hotel Bilan occupies Karlbergsgatan 3, Karlstad (Värmland) — the former Länscellfängelset i Karlstad (later Straffängelset i Karlstad), opened 1847 among Sweden's early cellular prisons after the 1844 riksdag reform. Capacity about 81 places (78 light cells, 3 dark/isolation cells); inmate labour historically included bags, matchboxes, brushes and carpentry. From 1911 the larger county cellular prisons including Karlstad were redesignated straffängelse. Kriminalvården left the building in 1968. The property later also served psychiatric care before hotel conversion; Hotell Bilan opened after rebuilding in 1985 (today Home Hotel Bilan / Strawberry). Much original prison character remains: corridor layout, thick stone walls, iron doors, cell volumes adapted as guest rooms, and a small prison museum in the basement. Notable documented inmates include Anders Lindbäck (the Silbodal priest), among others recorded in prison history. ANDERS LINDBÄCK (documented crime & death — not paranormal): Vicar Anders Lindbäck (1803–1865) of Silbodal was convicted in 1865 of murder by arsenic poisoning of parishioners (communion wine and related acts in the mid-1860s; at least three deaths established in court records / biographical sources). Sentenced to death by beheading; while awaiting execution in Karlstad prison he died by suicide by hanging on 20 November 1865. DARK HISTORY (documented context): solitary cellular confinement, illness and despair among inmates, executions sentenced by Swedish courts in the era (Lindbäck's sentence was not carried out due to suicide), and later psychiatric use of the building add layers of isolation and suffering — Haunted Sweden does not invent hauntings from these facts alone.",
+      "legend": "FOLKLORE & WITNESS REPORTS (not scientifically verified): Local and hotel tradition holds that Anders Lindbäck's spirit never left the prison; he remains the building's most famous ghost story (the Arsenic Priest / Silbodal priest). Contemporary hotel and media coverage often associates unexplained experiences with former cell areas — room 204 is highlighted in Strawberry/Home Hotel marketing as linked to Lindbäck folklore. Staff and guest reports over many years describe: reluctance to enter certain basement areas alone; feeling watched in former prison sections; cold spots; footsteps in empty corridors; unexplained sounds from cell doors; strange shadows; and an uncomfortable atmosphere in old prison vaults. Mediums and Halloween promotions have amplified the legend; Haunted Sweden treats these as folklore and anecdotal witness reports, not proven paranormal events. SPECIAL AREAS: former prison cells (guest rooms / detention volumes — most reported experiences); basement vaults (strong historical atmosphere, frequently mentioned by staff); museum area (prison history displays); historic corridors (footsteps and unusual sounds). ATMOSPHERE: original prison corridors, cells as rooms, thick walls, iron doors, preserved architecture, museum authenticity, hush after midnight — one of Sweden's most unique overnight stays. INVESTIGATION IDEAS: overnight in the prison hotel; focus on Lindbäck legend vs records; EVP in former cells and corridors; basement night session; museum after dark (with permission); compare guest reports with court and prison history. BEST CONDITIONS: overnight, autumn evenings, winter darkness, rain, quiet weekdays. Keep DOCUMENTED prison/Lindbäck facts separate from FOLKLORE above.",
+      "safetyNote": "Active hotel — book only through official channels (Home Hotel Bilan / Strawberry). Respect guests, staff, fire rules and night quiet. Do not film or investigate in corridors, basement museum areas or other guests' rooms without permission; room requests (including 204) depend on availability. Basement and museum access follow hotel rules.",
+      "sourceLinks": [
+        "https://sv.wikipedia.org/wiki/L%C3%A4nscellf%C3%A4ngelset_i_Karlstad",
+        "https://en.wikipedia.org/wiki/Anders_Lindb%C3%A4ck_(vicar)",
+        "https://www.strawberry.se/blog/sverige/spokhistoria-home-hotel-bilan/",
+        "https://www.strawberryhotels.com/blog/sweden/the-ghost-story-of-home-hotel-bilan/"
+      ],
+      "paranormalType": [
+        "Footsteps",
+        "Voices",
+        "Temperature Changes",
+        "Object Movement",
+        "Heavy Atmosphere",
+        "Local Folklore",
+        "Apparition"
+      ],
+      "accessType": "Paid Accommodation",
+      "familyFriendly": true,
+      "visitDifficulty": 1,
+      "nightAccess": true,
+      "parkingAvailable": true,
+      "guidedTours": false,
+      "publicAccess": false,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 0,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Karlbergsgatan+3,+652+24+Karlstad,+Sweden",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Karlstads tidigare länscellfängelse (1847) som hotell — ursprungliga celler, fängelsemuseum och legenden om arsenikprästen Anders Lindbäck.",
+      "historySv": "DOKUMENTERAT: Home Hotel Bilan, Karlbergsgatan 3 i Karlstad — tidigare Länscellfängelset (senare Straffängelset) i Karlstad, öppnat 1847 efter 1844 års fängelsereform. Cirka 81 platser (78 ljusa celler, 3 mörka). Kriminalvården lämnade byggnaden 1968. Senare även psykiatrisk verksamhet; Hotell Bilan öppnade efter ombyggnad 1985 (idag Home Hotel Bilan). Bevarad fängelsekaraktär, källarmuseum. ANDERS LINDBÄCK (dokumenterat): Silbodalsprästen, dömd 1865 för arsenikmord; dödsstraff; tog sitt liv genom hängning i fängelset 20 november 1865 innan avrättning. Mörk historia som kontext: cellisolering, sjukdom, förtvivlan, dödsdomar i tiden och senare psykiatrisk användning — ej automatiska spökpåståenden.",
+      "legendSv": "FOLKLORE & VITTNESMÅL (ej vetenskapligt verifierat): Legenden säger att Anders Lindbäcks ande aldrig lämnade fängelset — hotellets mest kända spökhistoria. Rum 204 lyfts fram i hotellmarknadsföring. Rapporter: personal undviker vissa källarutrymmen ensamma; känsla av att bli iakttagen; köldfläckar; fotsteg; ljud från celldörrar; skuggor; tung atmosfär i valv. Behandlas som vittnesmål och folklore, inte bevis. OMRÅDEN: cellrum, källarvalv, museum, korridorer.",
+      "hauntedSwedenAppSummarySv": "Home Hotel Bilan i Karlstad — Värmlands tidigare länscellfängelse från 1847, hotell sedan 1980-talet med bevarade celler och museum. Dokumenterat dog arsenikprästen Anders Lindbäck i sin cell 1865 medan han väntade på avrättning; folklore säger att han aldrig lämnade huset. Gäst- och personalberättelser om fotsteg, köld och källarvalv gör Bilan till ett av Sveriges mest omtalade spökhotell — historia och legend hålls isär. Boka officiellt för övernattningsutredning.",
+      "safetyNoteSv": "Aktivt hotell – boka endast via officiella kanaler. Respektera gäster, personal, brandskydd och nattlig tystnad. Filma eller utred inte i korridorer, källarmuseum eller andras rum utan tillstånd; önskemål om rum (t.ex. 204) beror på tillgång. Källare och museum enligt hotellets regler."
     }
   ]
 }
