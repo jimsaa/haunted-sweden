@@ -13,6 +13,7 @@ import {
   filterCoverAuditRows,
   formatMissingLocationsList,
   sortCoverAuditRows,
+  buildCoverAuditRow,
   type CoverAuditFilter,
   type CoverAuditRow,
   type CoverAuditSort,
@@ -129,7 +130,8 @@ export function AdminCoverAuditPanel() {
     }
   };
 
-  const saveCover = async (row: CoverAuditRow) => {
+  const saveCover = async (row: CoverAuditRow, event?: { preventDefault?: () => void }) => {
+    event?.preventDefault?.();
     const coverImage = (urlDrafts[row.id] ?? "").trim();
     setSavingId(row.id);
     setRowMessages((m) => ({ ...m, [row.id]: "" }));
@@ -159,13 +161,60 @@ export function AdminCoverAuditPanel() {
         }));
         return;
       }
+
+      // Optimistic UI — keep URL & mark has cover without wiping the field
+      setRows((prev) =>
+        prev.map((r) =>
+          r.id === row.id
+            ? buildCoverAuditRow(
+                {
+                  id: r.id,
+                  name: r.name,
+                  region: r.region,
+                  slug: r.slug,
+                  coverImage: coverImage || null,
+                },
+                null
+              )
+            : r
+        )
+      );
+      setUrlDrafts((d) => ({ ...d, [row.id]: coverImage }));
       setRowMessages((m) => ({
         ...m,
         [row.id]:
           data.note ||
           (coverImage ? "Cover saved." : "Cover cleared."),
       }));
-      await load();
+
+      // Refresh from GitHub/local in background (do not clear drafts on failure)
+      try {
+        const refresh = await fetch("/api/admin/cover-audit", {
+          headers: { ...getAdminAuthHeaders() },
+        });
+        if (refresh.ok) {
+          const refreshed = (await refresh.json()) as {
+            rows?: CoverAuditRow[];
+            summary?: CoverAuditSummary;
+          };
+          if (refreshed.rows) {
+            setRows(refreshed.rows);
+            setSummary(refreshed.summary ?? EMPTY_SUMMARY);
+            setUrlDrafts((prev) => {
+              const next = { ...prev };
+              for (const r of refreshed.rows ?? []) {
+                // Prefer server value when present; keep in-progress edits otherwise
+                if (r.id === row.id || !(next[r.id] ?? "").trim()) {
+                  next[r.id] = r.coverImage ?? "";
+                }
+              }
+              return next;
+            });
+          }
+        }
+      } catch {
+        /* keep optimistic state */
+      }
     } catch {
       setRowMessages((m) => ({ ...m, [row.id]: "Network error." }));
     } finally {
@@ -317,7 +366,13 @@ export function AdminCoverAuditPanel() {
                   </td>
                   <td className="px-3 py-2 text-white/70">{row.region || "—"}</td>
                   <td className="px-3 py-2">
-                    <div className="flex flex-col gap-1.5 sm:flex-row sm:items-center">
+                    <form
+                      className="flex flex-col gap-1.5 sm:flex-row sm:items-center"
+                      onSubmit={(e) => {
+                        e.preventDefault();
+                        void saveCover(row);
+                      }}
+                    >
                       <input
                         type="url"
                         value={urlDrafts[row.id] ?? ""}
@@ -331,15 +386,14 @@ export function AdminCoverAuditPanel() {
                         className="admin-input flex-1 min-w-0 text-xs font-mono"
                       />
                       <button
-                        type="button"
+                        type="submit"
                         className="admin-btn admin-btn--primary shrink-0 text-xs"
                         disabled={savingId === row.id}
-                        onClick={() => void saveCover(row)}
                       >
                         <Save className="h-3.5 w-3.5" aria-hidden />
                         {savingId === row.id ? "Saving…" : "Save cover"}
                       </button>
-                    </div>
+                    </form>
                     {rowMessages[row.id] ? (
                       <p className="mt-1 text-[11px] text-violet-200/80">
                         {rowMessages[row.id]}
