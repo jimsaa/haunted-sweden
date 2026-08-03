@@ -1,5 +1,5 @@
 {
-  "version": 40,
+  "version": 41,
   "places": [
     {
       "id": "1",
@@ -3361,6 +3361,91 @@
       "legendSv": "FOLKLORE (ej arkeologisk fakta): Skatter under murarna, spökljus, nattljud, forntida krigare, oro kring kapellruinen och varningar mot att störa fornborgar efter solnedgång. VITTNESMÅL: känsla av att bli iakttagen, tystnad, köld, ljus, skuggor, ekon, tung atmosfär. OMRÅDEN: ringmuren, Sankt Knuts kapell, central yta, portar. Håll isär från dokumenterade utgrävningar.",
       "hauntedSwedenAppSummarySv": "Gråborg öster om Färjestaden är Ölands största fornborg från folkvandringstiden — väldiga kalkstensmurar, medeltida återbruk och Sankt Knuts kapellruin. Arkeologi visar bosättning och handel; folklore talar om skatter, ljus och forntida krigare. Haunted Sweden skiljer fynd från sägen. Ett av Sveriges mest filmiska forntidsmål efter solnedgång — håll dig till stigar.",
       "safetyNoteSv": "Öppen fornlämning – håll dig till markerade stigar. Klättra inte på ostadiga murpartier, gräv inte och ta inte stenar eller fynd. Respektera kapellruinen och eventuella gravområden. Ojämn mark i mörker — ta ficklampa. Följ Vitterhetsakademiens och Ölands besöksregler. Nattbesök: låg ljudnivå, lämna inga spår."
+    },
+    {
+      "id": "41",
+      "slug": "skoklosters-slott",
+      "name": "Skoklosters Slott",
+      "englishName": "Skokloster Castle",
+      "coverImage": "",
+      "category": "Castle / Castle Ruin",
+      "city": "Skokloster",
+      "region": "Uppland",
+      "country": "Sweden",
+      "address": "Skoklosters Slott, 746 96 Skokloster, Sweden",
+      "latitude": 59.704,
+      "longitude": 17.621,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-submitted",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": false,
+      "hauntingLevel": 5,
+      "hauntedSwedenScore": 9.6,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "skoklosters_slott",
+        "wrangel",
+        "baroque_castle",
+        "grey_lady",
+        "white_lady",
+        "malaren",
+        "haunted_castle",
+        "historical_landmark",
+        "folklore",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Skoklosters Slott on Lake Mälaren between Stockholm and Uppsala is one of Europe's best-preserved Baroque castles — begun in 1654 for Field Marshal Carl Gustaf Wrangel and his wife Anna Margareta von Haugwitz, and left unfinished at his death in 1676. The vast Unfinished Great Hall (Ofullbordade salen) still shows scaffolding-era craft and tools abandoned when builders learned the count had died. Fideikommiss rules kept collections intact; today the state museum (from 1967) holds tens of thousands of objects — weapons, portraits, furniture — managed with Statens fastighetsverk. Folklore names a Grey Lady in grey silk, often linked to Anna Margareta, and guides share reports of a white figure in the nursery, voices in the Wrangel suite, and a dark shape above the unfinished hall. Haunted Sweden separates Wrangel's stormaktstid history from these stories. Open in museum season with guided tours; grounds accessible year-round — respect hours and closed rooms.",
+      "whyItFitsHauntedSweden": "Essential Haunted Sweden castle: spectacular Baroque architecture (visual/architectural 10/10), Swedish Empire and Thirty Years' War context, unfinished hall mystery, Grey Lady and staff/visitor ghost lore (folklore 9.5/10), paranormal reputation 8.5/10 — Score 9.6. Premium content potential EXTREMELY HIGH; research confidence HIGH. Future mission: full photography, evening exterior, guided-tour documentation, EVP where permitted, guide interviews, Grey Lady research, drone of castle and Mälaren.",
+      "shortDescription": "Europe's great unfinished Baroque palace on Lake Mälaren — Wrangel's stormaktstid masterpiece, museum collections, and the Grey Lady legend.",
+      "history": "DOCUMENTED: Skoklosters Slott (746 96 Skokloster, Uppland / Uppsala County) stands on Mälaren between Stockholm and Uppsala. Herman Wrangel received the estate from Karl IX (1611); son Carl Gustaf Wrangel (1613–1676), field marshal and one of Sweden's most powerful men of the Empire period, began the present palace in 1654 with Anna Margareta von Haugwitz. Architects associated with the Baroque design include Caspar Vogel, Jean de la Vallée, Mathias Spihler and Nicodemus Tessin the Elder. Construction largely spanned 1654–1676; neither house nor grounds were fully completed when Wrangel died — most famously the banquet hall on the upper floors, the Ofullbordade salen (~325 m², ~15 m to the open roof structure), left with visible preparatory plaster, timber roof from Hälsingland pines, and builders' tools traditionally said to have been set down on news of his death. Guest rooms named for European cities; extensive armoury and collections. Sons did not continue the Wrangel line at Skokloster; daughter Juliana Wrangel and Nils Brahe the Younger inherited (1676); Juliana established a fideikommiss (1701) that forbade scattering the chattels — key reason the interior survives. Brahe ownership until 1930, then von Essen; Swedish state acquired castle and collections in 1967 (state building monument from 1971); Statens historiska museer / Skoklosters slott museum; Statens fastighetsverk maintains the fabric. Open to visitors in season with guided tours; castle grounds accessible year-round. DARK HISTORY (documented context): Wrangel's career in the Thirty Years' War and Swedish imperial campaigns implies vast wartime death in Europe; family mourning (sons dying young), servants and nobles over centuries, and the literal silence of unfinished rooms after 1676 — Haunted Sweden does not invent hauntings from military history alone.",
+      "legend": "FOLKLORE & WITNESS REPORTS (not verified paranormal fact): THE GREY LADY (Grå damen) — Skokloster's best-known ghost tradition: a woman in grey (often grey silk) said to walk corridors, staircases and windows toward the lake, sometimes linked to the unfinished hall; popular lore associates her with first chatelaine Anna Margareta von Haugwitz, who ran the household while Wrangel was at war — association is folklore, not archival proof of a haunting. THE WHITE LADY / WHITE FIGURE — museum and guide storytelling includes a white figure encountered when unlocking the nursery (often called among the most 'haunted' rooms in tour narratives); Swedish White Lady traditions exist at many castles (e.g. Wik) — treat Skokloster reports as local witness lore unless a named historical identity is documented. OTHER REPORTS shared in official ghost-tour publicity: unknown voices in the Wrangel suite; dark shape on the attic above the Unfinished Hall; cold draughts; footsteps in empty floors; doors; feeling watched — staff and visitor anecdotes compiled for seasonal tours. SPECIAL AREAS: Unfinished Great Hall; grand staircase; upper corridors (Grey Lady lore); chapel; courtyard and lakeside after sunset. ATMOSPHERE: massive Baroque massing, staircases, unfinished hall, arms and armour, long corridors, Mälaren views, hush after closing. INVESTIGATION IDEAS: history vs Grey Lady; document unfinished hall; exterior evening photography; EVP only where museum allows. BEST CONDITIONS: autumn evenings, fog, winter dark, blue hour, rain. Keep DOCUMENTED Wrangel/museum history separate from FOLKLORE above.",
+      "safetyNote": "State museum — visit during published opening hours and follow guided-tour rules (skoklostersslott.se). Do not enter closed rooms, touch collections or climb barriers. Castle grounds are accessible year-round; respect private estate areas beyond the public zone. No overnight stays in museum galleries. Photography rules as posted.",
+      "sourceLinks": [
+        "https://skoklostersslott.se/en/the-history-of-skokloster-castle/",
+        "https://www.sfv.se/vara-fastigheter/sverige/uppsala-lan/skoklosters-slott",
+        "https://sv.wikipedia.org/wiki/Skoklosters_slott",
+        "https://shm.se/museeum/skoklosters-slott/"
+      ],
+      "paranormalType": [
+        "Apparition",
+        "Footsteps",
+        "Voices",
+        "Temperature Changes",
+        "Heavy Atmosphere",
+        "Local Folklore",
+        "Shadow Figures"
+      ],
+      "accessType": "Museum Visit",
+      "familyFriendly": true,
+      "visitDifficulty": 1,
+      "nightAccess": false,
+      "parkingAvailable": true,
+      "guidedTours": true,
+      "publicAccess": true,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 0,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Skoklosters+Slott,+746+96+Skokloster,+Sweden",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Europas stora ofullbordade barockpalats vid Mälaren — Wrangels stormaktstidsverk, museisamlingar och legenden om Grå damen.",
+      "historySv": "DOKUMENTERAT: Skoklosters slott vid Mälaren, Uppland. Påbörjat 1654 för fältmarskalken Carl Gustaf Wrangel och Anna Margareta von Haugwitz; Wrangel dog 1676 innan allt var klart. Ofullbordade salen (~325 m²) lämnades med synliga byggnadstekniker och verktyg. Dottern Juliana Wrangel/Nils Brahe; fideikommiss 1701 bevarade samlingarna. Staten 1967; museum och byggnadsminne, SFV förvaltar. Stormaktstid, trettioåriga kriget som bakgrund till Wrangels karriär. Öppet säsongsvis med guidade visningar; markerna året runt.",
+      "legendSv": "FOLKLORE & VITTNESMÅL (ej bevisat): GRÅ DAMEN — kvinna i grått i korridorer och vid den ofullbordade salen; kopplas i sägen till Anna Margareta von Haugwitz. VIT GESTALT — berättelser om vit figur i barnkammaren (museiguider/press). ÖVRIGT: röster i Wrangelvåningen, mörk skugga på vinden ovan ofullbordade salen, fotsteg, köld. OMRÅDEN: ofullbordade salen, trappa, korridorer, kapell, borggård/sjö. Håll isär från dokumenterad slotts- och museihistoria.",
+      "hauntedSwedenAppSummarySv": "Skoklosters slott mellan Stockholm och Uppsala är ett av Europas bäst bevarade barockslott — byggt 1654–1676 för Carl Gustaf Wrangel, med den berömda Ofullbordade salen där verktygen blev kvar. Statligt museum sedan 1967 med enorma samlingar. Folklore om Grå damen och guideras berättelser om vita gestalter och röster hålls isär från historien. Boka säsongsöppet; respektera stängda rum.",
+      "safetyNoteSv": "Statligt museum – besök under publicerade öppettider och följ guidade regler. Gå inte in i stängda rum, rör inte föremål. Slottsmarkerna är tillgängliga året runt; respektera privata områden. Ingen övernattning i museisalarna. Fotoregler enligt anslag."
     }
   ]
 }
