@@ -7,7 +7,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import { CheckCircle2, AlertTriangle, Copy, ImageOff, RefreshCw } from "lucide-react";
+import { CheckCircle2, AlertTriangle, Copy, ExternalLink, ImageOff, RefreshCw } from "lucide-react";
 import { getAdminAuthHeaders } from "@/lib/admin/auth";
 import {
   filterCoverAuditRows,
@@ -27,6 +27,11 @@ const EMPTY_SUMMARY: CoverAuditSummary = {
   brokenImages: 0,
   coveragePercent: 0,
 };
+
+function googleImagesSearchUrl(placeName: string, region?: string): string {
+  const query = [placeName, region, "Sweden"].filter(Boolean).join(" ");
+  return `https://www.google.com/search?tbm=isch&q=${encodeURIComponent(query)}`;
+}
 
 function statusLabel(status: CoverAuditStatus): string {
   switch (status) {
@@ -259,7 +264,21 @@ export function AdminCoverAuditPanel() {
                     {row.coverFilename || "—"}
                   </td>
                   <td className={`px-3 py-2 whitespace-nowrap ${statusClass(row.status)}`}>
-                    {statusLabel(row.status)}
+                    {row.status === "missing" || row.status === "broken" ? (
+                      <a
+                        href={googleImagesSearchUrl(row.name, row.region)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`inline-flex items-center gap-1.5 underline-offset-2 hover:underline ${statusClass(row.status)}`}
+                        title={`Search Google Images for ${row.name}`}
+                      >
+                        {statusLabel(row.status)}
+                        <ExternalLink className="h-3.5 w-3.5 opacity-70" aria-hidden />
+                        <span className="sr-only"> (Google Images)</span>
+                      </a>
+                    ) : (
+                      statusLabel(row.status)
+                    )}
                   </td>
                 </tr>
               ))}
