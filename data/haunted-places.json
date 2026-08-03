@@ -1,5 +1,5 @@
 {
-  "version": 36,
+  "version": 37,
   "places": [
     {
       "id": "1",
@@ -3030,6 +3030,90 @@
       "legendSv": "FOLKLORE & VITTNESMÅL (ej vetenskapligt verifierat): Legenden säger att Anders Lindbäcks ande aldrig lämnade fängelset — hotellets mest kända spökhistoria. Rum 204 lyfts fram i hotellmarknadsföring. Rapporter: personal undviker vissa källarutrymmen ensamma; känsla av att bli iakttagen; köldfläckar; fotsteg; ljud från celldörrar; skuggor; tung atmosfär i valv. Behandlas som vittnesmål och folklore, inte bevis. OMRÅDEN: cellrum, källarvalv, museum, korridorer.",
       "hauntedSwedenAppSummarySv": "Home Hotel Bilan i Karlstad — Värmlands tidigare länscellfängelse från 1847, hotell sedan 1980-talet med bevarade celler och museum. Dokumenterat dog arsenikprästen Anders Lindbäck i sin cell 1865 medan han väntade på avrättning; folklore säger att han aldrig lämnade huset. Gäst- och personalberättelser om fotsteg, köld och källarvalv gör Bilan till ett av Sveriges mest omtalade spökhotell — historia och legend hålls isär. Boka officiellt för övernattningsutredning.",
       "safetyNoteSv": "Aktivt hotell – boka endast via officiella kanaler. Respektera gäster, personal, brandskydd och nattlig tystnad. Filma eller utred inte i korridorer, källarmuseum eller andras rum utan tillstånd; önskemål om rum (t.ex. 204) beror på tillgång. Källare och museum enligt hotellets regler."
+    },
+    {
+      "id": "37",
+      "slug": "torpa-stenhus",
+      "name": "Torpa Stenhus",
+      "englishName": "Torpa Stone House",
+      "coverImage": "",
+      "category": "Castle / Castle Ruin",
+      "city": "Länghem",
+      "region": "Västra Götaland",
+      "country": "Sweden",
+      "address": "Torpa Gård, 514 52 Länghem, Sweden",
+      "latitude": 57.589,
+      "longitude": 13.271,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-submitted",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": false,
+      "hauntingLevel": 5,
+      "hauntedSwedenScore": 9.7,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "torpa_stenhus",
+        "medieval_castle",
+        "grey_lady",
+        "walled_in_girl",
+        "little_gustav",
+        "stenbock",
+        "haunted_castle",
+        "folklore",
+        "vastra_gotaland",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Torpa Stenhus beside Lake Åsunden near Länghem is one of Sweden's best-preserved medieval stone castles — begun around 1470 by councillor Arvid Knutsson as a fortified stronghold, expanded in the 1500s–1600s, and held by the Stenbock family through inheritance for centuries without commercial sale. In 1552 Gustav Vasa took his third wife, Katarina Stenbock, from Torpa. Visitors come for Renaissance interiors, the Great Hall, baroque chapel and lakeside setting — and for western Sweden's most famous castle ghost lore: the Grey Lady in the upper halls, the Walled-In Girl of plague folklore, and Little Gustav, said to have drowned in a well aged three. Guides tell the stories freely; Haunted Sweden keeps documented building and dynastic history clearly separate from legend and visitor reports of footsteps, cold spots and shadow figures. Book official tours; autumn fog and blue hour after sunset make Torpa a flagship Haunted Sweden destination.",
+      "whyItFitsHauntedSweden": "Western Sweden flagship: outstanding medieval preservation, 500+ years of documented history, Stenbock/Vasa royal connection, multiple named ghost legends with high storytelling power, visitor accessibility via official tours. Visual rating 10/10, historical value and folklore strength 10/10, paranormal reputation 9/10, night investigation potential 9.5/10 — Haunted Sweden Score 9.7. Premium content potential EXTREMELY HIGH; research confidence HIGH. Future verification: full photography, evening investigation with permission, EVP in Great Hall, guide interviews, archive research, drone of castle and Åsunden landscape.",
+      "shortDescription": "One of Sweden's finest medieval stone castles on Lake Åsunden — Stenbock heritage, Gustav Vasa's Katarina, and legendary ghosts including the Grey Lady.",
+      "history": "DOCUMENTED: Torpa Stenhus (Torpa Gård, Länghem, Tranemo municipality, Västra Götaland / Västergötland) stands west of Lake Åsunden. The first stone house was built around 1470 by riksråd Arvid Knutsson as a defensive and trading stronghold amid Danish war threats and local unrest; a parchment letter of 9 February 1513 from Vadstena is among the earliest archival mentions of the stone house at Torpa. Around mid-1500s the stair tower was added; late-1500s works raised roofs, added a fourth storey and decorated halls. Torpa became the principal stamgods of the Stenbock family and has never been sold commercially — inheritance on male or female lines from the medieval builders to the present owners. In 1552, after visiting Torpa, Gustav Vasa chose Katarina Stenbock (daughter of Gustav Olofsson Stenbock and Brita Leijonhufvud) as his third wife — she was collected/taken from Torpa into royal marriage. Early 1600s mark a golden age; Gustav Otto Stenbock later preferred a timber residence for comfort while using the stone house for representation. The castle chapel in Caroline baroque was completed for consecration in 1699 under Christina Katarina de la Gardie after Gustav Otto's death. Surviving fabric includes massive medieval walls, Renaissance Great Hall (riddarsalen), thick oak doors, stair tower and chapel — among Sweden's best-preserved manor castles of the type. DARK HISTORY (documented context, not hauntings): medieval fortification and warfare climate, noble politics, centuries of ordinary illness and death in an isolated lakeside stronghold, and family tragedies recorded in genealogy and local history form the emotional backdrop — Haunted Sweden does not treat folklore deaths as proven events.",
+      "legend": "FOLKLORE (castle tradition / official ghost pages — not documented history): THE GREY LADY (Gråa frun / Grå damen): Said to be a lord's daughter who loved a Danish prisoner her father had brought home; when he killed the captive she died of grief and still wanders the halls as a silent woman in grey, often linked to upper floors after dark — one of Torpa's oldest surviving ghost traditions. THE WALLED-IN GIRL (Den inmurade flickan): Legend of a knight's daughter bricked up alive after returning from Denmark and mentioning plague on her ship; her father feared contagion. Versions vary (sister confided in, night awakening, masons, chair by a window). She is said to wander seeking freedom — clearly folklore, not proven burial. LITTLE GUSTAV (Lille Gustav Stenbock): Local legend that young Gustav, first-born son of Gustaf Otto Stenbock, drowned in a well at age three; visitors (especially women, in site lore) report a pale boy in historic clothing. RELATED FOLKLORE also names white horses before an owner's death and Greve Gustaf Otto Stenbock (portrait / midnight calling tale) — secondary to the three focus legends above. WITNESS REPORTS & GUIDES (unverified): footsteps in empty corridors, doors opening unexpectedly, shadow figures, cold spots, feeling watched — shared by guides, visitors and staff in haunted-castle lists. SPECIAL AREAS: Great Hall; upper floors (Grey Lady); corridors; former well area (Little Gustav); exterior courtyard after sunset. ATMOSPHERE: stone walls, Renaissance hall, ancient stairs, oak doors, Åsunden views, fog on the grounds. INVESTIGATION IDEAS: evening visit with permission; Grey Lady / Walled-In Girl / Little Gustav story mapping vs archives; EVP in Great Hall; castle after dark only when allowed. BEST CONDITIONS: autumn evenings, heavy fog, winter darkness, rain, blue hour. Separate DOCUMENTED history from FOLKLORE above.",
+      "safetyNote": "Privately owned historic castle — visit only via official openings, guided tours and booked events (torpastenhus.se). Stay on permitted paths; do not enter closed floors, climb walls or trespass after hours. Respect staff, other visitors and photography rules. Night investigation only with explicit permission.",
+      "sourceLinks": [
+        "https://www.torpastenhus.se/historia",
+        "https://torpastenhus.se/om-torpa-stenhus/slottssp%C3%B6ken",
+        "https://sv.wikipedia.org/wiki/Torpa_stenhus",
+        "https://www.slottsguiden.info/slottdetalj.asp?id=66"
+      ],
+      "paranormalType": [
+        "Footsteps",
+        "Apparition",
+        "Temperature Changes",
+        "Heavy Atmosphere",
+        "Local Folklore",
+        "Shadow Figures"
+      ],
+      "accessType": "Guided Visits",
+      "familyFriendly": true,
+      "visitDifficulty": 2,
+      "nightAccess": false,
+      "parkingAvailable": true,
+      "guidedTours": true,
+      "publicAccess": true,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 0,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Torpa+G%C3%A5rd,+514+52+L%C3%A4nghem,+Sweden",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Ett av Sveriges finaste medeltida stenhus vid Åsunden — Stenbock-arv, Gustav Vasas Katarina och legendariska spöken som Gråa frun.",
+      "historySv": "DOKUMENTERAT: Torpa Stenhus vid sjön Åsunden, Länghem (Tranemo, Västra Götaland). Första stenhuset ca 1470 av riksrådet Arvid Knutsson som försvars- och handelsborg; omnämnt i pergamentbrev 9 februari 1513. Trapptorn och tillbyggnader 1500–1600-tal; renässansriddarsal; slottskapell invigt 1699. Stenbockarnas stamgods — aldrig sålt, endast ärvt. 1552 hämtade Gustav Vasa sin tredje hustru Katarina Stenbock från Torpa. Mörk historia som kontext: medeltida krigshot, adelspolitik, sjukdom och familjetragedier — inte automatiska spökbevis.",
+      "legendSv": "FOLKLORE (ej dokumenterad historia): GRÅA FRUN — herrdotter som älskade en dansk fånge; vandrar i grått, ofta övre våningar. DEN INMURADE FLICKAN — riddardotter inmurad levande efter pestoro från Danmark; söker frihet — legend. LILLE GUSTAV STENBOCK — drunknade i brunnen som treåring enligt sägen; blek pojke i gamla kläder. VITTNESMÅL: fotsteg, dörrar, skuggor, köld — guider och besökare. Håll isär från dokumenterad byggnads- och ätteshistoria.",
+      "hauntedSwedenAppSummarySv": "Torpa Stenhus vid Åsunden är ett av Sveriges bäst bevarade medeltida stenhus — uppfört ca 1470, Stenbockarnas stamgods, och platsen där Gustav Vasa 1552 hämtade Katarina Stenbock. Hit kommer besökare för renässanssalar och för västra Sveriges mest kända slottsspöken: Gråa frun, den inmurade flickan och lille Gustav. Haunted Sweden skiljer dokumenterad historia från folklore. Boka officiella visningar; höstdimma och blåtimme gör Torpa till en flaggskeppsdestination.",
+      "safetyNoteSv": "Privatägt historiskt slott – besök endast via officiella öppningar, guidade visningar och bokade evenemang. Håll dig till tillåtna stigar; gå inte in på stängda våningar, klättra inte på murar eller trespassera efter stängning. Respektera personal, besökare och fotoregler. Nattutredning endast med uttryckligt tillstånd."
     }
   ]
 }
