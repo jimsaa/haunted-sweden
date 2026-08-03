@@ -1,12 +1,12 @@
 import { NextResponse } from "next/server";
-import { readFile, writeFile } from "fs/promises";
-import path from "path";
 import { forbidden, requireAdminUser } from "@/lib/admin/api-auth";
 import { userHasPermission } from "@/lib/admin/permissions";
+import {
+  placesCatalogGithubConfigured,
+  readPlacesCatalog,
+  writePlacesCatalog,
+} from "@/lib/admin/places-json-store";
 import { notifyIndexNowAfterPlacesPublish } from "@/lib/indexnow/notify";
-import type { HauntedPlacesFile } from "@/lib/types/place";
-
-const DATA_PATH = path.join(process.cwd(), "data", "haunted-places.json");
 
 type CoverBody = {
   id?: string;
@@ -15,8 +15,11 @@ type CoverBody = {
 };
 
 /**
- * Update a single place coverImage without rewriting the whole admin draft.
+ * Update a single place coverImage.
  * Body: { id | slug, coverImage: string | null }
+ *
+ * Local: writes data/haunted-places.json
+ * Production (Vercel): commits via GitHub when HAUNTED_SWEDEN_GITHUB_TOKEN is set
  */
 export async function POST(request: Request) {
   const auth = await requireAdminUser(request);
@@ -52,8 +55,7 @@ export async function POST(request: Request) {
       }
     }
 
-    const raw = await readFile(DATA_PATH, "utf8");
-    const before = JSON.parse(raw) as HauntedPlacesFile;
+    const { file: before, sha, source: readSource } = await readPlacesCatalog();
     const places = Array.isArray(before.places) ? [...before.places] : [];
 
     const idx = places.findIndex((p) => {
@@ -66,18 +68,25 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Place not found." }, { status: 404 });
     }
 
+    const placeName = places[idx].name;
     const updated = {
       ...places[idx],
       coverImage,
     };
     places[idx] = updated;
 
-    const after: HauntedPlacesFile = {
+    const after = {
       ...before,
       places,
     };
 
-    await writeFile(DATA_PATH, `${JSON.stringify(after, null, 2)}\n`, "utf8");
+    const method = await writePlacesCatalog(after, {
+      sha,
+      commitMessage: coverImage
+        ? `Admin: set cover for ${placeName}`
+        : `Admin: clear cover for ${placeName}`,
+    });
+
     void notifyIndexNowAfterPlacesPublish(before, after);
 
     return NextResponse.json({
@@ -85,11 +94,22 @@ export async function POST(request: Request) {
       id: updated.id,
       slug: updated.slug,
       coverImage: updated.coverImage ?? null,
+      persistedVia: method,
+      readFrom: readSource,
+      note:
+        method === "github"
+          ? "Saved to GitHub — Vercel will redeploy shortly; cover appears after deploy."
+          : "Saved to local haunted-places.json.",
     });
   } catch (err) {
     console.error("[admin/places/cover POST]", err);
+    const message =
+      err instanceof Error ? err.message : "Failed to update cover image.";
     return NextResponse.json(
-      { error: "Failed to update cover image." },
+      {
+        error: message,
+        githubConfigured: placesCatalogGithubConfigured(),
+      },
       { status: 500 }
     );
   }

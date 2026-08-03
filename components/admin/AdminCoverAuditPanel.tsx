@@ -142,17 +142,28 @@ export function AdminCoverAuditPanel() {
         },
         body: JSON.stringify({ id: row.id, coverImage: coverImage || null }),
       });
-      const data = (await res.json()) as { error?: string; coverImage?: string | null };
+      const data = (await res.json()) as {
+        error?: string;
+        coverImage?: string | null;
+        note?: string;
+        githubConfigured?: boolean;
+      };
       if (!res.ok) {
+        const hint =
+          data.githubConfigured === false
+            ? " Add HAUNTED_SWEDEN_GITHUB_TOKEN on Vercel (repo Contents write) so covers can be committed."
+            : "";
         setRowMessages((m) => ({
           ...m,
-          [row.id]: data.error || "Save failed.",
+          [row.id]: (data.error || "Save failed.") + hint,
         }));
         return;
       }
       setRowMessages((m) => ({
         ...m,
-        [row.id]: coverImage ? "Cover saved." : "Cover cleared.",
+        [row.id]:
+          data.note ||
+          (coverImage ? "Cover saved." : "Cover cleared."),
       }));
       await load();
     } catch {
