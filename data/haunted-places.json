@@ -1,5 +1,5 @@
 {
-  "version": 50,
+  "version": 51,
   "places": [
     {
       "id": "1",
@@ -4206,6 +4206,91 @@
       "legendSv": "FOLKLORE & MEDIA: Ofta kallad en av Sveriges mest hemsökta platser. Vittnesmål: skuggor, fotsteg, röster, känsla av att bli iakttagen, köld. Det okända m.fl. har filmat. GUIDNING: Guidning i galenskapen / Journey into Madness (~45 min) till patientkyrkogården — historieberättelse, inte bevis för spöken. OMRÅDEN: Borgen, isoleringskorridorer, park, kyrkogård, tallskog/älv.",
       "hauntedSwedenAppSummarySv": "Furunäset i Piteå är norra Sveriges viktigaste tidigare sinnessjukhusmiljö — invigd 1893 som Piteå hospital och asyl efter Axel Kumliens ritningar, upptagningsområde Övre Norrland i nästan hundra år. Tusentals patienter; kyrkogård med omkring tusen gravar; park och självförsörjande institutionsliv. Idag hotell och företagsby. Gäst- och personalberättelser om skuggor och fotsteg samt guidningen Guidning i galenskapen hålls isär från dokumenterad vårdhistoria. Boka officiellt; visa respekt för dem som levde och dog här.",
       "safetyNoteSv": "Aktivt hotell, konferens och företagsby – boka endast via officiella kanaler. Respektera kontor, boende och stängda längor. Kyrkogård och park: tystnad och respekt; rör inte gravar. Historieguidningar bokas säsongsvis; tvinga dig inte in i stormceller eller källare. Nattutredning endast med tillstånd. Platsen är före detta patienters livsmiljö — inte en thrillpark."
+    },
+    {
+      "id": "51",
+      "slug": "home-hotel-victoria",
+      "name": "Home Hotel Victoria",
+      "englishName": "Home Hotel Victoria (Victoriahemmet / Clarion Collection Hotel Victoria)",
+      "coverImage": "",
+      "category": "Haunted Accommodation",
+      "city": "Jönköping",
+      "region": "Småland",
+      "country": "Sweden",
+      "address": "F. E. Elmgrens gata 5, 553 16 Jönköping, Sweden",
+      "latitude": 57.782,
+      "longitude": 14.16,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-submitted",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": true,
+      "hauntingLevel": 4,
+      "hauntedSwedenScore": 9.4,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "home_hotel_victoria",
+        "jonkoping",
+        "ebba_ramsay",
+        "room_426",
+        "haunted_hotel",
+        "historic_hotel",
+        "ghost_legend",
+        "overnight_stay",
+        "urban_haunting",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Home Hotel Victoria in central Jönköping occupies an English-inspired building completed around 1882 on the initiative of philanthropist, writer and care pioneer Ebba Ramsay (1828–1922). Known historically as Viktoria / Victoriahemmet, the house combined social and religious mission work with a temperance (alcohol-free) inn and a large assembly hall — part of Ramsay's wider Jönköping legacy that also includes Wilhelmsro children's care outside town. Later uses included a school and Sveriges Radio before hotel conversion (Clarion Collection / today Home Hotel Victoria under Strawberry), with décor nodding to the city's matchstick industry. Folklore — amplified by Strawberry's haunted-hotels series — says Ebba never left: Room 426 on the attic floor is the classic hotspot, with guests reporting a calm presence sitting on the bed edge, soft footsteps and rustling. Haunted Sweden separates Ramsay's documented philanthropy from witness anecdotes. Book officially; ask for 426 if available.",
+      "whyItFitsHauntedSweden": "Authentic 1880s philanthropic landmark; unique Ebba Ramsay connection; owners openly market \"Jönköping's kindest ghost\"; Room 426 overnight investigation; Strawberry haunted-hotel series companion to Bilan and Grand Helsingborg; central accessibility. Visual 9/10, historical value 9/10, folklore strength 9.5/10, paranormal reputation 9/10, overnight potential 10/10 — Haunted Sweden Score 9.4. Premium content potential VERY HIGH; research confidence HIGH. Ideal verification mission: overnight in 426, attic EVP with permission, staff interviews, compare hotel lore with SBL/Wilhelmsro vs Victoria building history.",
+      "shortDescription": "Jönköping's 1882 Victoriahemmet — Ebba Ramsay's historic house, now Home Hotel Victoria, famous for the gentle Room 426 legend.",
+      "history": "DOCUMENTED: Home Hotel Victoria stands at F. E. Elmgrens gata 5, Jönköping (Småland), in the Väster district near Sofiakyrkan and the matchstick-museum quarter. EBBA RAMSAY: Ebba Gustafva Ramsay (née Karström, 1 Oct 1828 Stockholm – 29 Oct 1922 Jönköping) was a writer, translator, artist and philanthropist — among Sweden's early Sunday-school pioneers, founder of day-care for working mothers' children in Jönköping, organiser of archipelago health colonies, and a national figure in care for disabled and epileptic children centred on Wilhelmsro (Vilhelmsro) outside Jönköping (father's farm bought 1872; Hoppet asylum 1878; later epilepsy-focused homes). THE VICTORIA BUILDING: On Ramsay's initiative the Viktoria / Victoriahemmet property was built in stages about 1877–1882 (often summarised as 1882) by Gothenburg architect J. A. Westerberg in English-inspired architecture. Contemporary descriptions (e.g. Smålands Allehanda 1882) emphasise a large assembly hall (Viktoriasalen, ~400 seats) for prayers, lectures and civic events, reading rooms, guest rooms and an alcohol-free temperance inn (nykterhetsvärdshus) — Ramsay also published on temperance inns and alcoholism as society's \"cancer.\" Hotel and tourism texts often describe Victoriahemmet as a home for vulnerable children (epilepsy / intellectual disability / children without stable support). Haunted Sweden notes that Ramsay's best-documented institutional children's care was at Wilhelmsro, and that popular hotel histories sometimes blend the town Victoria building with that wider philanthropic programme; both belong to her Jönköping legacy. LATER USES: School use from the early 1900s (Myling and local summaries cite ~1903); Sveriges Radio mid-20th century; hotel operation from the 1990s as Clarion Collection Hotel Victoria, later rebranded Home Hotel Victoria (Strawberry). Expansions and renovations (incl. ~38 new rooms ~2021; attic-floor works affecting rooms 426–428) while retaining historic character and match-industry decorative motifs. DARK HISTORY CONTEXT: Care for sick, disabled and socially vulnerable children in 19th-century institutions implies ordinary illness and death among residents and staff over decades — not automatic hauntings. Temperance work responded to documented alcohol harm. Keep philanthropy and building chronology separate from Room 426 folklore below.",
+      "legend": "FOLKLORE — EBBA RAMSAY / ROOM 426 (not scientifically verified): Local and hotel tradition holds that Ebba Ramsay never truly left the building she founded. The attic floor — especially Room 426 (also 427 and 428 in staff/PR accounts) — is the primary hotspot. Guests report waking to the sensation that someone sat on the bed edge; soft footsteps; rustling as if on newspaper on the floor; objects moving; quiet whispers; cold spots; feeling watched. Staff and Strawberry materials generally describe the presence as calm and protective — \"Jönköping's kindest ghost\" — rather than frightening. During renovations, hotel management jokingly \"relocated\" Ebba to an \"Ebba suite\" while attic rooms were refurbished (PR storytelling, not evidence). WITNESS & MEDIA: Strawberry's haunted-hotels feature \"The benefactress\"; JKPG tourism copy; Myling and press interviews with directors citing guest and cleaner experiences (e.g. vacuum attachment allegedly moving). A medium is said to have been invited after repeated reports. SPECIAL AREAS: Room 426; attic floor; historic staircase; atrium / light courtyard (ljusgård) dining heart. ATMOSPHERE: 1882 architecture, elegant atrium, quiet upper floors after midnight, match-industry décor — classic overnight haunted-hotel setting. INVESTIGATION IDEAS: overnight in 426; attic EVP with permission; history vs folklore (Victoria vs Wilhelmsro); staff interviews; Haunted Sweden overnight challenge. BEST CONDITIONS: overnight stay, rainy evenings, winter darkness, quiet weekdays. Keep DOCUMENTED Ramsay philanthropy separate from FOLKLORE and anecdotes above.",
+      "safetyNote": "Active hotel — book only through official Home Hotel Victoria / Strawberry channels. Respect guests, staff, fire rules and night quiet. Do not film or investigate in corridors or other guests' rooms without permission; Room 426 (and attic rooms) depend on availability. Lobby and restaurant are public-facing but still respect privacy.",
+      "sourceLinks": [
+        "https://sv.wikipedia.org/wiki/Ebba_Ramsay",
+        "https://www.strawberryhotels.com/blog/sweden/haunted-hotels/",
+        "https://www.strawberry.se/hotell/sverige/jonkoping/home-hotel-victoria",
+        "https://www.jkpg.com/sv/jonkoping-huskvarna/home-hotel-victoria/",
+        "https://myling.se/socitetskvinnan/"
+      ],
+      "paranormalType": [
+        "Apparition",
+        "Footsteps",
+        "Object Movement",
+        "Temperature Changes",
+        "Heavy Atmosphere",
+        "Local Folklore"
+      ],
+      "accessType": "Paid Accommodation",
+      "familyFriendly": true,
+      "visitDifficulty": 1,
+      "nightAccess": true,
+      "parkingAvailable": true,
+      "guidedTours": false,
+      "publicAccess": false,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 0,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=F.+E.+Elmgrens+gata+5,+J%C3%B6nk%C3%B6ping,+Sweden",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Jönköpings Victoriahemmet från 1882 — Ebba Ramsays historiska hus, idag Home Hotel Victoria, känt för den milda legenden om rum 426.",
+      "historySv": "DOKUMENTERAT: Home Hotel Victoria, F. E. Elmgrens gata 5, Jönköping. Ebba Ramsay (1828–1922) — författare, filantrop, pionjär inom barn- och epilepsivård (Wilhelmsro m.m.). Viktoria/Victoriahemmet uppfört ca 1877–1882 (arkitekt J. A. Westerberg), engelskinspirerat: temperancevärdshus, Viktoriasalen (~400 platser), social-religiös verksamhet. Hotelltexter beskriver ofta barnhem för utsatta/epilepsi — Haunted Sweden noterar att Ramsays mest dokumenterade barnsjukvård låg på Wilhelmsro och att populära hotellberättelser ibland blandar platserna. Senare skola (~1903), Sveriges Radio, hotell från 1990-talet (Clarion Collection → Home Hotel Victoria). Renoveringar/utbyggnad med bevarad karaktär och tändsticksdekor. Håll isär från rum 426-folklore.",
+      "legendSv": "FOLKLORE: Ebba Ramsay sägs aldrig ha lämnat huset — rum 426 (även 427–428) på vinden. Gäster: någon sätter sig på sängkanten, mjuka fotsteg, prassel, föremål, köld, känsla av att bli iakttagen. Personal/Strawberry: lugn, skyddande närvaro — »Jönköpings snällaste spöke«. VITTNESMÅL & MEDIA: Strawberry haunted hotels, JKPG, Myling. OMRÅDEN: 426, vind, trappa, ljusgård.",
+      "hauntedSwedenAppSummarySv": "Home Hotel Victoria i Jönköping ligger i Ebba Ramsays Viktoriahemmet från ca 1882 — temperancevärdshus, samlingssal och social mission, senare skola, radio och hotell. Folklore säger att Ebba aldrig checkade ut, särskilt rum 426 på vinden, med lugna gästupplevelser som Strawberry lyfter fram. Haunted Sweden skiljer Ramsays dokumenterade filantropi (inkl. Wilhelmsro) från vittnesmål. Boka officiellt; önska 426 om det finns.",
+      "safetyNoteSv": "Aktivt hotell – boka endast via officiella kanaler (Home Hotel Victoria / Strawberry). Respektera gäster, personal, brandskydd och nattlig tystnad. Filma eller utred inte i korridorer eller andras rum utan tillstånd; rum 426 och vindsvåning beror på tillgång. Lobby och restaurang är öppna men respektera privatliv."
     }
   ]
 }
