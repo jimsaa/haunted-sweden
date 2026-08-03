@@ -1,5 +1,5 @@
 {
-  "version": 42,
+  "version": 43,
   "places": [
     {
       "id": "1",
@@ -2802,7 +2802,7 @@
       "investigationVideos": [],
       "overnightInvestigation": false,
       "hauntingLevel": 5,
-      "hauntedSwedenScore": 9.0,
+      "hauntedSwedenScore": 9,
       "hauntedSwedenInvestigation": {
         "status": "not_investigated_yet"
       },
@@ -3530,6 +3530,91 @@
       "legendSv": "FOLKLORE (populära spökkällor, ej bevisat): Bengt Bagge — klingande sporrar, röster, festljus i tomma fönster speglade i Emån. Dränkt piga i dammen — gestalt i parken. Vit dam i korridorer/fönster som del av samma kvinnliga vålnadstradition. VITTNESMÅL: fotsteg, dörrar, köld, känsla av att bli iakttagen. Håll isär från dokumenterad godshistoria.",
       "hauntedSwedenAppSummarySv": "Berga herrgård utanför Högsby vid Emån har medeltida anor från 1200-talet och en huvudbyggnad från 1782. Folklore om Bengt Bagge, en dränkt piga och vita gestalter lever i populära spökberättelser — Haunted Sweden skiljer dem från jordeböcker och byggnadshistoria. Privat egendom: betrakta endast från allmän väg.",
       "safetyNoteSv": "Privat herrgård – gå inte in på tomt, park eller i byggnader utan tillstånd. Betrakta endast från allmän väg. Respektera boende och jordbruk. Ingen trespassing efter mörkrets inbrott."
+    },
+    {
+      "id": "43",
+      "slug": "home-hotel-grand-helsingborg",
+      "name": "Home Hotel Grand Helsingborg",
+      "englishName": "Home Hotel Grand Helsingborg (Grand Hotel / Clarion Grand)",
+      "coverImage": "",
+      "category": "Haunted Accommodation",
+      "city": "Helsingborg",
+      "region": "Skåne",
+      "country": "Sweden",
+      "address": "Stortorget 8, 252 23 Helsingborg, Sweden",
+      "latitude": 56.046,
+      "longitude": 12.694,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-submitted",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": true,
+      "hauntingLevel": 5,
+      "hauntedSwedenScore": 9.5,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "home_hotel_grand",
+        "grand_hotel_helsingborg",
+        "room_585",
+        "helsingborg",
+        "haunted_hotel",
+        "ghost_legend",
+        "overnight_stay",
+        "urban_haunting",
+        "skane",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Home Hotel Grand on Helsingborg's Stortorget is one of Skåne's best-known haunted hotels — opened as Grand Hotel in 1926 in a National Romantic brick palace originally planned as a bank. For nearly a century it has welcomed travellers at the heart of the city, later as Clarion Grand and today as Home Hotel Grand (Strawberry). Its fame among ghost-hunters rests on the Room 585 legend: folklore says a 1920s lover never checked out after a jealousy drama, and her presence is said to linger on the fifth floor. Guests and staff have reported feeling watched, icy drafts, lights and curtains behaving oddly, and even being pushed from bed — stories amplified by 2009 newspaper coverage and the hotel chain's own ghost articles. Haunted Sweden separates the documented 1926 building history from unverified folklore and anecdotal witness reports. Book officially for one of Sweden's strongest overnight investigation settings.",
+      "whyItFitsHauntedSweden": "Nearly a century of hotel history on Stortorget; National Romantic landmark architecture; one of Sweden's most famous haunted-hotel legends (Room 585); strong modern witness and media tradition (HD, Expressen, Strawberry); excellent overnight accessibility via paid stay; lobby and restaurant open to the public. Visual 9/10, historical value 9/10, folklore strength 10/10, paranormal reputation 9.5/10, overnight investigation potential 10/10 — Haunted Sweden Score 9.5. Premium content potential EXTREMELY HIGH; research confidence HIGH. Ideal verification mission: overnight in Room 585 if available, EVP on the fifth floor, night photography, staff interviews, compare guest accounts with archives.",
+      "shortDescription": "Helsingborg's 1926 Grand Hotel on Stortorget — National Romantic landmark famous for the Room 585 ghost legend.",
+      "history": "DOCUMENTED: Home Hotel Grand (historically Grand Hotel Helsingborg; later Clarion Grand Hotel) stands at Stortorget 8 in central Helsingborg, Skåne. Hotel operations began in 1926 (inaugurated 8 March 1926) and it remains one of the city's oldest continuously operating hotels. ARCHITECTURE & ORIGIN: The plot (earlier linked to Hotel Munthe) was bought in 1917 by AB Skånska Handelsbanken for a monumental bank palace designed by architect Ernst Stenhammar. After bank consolidations made a new bank palace unnecessary, and amid Helsingborg's hotel shortage, plans were converted to a hotel; drawings were modified by August Stoltz. The result is a strict National Romantic facade in dark Helsingborg brick with sandstone detailing — among the city's most monumental examples of the style, and largely intact externally. Helsingborg's 2002 central conservation programme classifies the building as particularly valuable (äldre PBL 3:12). ROLE: For decades a meeting place for travellers, business guests and festive events (grand banquet rooms until a major interior rebuild around 1980). Branding evolved from Grand Hotel to Clarion Grand Hotel within the Choice/Strawberry family, and is today marketed as Home Hotel Grand. DARK HISTORY CONTEXT: Haunted Sweden has not found verified court or police records confirming a 1920s murder or disappearance in Room 585. Any guest tragedies or personal dramas that may have occurred in a busy city hotel over a century remain ordinary historical possibilities — not automatically proof of hauntings. Keep the 1926 building and hotel history separate from the Room 585 legend below.",
+      "legend": "FOLKLORE (not historically verified): Local and hotel tradition says that in the 1920s a man checked into the new Grand Hotel with his lover; his wife discovered the affair; the lover then disappeared without explanation — and her spirit is said never to have left Room 585 on the fifth floor (\"the guest who never checked out\"). Some retellings escalate to a jealousy crime; Haunted Sweden treats the entire origin story as folklore unless primary sources appear. WITNESS REPORTS & MEDIA (anecdotal, not scientifically verified): Guests and staff have long described feeling watched in Room 585; ice-cold drafts; claims of being pushed from the bed at night; lights switching on and off; curtains moving without clear cause; strange noises in empty corridors; and an uneasy presence on the fifth floor. Around 2009, Helsingborgs Dagblad, Expressen and DI covered stories that airline (SAS) crew preferred to avoid the fifth floor after alleged nocturnal disturbances; the floor was renovated — hotel management publicly emphasised upgrade quality as the main reason, while marketing staff also discussed the ghost reputation. Strawberry/Home Hotels publish the Room 585 story in their haunted-hotels features. SPECIAL AREAS: Room 585 (primary hotspot in folklore); fifth floor (most reported experiences); historic corridors (footsteps and unusual sounds); lobby (historic city-hotel atmosphere). ATMOSPHERE: Elegant early-20th-century hotel character, quiet corridors after midnight, views across Stortorget, classic overnight ambience — one of Sweden's best-known haunted hotel stays. INVESTIGATION IDEAS: overnight in Room 585; fifth-floor EVP; history vs folklore comparison; guest-experience comparison; Haunted Sweden after midnight. BEST CONDITIONS: overnight stay, rainy evenings, winter darkness, quiet weekdays, late-night sessions. Keep DOCUMENTED hotel history separate from FOLKLORE and witness anecdotes above.",
+      "safetyNote": "Active hotel — book only through official channels (Home Hotel Grand / Strawberry). Respect guests, staff, fire rules and night quiet. Do not film or investigate in corridors or other guests' rooms without permission; Room 585 and fifth-floor requests depend on availability. Lobby and restaurant are public-facing but still respect privacy.",
+      "sourceLinks": [
+        "https://sv.wikipedia.org/wiki/Grand_Hotel,_Helsingborg",
+        "https://stadslexikon.helsingborg.se/grand-hotel/",
+        "https://www.strawberryhotels.com/blog/sweden/haunted-hotels/",
+        "https://www.di.se/artiklar/2009/12/8/spoken-tvingar-grand-hotel-att-renovera/"
+      ],
+      "paranormalType": [
+        "Apparition",
+        "Footsteps",
+        "Temperature Changes",
+        "Object Movement",
+        "Heavy Atmosphere",
+        "Local Folklore",
+        "Physical Contact"
+      ],
+      "accessType": "Paid Accommodation",
+      "familyFriendly": true,
+      "visitDifficulty": 1,
+      "nightAccess": true,
+      "parkingAvailable": true,
+      "guidedTours": false,
+      "publicAccess": false,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 0,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Stortorget+8,+252+23+Helsingborg,+Sweden",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Helsingborgs Grand Hotel från 1926 vid Stortorget — nationalromantisk byggnad känd för spöklegenden om rum 585.",
+      "historySv": "DOKUMENTERAT: Home Hotel Grand (historiskt Grand Hotel Helsingborg; senare Clarion Grand) ligger på Stortorget 8 i Helsingborg. Hotellverksamhet från 1926 (invigt 8 mars 1926). Tomten köptes 1917 av Skånska Handelsbanken för bankpalats ritat av Ernst Stenhammar; efter bankfusioner och hotellbrist omvandlades projektet till hotell (ritningar bearbetade av August Stoltz). Stram nationalromantisk fasad i helsingborgstegel med sandsten; klassad som särskilt värdefull bebyggelse i bevarandeprogrammet 2002. Mötesplats för resande och fest i nästan hundra år; invändig ombyggnad ca 1980; idag Home Hotel Grand (Strawberry). MÖRKHISTORIA: Haunted Sweden har inte funnit verifierade rättshandlingar som bekräftar ett 1920-talsmord eller försvinnande i rum 585 — håll isär från byggnads- och hotellhistoria.",
+      "legendSv": "FOLKLORE (ej historiskt verifierat): Enligt lokal och hotelltradition checkade en man in med sin älskarinna på 1920-talet; hustrun upptäckte otroheten; älskarinnan försvann utan förklaring — och sägs aldrig ha lämnat rum 585 på femte våningen. Vissa versioner talar om svartsjukedrama; behandlas som folklore tills primärkällor finns. VITTNESMÅL & MEDIA (anekdotiskt): känsla av att bli iakttagen; iskalla drag; påståenden om att bli knuffad ur sängen; lampor och gardiner; ljud i tomma korridorer; oro på femte våningen. Omkring 2009 skrev HD, Expressen och DI om SAS-personal som undvek våningen och om renovering — ledningen betonade också standarduppgradering. Strawberry publicerar historien. OMRÅDEN: rum 585, femte våningen, historiska korridorer, lobby.",
+      "hauntedSwedenAppSummarySv": "Home Hotel Grand vid Stortorget i Helsingborg öppnade som Grand Hotel 1926 i ett nationalromantiskt hus som först planerades som bank. Hotellets spökrykte vilar på legenden om rum 585 — en 1920-talsälskarinna som enligt folklore aldrig checkade ut — och på gäst- och personalberättelser om köld, närvaro och att bli knuffad ur sängen, förstärkta av mediebevakning 2009. Haunted Sweden skiljer dokumenterad hotellhistoria från folklore och vittnesmål. Boka officiellt för övernattningsutredning.",
+      "safetyNoteSv": "Aktivt hotell – boka endast via officiella kanaler (Home Hotel Grand / Strawberry). Respektera gäster, personal, brandskydd och nattlig tystnad. Filma eller utred inte i korridorer eller andras rum utan tillstånd; önskemål om rum 585 och femte våningen beror på tillgång. Lobby och restaurang är öppna för besökare men respektera privatliv."
     }
   ]
 }
