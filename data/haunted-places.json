@@ -1,5 +1,5 @@
 {
-  "version": 51,
+  "version": 52,
   "places": [
     {
       "id": "1",
@@ -4291,6 +4291,90 @@
       "legendSv": "FOLKLORE: Ebba Ramsay sägs aldrig ha lämnat huset — rum 426 (även 427–428) på vinden. Gäster: någon sätter sig på sängkanten, mjuka fotsteg, prassel, föremål, köld, känsla av att bli iakttagen. Personal/Strawberry: lugn, skyddande närvaro — »Jönköpings snällaste spöke«. VITTNESMÅL & MEDIA: Strawberry haunted hotels, JKPG, Myling. OMRÅDEN: 426, vind, trappa, ljusgård.",
       "hauntedSwedenAppSummarySv": "Home Hotel Victoria i Jönköping ligger i Ebba Ramsays Viktoriahemmet från ca 1882 — temperancevärdshus, samlingssal och social mission, senare skola, radio och hotell. Folklore säger att Ebba aldrig checkade ut, särskilt rum 426 på vinden, med lugna gästupplevelser som Strawberry lyfter fram. Haunted Sweden skiljer Ramsays dokumenterade filantropi (inkl. Wilhelmsro) från vittnesmål. Boka officiellt; önska 426 om det finns.",
       "safetyNoteSv": "Aktivt hotell – boka endast via officiella kanaler (Home Hotel Victoria / Strawberry). Respektera gäster, personal, brandskydd och nattlig tystnad. Filma eller utred inte i korridorer eller andras rum utan tillstånd; rum 426 och vindsvåning beror på tillgång. Lobby och restaurang är öppna men respektera privatliv."
+    },
+    {
+      "id": "52",
+      "slug": "wiks-slott",
+      "name": "Wiks Slott",
+      "englishName": "Wik Castle (Viks Slott)",
+      "coverImage": "",
+      "category": "Castle / Castle Ruin",
+      "city": "Balingsta",
+      "region": "Uppland",
+      "country": "Sweden",
+      "address": "Viks Mur 29, 755 91 Uppsala, Sweden",
+      "latitude": 59.736,
+      "longitude": 17.462,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-submitted",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": true,
+      "hauntingLevel": 5,
+      "hauntedSwedenScore": 9.6,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "wiks_slott",
+        "viks_slott",
+        "uppsala",
+        "balingsta",
+        "fru_ramborg",
+        "medieval_castle",
+        "haunted_castle",
+        "ghost_legend",
+        "malar_en",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Wiks Slott (Viks slott) on Lårstaviken south-west of Uppsala is one of Sweden's best-preserved medieval castles — estate roots in the 1200s and a late-medieval stone fortress now run by Region Uppsala as hotel, conference and folk high school. Documented owners include lagman Israel And and his daughter Ramborg Israelsdotter in the early 1300s; the present tower-house rose in the late 1400s under the Sparre/Ellinge circle; Gustav Vasa besieged it for more than a year in 1521. Scholander reshaped the exterior in 1858–60. Folklore — presented by Visit Sweden and local media — says Fru Ramborg appears when the clock strikes thirteen, a giant woman rises by the shore, and an armoured presence climbs from cellar to library. Haunted Sweden keeps court and building history separate from these legends. Book lodging on site; explore park and shoreline at dusk.",
+      "whyItFitsHauntedSweden": "Flagship Uppland haunted castle hotel: best-preserved mid-Sweden medieval borg, 800-year estate narrative, Fru Ramborg folklore officially amplified by tourism, overnight lodging, Mälaren fog atmosphere. Visual 10/10, historical value 10/10, folklore strength 10/10, paranormal reputation 9/10, overnight investigation potential 10/10 — Haunted Sweden Score 9.6. Research confidence HIGH. Ideal verification mission: overnight, library/cellar with permission, shoreline blue hour, compare Ramborg folklore with Västeråker burial and ownership records, documentary episode.",
+      "shortDescription": "Medieval Wik by Lårstaviken — late-1400s stone fortress, Region Uppsala hotel, and Fru Ramborg ghost legends.",
+      "history": "DOCUMENTED: Wiks / Viks slott stands at Viks Mur 29, Balingsta socken, Uppsala municipality (Uppland), on Lårstaviken (Ekoln arm of Lake Mälaren), ~20 km south-west of Uppsala. Owned by Region Uppsala since the former landsting purchase in 1923; used for folk high school (from 1923), courses, events, restaurant/café and year-round lodging in historic buildings; protected as byggnadsminne (Länsstyrelsen / KML; commonly cited 1982). EARLY ESTATE: Oldest known owner lagman Israel Andreasson (And), d. 1289. Vik (Vihc) is recorded 1303 as seat of Ramborg Israelsdotter (And) and 1315 for her husband Arvid Gustavsson (Sparre av Vik), killed at Nyköpings gästabud 1317. Inheritance passed through Sparre/Bielke lines; unusually many women appear as owners in the medieval chain. STONE CASTLE: Present fortress built in the later 1400s, associated with Danish knight Klaus/Claus Nilsson and Katarina Stensdotter till Wik, or their son Nils/Niels Klausson (Sparre av Ellinge). Multi-storey defensive house: lower levels grey stone, upper brick in monk bond; originally taller; today described with seven storeys above plus deep undercroft levels. WAR: According to Peder Swart, Gustav Vasa besieged \"a little house in Hagunda called Vik\" in 1521, defended by Knut Nilsson — siege lasting more than a year. REBUILDS: Mid-1600s works under Gustaf Horn / Sigrid Bielke circle — upper storeys reduced, central stair, baroque portal and bridge entrance. Exterior and Riddarsalen largely given present character by Fredrik Wilhelm Scholander 1858–1860 (for von Essen ownership). Estate remained in continuous inheritance for centuries until first sale 1912, then to the county/Region. Park retains traces of baroque and English landscape design; bathing shore on the inlet. DARK HISTORY CONTEXT: Medieval warfare and the long Vasa siege, noble deaths (e.g. Arvid at Nyköping 1317), isolation of a lakeside fortress, and later centuries of aristocratic life imply ordinary tragedy and hardship — not automatic hauntings. Keep this record separate from Fru Ramborg and armour folklore below.",
+      "legend": "FOLKLORE — FRU RAMBORG (legend layered on a documented medieval owner): Visit Sweden and local tradition say Lady Ramborg appears at night when the castle clock strikes thirteen, her pale face visible in a tower window. Popular storytelling (incl. Region Uppsala heritage app material) also retells a troll-treasure tale explaining her wealth, and presents her as a lingering guardian of the estate. Historically Ramborg Israelsdotter was a real early-1300s owner (related to St Bridget's kin circle) and is associated with Västeråker church burial — treat clock-thirteen apparitions and troll gold as folklore, not biography. FOLKLORE — THE GIANT WOMAN: Witness anecdotes (e.g. SR P4 / local interviews) describe an enormous female figure in a floor-length cloak and tricorne hat in the park, sometimes rising from the water of the inlet. FOLKLORE — ARMOURED KNIGHT / FOOTSTEPS: Heavy footsteps said to start in the cellar, climb a hidden staircase (lönntrappa) and enter the library — as if a suit of armour walked. FOLKLORE — OTHER: White Lady and Black Lady traditions; chairs scraping in empty rooms; courtyard shadows; a corner-tower room that lights itself after the caretaker locks up (Visit Sweden summary); Anna von der Grünau ice-drowning tale (1612 journey toward Skokloster) as a separate tragic ghost story. WITNESS & TOURISM (anecdotal): Guests, staff and managers have spoken of unexplained lights, sounds and park sightings; Region Uppsala openly frames the site with legends alongside history. SPECIAL AREAS: library; cellars; hidden staircase; castle park; shoreline / Lårstaviken. ATMOSPHERE: Medieval towers, thick stone, fog over Mälaren, autumn park — one of Uppland's strongest overnight castle settings. INVESTIGATION IDEAS: overnight lodging; Fru Ramborg vs archives; cellar–library sound walk with permission; shoreline blue hour; history vs folklore. BEST CONDITIONS: autumn fog, rain after sunset, winter darkness, overnight stay. Keep DOCUMENTED ownership and siege history separate from FOLKLORE above.",
+      "safetyNote": "Active Region Uppsala hotel, folk high school and conference site — book lodging and meals through official Wiks slott / Region Uppsala channels. Respect course participants, staff and closed floors. Cellars, library and secret stairs are not free-roam zones; access only when permitted. Park, trails and bathing area: stay on paths, watch water edges in dark/fog. No unauthorized night investigation inside the castle.",
+      "sourceLinks": [
+        "https://sv.wikipedia.org/wiki/Viks_slott",
+        "https://regionuppsala.se/wiks-slott/om-wiks-slott/",
+        "https://www.lansstyrelsen.se/uppsala/besoksmal/kulturmiljoer/wiks-slott.html",
+        "https://visitsweden.com/where-to-stay/castles-and-manor-houses/haunted-houses/",
+        "https://destinationuppsala.se/se-gora-ata/wiks-slott/"
+      ],
+      "paranormalType": [
+        "Apparition",
+        "Footsteps",
+        "Object Movement",
+        "Heavy Atmosphere",
+        "Local Folklore"
+      ],
+      "accessType": "Paid Accommodation",
+      "familyFriendly": true,
+      "visitDifficulty": 2,
+      "nightAccess": true,
+      "parkingAvailable": true,
+      "guidedTours": true,
+      "publicAccess": false,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 0,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Viks+Mur+29,+755+91+Uppsala,+Sweden",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Medeltida Wik vid Lårstaviken — senmedeltida stenborg, Region Uppsala-hotell och Fru Ramborgs spöklegender.",
+      "historySv": "DOKUMENTERAT: Wiks/Viks slott, Viks Mur 29, Balingsta — Lårstaviken/Ekoln. Region Uppsala sedan 1923 (folkhögskola, hotell, konferens); byggnadsminne. Äldste kände ägare Israel And (d. 1289); Ramborg Israelsdotter 1303; maken Arvid dödad vid Nyköpings gästabud 1317. Nuvarande borg sent 1400-tal (Klaus Nilsson/Katarina Stensdotter/Nils Klausson). Gustav Vasa belägrade 1521 >1 år (Peder Swart). Ombyggnad 1600-tal (Horn/Bielke); Scholander 1858–60. Mörk historia som kontext: belägring, adelsdödsfall, isolering — ej spökbevis.",
+      "legendSv": "FOLKLORE: Fru Ramborg — synlig i tornfönster när klockan slår tretton; trollskattsägen (historisk Ramborg skild från spökpåståenden). Jättekvinna i park/vatten. Rustning/tunga steg källare–lönntrappa–bibliotek. Vita/svarta damer, skrapande stolar, självtänd lampa i hörntorn (Visit Sweden). Anna von der Grünau-islegenden. VITTNESMÅL: gäster/personal om ljus och ljud. OMRÅDEN: bibliotek, källare, lönntrappa, park, strand.",
+      "hauntedSwedenAppSummarySv": "Wiks slott vid Lårstaviken är en av Sveriges bäst bevarade medeltidsborgar — gårdsanor från 1200-talet, stenborg sent 1400-tal, belägrad av Gustav Vasa 1521, idag Region Uppsala med hotell och folkhögskola. Folklore om Fru Ramborg, jättekvinna och rustningssteg hålls isär från dokumenterad ägarlängd. Boka logi; utforska park och strand i skymning.",
+      "safetyNoteSv": "Aktivt Region Uppsala-hotell, folkhögskola och konferens – boka via officiella kanaler. Respektera kursdeltagare och stängda våningar. Källare, bibliotek och lönntrappor endast med tillstånd. Park och bad: håll dig till stigar, var försiktig vid vatten i mörker/dimma. Ingen otillåten nattutredning inne i borgen."
     }
   ]
 }
