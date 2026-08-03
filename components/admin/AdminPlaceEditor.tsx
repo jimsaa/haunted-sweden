@@ -181,6 +181,28 @@ export function AdminPlaceEditor({
   );
 
   const patch = (partial: Partial<AdminPlaceDraft>) => {
+    const keys = Object.keys(partial) as (keyof AdminPlaceDraft)[];
+    const mediaKeys: (keyof AdminPlaceDraft)[] = [
+      "coverImage",
+      "images",
+      "videos",
+    ];
+    const mediaOnly =
+      keys.length > 0 && keys.every((k) => mediaKeys.includes(k));
+    if (mediaOnly) {
+      if (
+        (partial.coverImage !== undefined || partial.images !== undefined) &&
+        !access.uploadImages &&
+        !access.editLocations
+      ) {
+        return;
+      }
+      if (partial.videos !== undefined && !access.uploadVideos && !access.editLocations) {
+        return;
+      }
+      onChange({ ...draft, ...partial });
+      return;
+    }
     if (!access.editLocations && !access.editSwedish && !access.editEnglish) {
       return;
     }
@@ -485,6 +507,41 @@ export function AdminPlaceEditor({
 
         {tab === "media" && (
           <div className="space-y-8 max-w-3xl">
+            <section>
+              <h3 className="text-sm font-semibold text-violet-200 mb-2">
+                Cover photo
+              </h3>
+              <p className="text-xs text-white/45 mb-3">
+                Primary image for map cards and place pages. Paste a direct
+                image URL (<code className="text-violet-300">https://…</code>)
+                or a site path like{" "}
+                <code className="text-violet-300">/places/slug-cover.png</code>.
+                Then use <strong>Save to JSON file</strong> in the top bar (or
+                set covers faster from the Cover Audit tab).
+              </p>
+              {access.uploadImages || access.editLocations ? (
+                <Field label="Cover photo URL">
+                  <TextInput
+                    value={draft.coverImage}
+                    onChange={(v) => patch({ coverImage: v })}
+                    placeholder="https://… or /places/name-cover.png"
+                  />
+                </Field>
+              ) : (
+                <p className="text-sm text-white/40">
+                  {draft.coverImage || "No cover set"}
+                </p>
+              )}
+              {draft.coverImage.trim() ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={draft.coverImage.trim()}
+                  alt=""
+                  className="mt-3 h-28 w-44 rounded object-cover border border-white/10 bg-black/40"
+                />
+              ) : null}
+            </section>
+
             <section>
               <div className="flex items-center justify-between mb-3">
                 <h3 className="text-sm font-semibold text-violet-200">Images</h3>

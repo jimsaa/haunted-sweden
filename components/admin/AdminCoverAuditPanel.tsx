@@ -7,7 +7,7 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import { CheckCircle2, AlertTriangle, Copy, ExternalLink, ImageOff, RefreshCw } from "lucide-react";
+import { CheckCircle2, AlertTriangle, Copy, ExternalLink, ImageOff, RefreshCw, Save } from "lucide-react";
 import { getAdminAuthHeaders } from "@/lib/admin/auth";
 import {
   filterCoverAuditRows,
@@ -63,6 +63,10 @@ export function AdminCoverAuditPanel() {
   const [filter, setFilter] = useState<CoverAuditFilter>("all");
   const [sort, setSort] = useState<CoverAuditSort>("name");
   const [copyMessage, setCopyMessage] = useState<string | null>(null);
+  /** Draft cover URLs keyed by place id */
+  const [urlDrafts, setUrlDrafts] = useState<Record<string, string>>({});
+  const [savingId, setSavingId] = useState<string | null>(null);
+  const [rowMessages, setRowMessages] = useState<Record<string, string>>({});
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -83,8 +87,15 @@ export function AdminCoverAuditPanel() {
         setSummary(EMPTY_SUMMARY);
         return;
       }
-      setRows(data.rows ?? []);
+      const nextRows = data.rows ?? [];
+      setRows(nextRows);
       setSummary(data.summary ?? EMPTY_SUMMARY);
+      setUrlDrafts(
+        Object.fromEntries(
+          nextRows.map((r) => [r.id, r.coverImage ?? ""])
+        )
+      );
+      setRowMessages({});
     } catch {
       setError("Network error.");
       setRows([]);
@@ -118,6 +129,39 @@ export function AdminCoverAuditPanel() {
     }
   };
 
+  const saveCover = async (row: CoverAuditRow) => {
+    const coverImage = (urlDrafts[row.id] ?? "").trim();
+    setSavingId(row.id);
+    setRowMessages((m) => ({ ...m, [row.id]: "" }));
+    try {
+      const res = await fetch("/api/admin/places/cover", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          ...getAdminAuthHeaders(),
+        },
+        body: JSON.stringify({ id: row.id, coverImage: coverImage || null }),
+      });
+      const data = (await res.json()) as { error?: string; coverImage?: string | null };
+      if (!res.ok) {
+        setRowMessages((m) => ({
+          ...m,
+          [row.id]: data.error || "Save failed.",
+        }));
+        return;
+      }
+      setRowMessages((m) => ({
+        ...m,
+        [row.id]: coverImage ? "Cover saved." : "Cover cleared.",
+      }));
+      await load();
+    } catch {
+      setRowMessages((m) => ({ ...m, [row.id]: "Network error." }));
+    } finally {
+      setSavingId(null);
+    }
+  };
+
   return (
     <div className="flex flex-1 min-h-0 flex-col overflow-auto p-4">
       <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
@@ -129,8 +173,9 @@ export function AdminCoverAuditPanel() {
             Cover Audit
           </h2>
           <p className="text-sm text-white/45">
-            Find locations missing or with broken cover images. Does not change
-            place data.
+            Find a photo (Google Images link), paste the image URL below, and
+            save — updates the listing cover immediately. Does not bulk-edit
+            other place fields.
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
@@ -228,21 +273,23 @@ export function AdminCoverAuditPanel() {
                 <th className="px-3 py-2 font-medium w-16">Thumb</th>
                 <th className="px-3 py-2 font-medium">Location</th>
                 <th className="px-3 py-2 font-medium">Region</th>
-                <th className="px-3 py-2 font-medium">Slug</th>
-                <th className="px-3 py-2 font-medium">Cover filename</th>
+                <th className="px-3 py-2 font-medium min-w-[280px]">Cover photo URL</th>
                 <th className="px-3 py-2 font-medium">Status</th>
               </tr>
             </thead>
             <tbody>
               {visible.map((row) => (
-                <tr key={row.id} className="border-t border-white/5 align-middle">
+                <tr key={row.id} className="border-t border-white/5 align-top">
                   <td className="px-3 py-2">
-                    {row.thumbnailSrc ? (
+                    {row.thumbnailSrc || (urlDrafts[row.id] || "").trim() ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
-                        src={row.thumbnailSrc}
+                        src={(urlDrafts[row.id] || "").trim() || row.thumbnailSrc || ""}
                         alt=""
                         className="h-12 w-12 rounded object-cover border border-white/10 bg-black/40"
+                        onError={(e) => {
+                          (e.target as HTMLImageElement).style.opacity = "0.25";
+                        }}
                       />
                     ) : (
                       <div
@@ -253,15 +300,40 @@ export function AdminCoverAuditPanel() {
                       </div>
                     )}
                   </td>
-                  <td className="px-3 py-2 text-violet-100 font-medium">
-                    {row.name}
+                  <td className="px-3 py-2">
+                    <div className="text-violet-100 font-medium">{row.name}</div>
+                    <div className="font-mono text-[11px] text-white/40">{row.slug}</div>
                   </td>
                   <td className="px-3 py-2 text-white/70">{row.region || "—"}</td>
-                  <td className="px-3 py-2 font-mono text-xs text-white/50">
-                    {row.slug}
-                  </td>
-                  <td className="px-3 py-2 font-mono text-xs text-white/55">
-                    {row.coverFilename || "—"}
+                  <td className="px-3 py-2">
+                    <div className="flex flex-col gap-1.5 sm:flex-row sm:items-center">
+                      <input
+                        type="url"
+                        value={urlDrafts[row.id] ?? ""}
+                        onChange={(e) =>
+                          setUrlDrafts((d) => ({
+                            ...d,
+                            [row.id]: e.target.value,
+                          }))
+                        }
+                        placeholder="https://… or /places/name-cover.png"
+                        className="admin-input flex-1 min-w-0 text-xs font-mono"
+                      />
+                      <button
+                        type="button"
+                        className="admin-btn admin-btn--primary shrink-0 text-xs"
+                        disabled={savingId === row.id}
+                        onClick={() => void saveCover(row)}
+                      >
+                        <Save className="h-3.5 w-3.5" aria-hidden />
+                        {savingId === row.id ? "Saving…" : "Save cover"}
+                      </button>
+                    </div>
+                    {rowMessages[row.id] ? (
+                      <p className="mt-1 text-[11px] text-violet-200/80">
+                        {rowMessages[row.id]}
+                      </p>
+                    ) : null}
                   </td>
                   <td className={`px-3 py-2 whitespace-nowrap ${statusClass(row.status)}`}>
                     {row.status === "missing" || row.status === "broken" ? (
@@ -285,7 +357,7 @@ export function AdminCoverAuditPanel() {
               {visible.length === 0 ? (
                 <tr>
                   <td
-                    colSpan={6}
+                    colSpan={5}
                     className="px-3 py-8 text-center text-white/40"
                   >
                     No locations match this filter.

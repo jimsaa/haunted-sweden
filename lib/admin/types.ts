@@ -67,6 +67,8 @@ export interface AdminPlaceDraft {
   googleMapsUrl: string;
   googlePlaceId: string;
   status: PlaceStatus;
+  /** Primary map/card cover — public path or remote image URL */
+  coverImage: string;
   images: AdminImageDraft[];
   videos: AdminVideoDraft[];
 }

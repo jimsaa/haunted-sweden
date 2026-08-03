@@ -82,6 +82,7 @@ export function placeToDraft(place: HauntedPlace): AdminPlaceDraft {
     googleMapsUrl: place.googleMapsUrl ?? "",
     googlePlaceId: place.googlePlaceId ?? "",
     status: place.status,
+    coverImage: place.coverImage?.trim() ?? "",
     images: (place.images ?? []).map(imageToDraft),
     videos: (place.videos ?? []).map(videoToDraft),
   };
@@ -177,6 +178,7 @@ export function draftToPlaceJson(
     googleMapsUrl: draft.googleMapsUrl.trim() || undefined,
     googlePlaceId: draft.googlePlaceId.trim() || null,
     status: draft.status,
+    coverImage: draft.coverImage.trim() || null,
     images,
     videos,
     photoCount: images.length,
@@ -261,6 +263,7 @@ function createMinimalPlace(draft: AdminPlaceDraft): HauntedPlace {
     googlePlaceId: null,
     googleRating: null,
     googleReviewsEnabled: false,
+    coverImage: draft.coverImage.trim() || null,
     images: [],
     videos: [],
     status: "pending",
