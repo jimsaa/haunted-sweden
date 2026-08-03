@@ -1,5 +1,5 @@
 {
-  "version": 37,
+  "version": 38,
   "places": [
     {
       "id": "1",
@@ -3114,6 +3114,90 @@
       "legendSv": "FOLKLORE (ej dokumenterad historia): GRÅA FRUN — herrdotter som älskade en dansk fånge; vandrar i grått, ofta övre våningar. DEN INMURADE FLICKAN — riddardotter inmurad levande efter pestoro från Danmark; söker frihet — legend. LILLE GUSTAV STENBOCK — drunknade i brunnen som treåring enligt sägen; blek pojke i gamla kläder. VITTNESMÅL: fotsteg, dörrar, skuggor, köld — guider och besökare. Håll isär från dokumenterad byggnads- och ätteshistoria.",
       "hauntedSwedenAppSummarySv": "Torpa Stenhus vid Åsunden är ett av Sveriges bäst bevarade medeltida stenhus — uppfört ca 1470, Stenbockarnas stamgods, och platsen där Gustav Vasa 1552 hämtade Katarina Stenbock. Hit kommer besökare för renässanssalar och för västra Sveriges mest kända slottsspöken: Gråa frun, den inmurade flickan och lille Gustav. Haunted Sweden skiljer dokumenterad historia från folklore. Boka officiella visningar; höstdimma och blåtimme gör Torpa till en flaggskeppsdestination.",
       "safetyNoteSv": "Privatägt historiskt slott – besök endast via officiella öppningar, guidade visningar och bokade evenemang. Håll dig till tillåtna stigar; gå inte in på stängda våningar, klättra inte på murar eller trespassera efter stängning. Respektera personal, besökare och fotoregler. Nattutredning endast med uttryckligt tillstånd."
+    },
+    {
+      "id": "38",
+      "slug": "ericsbergs-slott",
+      "name": "Ericsbergs Slott",
+      "englishName": "Ericsberg Castle",
+      "coverImage": "",
+      "category": "Castle / Castle Ruin",
+      "city": "Katrineholm",
+      "region": "Södermanland",
+      "country": "Sweden",
+      "address": "Gårdskontoret Ericsberg, 641 93 Katrineholm, Sweden",
+      "latitude": 58.933,
+      "longitude": 16.379,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-submitted",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": false,
+      "hauntingLevel": 5,
+      "hauntedSwedenScore": 9.6,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "ericsbergs_slott",
+        "pintorpafrun",
+        "baroque_castle",
+        "katrineholm",
+        "sodermanland",
+        "haunted_castle",
+        "ghost_legend",
+        "historical_estate",
+        "folklore",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Ericsbergs Slott near Katrineholm is one of Sweden's finest Baroque castles — first recorded in 1508 as Pintorp (Pinnatorp), rebuilt from the 1650s under Baron Eric Gyllenstierna and completed by his widow Beata von Yxkull, who renamed the estate Ericsberg after her husband. Their son Christoffer Gyllenstierna expanded it in Baroque style; later Hildebrand and then the Bonde family (owners to this day) restored and preserved the house and its celebrated late-17th-century park of avenues, gardens and fountains. Documented history meets Sweden's most famous castle-mistress ghost tradition: Pintorpafrun — folklore variously naming Anna Karlsdotter or Beata von Yxkull as a cruel lady of the manor who returns as a restless female spirit. Historians note the legend is a travelling tale of harsh noblewomen, and that sources do not prove Beata was cruel. Haunted Sweden keeps estate records separate from legend and visitor reports of apparitions, footsteps and cold spots. The castle interior is private; park, café and guided tours open in designated periods — respect restricted grounds.",
+      "whyItFitsHauntedSweden": "Södermanland flagship: outstanding Baroque architecture and park (visual 10/10), 500+ years from Pintorp to Ericsberg, Bonde ownership continuity, and home of the Pintorpafrun — one of Sweden's best-known castle ghost legends (folklore strength 10/10). Historical value 10/10, paranormal reputation 9/10, night investigation potential 9/10 around public park areas — Haunted Sweden Score 9.6. Premium content potential EXTREMELY HIGH; research confidence HIGH. Future mission: park photography, evening public-area investigation, archive research, guide interviews, compare Pintorpafrun variants.",
+      "shortDescription": "Södermanland's great Baroque castle — once Pintorp, still Bonde-owned, and home of Sweden's legendary Pintorpafrun.",
+      "history": "DOCUMENTED: Ericsbergs Slott (Gårdskontoret Ericsberg, 641 93 Katrineholm, Södermanland) stands on the former Pintorp / Pinnatorp estate, mentioned in 1508 when Knut Nilsson of Bosgård sold the croft to Anna Karlsdotter (Vinstorpaätten), widow of knight Erik Eriksson Gyllenstierna; it remained in the Gyllenstierna sphere. The present castle was begun in the mid-1600s by riksråd Baron Eric (Erik Karlsson) Gyllenstierna (d. 1657) and finished by his wife Beata von Yxkull (1618–1667), who renamed the property Ericsberg in his honour while managing the estate during and after his wartime absences. Their son Christoffer (Kristofer) Gyllenstierna, riksråd and överståthållare, remodelled and winged the house in Baroque fashion (architect attributions vary — Nicodemus Tessin the Elder, Jean de la Vallée or Mathias Spihler appear in secondary sources) and developed the French-inspired park, essentially complete after the castle works of the 1680s. After the Gyllenstierna line died out (1733), David Henrik Hildebrand purchased Ericsberg, enlarged the lands and made it a fideikommiss (1778); in 1808 it passed to the Bonde family, who still own the estate (fideikommiss wound up after 1988). 19th-century restorations (e.g. 1812, 1862, 1897 with Isak Gustaf Clason) secured its reputation as one of Sweden's most important Baroque castle environments, including a noted Nordic-history library. The Baroque park — linden avenues, gardens, fountains — dates from the late 1600s. ACCESSIBILITY: the castle itself is privately owned and not generally open; park, café and guided tours operate in designated opening periods — respect private property. DARK HISTORY (documented context): centuries of noble life, inheritance and estate management, deaths of owners across generations, and folklore of harsh treatment of servants and tenants attached to the Pintorp name — Haunted Sweden does not treat legendary cruelty as proven biography.",
+      "legend": "FOLKLORE — PINTORPAFRUN (one of Sweden's most famous castle-ghost traditions; not established fact): A cruel (or, in softer tellings, misunderstood) mistress who mistreated servants and tenant farmers, was punished after death, and wanders as a restless female spirit. The name plays on Pintorp / 'pina' (to torment). Candidates in tradition include Anna Karlsdotter (16th c.), Beata von Yxkull (most often named in popular lore), and even Anna Gustafsdotter Banér (never resident at Pintorp). Scholarly and popular histories stress that the tale is a widespread Swedish wandering legend of harsh noblewomen applied to strong widows who ran estates; there is no documentary proof that Beata von Yxkull was cruel. WITNESS REPORTS & LOCAL STORIES (unverified): female apparition near the castle, unexplained footsteps, cold spots, feeling watched, strange sounds in empty rooms, unusual evening atmosphere — associated with Pintorpafrun in regional ghost lists. SPECIAL AREAS: castle exterior (sighting lore); Baroque park pathways; historic courtyard; linden avenues (isolation and drama after sunset). ATMOSPHERE: magnificent Baroque architecture, historic park and avenues, gardens and fountains, quiet countryside, fog on the grounds, photogenic mystery at blue hour. INVESTIGATION IDEAS: map Pintorpafrun variants vs documented owners; evening photography in public park areas only; EVP outdoors with permission; history-vs-folklore documentary. BEST CONDITIONS: autumn evenings, heavy fog, winter darkness, rain, blue hour. Keep DOCUMENTED estate history separate from FOLKLORE above.",
+      "safetyNote": "Privately owned estate — the castle interior is not generally open to the public. Use only official openings for the Baroque park, café and guided tours (ericsberg.se). Stay on permitted paths; do not enter restricted buildings, courtyards or areas after closing. Respect private property, staff and other visitors. Night investigation only in public/open areas with permission.",
+      "sourceLinks": [
+        "https://ericsberg.se/om_ericsberg/",
+        "https://sv.wikipedia.org/wiki/Ericsbergs_slott",
+        "https://sv.wikipedia.org/wiki/Pintorpafrun",
+        "https://www.slottsguiden.info/slottdetalj.asp?id=30"
+      ],
+      "paranormalType": [
+        "Apparition",
+        "Footsteps",
+        "Temperature Changes",
+        "Heavy Atmosphere",
+        "Local Folklore",
+        "Voices"
+      ],
+      "accessType": "Guided Visits",
+      "familyFriendly": true,
+      "visitDifficulty": 2,
+      "nightAccess": false,
+      "parkingAvailable": true,
+      "guidedTours": true,
+      "publicAccess": true,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 0,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ericsbergs+Slott,+641+93+Katrineholm,+Sweden",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Sörmlands stora barockslott — en gång Pintorp, fortfarande Bondeägt, och hem för legenden om Pintorpafrun.",
+      "historySv": "DOKUMENTERAT: Ericsbergs slott vid Katrineholm, tidigare Pintorp/Pinnatorp (omnämnt 1508 när Knut Nilsson sålde torpet till Anna Karlsdotter). Nuvarande slott påbörjat på 1650-talet av friherre Eric Gyllenstierna, färdigställt av hustrun Beata von Yxkull som namngav Ericsberg efter maken. Sonen Christoffer Gyllenstierna byggde om i barock och anlade park. Hildebrand köpte på 1700-talet; från 1808 ätten Bonde, som äger godset än idag. Ett av Sveriges viktigaste barockslott med park från sent 1600-tal. Tillgänglighet: slottet privat; park, café och guidade visningar under öppettider. Mörk historia som kontext: adelsliv, arv och folklore om hård behandling av tjänstefolk — ej bevisad biografi.",
+      "legendSv": "FOLKLORE — PINTORPAFRUN (en av Sveriges mest kända slottsägner, ej fakta): Grym (eller missförstådd) fru som pinade tjänstefolk och torpare och går igen. Namnet knyts till Pintorp. Traditionen pekar på Anna Karlsdotter eller Beata von Yxkull; forskare betonar att det är en vandringssägen och att Beata saknar belägg för grymhet. VITTNESMÅL: kvinnlig gestalt, fotsteg, köld, känsla av att bli iakttagen. OMRÅDEN: slottsfasad, barockpark, gård, lindalléer. Håll isär från dokumenterad godshistoria.",
+      "hauntedSwedenAppSummarySv": "Ericsbergs slott nära Katrineholm är ett av Sveriges finaste barockslott — dokumenterat som Pintorp 1508, ombyggt från 1650-talet under Gyllenstierna och Beata von Yxkull, senare Hildebrand och Bonde. Hit hör legenden om Pintorpafrun, Sveriges mest kända pinande slottsfru — folklore, inte bevisad historia. Park och visningar under öppettider; slottet privat. Haunted Sweden skiljer arkiv från sägen.",
+      "safetyNoteSv": "Privatägt gods – slottsinteriören är i regel stängd. Använd endast officiella öppningar för barockparken, café och guidade visningar. Håll dig till tillåtna stigar; gå inte in i stängda byggnader eller områden efter stängning. Respektera privat egendom. Nattutredning endast i öppna/allmänna områden med tillstånd."
     }
   ]
 }
