@@ -1,5 +1,5 @@
 {
-  "version": 41,
+  "version": 42,
   "places": [
     {
       "id": "1",
@@ -3446,6 +3446,90 @@
       "legendSv": "FOLKLORE & VITTNESMÅL (ej bevisat): GRÅ DAMEN — kvinna i grått i korridorer och vid den ofullbordade salen; kopplas i sägen till Anna Margareta von Haugwitz. VIT GESTALT — berättelser om vit figur i barnkammaren (museiguider/press). ÖVRIGT: röster i Wrangelvåningen, mörk skugga på vinden ovan ofullbordade salen, fotsteg, köld. OMRÅDEN: ofullbordade salen, trappa, korridorer, kapell, borggård/sjö. Håll isär från dokumenterad slotts- och museihistoria.",
       "hauntedSwedenAppSummarySv": "Skoklosters slott mellan Stockholm och Uppsala är ett av Europas bäst bevarade barockslott — byggt 1654–1676 för Carl Gustaf Wrangel, med den berömda Ofullbordade salen där verktygen blev kvar. Statligt museum sedan 1967 med enorma samlingar. Folklore om Grå damen och guideras berättelser om vita gestalter och röster hålls isär från historien. Boka säsongsöppet; respektera stängda rum.",
       "safetyNoteSv": "Statligt museum – besök under publicerade öppettider och följ guidade regler. Gå inte in i stängda rum, rör inte föremål. Slottsmarkerna är tillgängliga året runt; respektera privata områden. Ingen övernattning i museisalarna. Fotoregler enligt anslag."
+    },
+    {
+      "id": "42",
+      "slug": "berga-herrgard",
+      "name": "Berga Herrgård",
+      "englishName": "Berga Manor",
+      "coverImage": "",
+      "category": "Manor / Estate",
+      "city": "Högsby",
+      "region": "Småland",
+      "country": "Sweden",
+      "address": "Berga Herrgård, 579 92 Högsby, Småland, Sweden",
+      "latitude": 57.168,
+      "longitude": 16.027,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-submitted",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": false,
+      "hauntingLevel": 4,
+      "hauntedSwedenScore": 8.9,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "berga_herrgard",
+        "hogsby",
+        "smaland",
+        "white_lady",
+        "haunted_manor",
+        "ghost_legend",
+        "historic_estate",
+        "folklore",
+        "historical_mystery",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Berga Herrgård outside Högsby, on the east bank of the Emån in Småland, is a medieval-rooted frälse estate first documented around 1298–1299 when land was tied to Kalmar nunnekloster donations. After the Reformation it remained crown land until 1639, when landshövding Bengt Bagge af Berga purchased it; later owners included de Besche, af Harmens and Jeansson families. The present main house was built in 1782 by Henrik af Harmens and stands in parkland with ancient trees and one of Scandinavia's noted mistletoe stands. Local ghost lore — stronger in popular Spökhus-style sources than in academic archives — centres on Bagge (jingling spurs, voices, festive light in empty windows reflected in the Emån) and a maid said to have been drowned in the estate pond, whose figure wanders the park. Haunted Sweden frames White Lady corridor/window tales within that female-apparition tradition while keeping cruelty and drowning stories as folklore, not proven crime. Privately owned — stay on public roads and respect the property.",
+      "whyItFitsHauntedSweden": "Småland manor addition: medieval documentation from the 1200s, Emån cultural landscape, 1782 manor architecture, and layered Bagge/maid/White Lady folklore. Visual 9/10, historical 9.5/10, folklore 8.5/10, paranormal reputation 8/10, night potential 8.5/10 from public approaches — Score 8.9. Premium content HIGH; research confidence MEDIUM–HIGH (history solid; ghost details mainly popular folklore sites). Future mission: exterior photography, evening public-road views, Högsby archive research, local historian interviews, compare legends with jordeböcker.",
+      "shortDescription": "Medieval Högsby manor by the Emån — 1782 main house, noble Bagge–Harmens history, and local White Lady / maid folklore.",
+      "history": "DOCUMENTED: Berga Herrgård (Berga gård), Högsby municipality / former Högsby socken, Småland (Kalmar County), southeast of Högsby on the eastern side of the Emån. Earliest records around 1298–1299 link the farm to donations involving Bengta Holmstensdotter / Margareta Gustavsdotter and Kalmar nunnekloster (Wikipedia and museum texts vary slightly on names and exact year). Medieval frälse and sätesgård phases include Per Nilsson (sparre) mid-1400s; parts burned c. 1510. Post-Reformation crown holdings until landshövding Bengt Bagge (1594–1660) bought Berga in 1639 (Bagge family already connected earlier). After Peder Bagge's death (1712), Isak de Besche and later von Gertten, Broman, Åkerhielm, von Hegardt; major Henrik af Harmens built the present main house in 1782; Harmens ownership through the 1800s; Jeansson consortium from 1889. Högsby municipal heritage texts describe Berga as one of the county's larger 1700–1800s estates (agriculture, industry including brickworks), now reduced but with main building and stone barn remaining in an Emån agricultural landscape rich in prehistoric graves. Park and mature trees; privately owned. ACCESSIBILITY: private property — remain on public roads; do not enter park or buildings without invitation; check for any rare open events. DARK HISTORY (documented context): centuries of noble/military ownership, regional war–disease–famine hardship, and ordinary deaths of residents and servants — folklore of forbidden love and drowning is not proven court fact.",
+      "legend": "FOLKLORE (popular ghost sites; research confidence medium — not verified crime or haunting): BENGT BAGGE — feared 1600s landshövding/owner; night guests reportedly hear jingling spurs, loud voices and murmuring; festive light said to stream from high windows when the house stands empty, reflecting in the Emån. THE DROWNED MAID — legend that Bagge drowned a maid in the pond behind the house to silence a secret affair; her restless figure is said to wander the park; visitors report unease or soft murmuring water sounds near the pond. WHITE LADY — Swedish manor tradition of a woman in white in corridors and at windows, silently watching then vanishing, often folded into the maid/tragic-resident story at Berga; treat corridor White Lady reports as folklore/visitor lore unless a named archival case exists. OTHER REPORTS: footsteps in empty rooms, doors moving, cold spots, feeling watched, night sounds. SPECIAL AREAS: main hall; upper corridors (White Lady lore); manor park and pond; entrance staircase. ATMOSPHERE: historic manor, ancient trees, Småland countryside, mist from fields and Emån, mysterious after sunset. INVESTIGATION IDEAS: exterior only from public rights of way; folklore vs 1299/1782 timeline; Högsby local history. BEST CONDITIONS: autumn evenings, fog, winter dark, rain, blue hour. Keep DOCUMENTED estate history separate from FOLKLORE above.",
+      "safetyNote": "Privately owned manor — do not enter grounds, park, driveways or buildings without permission. Observe only from public roads. Respect residents and agricultural operations. No trespassing after dark.",
+      "sourceLinks": [
+        "https://sv.wikipedia.org/wiki/Berga_herrg%C3%A5rd,_Sm%C3%A5land",
+        "https://digitaltmuseum.se/021017897972/berga-gard",
+        "https://spokhus.se/plats/berga-herrgard/",
+        "https://www.spokkartan.se/kalmar-lan/berga-herrgard/"
+      ],
+      "paranormalType": [
+        "Apparition",
+        "Footsteps",
+        "Voices",
+        "Temperature Changes",
+        "Heavy Atmosphere",
+        "Local Folklore"
+      ],
+      "accessType": "Public Landmark",
+      "familyFriendly": true,
+      "visitDifficulty": 2,
+      "nightAccess": false,
+      "parkingAvailable": false,
+      "guidedTours": false,
+      "publicAccess": false,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 0,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Berga+Herrg%C3%A5rd,+579+92+H%C3%B6gsby,+Sweden",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Medeltida herrgård vid Emån i Högsby — huvudbyggnad 1782, Bagge–Harmens-historia och lokal folklore om vit dam / piga.",
+      "historySv": "DOKUMENTERAT: Berga herrgård, Högsby kommun, Småland, öster om Emån. Omnämnd ca 1298–1299 i samband med donation till Kalmar nunnekloster. Kronogods till 1639 då landshövding Bengt Bagge köpte. Nuvarande huvudbyggnad 1782 av Henrik af Harmens; senare Jeansson m.fl. Viktig frälsegård i Emåns odlingslandskap. Privatägt — stanna på allmän väg.",
+      "legendSv": "FOLKLORE (populära spökkällor, ej bevisat): Bengt Bagge — klingande sporrar, röster, festljus i tomma fönster speglade i Emån. Dränkt piga i dammen — gestalt i parken. Vit dam i korridorer/fönster som del av samma kvinnliga vålnadstradition. VITTNESMÅL: fotsteg, dörrar, köld, känsla av att bli iakttagen. Håll isär från dokumenterad godshistoria.",
+      "hauntedSwedenAppSummarySv": "Berga herrgård utanför Högsby vid Emån har medeltida anor från 1200-talet och en huvudbyggnad från 1782. Folklore om Bengt Bagge, en dränkt piga och vita gestalter lever i populära spökberättelser — Haunted Sweden skiljer dem från jordeböcker och byggnadshistoria. Privat egendom: betrakta endast från allmän väg.",
+      "safetyNoteSv": "Privat herrgård – gå inte in på tomt, park eller i byggnader utan tillstånd. Betrakta endast från allmän väg. Respektera boende och jordbruk. Ingen trespassing efter mörkrets inbrott."
     }
   ]
 }
