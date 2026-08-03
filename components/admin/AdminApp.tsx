@@ -33,6 +33,7 @@ import { AdminUsersPanel } from "@/components/admin/AdminUsersPanel";
 import { AdminNewsletterPanel } from "@/components/admin/AdminNewsletterPanel";
 import { AdminCommunityMembersPanel } from "@/components/admin/AdminCommunityMembersPanel";
 import { AdminMembersPanel } from "@/components/admin/AdminMembersPanel";
+import { AdminCoverAuditPanel } from "@/components/admin/AdminCoverAuditPanel";
 import { getTranslations } from "@/lib/i18n";
 import { useLanguage } from "@/lib/language-context";
 
@@ -40,6 +41,7 @@ const initialFile = hauntedPlacesFile as HauntedPlacesFile;
 
 type AdminMainTab =
   | "places"
+  | "cover-audit"
   | "submissions"
   | "users"
   | "newsletter"
@@ -336,6 +338,15 @@ export function AdminApp() {
             Locations
           </button>
         ) : null}
+        {showPlacesTab ? (
+          <button
+            type="button"
+            onClick={() => setMainTab("cover-audit")}
+            className={`admin-tab ${mainTab === "cover-audit" ? "admin-tab--active" : ""}`}
+          >
+            Cover Audit
+          </button>
+        ) : null}
         {showSubmissionsTab ? (
           <button
             type="button"
@@ -443,6 +454,10 @@ export function AdminApp() {
             )}
           </div>
         </div>
+      ) : null}
+
+      {mainTab === "cover-audit" && showPlacesTab ? (
+        <AdminCoverAuditPanel />
       ) : null}
 
       {copyOpen ? (
