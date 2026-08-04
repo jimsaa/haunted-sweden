@@ -1,0 +1,51 @@
+---
+description: Monthly SEO Sprint from Google Search Console — upgrade top-impression pages for CTR and rankings
+alwaysApply: false
+---
+
+# Monthly SEO Sprint (Search Console)
+
+Run this workflow whenever the user shares a Google Search Console report, top queries/pages, or asks for a monthly SEO sprint.
+
+## Goal
+
+Raise CTR and move high-impression pages from positions ~10–20 onto page 1 by upgrading the pages people already search for — not inventing random content.
+
+## Intake
+
+Ask for (or extract from their paste):
+
+1. Top pages by impressions (and clicks/CTR/position if available)
+2. Top queries for those pages
+3. Date range of the report
+
+Prioritize: high impressions + soft CTR and/or position 8–20.
+
+## Per place page (top N, usually 3–5)
+
+Use existing place JSON + `PlaceDetail` patterns (no MDX place pages).
+
+- Expand history/legend (DOCUMENTED vs FOLKLORE) toward ~1200–2000 words where substance exists
+- More H2/H3 via `##` / `###` in copy (`RichProse`)
+- FAQ + FAQPage schema (`faq` field)
+- Info box when key facts help (`infoBox`)
+- Nearby (geo) + Related Places + breadcrumbs
+- Haunted Sweden Investigation section (planned OK)
+- Gallery / cover when assets exist
+- Stronger meta title, description, OG, TouristAttraction JSON-LD
+
+## Homepage (if in top impressions)
+
+Featured, Verified, Popular, Latest, stats, and meta that name top searched places.
+
+## Guardrails
+
+- Official sources only for history; never present folklore as fact
+- Append/enrich JSON; do not invent unverifiable events
+- Prefer local `/places/*` images over fragile hotlinks
+- Validate: `npm run validate:places`
+- Commit/push only when the user asks
+
+## After sprint report
+
+Return: pages upgraded, queries targeted, meta changes, remaining cover/photo gaps, suggested next month focus.
