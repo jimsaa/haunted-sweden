@@ -19,6 +19,14 @@ Ask for (or extract from their paste):
 2. Top queries for those pages
 3. Date range of the report
 
+Or import a Search Console export folder:
+
+```bash
+node scripts/import-gsc-export.mjs "<export-folder>" YYYY-MM
+```
+
+Snapshots live in `data/seo/search-console/` and appear in Admin → **SEO**.
+
 Prioritize: high impressions + soft CTR and/or position 8–20.
 
 ## Per place page (top N, usually 3–5)
