@@ -296,7 +296,7 @@
       "slug": "hemsokt-museum",
       "name": "Hemsökt Museum",
       "englishName": "Haunted Museum Borås",
-      "coverImage": "",
+      "coverImage": "/places/hemsokt-museum-cover.jpg",
       "category": "Haunted Museum",
       "city": "Borås",
       "region": "Västra Götaland",
@@ -351,12 +351,20 @@
       "publicAccess": true,
       "evidenceCount": 0,
       "reportCount": 0,
-      "photoCount": 0,
+      "photoCount": 1,
       "videoCount": 0,
       "googlePlaceId": "",
       "googleRating": null,
       "googleReviewsEnabled": false,
-      "images": [],
+      "images": [
+        {
+          "url": "/places/hemsokt-museum-cover.jpg",
+          "caption": "Hemsökt Museum, Borås",
+          "captionSv": "Hemsökt Museum, Borås",
+          "credit": "Haunted Sweden",
+          "status": "approved"
+        }
+      ],
       "videos": [],
       "status": "approved",
       "shortDescriptionSv": "Sveriges första hemsökta museum i Borås — hundratals påstått hemsökta föremål, nattarrangemang och utredningsupplevelser från LaxTon Ghost Sweden. En flaggskeppsdestination för dark tourism i Västra Götaland.",
