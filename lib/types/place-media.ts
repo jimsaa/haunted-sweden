@@ -5,6 +5,7 @@ export type VideoPlatform = "youtube" | "vimeo" | "other";
 export interface PlaceImage {
   url: string;
   caption?: string;
+  captionSv?: string;
   credit?: string;
   status?: MediaStatus;
 }

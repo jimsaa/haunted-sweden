@@ -32,6 +32,11 @@ import type { VerificationLevel } from "@/lib/types/verification";
 import { SpokjaktBadge } from "@/components/spokjakt/SpokjaktBadge";
 import { InvestigationSourcesSection } from "@/components/places/InvestigationSourcesSection";
 import { InvestigationTimelineSection } from "@/components/places/InvestigationTimelineSection";
+import { PlaceBreadcrumbs } from "@/components/places/PlaceBreadcrumbs";
+import { PlaceFaqSection } from "@/components/places/PlaceFaqSection";
+import { PlaceInvestigationPlanSection } from "@/components/places/PlaceInvestigationPlanSection";
+import { PlaceRelatedSection } from "@/components/places/PlaceRelatedSection";
+import { RichProse } from "@/components/places/RichProse";
 import { SpokjaktFeaturedSection } from "@/components/spokjakt/SpokjaktFeaturedSection";
 import { isFeaturedInSpokjakt } from "@/lib/spokjakt-place";
 import {
@@ -93,16 +98,6 @@ function Section({
   );
 }
 
-function Prose({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-5 sm:px-6 sm:py-6">
-      <p className="leading-relaxed text-white/80 text-[15px] sm:text-base">
-        {children}
-      </p>
-    </div>
-  );
-}
-
 function VerificationBadge({
   level,
   label,
@@ -141,11 +136,13 @@ export function PlaceDetail({
   reports,
   mapsUrl,
   nearby,
+  related = [],
 }: {
   place: HauntedPlace;
   reports: PlaceReport[];
   mapsUrl: string;
   nearby: HauntedPlace[];
+  related?: HauntedPlace[];
 }) {
   const { locale, t } = useLanguage();
   const pt = t.placePage;
@@ -157,6 +154,7 @@ export function PlaceDetail({
     place.clusterName,
     locale
   );
+  const faqs = place.faq ?? [];
 
   const sections = [
     ...(isFeaturedInSpokjakt(place)
@@ -169,11 +167,17 @@ export function PlaceDetail({
       : []),
     { id: "history", label: pt.history },
     { id: "legends", label: pt.legends },
+    {
+      id: "haunted-sweden-investigation",
+      label: pt.investigation.navLabel,
+    },
     { id: "reports", label: pt.paranormalReports },
     { id: "photos", label: pt.photos },
     { id: "videos", label: pt.videos },
     { id: "location", label: pt.location },
+    ...(faqs.length > 0 ? [{ id: "faq", label: pt.faqTitle }] : []),
     ...(nearby.length > 0 ? [{ id: "nearby", label: pt.nearbyTitle }] : []),
+    ...(related.length > 0 ? [{ id: "related", label: pt.relatedTitle }] : []),
   ];
 
   return (
@@ -192,6 +196,11 @@ export function PlaceDetail({
           aria-hidden
         />
         <div className="relative mx-auto max-w-3xl px-4 pt-5 pb-10 sm:px-6 sm:pt-6 sm:pb-12">
+          <PlaceBreadcrumbs
+            placeName={title}
+            city={place.city}
+            region={place.region}
+          />
           <Link
             href="/map"
             className="text-sm text-white/70 hover:text-white inline-flex items-center gap-1"
@@ -291,12 +300,14 @@ export function PlaceDetail({
         </div>
 
         <Section id="history" title={pt.history}>
-          <Prose>{getPlaceHistory(place, locale)}</Prose>
+          <RichProse text={getPlaceHistory(place, locale)} />
         </Section>
 
         <Section id="legends" title={pt.legends}>
-          <Prose>{getPlaceLegend(place, locale)}</Prose>
+          <RichProse text={getPlaceLegend(place, locale)} />
         </Section>
+
+        <PlaceInvestigationPlanSection place={place} />
 
         {place.paranormalType.length > 0 && (
           <div className="mt-8 flex flex-wrap gap-2">
@@ -333,7 +344,7 @@ export function PlaceDetail({
           {place.images.length > 0 ? (
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
               {place.images.map((img, i) => (
-                <div
+                <figure
                   key={i}
                   className="relative aspect-square rounded-xl overflow-hidden border border-white/10"
                 >
@@ -349,7 +360,21 @@ export function PlaceDetail({
                     loading="lazy"
                     unoptimized
                   />
-                </div>
+                  {(img.credit || getImageCaption(img, locale)) && (
+                    <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 to-transparent px-2.5 pb-2 pt-8">
+                      {getImageCaption(img, locale) ? (
+                        <p className="text-[10px] sm:text-xs text-white/85 leading-snug">
+                          {getImageCaption(img, locale)}
+                        </p>
+                      ) : null}
+                      {img.credit ? (
+                        <p className="mt-0.5 text-[10px] text-violet-200/90">
+                          {pt.photoCredit}: {img.credit}
+                        </p>
+                      ) : null}
+                    </figcaption>
+                  )}
+                </figure>
               ))}
             </div>
           ) : (
@@ -501,6 +526,8 @@ export function PlaceDetail({
           </div>
         )}
 
+        <PlaceFaqSection faqs={faqs} />
+
         {nearby.length > 0 && (
           <Section id="nearby" title={pt.nearbyTitle}>
             {clusterDisplay && (
@@ -560,6 +587,8 @@ export function PlaceDetail({
             </ul>
           </Section>
         )}
+
+        <PlaceRelatedSection places={related} />
       </div>
     </article>
   );

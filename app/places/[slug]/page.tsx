@@ -4,8 +4,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import {
   getApprovedPlaceBySlug,
   getApprovedPlaces,
-  getClusterNearbyPlaces,
   getGoogleMapsUrl,
+  getNearbyPlaces,
+  getRelatedPlaces,
 } from "@/lib/places";
 import { getReportsForPlace } from "@/lib/reports";
 import { buildPageMetadata } from "@/lib/seo/build-metadata";
@@ -13,7 +14,11 @@ import {
   getPlaceMetaDescription,
   getPlaceOgImage,
 } from "@/lib/seo/descriptions";
-import { buildTouristAttractionJsonLd } from "@/lib/seo/json-ld";
+import {
+  buildFaqPageJsonLd,
+  buildPlaceBreadcrumbJsonLd,
+  buildTouristAttractionJsonLd,
+} from "@/lib/seo/json-ld";
 import { getPlaceSeoTitle } from "@/lib/seo/titles";
 
 export function generateStaticParams() {
@@ -50,16 +55,25 @@ export default async function PlacePage({
 
   const reports = getReportsForPlace(place.id);
   const mapsUrl = getGoogleMapsUrl(place);
-  const nearby = getClusterNearbyPlaces(place);
+  const nearby = getNearbyPlaces(place, 6);
+  const related = getRelatedPlaces(
+    place,
+    new Set(nearby.map((p) => p.id)),
+    4
+  );
+  const faqLd = buildFaqPageJsonLd(place);
 
   return (
     <>
       <JsonLd data={buildTouristAttractionJsonLd(place)} />
+      <JsonLd data={buildPlaceBreadcrumbJsonLd(place)} />
+      {faqLd ? <JsonLd data={faqLd} /> : null}
       <PlaceDetail
         place={place}
         reports={reports}
         mapsUrl={mapsUrl}
         nearby={nearby}
+        related={related}
       />
     </>
   );

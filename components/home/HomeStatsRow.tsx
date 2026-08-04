@@ -1,6 +1,6 @@
 "use client";
 
-import { Ghost, ImageIcon, Users, Video } from "lucide-react";
+import { Ghost, ImageIcon, MapPinned, ShieldCheck, Users, Video } from "lucide-react";
 import type { HomepageStats } from "@/lib/homepage-stats";
 import { useLanguage } from "@/lib/language-context";
 
@@ -16,7 +16,7 @@ function StatCard({
   sublabel?: string;
 }) {
   return (
-    <div className="home-stat-card group flex min-w-[140px] flex-1 flex-col items-center rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-4 text-center transition-all duration-300 hover:border-violet-500/35 hover:bg-violet-950/20 hover:shadow-[0_0_24px_rgba(139,92,246,0.12)] sm:min-w-0 sm:px-5 sm:py-5">
+    <div className="home-stat-card group flex min-w-[120px] flex-1 flex-col items-center rounded-2xl border border-white/10 bg-white/[0.04] px-3 py-4 text-center transition-all duration-300 hover:border-violet-500/35 hover:bg-violet-950/20 hover:shadow-[0_0_24px_rgba(139,92,246,0.12)] sm:min-w-0 sm:px-4 sm:py-5">
       <Icon
         className="mb-2 h-5 w-5 text-violet-400/90 transition-transform duration-300 group-hover:scale-110"
         aria-hidden
@@ -42,12 +42,23 @@ export function HomeStatsRow({ stats }: { stats: HomepageStats }) {
   const hs = t.homeStats;
 
   return (
-    <div className="mx-auto max-w-4xl">
-      <div className="flex gap-2 overflow-x-auto pb-1 snap-x snap-mandatory sm:grid sm:grid-cols-4 sm:gap-3 sm:overflow-visible">
+    <div className="mx-auto max-w-5xl">
+      <div className="flex gap-2 overflow-x-auto pb-1 snap-x snap-mandatory sm:grid sm:grid-cols-3 lg:grid-cols-6 sm:gap-3 sm:overflow-visible">
         <StatCard
           icon={Ghost}
           value={stats.locationCount}
           label={hs.locations}
+        />
+        <StatCard
+          icon={MapPinned}
+          value={stats.regionCount}
+          label={hs.regions}
+        />
+        <StatCard
+          icon={ShieldCheck}
+          value={stats.verifiedCount > 0 ? stats.verifiedCount : "—"}
+          label={hs.verified}
+          sublabel={stats.verifiedCount > 0 ? undefined : hs.comingSoon}
         />
         <StatCard
           icon={ImageIcon}

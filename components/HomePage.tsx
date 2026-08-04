@@ -12,16 +12,98 @@ import type { HomepageMediaItem } from "@/lib/place-media";
 import { useLanguage } from "@/lib/language-context";
 import type { HauntedPlace } from "@/lib/types/place";
 
+function PlaceGrid({
+  places,
+  locale,
+  coverPlaceholder,
+  viewDetails,
+  regionLabel,
+  hauntingLevelLabel,
+  featuredLabel,
+}: {
+  places: HauntedPlace[];
+  locale: "sv" | "en";
+  coverPlaceholder: string;
+  viewDetails: string;
+  regionLabel: string;
+  hauntingLevelLabel: string;
+  featuredLabel: string;
+}) {
+  return (
+    <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {places.map((place) => (
+        <li key={place.id}>
+          <FeaturedLocationCard
+            place={place}
+            locale={locale}
+            placeholderLabel={coverPlaceholder}
+            viewDetailsLabel={viewDetails}
+            regionLabel={regionLabel}
+            hauntingLevelLabel={hauntingLevelLabel}
+            featuredLabel={featuredLabel}
+          />
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function SectionHeader({
+  title,
+  subtitle,
+  linkLabel,
+}: {
+  title: string;
+  subtitle: string;
+  linkLabel: string;
+}) {
+  return (
+    <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+      <div>
+        <h2
+          className="text-2xl font-bold sm:text-3xl"
+          style={{ fontFamily: "var(--font-display), serif" }}
+        >
+          {title}
+        </h2>
+        <p className="mt-2 text-sm text-white/55 max-w-lg">{subtitle}</p>
+      </div>
+      <Link
+        href="/map"
+        className="inline-flex items-center gap-1.5 text-sm font-semibold text-violet-300 hover:text-violet-100 transition-colors shrink-0"
+      >
+        {linkLabel}
+        <ArrowRight className="h-4 w-4" aria-hidden />
+      </Link>
+    </div>
+  );
+}
+
 export function HomePage({
   featured,
+  verified,
+  latest,
+  popular,
   stats,
   mediaItems,
 }: {
   featured: HauntedPlace[];
+  verified: HauntedPlace[];
+  latest: HauntedPlace[];
+  popular: HauntedPlace[];
   stats: HomepageStats;
   mediaItems: HomepageMediaItem[];
 }) {
   const { locale, t } = useLanguage();
+  const hs = t.homeSections;
+  const cardProps = {
+    locale,
+    coverPlaceholder: t.coverPlaceholder,
+    viewDetails: t.mapPopup.viewDetails,
+    regionLabel: t.homeFeatured.region,
+    hauntingLevelLabel: t.homeFeatured.hauntingLevel,
+    featuredLabel: t.common.featured,
+  };
 
   return (
     <div className="min-h-screen bg-black text-white">
@@ -65,42 +147,51 @@ export function HomePage({
 
       <section className="border-t border-white/8 px-4 py-14 sm:px-6 sm:py-16">
         <div className="mx-auto max-w-6xl">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <h2
-                className="text-2xl font-bold sm:text-3xl"
-                style={{ fontFamily: "var(--font-display), serif" }}
-              >
-                {t.featuredPlaces}
-              </h2>
-              <p className="mt-2 text-sm text-white/55 max-w-lg">
-                {t.homeFeatured.subtitle}
-              </p>
-            </div>
-            <Link
-              href="/map"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-violet-300 hover:text-violet-100 transition-colors shrink-0"
-            >
-              {t.exploreMap}
-              <ArrowRight className="h-4 w-4" aria-hidden />
-            </Link>
-          </div>
+          <SectionHeader
+            title={t.featuredPlaces}
+            subtitle={t.homeFeatured.subtitle}
+            linkLabel={hs.viewAll}
+          />
+          <PlaceGrid places={featured} {...cardProps} />
+        </div>
+      </section>
 
-          <ul className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {featured.map((place) => (
-              <li key={place.id}>
-                <FeaturedLocationCard
-                  place={place}
-                  locale={locale}
-                  placeholderLabel={t.coverPlaceholder}
-                  viewDetailsLabel={t.mapPopup.viewDetails}
-                  regionLabel={t.homeFeatured.region}
-                  hauntingLevelLabel={t.homeFeatured.hauntingLevel}
-                  featuredLabel={t.common.featured}
-                />
-              </li>
-            ))}
-          </ul>
+      <section className="border-t border-white/8 px-4 py-14 sm:px-6 sm:py-16 bg-white/[0.015]">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeader
+            title={hs.verifiedTitle}
+            subtitle={hs.verifiedSubtitle}
+            linkLabel={hs.viewAll}
+          />
+          {verified.length > 0 ? (
+            <PlaceGrid places={verified} {...cardProps} />
+          ) : (
+            <p className="mt-8 rounded-2xl border border-dashed border-white/15 bg-white/[0.02] px-5 py-10 text-center text-sm text-white/55 max-w-2xl mx-auto">
+              {hs.verifiedEmpty}
+            </p>
+          )}
+        </div>
+      </section>
+
+      <section className="border-t border-white/8 px-4 py-14 sm:px-6 sm:py-16">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeader
+            title={hs.popularTitle}
+            subtitle={hs.popularSubtitle}
+            linkLabel={hs.viewAll}
+          />
+          <PlaceGrid places={popular} {...cardProps} />
+        </div>
+      </section>
+
+      <section className="border-t border-white/8 px-4 py-14 sm:px-6 sm:py-16 bg-white/[0.015]">
+        <div className="mx-auto max-w-6xl">
+          <SectionHeader
+            title={hs.latestTitle}
+            subtitle={hs.latestSubtitle}
+            linkLabel={hs.viewAll}
+          />
+          <PlaceGrid places={latest} {...cardProps} />
         </div>
       </section>
 

@@ -3,7 +3,13 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { SeoDiscoverability } from "@/components/seo/SeoDiscoverability";
 import { getHomepageStats } from "@/lib/homepage-stats";
 import { collectHomepageMediaItems } from "@/lib/place-media";
-import { getApprovedPlaces, getFeaturedPlaces } from "@/lib/places";
+import {
+  getApprovedPlaces,
+  getFeaturedPlaces,
+  getLatestPlaces,
+  getPopularPlaces,
+  getVerifiedPlaces,
+} from "@/lib/places";
 import { buildWebSiteJsonLd } from "@/lib/seo/json-ld";
 import { buildPageMetadata } from "@/lib/seo/build-metadata";
 import { getHomeDescription } from "@/lib/seo/descriptions";
@@ -18,6 +24,9 @@ export const metadata = buildPageMetadata({
 /** Landing page — primary journey leads to /map (the main product). */
 export default function Page() {
   const featured = getFeaturedPlaces(6);
+  const verified = getVerifiedPlaces(6);
+  const latest = getLatestPlaces(6);
+  const popular = getPopularPlaces(6);
   const stats = getHomepageStats();
   const mediaItems = collectHomepageMediaItems(getApprovedPlaces(), 8);
 
@@ -25,7 +34,14 @@ export default function Page() {
     <>
       <JsonLd data={buildWebSiteJsonLd()} />
       <SeoDiscoverability />
-      <HomePage featured={featured} stats={stats} mediaItems={mediaItems} />
+      <HomePage
+        featured={featured}
+        verified={verified}
+        latest={latest}
+        popular={popular}
+        stats={stats}
+        mediaItems={mediaItems}
+      />
     </>
   );
 }

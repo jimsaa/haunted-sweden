@@ -2,10 +2,10 @@ import type { HauntedPlace } from "@/lib/types/place";
 import { getCoverImageSrc } from "@/lib/place-cover";
 
 const HOME_DESCRIPTION_SV =
-  "Utforska hemsökta platser i Sverige. Spökhotell, slott, herrgårdar, kyrkogårdar och paranormala utredningar på Sveriges största spökkarta — Haunted Sweden.";
+  "Utforska Sveriges hemsökta platser: Hemsökt Museum, Läckö Slott, Målilla Sanatorium och 50+ spökplatser på spökkartan. Historia, folklore och utredningar — Haunted Sweden.";
 
 const HOME_DESCRIPTION_EN =
-  "Explore haunted places in Sweden. Ghost hotels, castles, manors, cemeteries and paranormal investigations on Sweden's haunted map — Haunted Sweden.";
+  "Explore Sweden's haunted places: Haunted Museum Borås, Läckö Castle, Målilla Sanatorium and 50+ ghost locations on the haunted map. History, folklore and investigations — Haunted Sweden.";
 
 const MAP_DESCRIPTION_SV =
   "Spökkartan Sverige: hitta hemsökta platser, spökhus, slott och paranormala platser på kartan. Utforska spökplatser i hela Sverige med Haunted Sweden.";
@@ -57,7 +57,7 @@ export function getCommunityDescription(locale: "sv" | "en" = "sv"): string {
   return locale === "en" ? COMMUNITY_DESCRIPTION_EN : COMMUNITY_DESCRIPTION_SV;
 }
 
-/** Auto-generated place meta description (SV-first, natural keywords). */
+/** Auto-generated place meta description (SV-first, CTR-oriented). */
 export function getPlaceMetaDescription(place: HauntedPlace): string {
   const name = place.name;
   const city = place.city;
@@ -67,8 +67,8 @@ export function getPlaceMetaDescription(place: HauntedPlace): string {
     place.shortDescription?.trim() ||
     `Hemsökt plats i ${city}, ${region}.`;
 
-  const base = truncate(summary, 120);
-  return `${name} — ${base} Utforska spökplatser och paranormala platser i Sverige på Haunted Sweden.`;
+  const base = truncate(summary, 110);
+  return `${name} i ${city} — ${base} Läs spökhistorier, besöksinfo och närliggande hemsökta platser på Haunted Sweden.`;
 }
 
 export function getPlaceOgImage(place: HauntedPlace): string | undefined {

@@ -19,6 +19,7 @@ export function buildPageMetadata({
 }: PageMetadataInput): Metadata {
   const alternates = buildLanguageAlternates(path);
   const ogImage = absoluteImageUrl(image) ?? absoluteImageUrl(DEFAULT_OG_IMAGE_PATH);
+  const isPlace = path.startsWith("/places/");
 
   return {
     title,
@@ -32,7 +33,7 @@ export function buildPageMetadata({
           googleBot: { index: true, follow: true },
         },
     openGraph: {
-      type: "website",
+      type: isPlace ? "article" : "website",
       locale: "sv_SE",
       alternateLocale: ["en"],
       url: alternates.canonical,
@@ -40,7 +41,14 @@ export function buildPageMetadata({
       title,
       description,
       images: ogImage
-        ? [{ url: ogImage, width: 1200, height: 630, alt: title }]
+        ? [
+            {
+              url: ogImage,
+              width: 1200,
+              height: 630,
+              alt: title,
+            },
+          ]
         : undefined,
     },
     twitter: {

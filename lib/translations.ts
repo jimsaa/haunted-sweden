@@ -41,7 +41,7 @@ export const translations = {
     },
     heroTitle: "Discover Sweden's Haunted Places",
     heroSubtitle:
-      "Sweden's trusted map for paranormal exploration — discover verified haunted locations.",
+      "Explore Hemsökt Museum, Läckö Slott, Målilla Sanatorium and 50+ haunted places on Sweden's paranormal map.",
     exploreMap: "Explore Map",
     navMap: "Map",
     navSpokjakt: "Spökjakt",
@@ -375,6 +375,8 @@ export const translations = {
     featuredPlaces: "Featured Haunted Locations",
     homeStats: {
       locations: "Haunted Locations",
+      regions: "Regions",
+      verified: "Verified",
       photos: "Photos",
       videos: "Videos",
       reports: "Community Reports",
@@ -411,6 +413,18 @@ export const translations = {
       subtitle: "Hand-picked locations from Sweden's paranormal map.",
       region: "Region",
       hauntingLevel: "Haunting level",
+    },
+    homeSections: {
+      verifiedTitle: "Haunted Sweden Verified",
+      verifiedSubtitle:
+        "Locations the Haunted Sweden team has personally verified.",
+      verifiedEmpty:
+        "Team verifications are underway. Explore the map while we document sites on the ground.",
+      latestTitle: "Latest added places",
+      latestSubtitle: "Newly catalogued haunted locations on the map.",
+      popularTitle: "Popular haunted places",
+      popularSubtitle: "Most explored destinations by score, media and recognition.",
+      viewAll: "View on map",
     },
     latestReports: "Latest Reports",
     categories: "Categories",
@@ -469,6 +483,7 @@ export const translations = {
       evidence: "Evidence timeline",
       noPhotos: "No photos yet. Be the first to contribute.",
       noVideos: "No videos yet. Be the first to contribute.",
+      photoCredit: "Added by",
       noReports: "No approved reports yet. Share your experience.",
       noEvidence: "No evidence logged yet. Investigations welcome.",
       openGoogleMaps: "Open in Google Maps",
@@ -498,6 +513,30 @@ export const translations = {
       publicAccessNo: "Restricted",
       yes: "Yes",
       no: "No",
+      faqTitle: "Frequently asked questions",
+      relatedTitle: "Related haunted places",
+      breadcrumbs: {
+        ariaLabel: "Breadcrumb",
+        home: "Home",
+        map: "Haunted map",
+      },
+      investigation: {
+        navLabel: "Haunted Sweden investigation",
+        title: "Haunted Sweden Investigation",
+        statusVerified: "Status: Verified by the Haunted Sweden team",
+        statusPlanned: "Status: Investigation planned — not yet completed",
+        bodyVerified:
+          "The Haunted Sweden team has documented this location with on-site notes, media, and verification criteria.",
+        bodyPlanned:
+          "This location is on the Haunted Sweden investigation shortlist. We separate documented history from folklore and visitor reports until a team visit can confirm access, atmosphere, and any claimed evidence.",
+        bulletHistory: "Documented history and primary sources",
+        bulletFolklore: "Local folklore vs. unverified claims",
+        bulletAccess: "Visitor access, safety and night-visit notes",
+        bulletEvidence: "Photos, audio and community reports (when available)",
+        tipPrompt: "Been here? Help the investigation —",
+        tipLink: "submit a tip or report",
+        lastVisit: "Last team visit",
+      },
     },
     clusterNames: {
       borgvattnet: "Borgvattnet Haunted Cluster",
@@ -562,7 +601,7 @@ export const translations = {
     },
     heroTitle: "Upptäck Sveriges hemsökta platser",
     heroSubtitle:
-      "Sveriges betrodda karta för paranormal utforskning — upptäck verifierade hemsökta platser.",
+      "Utforska Hemsökt Museum, Läckö Slott, Målilla Sanatorium och 50+ hemsökta platser på Sveriges paranormala karta.",
     exploreMap: "Utforska kartan",
     navMap: "Karta",
     navSpokjakt: "Spökjakt",
@@ -894,6 +933,8 @@ export const translations = {
     featuredPlaces: "Utvalda hemsökta platser",
     homeStats: {
       locations: "Hemsökta platser",
+      regions: "Regioner",
+      verified: "Verifierade",
       photos: "Foton",
       videos: "Videor",
       reports: "Community-rapporter",
@@ -930,6 +971,18 @@ export const translations = {
       subtitle: "Utvalda platser från Sveriges paranormala karta.",
       region: "Region",
       hauntingLevel: "Hemsökningsnivå",
+    },
+    homeSections: {
+      verifiedTitle: "Haunted Sweden Verified",
+      verifiedSubtitle:
+        "Platser som Haunted Sweden-teamet har verifierat på plats.",
+      verifiedEmpty:
+        "Teamverifieringar pågår. Utforska kartan medan vi dokumenterar platser i fält.",
+      latestTitle: "Senast tillagda platser",
+      latestSubtitle: "Nya hemsökta platser i katalogen.",
+      popularTitle: "Populära hemsökta platser",
+      popularSubtitle: "Mest utforskade destinationer efter poäng, media och igenkänning.",
+      viewAll: "Visa på kartan",
     },
     latestReports: "Senaste rapporter",
     categories: "Kategorier",
@@ -988,6 +1041,7 @@ export const translations = {
       evidence: "Bevis-tidslinje",
       noPhotos: "Inga foton ännu. Bli den första att bidra.",
       noVideos: "Inga videor ännu. Bli den första att bidra.",
+      photoCredit: "Tillagt av",
       noReports: "Inga godkända rapporter ännu. Dela din upplevelse.",
       noEvidence: "Inget bevis material ännu. Utredningar välkomna.",
       openGoogleMaps: "Öppna i Google Maps",
@@ -1017,6 +1071,30 @@ export const translations = {
       publicAccessNo: "Begränsad",
       yes: "Ja",
       no: "Nej",
+      faqTitle: "Vanliga frågor",
+      relatedTitle: "Relaterade hemsökta platser",
+      breadcrumbs: {
+        ariaLabel: "Brödsmulor",
+        home: "Startsida",
+        map: "Spökkartan",
+      },
+      investigation: {
+        navLabel: "Haunted Sweden-utredning",
+        title: "Haunted Sweden Investigation",
+        statusVerified: "Status: Verifierad av Haunted Sweden-teamet",
+        statusPlanned: "Status: Utredning planerad — ännu inte genomförd",
+        bodyVerified:
+          "Haunted Sweden-teamet har dokumenterat platsen med fältanteckningar, media och verifieringskriterier.",
+        bodyPlanned:
+          "Platsen står på Haunted Swedens utredningslista. Vi skiljer dokumenterad historia från folklore och besökarrapporter tills ett team kan bekräfta tillgång, atmosfär och eventuella bevispåståenden.",
+        bulletHistory: "Dokumenterad historia och källor",
+        bulletFolklore: "Lokal folklore kontra overifierade påståenden",
+        bulletAccess: "Besökstillgång, säkerhet och nattbesök",
+        bulletEvidence: "Foton, ljud och community-rapporter (när de finns)",
+        tipPrompt: "Har du varit här? Hjälp utredningen —",
+        tipLink: "skicka tips eller rapport",
+        lastVisit: "Senaste teamvisit",
+      },
     },
     clusterNames: {
       borgvattnet: "Borgvattnets hemsökta kluster",

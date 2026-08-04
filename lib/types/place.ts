@@ -5,9 +5,11 @@ import type { FeaturedInSource, SpokjaktPriority } from "@/lib/types/spokjakt";
 import type { HauntedSwedenInvestigationRecord } from "@/lib/types/investigation-sources";
 import type { SpokjaktPlaceData } from "@/lib/types/spokjakt-place";
 import type { VerificationLevel } from "@/lib/types/verification";
+import type { PlaceFaqItem } from "@/lib/types/place-faq";
 import type { PlaceImage, PlaceMedia, PlaceVideo } from "@/lib/types/place-media";
 
 export type { PlaceCategory } from "@/lib/categories";
+export type { PlaceFaqItem } from "@/lib/types/place-faq";
 
 export type PlaceStatus =
   | "pending"
@@ -80,6 +82,8 @@ export interface HauntedPlace extends GooglePlaceFields {
   historySv?: string;
   legend: string;
   legendSv?: string;
+  /** FAQ for landing-page SEO (FAQPage schema). */
+  faq?: PlaceFaqItem[];
   /** English safety copy (safetyNote_en in admin). */
   safetyNote?: string;
   /** Swedish safety copy (safetyNote_sv in admin). */

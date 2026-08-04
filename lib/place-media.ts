@@ -17,6 +17,7 @@ export function normalizePlaceImage(raw: Partial<PlaceImage>): PlaceImage {
   return {
     url: raw.url?.trim() ?? "",
     caption: raw.caption?.trim() ?? "",
+    captionSv: raw.captionSv?.trim() || undefined,
     credit: raw.credit?.trim() ?? "",
     status: raw.status ?? "approved",
   };

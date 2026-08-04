@@ -35,12 +35,23 @@ export function normalizePlace(raw: HauntedPlace): HauntedPlace {
   const images = normalizePlaceImages(raw.images);
   const videos = normalizePlaceVideos(raw.videos);
   const coverImage = raw.coverImage?.trim() || "";
+  const faq = Array.isArray(raw.faq)
+    ? raw.faq.filter(
+        (item) =>
+          item &&
+          typeof item.question === "string" &&
+          item.question.trim() &&
+          typeof item.answer === "string" &&
+          item.answer.trim()
+      )
+    : [];
 
   return {
     ...raw,
     coverImage: coverImage || null,
     images,
     videos,
+    faq,
     category: normalizePlaceCategory(raw.category as string),
     ...verification,
     verified: syncLegacyVerifiedFlag(verification),
