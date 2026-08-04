@@ -406,7 +406,51 @@
       ],
       "hauntedSwedenInvestigation": {
         "status": "not_investigated_yet"
-      }
+      },
+      "infoBox": [
+        {
+          "label": "Founded",
+          "labelSv": "Grundat",
+          "value": "2021",
+          "valueSv": "2021"
+        },
+        {
+          "label": "Founders",
+          "labelSv": "Grundare",
+          "value": "Tony Martinsson\nNiclas Laaksonen",
+          "valueSv": "Tony Martinsson\nNiclas Laaksonen"
+        },
+        {
+          "label": "Size",
+          "labelSv": "Storlek",
+          "value": "450 m²",
+          "valueSv": "450 m²"
+        },
+        {
+          "label": "Category",
+          "labelSv": "Kategori",
+          "value": "Museum",
+          "valueSv": "Museum"
+        },
+        {
+          "label": "Night investigations",
+          "labelSv": "Nattutredningar",
+          "value": "Yes",
+          "valueSv": "Ja"
+        },
+        {
+          "label": "Family friendly",
+          "labelSv": "Familjevänligt",
+          "value": "Yes",
+          "valueSv": "Ja"
+        },
+        {
+          "label": "Haunted Sweden",
+          "labelSv": "Haunted Sweden",
+          "value": "Investigation planned",
+          "valueSv": "Utredning planerad"
+        }
+      ]
     },
     {
       "id": "6",

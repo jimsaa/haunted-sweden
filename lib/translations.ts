@@ -514,6 +514,7 @@ export const translations = {
       yes: "Yes",
       no: "No",
       faqTitle: "Frequently asked questions",
+      infoBoxTitle: "Quick facts",
       relatedTitle: "Related haunted places",
       breadcrumbs: {
         ariaLabel: "Breadcrumb",
@@ -1072,6 +1073,7 @@ export const translations = {
       yes: "Ja",
       no: "Nej",
       faqTitle: "Vanliga frågor",
+      infoBoxTitle: "Fakta",
       relatedTitle: "Relaterade hemsökta platser",
       breadcrumbs: {
         ariaLabel: "Brödsmulor",

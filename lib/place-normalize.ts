@@ -45,6 +45,16 @@ export function normalizePlace(raw: HauntedPlace): HauntedPlace {
           item.answer.trim()
       )
     : [];
+  const infoBox = Array.isArray(raw.infoBox)
+    ? raw.infoBox.filter(
+        (item) =>
+          item &&
+          typeof item.label === "string" &&
+          item.label.trim() &&
+          typeof item.value === "string" &&
+          item.value.trim()
+      )
+    : [];
 
   return {
     ...raw,
@@ -52,6 +62,7 @@ export function normalizePlace(raw: HauntedPlace): HauntedPlace {
     images,
     videos,
     faq,
+    infoBox,
     category: normalizePlaceCategory(raw.category as string),
     ...verification,
     verified: syncLegacyVerifiedFlag(verification),

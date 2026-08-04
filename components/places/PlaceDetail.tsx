@@ -34,6 +34,7 @@ import { InvestigationSourcesSection } from "@/components/places/InvestigationSo
 import { InvestigationTimelineSection } from "@/components/places/InvestigationTimelineSection";
 import { PlaceBreadcrumbs } from "@/components/places/PlaceBreadcrumbs";
 import { PlaceFaqSection } from "@/components/places/PlaceFaqSection";
+import { PlaceInfoBox } from "@/components/places/PlaceInfoBox";
 import { PlaceInvestigationPlanSection } from "@/components/places/PlaceInvestigationPlanSection";
 import { PlaceRelatedSection } from "@/components/places/PlaceRelatedSection";
 import { RichProse } from "@/components/places/RichProse";
@@ -155,6 +156,7 @@ export function PlaceDetail({
     locale
   );
   const faqs = place.faq ?? [];
+  const infoFacts = place.infoBox ?? [];
 
   const sections = [
     ...(isFeaturedInSpokjakt(place)
@@ -165,6 +167,7 @@ export function PlaceDetail({
           },
         ]
       : []),
+    ...(infoFacts.length > 0 ? [{ id: "info", label: pt.infoBoxTitle }] : []),
     { id: "history", label: pt.history },
     { id: "legends", label: pt.legends },
     {
@@ -274,6 +277,8 @@ export function PlaceDetail({
         <p className="mt-8 text-[15px] sm:text-base leading-relaxed text-white/75">
           {getPlaceShortDescription(place, locale)}
         </p>
+
+        <PlaceInfoBox facts={infoFacts} />
 
         <div className="mt-4 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3">
           <p className="text-xs uppercase tracking-wider text-white/45">{pt.verification}</p>
