@@ -1,5 +1,5 @@
 {
-  "version": 60,
+  "version": 64,
   "places": [
     {
       "id": "1",
@@ -979,7 +979,7 @@
       "publicAccess": true,
       "evidenceCount": 0,
       "reportCount": 0,
-      "photoCount": 1,
+      "photoCount": 4,
       "videoCount": 0,
       "googlePlaceId": "",
       "googleRating": null,
@@ -989,6 +989,27 @@
           "url": "/places/bohus-fastning-cover.png",
           "caption": "Bohus Fortress in Kungälv — the round tower (Fars hatt) and medieval stone ramparts above the Göta River.",
           "captionSv": "Bohus fästning i Kungälv — rundtornet Fars hatt och medeltida murverk ovanför Göta älv.",
+          "status": "approved"
+        },
+        {
+          "url": "/places/bohus-fastning-1.jpg",
+          "caption": "User-added content · Added by Haunted Sweden",
+          "captionSv": "Användarinnehåll · Tillagt av Haunted Sweden",
+          "credit": "Haunted Sweden",
+          "status": "approved"
+        },
+        {
+          "url": "/places/bohus-fastning-2.jpg",
+          "caption": "User-added content · Added by Haunted Sweden",
+          "captionSv": "Användarinnehåll · Tillagt av Haunted Sweden",
+          "credit": "Haunted Sweden",
+          "status": "approved"
+        },
+        {
+          "url": "/places/bohus-fastning-3.jpg",
+          "caption": "User-added content · Added by Haunted Sweden",
+          "captionSv": "Användarinnehåll · Tillagt av Haunted Sweden",
+          "credit": "Haunted Sweden",
           "status": "approved"
         }
       ],
@@ -2821,19 +2842,19 @@
     {
       "id": "32",
       "slug": "nyckelhalshuset",
-      "name": "Nyckelhålshuset",
-      "englishName": "The Keyhole House",
-      "coverImage": "/places/nyckelhalshuset-cover.png",
+      "name": "Nyckelhålshuset – Arthur Lowells plakett",
+      "englishName": "The Keyhole House – Arthur Lowell Plaque",
+      "coverImage": "/places/nyckelhalshuset-cover.jpg",
       "category": "Urban Legend",
       "city": "Göteborg",
       "region": "Västra Götaland",
       "country": "Sweden",
       "address": "Sveagatan 2, 413 14 Göteborg, Sweden",
-      "latitude": 57.695,
-      "longitude": 11.954,
+      "latitude": 57.6952,
+      "longitude": 11.9535,
       "featured": true,
       "verified": false,
-      "verificationLevel": "community-submitted",
+      "verificationLevel": "community-verified",
       "verifiedByTeam": false,
       "visitedByTeam": false,
       "visitCount": 0,
@@ -2841,38 +2862,42 @@
       "investigationPhotos": [],
       "investigationVideos": [],
       "overnightInvestigation": false,
-      "hauntingLevel": 4,
+      "hauntingLevel": 3,
       "hauntedSwedenScore": 8.8,
       "hauntedSwedenInvestigation": {
         "status": "not_investigated_yet"
       },
       "suggestedHauntedSwedenTags": [
         "nyckelhalshuset",
-        "sveagatan_2",
+        "sveagatan2",
         "goteborg",
-        "linnestaden",
-        "headless_ghost",
+        "percival_lowell",
+        "arthur_lowell",
         "urban_legend",
-        "ghost_story",
-        "folklore",
-        "haunted_goteborg",
+        "haunted_building",
+        "mystery_plaque",
+        "jugend",
         "haunted_sweden"
       ],
-      "hauntedSwedenAppSummary": "Nyckelhålshuset at Sveagatan 2 in Linnéstaden is one of Gothenburg's quirkiest urban ghost legends — not a castle or ruin, but a 1903 Jugend apartment house famous for its keyhole-shaped entrance and a facade plaque that tells the story itself. The sign claims a tall, headless man haunts the building: \"astronomer Arthur Lowell,\" said to have stayed here during a June 1909 visit while studying Mars and its canals. Haunted Sweden notes that Arthur is almost certainly folklore's twist on the real American astronomer Percival Lowell — and that no strong evidence confirms either the haunting or the stay. What is documented is the architecture, the nickname Nyckelhålshuset, and decades of city guides (Göteborg.com, Atlas Obscura, ghost walks) treating the plaque as part of the building's identity. Visit respectfully from the pavement: rain, fog and late-night Linné streets turn this into pure urban mystery — folklore presented separately from verified history.",
-      "whyItFitsHauntedSweden": "Signature Gothenburg street-level folklore with unique visual identity (keyhole portal + ghost plaque), easy public access for photography and ghost-walk routes, high folklore and urban-mystery scores (9/10 and 10/10), strong contrast to manor-and-castle entries, and high premium potential for night documentation and legend-vs-reality content — research confidence MEDIUM–HIGH; ideal Haunted Gothenburg stop alongside Överås and other city legends.",
-      "shortDescription": "Göteborg's Keyhole House (1903 Jugend) — famous entrance plaque tells of a headless \"Arthur Lowell\" ghost; urban legend, not verified history.",
-      "history": "DOCUMENTED: Nyckelhålshuset is a residential building at Sveagatan 2 (corner with Risåsgatan) in Linnéstaden, Göteborg, near Skansberget. Built in 1903, it belongs to the era when the Linné district and western Gothenburg expanded with stone apartment houses in Jugend / Art Nouveau style. The nickname Nyckelhålshuset comes from the distinctive keyhole-shaped main entrance — one of the area's most recognizable façades. The property operates as a housing cooperative (Brf Nyckelhålet) with period interiors (high ceilings, mouldings, cast iron) typical of early-1900s Göteborg. Linnéstaden's café culture, parks and tram lines frame a dense historic neighbourhood rather than a rural estate. Sources: Göteborg.com haunted guides, Atlas Obscura, local real-estate heritage descriptions citing byggår 1903.",
-      "legend": "THE HEADLESS MAN & GHOST PLAQUE (folklore — not verified as paranormal): A sign beside the keyhole entrance states (in essence) that the house is haunted by a tall, slim, headless man — identified on the plaque as astronomer \"Arthur Lowell,\" discoverer of Mars canals, who allegedly stayed in a second-floor apartment during a Gothenburg visit 3–16 June 1909. The story is unusual because the legend is displayed on the building itself, not only passed orally. FOLKLORE ANALYSIS: \"Arthur Lowell\" is widely understood as a playful or mistaken name for Percival Lowell (1855–1916), the real Mars-canal astronomer; his documented link to this specific flat is weak, and the plaque may be artistic or humorous rather than historical. REPORTED URBAN MYTHS (subjective): sightings of a tall headless figure, unease near the entrance, and reputation amplified by ghost walks and media — Haunted Sweden does not treat these as proven hauntings. NOTABLE AREAS: (1) Keyhole entrance + plaque. (2) Entrance hall (stories). (3) Night exterior on Sveagatan. (4) Surrounding Linné streets. SCORING (editorial): Visual 8.5/10, Historical 8/10, Folklore 9/10, Paranormal reputation 8/10, Urban mystery 10/10. FUTURE MISSION: photograph plaque, archive Lowell dates, resident interviews, folklore documentation — premium HIGH. BEST CONDITIONS: rain, fog, winter dark, blue hour, late quiet hours.",
-      "safetyNote": "Active apartment building — view the entrance and ghost plaque only from the public pavement. Do not enter the building, block doorways, or disturb residents. Keep noise low, especially at night.",
+      "hauntedSwedenAppSummary": "Nyckelhålshuset at Sveagatan 2 in Linnéstaden is one of Göteborg’s strangest modern urban legends. The 1903 Jugend corner house by architects R. Hanson and K. A. Löfmark is named for its keyhole-shaped entrance — a genuine architectural curiosity. Beside the door sits a bronze-style plaque claiming a tall, slim, headless ghost: “astronomer Arthur Lowell,” discoverer of the canals on Mars, who supposedly stayed on the second floor 3–16 June 1909. There is no verified evidence that Percival Lowell (the real Mars-canal astronomer the plaque almost certainly riffs on) lived here — or that any haunting is historical fact. Atlas Obscura and secondary sources identify the sign as a leftover from Thomas Liljenberg’s 1998 public-art project Gothenburg Haunts, which mixed fact and fiction across the city; the plaque outlived the temporary project and became folklore. Göteborg.com still lists the house among haunted city stops. Visit from the pavement only: blue hour and night photography make this a perfect history-versus-myth stop.",
+      "whyItFitsHauntedSweden": "One of Sweden’s best modern urban legends: unique mystery plaque, beautiful Jugend architecture, and a clear documented vs invented split. Visual 8.5/10, historical 8.5/10, urban-legend strength 10/10, paranormal reputation 7.5/10, curiosity 10/10 — Haunted Sweden Score 8.8. Premium MEDIUM–HIGH; research confidence HIGH (building) / MEDIUM (legend & plaque origin details).",
+      "shortDescription": "1903 Jugend keyhole-entrance house at Sveagatan 2 — famous for a faux “Arthur Lowell” ghost plaque rooted in modern public art, not verified history.",
+      "history": "## DOCUMENTED: Construction 1903 and architects\n\nNyckelhålshuset stands at Sveagatan 2 (corner Risåsgatan), kvarteret Vaktposten, Kommendantsängen / Linnéstaden, Göteborg. Wikimedia Commons and local estate/heritage descriptions record construction in **1903** after drawings by architects **R. Hanson** and **K. A. Löfmark** (Hanson & Löfmark). It is a residential stone apartment house from the early-1900s expansion of western Göteborg, when Linné filled with freer multi-storey façades influenced by **Jugend / Art Nouveau**.\n\n## DOCUMENTED: Architecture and the keyhole nickname\n\nThe well-preserved exterior mixes light smooth render, red brick and limestone, with plant ornament, undulating eaves and two prominent corner turrets. The staircase entrance is uniquely **keyhole-shaped** — the feature that gave the building (and Brf Nyckelhålet) its popular name **Nyckelhålshuset**. Stair hall details include ceiling rose and wall ornament; a small front garden with wrought-iron railing sits before the portal. Period apartments retain high ceilings, mouldings and timber floors typical of the era. Later attic conversion added loft flats while keeping the landmark exterior (estate press ~2020).\n\n## DOCUMENTED: Linnéstaden context\n\nAround 1900 Linné / Kommendantsängen developed as a dense residential district of café streets, trams and monumental stone blocks near Skansberget — part of Göteborg’s westward growth after the wooden-city era. The house remains a private housing cooperative; the exterior and plaque are the public curiosity.\n\n## DOCUMENTED: Percival Lowell (the real astronomer)\n\n**Percival Lowell** (1855–1916) was a real American astronomer whose Mars “canal” maps fuelled popular speculation about intelligent life — later explained as optical illusion / pareidolia. He is **not** documented as a resident of Sveagatan 2. Haunted Sweden found **no verified primary evidence** that Lowell visited Göteborg in June 1909 or stayed in this building. The plaque’s “Arthur Lowell” is a **fictional / playful name** attached to Lowell’s public fame.\n\n## Preservation / access\n\nExterior publicly viewable from the street (corner Sveagatan / Risåsgatan). Active private residence — do not enter. Nearest transit often cited as Prinsgatan (Atlas Obscura).",
+      "legend": "## URBAN LEGEND / PUBLIC ART: The Lowell plaque (not historical monument)\n\n**Plaque wording** (English paraphrase widely published; Swedish façade text equivalent): that the house is haunted by a tall, slim, headless man — the ghost of astronomer **Arthur Lowell**, “discoverer of the canals on Mars,” who stayed in a second-floor apartment **3–16 June 1909**.\n\n### Who commissioned it / when it appeared\n\nAccording to **Atlas Obscura** (and matching secondary coverage), the sign is a remnant of Swedish artist **Thomas Liljenberg**’s **1998** public-art project ***Gothenburg Haunts***: temporary plaques around Göteborg blending real city history with invented stories to make familiar places feel strange again. The Keyhole House plaque was meant to be temporary; it remained, and the fiction took root as local legend. Treat this as the best-documented origin for the plaque — an **art intervention**, not a parish or municipal historical marker.\n\n### Why “Arthur” / Percival?\n\nThe figure evokes **Percival Lowell**; “Arthur” is almost certainly an intentional twist or artistic error. There is **no verified historical evidence** that Lowell haunted — or lived in — the building. Göteborg & Co / Göteborg.com retell the plaque story in haunted-city guides without claiming archival proof of the stay.\n\n### Public reaction\n\nResidents, ghost hunters and tourists have reacted with unease, curiosity and amusement for years. The site appears on official tourism haunted guides and Atlas Obscura — a rare case where **modern public art became urban folklore**.\n\n## FOLKLORE / MODERN WITNESS MOTIFS (anecdotal)\n\nHeadless tall man near the entrance; unease at the plaque; ghost-walk stop reputation. No controlled paranormal investigation with scientific standing was located. Do not exaggerate: reputation = plaque + tourism storytelling.\n\n## Special points of interest\n\n1. **Bronze / metal plaque** — main attraction; source of the legend (art-project remnant).\n2. **Keyhole entrance** — unique 1903 architectural feature.\n3. **Historic Jugend façade** — turrets, ornament, render/brick/limestone.\n\n## Atmosphere, investigation ideas, best conditions\n\nQuiet residential corner, decorative Jugend façade, keyhole portal, one of Göteborg’s best hidden curiosities. Ideas: Who created the Lowell plaque?; fact vs fiction; newspaper-archive search; did Percival Lowell ever visit Göteborg?; history vs urban legend documentary. Best: evening, blue hour, night photography. Respect residents — pavement only.",
+      "safetyNote": "Private residential building (Brf Nyckelhålet). View the keyhole entrance and plaque only from the public pavement. Do not enter the property, block the doorway, ring buzzers without reason, or disturb residents. Keep noise low, especially at night.",
       "sourceLinks": [
         "https://www.goteborg.com/guider/guide-hemsokta-platser-i-goteborg",
         "https://www.atlasobscura.com/places/keyhole-house-ghost-plaque",
+        "https://commons.wikimedia.org/wiki/File:Sveagatan_2.jpg",
+        "https://press.bjurfors.se/pressreleases/bjurfors-foermedlar-vindsvaaningar-i-linnestaden-2979104",
+        "https://thomasliljenberg.se/about-personal/",
         "https://www.expressen.se/gt/har-ar-platserna-dar-det-sags-spoka-i-goteborg/"
       ],
       "paranormalType": [
         "Apparition",
-        "Heavy Atmosphere",
-        "Local Folklore"
+        "Urban Legend",
+        "Local Folklore",
+        "Heavy Atmosphere"
       ],
       "accessType": "Public Landmark",
       "familyFriendly": true,
@@ -2883,20 +2908,104 @@
       "publicAccess": true,
       "evidenceCount": 0,
       "reportCount": 0,
-      "photoCount": 0,
+      "photoCount": 1,
       "videoCount": 0,
       "googlePlaceId": null,
       "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sveagatan+2,+413+14+G%C3%B6teborg,+Sweden",
       "googleRating": null,
       "googleReviewsEnabled": false,
-      "images": [],
+      "images": [
+        {
+          "url": "/places/nyckelhalshuset-cover.jpg",
+          "caption": "Nyckelhålshuset, Sveagatan 2 — Jugend corner house with keyhole entrance",
+          "captionSv": "Nyckelhålshuset, Sveagatan 2 — jugendhörnhus med nyckelhålsentré",
+          "credit": "Wikimedia Commons",
+          "status": "approved"
+        }
+      ],
       "videos": [],
       "status": "approved",
-      "shortDescriptionSv": "Göteborgs Nyckelhålshus (1903 jugend) — berömd spökskylt vid nyckelhålsentrén om en huvudlös \"Arthur Lowell\"; urban legend, ej verifierad historia.",
-      "historySv": "DOKUMENTERAT: Nyckelhålshuset vid Sveagatan 2 i Linnéstaden, uppfört 1903 i jugend/art nouveau-stil. Känt för nyckelhålsformad entré och smeknamnet Nyckelhålshuset. Bostadsrättsförening Brf Nyckelhålet; sekelskiftesdetaljer. Del av Linnés expansion i tidigt 1900-talets Göteborg.",
-      "legendSv": "DEN HUVUDLÖSA MANNEN (folklore): Skylt vid entrén hävdar att en lång, smal, huvudlös man hemsöker huset — \"astronomen Arthur Lowell\", påstått Mars-kanaler, vistelse juni 1909. Troligen lek med namnet Percival Lowell; ingen stark historisk koppling eller bevisad paranormal aktivitet. OMRÅDEN: nyckelhålsporten, entréhall, fasad nattetid, Linnégator. Urban mystik.",
-      "hauntedSwedenAppSummarySv": "Nyckelhålshuset vid Sveagatan 2 — ett av Göteborgs mest udda stadsspökmyter med jugendfasad, nyckelhålsentré och en skylt som berättar legenden om den huvudlösa mannen. Arthur Lowell på skylten är folklore, sannolikt avsedd som Percival Lowell; huset är lätt att besöka från trottoaren och perfekt på en hemsökt Göteborg-rutt.",
-      "safetyNoteSv": "Aktivt flerfamiljshus – betrakta entré och spökskylt endast från allmän trottoar. Gå inte in i huset, blockera inte entrén eller stör boende. Håll låg volym, särskilt på natten."
+      "shortDescriptionSv": "Jugendhus från 1903 med nyckelhålsentré på Sveagatan 2 — berömt för en falsk ”Arthur Lowell”-spökplakett med rötter i modern offentlig konst, inte verifierad historia.",
+      "historySv": "## DOKUMENTERAT: Bygge 1903 och arkitekter\n\nNyckelhålshuset vid Sveagatan 2 (hörn Risåsgatan), kvarteret Vaktposten, Kommendantsängen/Linnéstaden. Uppfört **1903** efter ritningar av **R. Hanson** och **K. A. Löfmark**. Representerar tidigt 1900-tals jugend/art nouveau i västra Göteborgs stenhusexpansion.\n\n## DOKUMENTERAT: Arkitektur och smeknamn\n\nVälbevarad fasad med ljus puts, rött tegel och kalksten, växtornament, hörntorn och den unika **nyckelhålsformade portalen** som gett namnet **Nyckelhålshuset** / Brf Nyckelhålet.\n\n## DOKUMENTERAT: Percival Lowell\n\nVerklig amerikansk astronom (1855–1916) känd för Mars-”kanaler”. **Ingen verifierad primärkälla** visar att han bodde på Sveagatan 2 eller besökte Göteborg juni 1909. ”Arthur Lowell” på plaketten är fiktion/lek med hans namn.\n\n## Tillträde\n\nExteriör synlig från gatan. Privat bostad — gå inte in.",
+      "legendSv": "## URBAN LEGEND / OFFENTLIG KONST: Lowell-plaketten\n\nPlaketten hävdar att en lång, smal, huvudlös man hemsöker huset — astronomen **Arthur Lowell**, Mars kanaler, vistelse **3–16 juni 1909** i andra våningen.\n\n### Ursprung\n\nEnligt Atlas Obscura m.fl. rest från konstnären **Thomas Liljenbergs** projekt ***Gothenburg Haunts* (1998)** — skyltar som blandade fakta och fiktion. Projektet var tillfälligt; plaketten blev kvar och blev folklore. Inte ett historiskt minnesmärke.\n\n### Reaktion\n\nBoende, spökjägare och turister; listad av Göteborg.com. Modern offentlig konst som blivit urban legend.\n\n## ANEKDOTISKA MOTIV\n\nHuvudlös gestalt, obehag vid skylten — ej kontrollerade utredningar. OMRÅDEN: plaketten; nyckelhålsentrén; jugendfasaden. Endast trottoar.",
+      "hauntedSwedenAppSummarySv": "Nyckelhålshuset på Sveagatan 2 i Linnéstaden är en av Göteborgs märkligaste moderna urban legends. Jugendhörnhuset från 1903 av R. Hanson och K. A. Löfmark har fått sitt namn av den nyckelhålsformade entrén. Vid dörren sitter en plakett om en lång, smal, huvudlös ”Arthur Lowell” — astronomen som upptäckte Mars kanaler och ska ha bott här 3–16 juni 1909. Det finns ingen verifierad bevisning för att Percival Lowell (den verkliga astronomen) bodde här, eller för någon historisk hemsökelse. Atlas Obscura kopplar skylten till Thomas Liljenbergs konstprojekt Gothenburg Haunts 1998. Besök från trottoaren: blåtimme och nattfoto gör platsen till ett perfekt stopp för historia kontra myt.",
+      "safetyNoteSv": "Privat bostadshus (Brf Nyckelhålet). Betrakta nyckelhålsentrén och plaketten endast från allmän trottoar. Gå inte in, blockera inte dörren eller stör boende. Håll låg volym, särskilt nattetid.",
+      "infoBox": [
+        {
+          "label": "Built",
+          "labelSv": "Byggt",
+          "value": "1903 · R. Hanson & K. A. Löfmark",
+          "valueSv": "1903 · R. Hanson & K. A. Löfmark"
+        },
+        {
+          "label": "Style",
+          "labelSv": "Stil",
+          "value": "Jugend / Art Nouveau",
+          "valueSv": "Jugend / art nouveau"
+        },
+        {
+          "label": "Nickname",
+          "labelSv": "Smeknamn",
+          "value": "Nyckelhålshuset (keyhole portal)",
+          "valueSv": "Nyckelhålshuset (nyckelhålsport)"
+        },
+        {
+          "label": "Plaque origin",
+          "labelSv": "Plakettens ursprung",
+          "value": "Liljenberg · Gothenburg Haunts 1998 (art)",
+          "valueSv": "Liljenberg · Gothenburg Haunts 1998 (konst)"
+        },
+        {
+          "label": "Astronomer",
+          "labelSv": "Astronom",
+          "value": "Percival Lowell (plaque: “Arthur”)",
+          "valueSv": "Percival Lowell (plakett: ”Arthur”)"
+        },
+        {
+          "label": "Haunting evidence",
+          "labelSv": "Bevis för spökeri",
+          "value": "None verified — urban legend",
+          "valueSv": "Inget verifierat — urban legend"
+        },
+        {
+          "label": "Haunted Sweden",
+          "labelSv": "Haunted Sweden",
+          "value": "Score 8.8 · Premium MEDIUM–HIGH",
+          "valueSv": "Poäng 8.8 · Premium MEDEL–HÖG"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is the Lowell ghost plaque historically authentic?",
+          "questionSv": "Är Lowell-spökplaketten historiskt äkta?",
+          "answer": "No as a historical monument. Best-documented origin: Thomas Liljenberg’s 1998 Gothenburg Haunts art project mixed fact and fiction on temporary city plaques; this one remained and became an urban legend. It is not evidence of a verified haunting.",
+          "answerSv": "Nej som historiskt minnesmärke. Bäst dokumenterade ursprunget: Thomas Liljenbergs konstprojekt Gothenburg Haunts 1998 blandade fakta och fiktion på tillfälliga skyltar; denna blev kvar och blev urban legend. Den är inte bevis för verifierat spökeri."
+        },
+        {
+          "question": "Did Percival Lowell live at Sveagatan 2?",
+          "questionSv": "Bodde Percival Lowell på Sveagatan 2?",
+          "answer": "There is no verified documentary evidence that Percival Lowell stayed in this building or visited Göteborg on the plaque’s dates. “Arthur Lowell” on the sign is a fictional twist on the real astronomer’s name and Mars-canal fame.",
+          "answerSv": "Det finns ingen verifierad dokumentation att Percival Lowell bodde i huset eller besökte Göteborg på plakettens datum. ”Arthur Lowell” är en fiktiv vridning av den verkliga astronomens namn och Mars-kanalfame."
+        },
+        {
+          "question": "Why is it called Nyckelhålshuset?",
+          "questionSv": "Varför heter det Nyckelhålshuset?",
+          "answer": "From the distinctive keyhole-shaped main entrance on the 1903 Jugend façade by Hanson & Löfmark — also the name of the housing cooperative Brf Nyckelhålet.",
+          "answerSv": "Efter den karakteristiska nyckelhålsformade huvudentrén på 1903 års jugendfasad av Hanson & Löfmark — också namnet på Brf Nyckelhålet."
+        },
+        {
+          "question": "Can I go inside?",
+          "questionSv": "Kan jag gå in?",
+          "answer": "No — it is a private residence. Photograph the façade and plaque from the public pavement only, and respect residents.",
+          "answerSv": "Nej — privat bostad. Fotografera fasad och plakett endast från allmän trottoar och respektera boende."
+        },
+        {
+          "question": "Has Haunted Sweden investigated yet?",
+          "questionSv": "Har Haunted Sweden utrett platsen ännu?",
+          "answer": "Not yet. Planned: plaque photography, architecture documentation, newspaper-archive search, local-historian interviews, and checking whether Percival Lowell ever visited Göteborg.",
+          "answerSv": "Inte ännu. Planerat: plakettfoto, arkitekturdokumentation, tidningsarkiv, lokalhistorikerintervjuer och kontroll om Percival Lowell någonsin besökte Göteborg."
+        }
+      ]
     },
     {
       "id": "33",
@@ -5520,6 +5629,689 @@
           "questionSv": "Har Haunted Sweden utrett Löfstad ännu?",
           "answer": "Not yet. Status is investigation planned — guided tour, park and memorial photography, guide interviews, and a history-vs-folklore documentary brief.",
           "answerSv": "Inte ännu. Status är utredning planerad — guidad tur, park- och monumentsfoto, guideintervjuer och dokumentärbrief historia kontra folklore."
+        }
+      ]
+    },
+    {
+      "id": "61",
+      "slug": "masthuggskyrkan",
+      "name": "Gamla Masthuggskyrkan – Legenden om Vita Damen och den Svarta Prästen",
+      "englishName": "Masthuggskyrkan – White Lady & Black Priest Legends",
+      "coverImage": "/places/masthuggskyrkan-cover.jpg",
+      "category": "Church / Cemetery",
+      "city": "Göteborg",
+      "region": "Västra Götaland",
+      "country": "Sweden",
+      "address": "Storebackegatan 15, 413 18 Göteborg, Sweden",
+      "latitude": 57.6948,
+      "longitude": 11.9448,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-verified",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": false,
+      "hauntingLevel": 4,
+      "hauntedSwedenScore": 8.9,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "masthuggskyrkan",
+        "goteborg",
+        "white_lady",
+        "black_priest",
+        "haunted_church",
+        "urban_legend",
+        "national_romantic",
+        "ghost_walk",
+        "vastkusten",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Masthuggskyrkan crowns Stigberget above Göteborg harbour — a National Romantic brick landmark designed by Sigfrid Ericson and built 1910/11–1914 for the new Masthuggs parish. Its ~60-metre tower and panoramic city views made it a sailor’s seamark and one of Göteborg’s most photographed silhouettes. Documented history includes the parish decision to build, Ericson’s winning competition design, consecration in October 1914, and bells that rang on 2 August 1914 for wartime mobilisation before the official inauguration. Local urban legends later attached the White Lady (Vita damen) and the Black Priest (Svarta prästen) to the church and its surroundings; these appear mainly in ghost-list and tourism storytelling, not on Svenska kyrkan’s official history pages. Haunted Sweden keeps Riksantikvarieämbetet / parish chronology separate from folklore. Fog, blue hour and evening light turn the ridge into one of Västkusten’s most atmospheric church settings — history first, legend clearly labelled.",
+      "whyItFitsHauntedSweden": "One of Göteborg’s most iconic buildings: outstanding National Romantic architecture, panoramic Stigberget location, sailor-landmark role, and well-circulated White Lady / Black Priest urban legends. Visual 10/10, historical 9.5/10, architectural 10/10, folklore 8.5/10, paranormal reputation 8.0/10 — Haunted Sweden Score 8.9. Strong Göteborg collection addition; premium content HIGH; research confidence HIGH (history) / MEDIUM (folklore).",
+      "shortDescription": "Göteborg’s National Romantic landmark church on Stigberget (1910/11–1914, Sigfrid Ericson) — panoramic views, sailor seamark, and urban legends of the White Lady and the Black Priest.",
+      "history": "## DOCUMENTED: Why Masthuggskyrkan was built\n\nMasthuggs parish was formed 1 January 1908 (split from earlier parish structures). Already in 1906 church authorities decided a new parish church was needed. Proposed sites included using S:t Johanneskyrkan (too small), Gamla Varvsparken (later Sjöfartsmuseet), or the crown of Stigberget. On 12 September 1907 Göteborg city council granted the Stigberget plot (Majornas 5:e rote). An architectural competition began 4 November 1907; Sigfrid Ericson’s National Romantic proposal (“15/2”) was accepted 24 May 1909. Drawings were fixed in 1910; builder Ivar Burman started work in December 1910.\n\n## DOCUMENTED: Construction 1910/11–1914 and Sigfrid Ericson\n\nRiksantikvarieämbetet’s Bebyggelseregistret records new construction 1910–1914 (often summarised 1911–1914) after Ericson’s designs: nave, choir, sacristy, transepts, tower and baptismal chapel, linked to parish premises. Cost rose from an estimated ~365,000 to about 526,000 kronor. Bishop Edvard Herman Rodhe consecrated the church in October 1914 (Wikipedia and parish tradition cite 14 October; BeBR summarises 11 October — treat inauguration as October 1914). Capacity about 1,050 (including galleries).\n\n## DOCUMENTED: World War I bells before inauguration\n\nTwo bells cast 1914 at Götaverken (large ~3,200 kg, small ~2,000 kg). On 2 August 1914 — before official consecration — the bells, like others in the city, rang between 08:00 and 11:00 at ten-minute intervals to announce general mobilisation at the outbreak of World War I. BeBR explicitly notes the bells first rang to announce the war before the church was inaugurated.\n\n## DOCUMENTED: National Romantic architecture and landmark role\n\nHand-struck red brick (Börringe), fieldstone base, monk-and-nun tile roof, copper-clad iron spire, ~60 m tower (cockerel ~127 m above sea level). Timber ceiling, whitewashed brick interior, limestone floors and pier details; wrought-iron crowns with dragon heads. Altar triptych design by Ericson; sculptures by Ninnan Santesson; painting by Engelbert Bertel-Nordström / Bertel Nordström (altarpiece completed 1923; triumph crucifix 1925). Ship model of the full-rigger Java gifted by Göteborgs Sjöfartsmuseum (1944). Organ originally 1914 (Johannes Magnusson); later rebuilds — today the largest church organ in Göteborg diocese. City engineer Albert Lilienberg praised the silhouette as defining the formerly bare ridge for Majorna and Masthugget. The tower remains a panoramic landmark for sailors and citizens; Svenska kyrkan notes ~100,000 visitors yearly and seasonal guided tower climbs.\n\n## DOCUMENTED: Masthugget / Stigberget before the church\n\nName Masthugget (Mastehugget, 1647) from mast-making for sailing ships. From the 1600s Stigberget slopes held dense wooden housing for sailors, harbour and yard workers — steep lanes, overcrowding, and hard living conditions documented in Göteborg Stadsmuseum and local history (Sjömanshuset and related institutions served maritime welfare). Late 1800s–early 1900s growth as a working-class district (“Röda Masthugget”); 1960s–70s clearance replaced most old wooden fabric. A few Storebackegatan houses near the church recall Gamla Masthugget. The standing church is not a ruin — popular ghost-list titles saying “Gamla Masthuggskyrkan är en ruin” confuse folklore branding with the active 1914 landmark.\n\n## DOCUMENTED dark / wartime / parish context (no invented tragedies)\n\nHard living conditions in old Masthugget (cramped worker housing, harbour poverty) are historically attested. Wartime link: August 1914 mobilisation ringing. February 1940 fuel shortage closed several Göteborg churches temporarily, including Masthugget’s. Parish life includes ordinary funerals and mourning as at any active church — do not invent specific undocumented deaths as “haunted history.”",
+      "legend": "## FOLKLORE vs HISTORY — research note (confidence: MEDIUM)\n\nOfficial Svenska kyrkan and BeBR pages document architecture and parish history; they do not present White Lady or Black Priest narratives as historical fact. Those motifs circulate mainly in online haunted-place lists, tourism/ghost-walk style copy, and oral/urban-legend culture. Haunted Sweden has not found archival parish “first sighting” records proving older documented hauntings. Treat legends as folklore / modern storytelling unless primary sources appear.\n\n## URBAN LEGEND / FOLKLORE: The White Lady (Vita damen)\n\nPopular tellings speak of a woman in white near the church — sometimes framed as a jilted bride left at the altar, or as a figure at a “church ruin.” That ruin framing does not match the standing National Romantic church at Storebackegatan 15. Descriptions of apparitions, cold air, and churchyard sightings are anecdotal and secondary. Origin: oral tradition and modern ghost-list/ghost-walk culture rather than verified historical biography. Do not present the White Lady as documented history.\n\n## URBAN LEGEND / FOLKLORE: The Black Priest (Svarta prästen)\n\nStories describe a black-clad priestly figure near pillars, doors or shadowy corners of the church — a classic Swedish “dark cleric” motif. Reports are local anecdote and tourism narrative. No confirmed link to a named historical priest in parish archives was found in this research pass. Whether the tale predates commercial ghost tours is unclear; current evidence points to modern circulation more than early printed folklore collections. Label as folklore.\n\n## MODERN WITNESS-STYLE REPORTS (anecdotal — not controlled investigations)\n\nVisitor and list-site motifs include apparitions, footsteps in empty space, unexplained organ-like sound, cold spots, shadow figures, and feeling watched — especially in the nave, tower approaches, churchyard, and main entrance (often cited as a ghost-walk meeting point in tourism copy). No peer-reviewed paranormal investigation of Masthuggskyrkan was located. Record as subjective experience and urban reputation, not proven hauntings.\n\n## Special haunted areas (atmosphere + legend — not verified hotspots)\n\n1. Main nave — historic National Romantic interior, heavy atmosphere.\n2. Church tower — panoramic views; folklore attaches mystery to height and darkness (official tower visits are guided heritage tours, not ghost hunts).\n3. Churchyard / exterior grounds — reported apparition motifs in folklore lists.\n4. Main entrance — traditional meetup point in ghost-walk marketing.\n\n## Atmosphere, investigation ideas, best conditions\n\nMassive brick church, stone base, ~60 m tower, evening lighting, fog over Göteborg, quiet churchyard, views across harbour and city. Investigation ideas (with permission / respect for worship): White Lady folklore mapping; Black Priest legend origins; night photography from Stigberget; history vs folklore documentary; EVP only where explicitly permitted. Best conditions: blue hour, winter evenings, heavy fog, rain after sunset. Accessibility: church open during published hours (~100,000 visitors/year); grounds publicly approachable; respect services; outdoor photography generally fine — confirm indoor rules.",
+      "safetyNote": "Active parish church (Svenska kyrkan / Masthuggs församling) — respect opening hours, services, funerals and quiet visitors. Tower climbs are guided and seasonal when offered. Uneven stone and steep Stigberget streets can be slippery in rain or ice. No overnight stays. Do not disturb worship or invent ‘investigations’ during services.",
+      "sourceLinks": [
+        "https://www.svenskakyrkan.se/carl-johans-pastorat/masthugg/masthuggskyrkan",
+        "https://bebyggelseregistret.raa.se/bbr2/byggnad/visaHistorik.raa?byggnadId=21400000238459&page=historik&visaHistorik=true",
+        "https://sv.wikipedia.org/wiki/Masthuggskyrkan",
+        "https://sv.wikipedia.org/wiki/Masthugget",
+        "https://sv.wikipedia.org/wiki/Stigberget,_G%C3%B6teborg",
+        "https://www.masthuggspojkarna.se/om-oss/masthuggets-historia-9179185",
+        "https://www.svenskakyrkan.se/carl-johans-pastorat/masthugg/nyheter/upptack-masthuggskyrkans-torn"
+      ],
+      "paranormalType": [
+        "Apparition",
+        "Ghostly Lady",
+        "Shadow Figures",
+        "Footsteps",
+        "Temperature Changes",
+        "Heavy Atmosphere",
+        "Local Folklore",
+        "Urban Legend"
+      ],
+      "accessType": "Public Landmark",
+      "familyFriendly": true,
+      "visitDifficulty": 2,
+      "nightAccess": true,
+      "parkingAvailable": true,
+      "guidedTours": true,
+      "publicAccess": true,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 1,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Storebackegatan+15,+413+18+G%C3%B6teborg,+Sweden",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [
+        {
+          "url": "/places/masthuggskyrkan-cover.jpg",
+          "caption": "Masthuggskyrkan, Göteborg — National Romantic landmark on Stigberget",
+          "captionSv": "Masthuggskyrkan, Göteborg — nationalromantiska landmärket på Stigberget",
+          "credit": "Wikimedia Commons",
+          "status": "approved"
+        }
+      ],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Göteborgs nationalromantiska landmärkeskyrka på Stigberget (1910/11–1914, Sigfrid Ericson) — panoramavyer, sjömanssiktmärke och urban legends om Vita damen och Svarta prästen.",
+      "historySv": "## DOKUMENTERAT: Varför Masthuggskyrkan byggdes\n\nMasthuggs församling bildades 1 januari 1908. Redan 1906 beslutades att en ny församlingskyrka behövdes. Tomt på Stigberget uppläts 12 september 1907. Arkitekttävling från 4 november 1907; Sigfrid Ericsons nationalromantiska förslag antogs 24 maj 1909. Byggstart december 1910 under Ivar Burman.\n\n## DOKUMENTERAT: Bygge 1910/11–1914 och Sigfrid Ericson\n\nEnligt Riksantikvarieämbetets BeBR uppfördes kyrkan 1910–1914 (ofta sammanfattat 1911–1914) efter Ericsons ritningar. Invigning oktober 1914 (Wikipedia/församlingstradition 14 oktober; BeBR anger 11 oktober). Plats för ca 1 050 personer.\n\n## DOKUMENTERAT: Första världskrigets klockringning före invigning\n\nTvå klockor gjutna 1914 vid Götaverken. Den 2 augusti 1914 — före den officiella invigningen — ringde klockorna (liksom andra i staden) mellan kl. 8 och 11 med tio minuters mellanrum och kungjorde allmän mobilisering vid krigsutbrottet. BeBR noterar uttryckligen att klockorna ringde för kriget innan kyrkan invigdes.\n\n## DOKUMENTERAT: Nationalromantisk arkitektur och landmärke\n\nHandslaget rött tegel, naturstenssockel, ca 60 m torn, kopparspira. Interiör med timmertak, kalkstensgolv, altarskåp (Santesson / Nordström, 1923), triumfkrucifix 1925. Stifts största kyrkorgel. Lilienberg framhöll silhuetten som avgörande för Majornas och Masthuggets stadsbild. Svenska kyrkan: ca 100 000 besökare per år; säsongsvis tornvisningar.\n\n## DOKUMENTERAT: Masthugget före kyrkan\n\nNamnet från masttillverkning (1647). Stigberget: sjöfolkets och hamnarbetarnas trähusmiljö med trångboddhet och hårda villkor (Göteborgs stadsmuseum m.fl.). 1960-talets sanering raderade det mesta av Gamla Masthugget. Den stående kyrkan är ingen ruin — spöklistor som kallar den “ruin” blandar folklore med den aktiva 1914-kyrkan.\n\n## DOKUMENTERAD mörk/krigs-/församlingskontext (inga påhittade tragedier)\n\nDokumenterad trångboddhet och fattigdom i gamla Masthugget; mobiliseringsringning augusti 1914; tillfällig stängning februari 1940 p.g.a. bränslebrist. Vanliga begravningar hör till församlingsliv — hitta inte på odokumenterade dödsfall som “spökhistoria”.",
+      "legendSv": "## FOLKLORE kontra HISTORIA — forskningsnot (konfidens: MEDEL)\n\nSvenska kyrkan och BeBR dokumenterar arkitektur och församlingshistoria — inte Vita damen eller Svarta prästen som historiska fakta. Motiven cirkulerar främst i nätlistor, turism-/spökvandringsstil och muntlig urban legend. Inga arkivfynd av tidiga “första observationer” i denna research. Behandla som folklore/modern storytelling.\n\n## URBAN LEGEND: Vita damen\n\nBerättelser om kvinna i vitt — ibland brud lämnad vid altaret, ibland kopplad till “kyrkoruin” (stämmer inte med den stående kyrkan). Anekdotiska syner och köld. Ursprung: muntlig tradition och modern spöklistkultur, inte verifierad biografi.\n\n## URBAN LEGEND: Svarta prästen\n\nSvartklädd prästgestalt vid pelare/dörrar — klassiskt motiv. Anekdot och turismnarrativ; ingen säker koppling till namngiven historisk präst funnen här. Om legenden föregår moderna spökturer är oklart; nuvarande spår pekar mot modern cirkulation.\n\n## MODERNA UPPLEVELSER (anekdotiska)\n\nApparitioner, fotsteg, orgelliknande ljud, köld, skuggfigurer, känsla av att bli iakttagen — långhus, torn, kyrkogård/utomhus, huvudingång. Inga peer-reviewed paranormala utredningar lokaliserade. OMRÅDEN ovan = atmosfär + legend, inte verifierade “hotspots”. Respektera gudstjänst; fotografera utomhus fritt, kontrollera inomhusregler.",
+      "hauntedSwedenAppSummarySv": "Masthuggskyrkan tronar på Stigberget över Göteborgs hamn — nationalromantiskt tegellandmärke av Sigfrid Ericson, byggt 1910/11–1914 för den nya Masthuggs församlingen. Det ca 60 meter höga tornet och panoramavyerna gjorde kyrkan till sjömanssiktmärke och en av stadens mest fotograferade silhuetter. Dokumenterad historia omfattar församlingsbeslut, Ericsons tävlingsvinst, invigning oktober 1914 och klockor som ringde 2 augusti 1914 för mobilisering före den officiella invigningen. Senare urban legends knyter Vita damen och Svarta prästen till platsen — främst i spöklistor och turismberättelser, inte på Svenska kyrkans officiella historiksidor. Haunted Sweden håller isär BeBR/församlingskronologi och folklore. Dimma, blåtimme och kvällsljus gör åsen till en av Västkustens mest atmosfäriska kyrkomiljöer.",
+      "safetyNoteSv": "Aktiv församlingskyrka (Svenska kyrkan / Masthuggs församling) — respektera öppettider, gudstjänster, begravningar och tysta besökare. Tornvisningar är guidade och säsongsvisa när de erbjuds. Ojämn sten och branta Stigbergsgator kan vara hala. Ingen övernattning. Stör inte gudstjänst.",
+      "infoBox": [
+        {
+          "label": "Built",
+          "labelSv": "Byggd",
+          "value": "1910/11–1914 · Sigfrid Ericson",
+          "valueSv": "1910/11–1914 · Sigfrid Ericson"
+        },
+        {
+          "label": "Style",
+          "labelSv": "Stil",
+          "value": "National Romantic",
+          "valueSv": "Nationalromantisk"
+        },
+        {
+          "label": "Tower",
+          "labelSv": "Torn",
+          "value": "~60 m · panoramic views",
+          "valueSv": "ca 60 m · panoramavyer"
+        },
+        {
+          "label": "WWI bells",
+          "labelSv": "Krigsklockor",
+          "value": "Rang 2 Aug 1914 (mobilisation)",
+          "valueSv": "Ringde 2 aug 1914 (mobilisering)"
+        },
+        {
+          "label": "Folklore",
+          "labelSv": "Folklore",
+          "value": "White Lady · Black Priest (urban legend)",
+          "valueSv": "Vita damen · Svarta prästen (urban legend)"
+        },
+        {
+          "label": "Access",
+          "labelSv": "Tillträde",
+          "value": "Open daily (parish hours)",
+          "valueSv": "Öppen dagligen (församlingens tider)"
+        },
+        {
+          "label": "Haunted Sweden",
+          "labelSv": "Haunted Sweden",
+          "value": "Score 8.9 · Premium HIGH",
+          "valueSv": "Poäng 8.9 · Premium HÖG"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Masthuggskyrkan really a ruined church?",
+          "questionSv": "Är Masthuggskyrkan verkligen en kyrkoruin?",
+          "answer": "No. The landmark at Storebackegatan 15 is an active parish church completed and consecrated in 1914. Some ghost-list sites wrongly call “Gamla Masthuggskyrkan” a ruin — that framing is folklore branding, not the building’s documented status.",
+          "answerSv": "Nej. Landmärket på Storebackegatan 15 är en aktiv församlingskyrka invigd 1914. Vissa spöklistor kallar felaktigt “Gamla Masthuggskyrkan” för ruin — det är folkloreetikett, inte byggnadens dokumenterade status."
+        },
+        {
+          "question": "Did the church bells ring for World War I before inauguration?",
+          "questionSv": "Ringde kyrkklockorna för första världskriget före invigningen?",
+          "answer": "Yes — documented in BeBR and local history: on 2 August 1914 the new bells rang with other Göteborg churches to announce general mobilisation, before the October 1914 consecration.",
+          "answerSv": "Ja — dokumenterat i BeBR och lokalhistoria: den 2 augusti 1914 ringde de nya klockorna tillsammans med andra Göteborgskyrkor för allmän mobilisering, före invigningen i oktober 1914."
+        },
+        {
+          "question": "Who are the White Lady and the Black Priest?",
+          "questionSv": "Vem är Vita damen och Svarta prästen?",
+          "answer": "They are urban-legend / folklore figures linked to the church in modern haunted-place lists and oral storytelling — not verified historical persons in parish archives. Haunted Sweden labels them clearly as legend.",
+          "answerSv": "De är urban-legend-/folkloregestalter knutna till kyrkan i moderna spöklistor och muntlig storytelling — inte verifierade historiska personer i församlingsarkiv. Haunted Sweden märker dem tydligt som legend."
+        },
+        {
+          "question": "Can visitors go inside and up the tower?",
+          "questionSv": "Kan besökare gå in och upp i tornet?",
+          "answer": "The church is open during published parish hours (often daily). Guided tower visits are offered seasonally when announced by Masthuggs församling — book or check svenskakyrkan.se. Respect services.",
+          "answerSv": "Kyrkan är öppen under publicerade församlingstider (ofta dagligen). Guidade tornvisningar erbjuds säsongsvis när församlingen annonserar — kolla svenskakyrkan.se. Respektera gudstjänster."
+        },
+        {
+          "question": "Has Haunted Sweden investigated Masthuggskyrkan yet?",
+          "questionSv": "Har Haunted Sweden utrett Masthuggskyrkan ännu?",
+          "answer": "Not yet. Planned verification: night photography from Stigberget, interviews with church guides, folklore-archive checks, comparing ghost-walk stories with historical sources, and a history-vs-folklore documentary episode.",
+          "answerSv": "Inte ännu. Planerad verifiering: nattfotografi från Stigberget, intervjuer med kyrkoguider, folklorearkiv, jämförelse spökvandringsberättelser mot historiska källor, och dokumentärepisod historia kontra folklore."
+        }
+      ]
+    },
+    {
+      "id": "62",
+      "slug": "stortorget-stockholm",
+      "name": "Stortorget – Stockholm Bloodbath",
+      "englishName": "Stortorget – Stockholm Bloodbath (Stockholms blodbad)",
+      "coverImage": "/places/stortorget-stockholm-cover.jpg",
+      "category": "Historical Tragedy Site",
+      "city": "Stockholm",
+      "region": "Stockholm",
+      "country": "Sweden",
+      "address": "Stortorget, Gamla Stan, 111 29 Stockholm, Sweden",
+      "latitude": 59.3255,
+      "longitude": 18.0708,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-verified",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": false,
+      "hauntingLevel": 5,
+      "hauntedSwedenScore": 9.8,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "stortorget",
+        "gamla_stan",
+        "stockholm_bloodbath",
+        "christian_ii",
+        "schantzska_huset",
+        "92_white_stones",
+        "ghost_walk",
+        "medieval_stockholm",
+        "stockholm",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Stortorget is the historic heart of Gamla Stan — and the stage of the Stockholm Bloodbath. In November 1520, after Christian II of Denmark was crowned king of Sweden in Storkyrkan, roughly eighty to a hundred nobles, bishops, burghers and others were executed on this cobbled square: beheaded by sword or hanged from a gallows raised on the marketplace. Bodies lay in the open before being burned on Södermalm; among the dead was Erik Johansson Vasa, father of the future king Gustav Vasa, whose rebellion followed the massacre. Today colourful façades frame Nobel Prize Museum, Stortorgsbrunnen and Schantzska huset (Stortorget 20), whose white façade stones are popularly said to number each Bloodbath victim — a later symbolic tradition, not a 1520 memorial. Folklore adds that if a stone vanishes, its soul wanders Gamla Stan forever. Haunted Sweden keeps Olaus Petri–era chronology separate from ghost-walk atmosphere. Winter fog and lantern light make Stortorget one of Sweden’s most powerful historical mystery locations.",
+      "whyItFitsHauntedSweden": "One of Sweden’s darkest documented historical sites: national turning point, ~80–100 executions, white-stone folklore, and a central Gamla Stan ghost-walk stop. Visual 10/10, historical 10/10, folklore 9.8/10, paranormal reputation 8.8/10, cultural significance 10/10 — Haunted Sweden Score 9.8. Essential Stockholm destination; premium content EXTREMELY HIGH; research confidence VERY HIGH.",
+      "shortDescription": "Gamla Stan’s main square — site of the Stockholm Bloodbath (Nov 1520), later white-stone memorial folklore on Schantzska huset, and Sweden’s most charged medieval urban stage.",
+      "history": "## DOCUMENTED: Medieval Stortorget and Gamla Stan\n\nStortorget (“the Great Square”) is Stockholm’s oldest square — the central point around which the medieval city grew from the 1200s onward. Named in sources as *stora torghit* (1420). From the 1300s to 1732 the city’s town hall (rådstuga) stood here; it was the main marketplace (Erik XIV’s 1563 privileges directed trade here). Nearby **Storkyrkan** (Stockholm Cathedral) served royal and civic ritual; since 2001 the **Nobel Prize Museum** occupies the former Stock Exchange (Börshuset) on the square. **Stortorgsbrunnen** (well pavilion by Erik Palmquist / Palmstedt, 1778; moved away 1857, returned 1953 as aesthetic monument) marks the centre. Colourful merchant façades — Grillska, Schantzska, Seyfridtzska and others — define today’s tourist Gamla Stan.\n\nEarlier recorded executions on the square include 1280 (Folkunga uprising victims under Magnus Ladulås). Between 1603 and 1776 the shame-pole figure **Kopparmatte** stood here as a crime warning.\n\n## DOCUMENTED: Christian II’s coronation and the path to massacre\n\nAfter invading Sweden in 1520 and receiving Stockholm (amnesty letters September 1520), Christian II was acclaimed and crowned king of Sweden in **Storkyrkan on 4 November 1520**, anointed by Archbishop **Gustaf (Gustav) Trolle**. A three-day coronation feast followed at Tre Kronor castle.\n\nOn **7 November** guests were summoned back to the great hall; gates closed. Trolle demanded huge compensation for the demolition of **Almarestäket** and other injuries to the church, listing Sten Sture the Younger and supporters as guilty of **manifest heresy**. Arrests followed that evening. A clerical panel the next day affirmed heresy and handed the accused to the secular power for the customary extreme penalty.\n\n## DOCUMENTED: Stockholm Bloodbath, 8–9 November 1520\n\nExecutions on **Stortorget** began at midday **Thursday 8 November 1520**. Eyewitness **Olaus Petri** describes bishops of Skara and Strängnäs (**Vincentius** and **Mattias Gregersson (Lillie)**) led out first and **beheaded with the sword**, then nobles by sword, then Stockholm’s burgomasters and councillors **hanged** from a gallows on the square. **9 November** continued with servants and further victims. Bodies lay on the square into Saturday; blood ran in the gutters. On **10 November** corpses were burned on large pyres on **Södermalm** (later Katarina churchyard area); the body of Sten Sture the Younger was exhumed from the Blackfriars and burned too.\n\nVictim counts vary: executioner **Jürgen Homuth** claimed **82**; historians and media often cite **~80–100** (SVT: near 100; popular summaries ~90). Lists commonly include riksråd **Erik Johansson (Vasa)** — father of **Gustav Vasa** — whose rebellion and the break with the Kalmar Union followed. Christian II became known in Sweden as **Kristian Tyrann**. Political terror, disarmament of burghers, and imprisonment of widows (including Kristina Gyllenstierna) followed.\n\n## DOCUMENTED: Schantzska huset (building history — not 1520)\n\n**Schantzska huset**, Stortorget 20 (beside Seyfridtzska huset), is named for royal secretary **Johan Eberhard Schantz**. The present stepped-gabled Nordic Renaissance façade dates to **1650** (restored 1905), with limestone portal by Johan Wendelstam and a German Psalm 37:5 inscription. It is **more than a century after** the Bloodbath — so its decorative white stones cannot be contemporary memorial markers from 1520.\n\n## DOCUMENTED dark history summary (no invented events)\n\nBeheadings and hangings on the marketplace; public display of bodies; burning of corpses (and Sture’s remains) on Södermalm; heresy trial framing; Gustav Vasa’s personal loss and ensuing national revolt. Separate folklore (white stones / restless souls) below.",
+      "legend": "## FOLKLORE: The white stones of Schantzska huset\n\n**Widespread tradition:** white stones on the red façade of Schantzska huset each stand for a Bloodbath victim. Popular tourism and media often say **92** stones (Expressen and similar; stockholmgamlastan-linked tellings). **Swedish Wikipedia** notes that if one counts carefully the number is **94**, and states clearly that the stones’ link to the executed has **no real historical foundation** — they are a **later symbolic / mythic reading** of a 1650 façade, not a 1520 memorial programme.\n\n**Missing-stone legend (folklore):** as long as the stones remain, the dead find a measure of peace; if one stone disappears, the soul it “represents” becomes a restless revenant wandering Gamla Stan forever. Haunted Sweden labels this **folklore**, not documented history. Verify any current count by eye on site — do not treat “92” or “94” as an official Bloodbath victim tally.\n\n## FOLKLORE / GHOST-WALK CULTURE\n\nStortorget is a staple of Gamla Stan ghost and history walks (Stockholm Ghost Walk, Sweden History Tours, story tours, etc.): Bloodbath narrative, executioner motifs, night alleys, oppression of place. Cannonball folklore on a corner house (Gustav Vasa siege legend — Wikipedia notes the visible ball was set into a 1795 rebuild as symbolic memorial, not a verified 1521 hit on Christian II) is a separate local tale often told nearby.\n\n## MODERN WITNESS-STYLE REPORTS (anecdotal)\n\nVisitors and tour guests report apparitions on the square, night footsteps, unexplained voices, sadness or oppression — especially near Schantzska huset, the approximate execution ground, the well, and narrow alleys. No peer-reviewed paranormal study of Stortorget was located. Record as subjective experience and tourism atmosphere, not proven hauntings.\n\n## Special haunted areas (atmosphere + legend)\n\n1. **Schantzska huset** — white stones / memorial folklore.\n2. **Execution site** — approximate marketplace centre of the Bloodbath.\n3. **Medieval well (Stortorgsbrunnen)** — historic centrepiece.\n4. **Narrow alleys** — classic ghost-walk setting into Gamla Stan.\n\n## Atmosphere, investigation ideas, best conditions\n\nMedieval cobbles, colourful façades, lantern evening light, winter fog — one of Sweden’s most atmospheric historic squares. Ideas: Bloodbath after dark (respectful photography); white-stone legend documentation; history vs folklore; join a licensed ghost walk; EVP only where legal and respectful; Haunted Sweden Stockholm documentary. Best: winter evenings, blue hour, heavy rain, late walking tours, autumn fog. Public square year-round; respect residents and businesses.",
+      "safetyNote": "Public historic square open year-round. Easy walking access through Gamla Stan; cobbles can be slippery when wet or icy. Guided historical and ghost tours available from commercial operators. Respect façades, residents, shops and museums — do not climb buildings, remove or touch façade stones, or block emergency access. Keep night noise low.",
+      "sourceLinks": [
+        "https://sv.wikipedia.org/wiki/Stockholms_blodbad",
+        "https://sv.wikipedia.org/wiki/Stortorget,_Stockholm",
+        "https://sv.wikipedia.org/wiki/Schantzska_huset",
+        "https://www.svt.se/nyheter/inrikes/500-ar-sedan-blodbadet-i-gamla-stan-sahar-gick-det-till",
+        "https://stockholmskallan.stockholm.se/",
+        "https://stockholmghostwalk.com/historisk-spokvandring-i-gamla-stan/",
+        "https://nobelmuseum.se/"
+      ],
+      "paranormalType": [
+        "Apparition",
+        "Footsteps",
+        "Voices",
+        "Heavy Atmosphere",
+        "Local Folklore",
+        "Historical Tragedy"
+      ],
+      "accessType": "Public Landmark",
+      "familyFriendly": true,
+      "visitDifficulty": 1,
+      "nightAccess": true,
+      "parkingAvailable": false,
+      "guidedTours": true,
+      "publicAccess": true,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 1,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Stortorget,+Gamla+Stan,+Stockholm,+Sweden",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [
+        {
+          "url": "/places/stortorget-stockholm-cover.jpg",
+          "caption": "Stortorget, Gamla Stan — site of the Stockholm Bloodbath",
+          "captionSv": "Stortorget, Gamla stan — platsen för Stockholms blodbad",
+          "credit": "Wikimedia Commons",
+          "status": "approved"
+        }
+      ],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Gamla stans huvudtorg — platsen för Stockholms blodbad (nov 1520), senare vitstensfolklore på Schantzska huset, och Sveriges mest laddade medeltida stadsscen.",
+      "historySv": "## DOKUMENTERAT: Medeltida Stortorget\n\nStockholms äldsta torg — centralpunkt från 1200-talet. Rådstuga 1300-talet–1732; huvudtorg för handel. **Storkyrkan** intill; **Nobelmuseet** i Börshuset sedan 2001. **Stortorgsbrunnen** (Palmstedt 1778; åter 1953). Avrättningar även 1280 (Folkungaupproret).\n\n## DOKUMENTERAT: Kristian II:s kröning och vägen till blodbadet\n\nKrönt i Storkyrkan **4 november 1520** av ärkebiskop **Gustaf Trolle**. Den **7 november** framförde Trolle kätterianklagelser och krav efter Almarestäkets rivning; gripanden följde.\n\n## DOKUMENTERAT: Stockholms blodbad 8–9 november 1520\n\nAvrättningar på Stortorget från middagstid **8 november**: biskoparna Vincentius och Mattias först (svärd), sedan adelsmän, därefter borgmästare/rådmän (galge). **9 november** fortsatt. Kroppar på torget; bål på **Södermalm 10 november** (även Sten Sture d.y:s lik). Antal: bödeln Jürgen Homuth **82**; ofta **~80–100** / ca 90. Bland de avrättade: **Erik Johansson (Vasa)**, far till Gustav Vasa. Kristian Tyrann; uppror och självständighet följde.\n\n## DOKUMENTERAT: Schantzska huset\n\nStortorget 20, uppfört **1650** (Johan Eberhard Schantz), restaurerat 1905 — **långt efter** 1520. Vita stenar kan därför inte vara samtidiga minnesstenar från blodbadet.",
+      "legendSv": "## FOLKLORE: Vita stenarna\n\nTradition: vita stenar på Schantzska husets fasad = blodbadets offer. Turism/media säger ofta **92**; Wikipedia anger att man vid räkning får **94** och att kopplingen till de avrättade **saknar reell historisk förankring** — senare symbolisk/mytisk läsning.\n\n**Saknad sten (folklore):** försvinner en sten vandrar själen i Gamla stan för alltid. Märk som folklore.\n\n## SPÖKVANDRINGSKULTUR\n\nStortorget är standardstopp på Gamla stan-spökvandringar. Kanonkulesägen i hörnhus är separat lokal berättelse (kulan murades in 1795 som symbol).\n\n## MODERNA UPPLEVELSER (anekdotiska)\n\nApparitioner, fotsteg, röster, tyngd — ej peer-reviewed utredningar. OMRÅDEN: Schantzska huset; ungefärlig avrättningsplats; brunnen; gränder.",
+      "hauntedSwedenAppSummarySv": "Stortorget är Gamla stans historiska hjärta — och scenen för Stockholms blodbad. I november 1520, efter att Kristian II krönts i Storkyrkan, avrättades ungefär 80–100 personer på torget: halshuggning och hängning. Kroppar brändes på Södermalm; bland de döda fanns Erik Johansson Vasa, far till Gustav Vasa. Idag ramar färgrika fasader in Nobelmuseet, Stortorgsbrunnen och Schantzska huset, vars vita stenar i folklore sägs räkna varje offer — en senare symboltradition, inte ett 1520-minnesmärke. Legenden om den saknade stenen och den osaliga själen är folklore. Haunted Sweden håller isär dokumenterad kronologi och spökvandringsatmosfär.",
+      "safetyNoteSv": "Offentligt historiskt torg året runt. Lätt att gå i Gamla stan; kullerstensgator kan vara hala. Guidade historie- och spökvandringar finns. Respektera fasader, boende och butiker — klättra inte, rör inte fasadstenar. Håll låg volym nattetid.",
+      "infoBox": [
+        {
+          "label": "Bloodbath",
+          "labelSv": "Blodbadet",
+          "value": "8–9 Nov 1520 (events from 7 Nov)",
+          "valueSv": "8–9 nov 1520 (inleds 7 nov)"
+        },
+        {
+          "label": "Victims",
+          "labelSv": "Offer",
+          "value": "~80–100 (executioner: 82)",
+          "valueSv": "ca 80–100 (bödeln: 82)"
+        },
+        {
+          "label": "Ordered under",
+          "labelSv": "Under",
+          "value": "Christian II · Gustaf Trolle’s heresy case",
+          "valueSv": "Kristian II · Gustaf Trolles kätterimål"
+        },
+        {
+          "label": "Schantzska huset",
+          "labelSv": "Schantzska huset",
+          "value": "Façade 1650 · white-stone folklore",
+          "valueSv": "Fasad 1650 · vitstensfolklore"
+        },
+        {
+          "label": "Stone count myth",
+          "labelSv": "Stenantalsmyt",
+          "value": "Often 92; Wikipedia count 94",
+          "valueSv": "Ofta 92; Wikipedia räknar 94"
+        },
+        {
+          "label": "Nearby",
+          "labelSv": "Intill",
+          "value": "Storkyrkan · Nobel Prize Museum",
+          "valueSv": "Storkyrkan · Nobelmuseet"
+        },
+        {
+          "label": "Haunted Sweden",
+          "labelSv": "Haunted Sweden",
+          "value": "Score 9.8 · Premium EXTREMELY HIGH",
+          "valueSv": "Poäng 9.8 · Premium EXTREMT HÖG"
+        }
+      ],
+      "faq": [
+        {
+          "question": "When was the Stockholm Bloodbath?",
+          "questionSv": "När var Stockholms blodbad?",
+          "answer": "Arrests and the heresy process began 7 November 1520 after Christian II’s coronation; mass executions on Stortorget took place 8–9 November. Bodies were burned on Södermalm on 10 November.",
+          "answerSv": "Gripanden och kätteriprocessen inleddes 7 november 1520 efter Kristian II:s kröning; massavrättningarna på Stortorget skedde 8–9 november. Kroppar brändes på Södermalm den 10 november."
+        },
+        {
+          "question": "How many people were executed?",
+          "questionSv": "Hur många avrättades?",
+          "answer": "Sources disagree. The executioner Jürgen Homuth claimed 82; historians and media often say roughly 80–100 (commonly summarised as about 90). Exact totals remain debated.",
+          "answerSv": "Källorna skiljer sig. Bödeln Jürgen Homuth uppgav 82; historiker och media säger ofta ungefär 80–100 (vanligen ca 90). Exakt antal är omdiskuterat."
+        },
+        {
+          "question": "Do the white stones on Schantzska huset commemorate the victims?",
+          "questionSv": "Minns de vita stenarna på Schantzska huset offren?",
+          "answer": "Popular tradition says yes (often 92 stones; Wikipedia’s count is 94). Historically the link has no solid foundation — the house façade dates to 1650, long after 1520. Treat as later symbolic folklore. The “missing stone releases a restless soul” story is folklore.",
+          "answerSv": "Folklig tradition säger ja (ofta 92 stenar; Wikipedia räknar 94). Historiskt saknas fast förankring — fasaden är från 1650, långt efter 1520. Behandla som senare symbolisk folklore. Berättelsen om saknad sten och osalig själ är folklore."
+        },
+        {
+          "question": "How is Gustav Vasa connected?",
+          "questionSv": "Hur är Gustav Vasa kopplad?",
+          "answer": "His father, riksråd Erik Johansson (Vasa), was among those executed. The Bloodbath helped spark the rebellion that made Gustav Vasa king and ended effective Danish rule under the Kalmar Union.",
+          "answerSv": "Hans far, riksrådet Erik Johansson (Vasa), var bland de avrättade. Blodbadet bidrog till upproret som gjorde Gustav Vasa till kung och avslutade det effektiva danska styret under Kalmarunionen."
+        },
+        {
+          "question": "Has Haunted Sweden investigated Stortorget yet?",
+          "questionSv": "Har Haunted Sweden utrett Stortorget ännu?",
+          "answer": "Not yet. Planned: night photography, white-stone documentation, ghost-walk observation, historian interviews, history-vs-folklore comparison, and a Stockholm documentary episode.",
+          "answerSv": "Inte ännu. Planerat: nattfotografi, dokumentation av vita stenar, spökvandringsobservation, historikerintervjuer, historia kontra folklore, och Stockholmsdokumentär."
+        }
+      ]
+    },
+    {
+      "id": "63",
+      "slug": "trollkyrka",
+      "name": "Trollkyrka (Tiveden)",
+      "englishName": "Trollkyrka – Troll’s Church (Tiveden National Park)",
+      "coverImage": "/places/trollkyrka-cover.jpg",
+      "category": "Legend Site",
+      "city": "Tived",
+      "region": "Örebro",
+      "country": "Sweden",
+      "address": "Tivedens Nationalpark, 695 97 Tived, Sweden",
+      "latitude": 58.76,
+      "longitude": 14.78,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-verified",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": false,
+      "hauntingLevel": 4,
+      "hauntedSwedenScore": 9.8,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "trollkyrka",
+        "tiveden",
+        "national_park",
+        "blot",
+        "pagan_rituals",
+        "sacred_site",
+        "swedish_folklore",
+        "ancient_forest",
+        "mystery",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Trollkyrka (“Troll’s Church”) is a dramatic rocky outcrop deep inside Tiveden National Park — one of southern Sweden’s wildest ancient forests between Vänern and Vättern. Official park material presents ice-scoured granite, crack-valley terrain and the demanding Trollkyrkerundan hike; the name Trollkyrka appears in writing from the 1600s, and the ridges once served as seamarks across Vättern. Documented folklore — collected by B. Gösta Carlshult around 1940 and popularised by Hans Lidman in Gudanatt (1972) — tells of secret night ceremonies, a masked “prelatus,” blood offerings and a rule that outsiders who saw the rites risked death in a forest bog or forced initiation into a brotherhood. Those secrecy motifs are often linked to the era when non-Christian ritual could mean capital punishment (commonly cited 1604–1735), but they are oral/literary tradition, not archaeological proof of a Norse blót site. Haunted Sweden keeps national-park geology and trail facts separate from the poem and legend. Fog among moss-covered blocks makes Trollkyrka one of Sweden’s most mysterious natural landmarks.",
+      "whyItFitsHauntedSweden": "Flagship folklore destination: National Park wilderness, unique secret-ritual traditions, deep historical mystery without castle walls. Visual 10/10, historical 10/10, folklore 10/10, paranormal reputation 8.5/10, mystique 10/10 — Haunted Sweden Score 9.8. Premium EXTREMELY HIGH; research confidence VERY HIGH.",
+      "shortDescription": "Granite “Troll’s Church” in Tiveden National Park — documented folklore of secret pagan rites and death-penalty-era secrecy, not archaeological proof of blót.",
+      "history": "## DOCUMENTED: Geology and Tiveden’s wilderness\n\nTrollkyrka is a prominent rocky knoll / butte-like formation in the heart of **Tiveden National Park** (Laxå / Karlsborg area; managed by **Länsstyrelsen Örebro**). The landscape is a classic ice-age **sprickdalslandskap**: ice-scoured granite, glacial striations, chaotic boulder fields (blocks up to ~10 m), mossy passages, mires and old pine forest shaped by natural fire. Sveriges Nationalparker describes one of southern Sweden’s wildest continuous forest–lake–crack-valley landscapes, protected so the forest can develop toward virgin woodland.\n\n## DOCUMENTED: Border forest and place-names\n\nTiveden was long an isolating border woodland between **Svealand** and **Götaland** — sparse settlement, difficult terrain, strong local place-name folklore. Official trail texts note **Trollkyrkobergen** as known seamarks for medieval sailors on **Vättern** (with Vadstena’s “blue church” across the water); one park interpretation suggests sailors coined “trolls’ church” for the empty northern shore skyline. The name **Trollkyrka** is attested in writing from the **1600s**; many other “troll-” names in the park are later tourist inventions, while Trollkyrka has the longer tradition (Länsstyrelsen trail material).\n\n## DOCUMENTED: National Park and access\n\n**Tivedens nationalpark** founded **1983**, expanded **2017** (c. 2,030 ha). Marked trails include **Trollkyrkerundan** (~4.6 km, demanding / “berg-och-dalbana” through crack valleys; ~3–3.5 hours with breaks), starting at the main entrance. Stops include **Stora Trollkyrka**, **Lilla Trollkyrka** (views toward Vättern) and Metesjön. Stay on marked trails; follow park regulations (dogs on leash, fire only at designated sites, etc.).\n\n## DOCUMENTED: Later Christian / free-church use (not pagan archaeology)\n\nSwedish Wikipedia notes that in the **1800s** an early free-church movement used Trollkyrkoberget for **secret meetings** when banned by the Church of Sweden — a documented historical use of the rock as a gathering place, separate from prehistoric blót claims. Park texts also mention an “open-air church” häll associated with forbidden services in the konventikel era (early 1700s context in some trail leaflets).\n\n## Archaeology vs folklore (research caution)\n\nNo Haunted Sweden claim equates Trollkyrka with an excavated Norse **hörgr** or proven continuous blót site. Possible ritual reading comes from **folklore documentation** (below). Researchers remain cautious: place-name + poem ≠ archaeological horizon.",
+      "legend": "## DOCUMENTED FOLKLORE: Forbidden rituals (not verified history)\n\nFolklife researcher **B. Gösta Carlshult** (often spelled Carshult in English summaries), documenting Undenäs / Tiveden traditions around **1940–1941** (*Undenäsbygden genom tiderna*), recorded an “ancient folk poem” describing night journeys to the Troll mountains, three-day “mass,” masked identical garments, horn signals, fire of **nine kinds of wood**, blood sprinkled on participants, best of the offering to the spirits, then midnight invocation of spirits by a **prelatus**. Later published via **S. Karlsson** (*I Tiveden*, 1970) and **Hans Lidman** (*Gudanatt, dagar och nätter i Tiveden*, 1972) — note: **Hans** Lidman, not Olof.\n\n**Secrecy tradition:** anyone not initiated who witnessed the rites risked being silenced in a forest bog/hole **or** sworn into the brotherhood. English/Swedish secondary literature often argues such precautions fit the period when practising non-Christian rites could mean **death** under Swedish law (**commonly cited 1604–1735**). That is an **interpretive link** between folklore and legal history — **not** a court record proving specific executions at Trollkyrka.\n\n**Lidman quote (tradition):** old people said no Christian should go there; the troll-church mountains belong to heathen trolls; a Christian who ventures there comes to grief.\n\n**Authenticity debate (important):** the poem’s author seems familiar with blot-like structure, and some details (nine woods; spirit-calling after the meal) are not simply copied from well-known medieval Icelandic texts — yet the **absence of matching medieval sources also means the poem cannot prove** historical practice. Haunted Sweden presents this as **documented folklore / oral-literary tradition**, not verified ritual archaeology.\n\n## FOLKLORE: Blót / hörgr reading\n\nPopular and neo-pagan readings treat Trollkyrka as a long-lived **hörgr** / blót ground after Christianisation. Possible — but **unproven**. Distinguish: sacred-rock folklore worldwide vs excavated cult sites with finds and dating.\n\n## MODERN WITNESS-STYLE REPORTS (anecdotal)\n\nHikers report deep silence, feeling watched, strange sounds in fog, heavy atmosphere among the blocks — classic wilderness uncanny, not controlled paranormal evidence. No peer-reviewed investigation of hauntings at Trollkyrka was located.\n\n## Special areas\n\n1. **Trollkyrka rock formation** — folklore centre (Stora Trollkyrka).\n2. **Summit / Lilla Trollkyrka** — views; gathering-place tradition.\n3. **Forest trails (Trollkyrkerundan)** — demanding wilderness hike.\n4. **Surrounding ancient forest** — silence, moss, fog.\n\n## Atmosphere, investigation ideas, best conditions\n\nAncient forest, massive granite, narrow passages, complete hush, fog in the trees — flagship Haunted Sweden wilderness folklore. Ideas: forbidden-ritual folklore mapping; history vs poem; fog photography; interview local historians; documentary on Sweden’s hidden sacred places. Best: heavy fog, autumn, early morning, blue hour, calm weather. EVP only where legal and non-disruptive to nature/other hikers.",
+      "safetyNote": "National Park — follow Sveriges Nationalparker / Länsstyrelsen Örebro rules. Reach via marked Trollkyrkerundan (moderate to demanding: steep, rocky, roots; allow several hours). Stay on trails; no camping/fires except where permitted; dogs leashed. Terrain is slippery when wet; bring map, water, sturdy shoes. Respect protected nature — no removing stones, moss or artefacts. Not an easy casual stroll.",
+      "sourceLinks": [
+        "https://www.sverigesnationalparker.se/park/tivedens-nationalpark/",
+        "https://www.lansstyrelsen.se/orebro/besoksmal/naturreservat/tivedens-nationalpark.html",
+        "https://sv.wikipedia.org/wiki/Trollkyrka",
+        "https://en.wikipedia.org/wiki/Trollkyrka",
+        "https://www.vastsverige.com/karlsborg/leder/trollkyrkerundan/",
+        "https://www.naturkartan.se/sv/vastra-gotalands-lan/trollkyrka"
+      ],
+      "paranormalType": [
+        "Heavy Atmosphere",
+        "Local Folklore",
+        "Sacred Site Folklore",
+        "Unusual Sounds"
+      ],
+      "accessType": "Hiking Trail",
+      "familyFriendly": false,
+      "visitDifficulty": 3,
+      "nightAccess": false,
+      "parkingAvailable": true,
+      "guidedTours": false,
+      "publicAccess": true,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 1,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tivedens+nationalpark+Trollkyrka",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [
+        {
+          "url": "/places/trollkyrka-cover.jpg",
+          "caption": "Trail toward Trollkyrka, Tiveden National Park",
+          "captionSv": "Led mot Trollkyrka, Tivedens nationalpark",
+          "credit": "Wikimedia Commons",
+          "status": "approved"
+        }
+      ],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Granit-”Trollkyrkan” i Tivedens nationalpark — dokumenterad folklore om hemliga hedningariter och dödsstraffstidens sekretess, inte arkeologiskt bevis för blot.",
+      "historySv": "## DOKUMENTERAT: Geologi och vildmark\n\nBergknalle mitt i **Tivedens nationalpark** (Länsstyrelsen Örebro). Inlandsisslipad granit, sprickdalar, blockmarker, brandpräglad tallskog. Nationalpark **1983**, utvidgad **2017**.\n\n## DOKUMENTERAT: Gränsskog och namn\n\nTiveden som isolerande gränsskog mellan Svealand och Götaland. **Trollkyrka** belagt i skrift från **1600-talet**; sjömärke mot Vättern enligt parkmaterial. **Trollkyrkerundan** ca 4,6 km, krävande led från huvudentrén (Stora/Lilla Trollkyrka).\n\n## DOKUMENTERAT: Senare bruk\n\n1800-talets frikyrkorörelse ska ha hållit hemliga möten på berget (Wikipedia). Skilj från fornnordiska blotpåståenden.\n\n## Arkeologi kontra folklore\n\nIngen utgrävd hörgr med daterade fynd som “bevisar” kontinuerligt blot. Ritualtolkning vilar på folklore.",
+      "legendSv": "## DOKUMENTERAD FOLKLORE: Förbjudna riter (inte verifierad historia)\n\n**B. Gösta Carlshult** (~1940) upptecknade ett folkligt kväde om nattfärder till Trollebergen, tre dagars “mässa”, maskerad skara, hornstötar, eld av **nio slags ved**, blodstänk, offer till andar och midnattsåkallan av en **prelatus**. Publicerat vidare av Karlsson (1970) och **Hans Lidman**, *Gudanatt* (1972).\n\n**Sekretess:** den oinvigde som såg riterna riskerade tystnad i skogen eller upptagning i brödraskapet — ofta kopplat till perioden med **dödsstraff** för icke-kristen rit (**ca 1604–1735**). Det är tolkning, inte rättegångsbevis från Trollkyrka.\n\n**Äkthetsdebatt:** dikten kan spegla blotkunskap — men bevisar inte historisk praktik. Märk som dokumenterad folklore.\n\n## MODERNA UPPLEVELSER (anekdotiska)\n\nTystnad, känsla av att bli iakttagen, udda ljud i dimma — vildmarksatmosfär, inte kontrollerad paranormal evidens. OMRÅDEN: Stora Trollkyrka; topp/Lilla Trollkyrka; Trollkyrkerundan; gammelskogen.",
+      "hauntedSwedenAppSummarySv": "Trollkyrka är en dramatisk bergknalle djupt inne i Tivedens nationalpark — en av Sydsveriges vildaste gammelskogar. Parkens fakta handlar om isslipad granit, sprickdalar och den krävande Trollkyrkerundan; namnet finns i skrift från 1600-talet. Dokumenterad folklore — Carlshult ca 1940 och Hans Lidmans Gudanatt (1972) — berättar om hemliga nattliga ceremonier, blodoffer och att den som såg riterna riskerade döden i skogen eller tvångsupptagning i ett brödraskap. Motiven kopplas ofta till tiden då icke-kristen rit kunde ge dödsstraff (ca 1604–1735), men det är muntlig/litterär tradition — inte arkeologiskt bevis för en fornnordisk blotplats. Haunted Sweden håller isär nationalparkens geologi och folkviselegenden. Dimma bland mossiga block gör Trollkyrka till ett av Sveriges mest mystiska naturlandmärken.",
+      "safetyNoteSv": "Nationalpark — följ Sveriges nationalparker / Länsstyrelsen Örebro. Nås via markerade Trollkyrkerundan (medel–krävande). Håll dig till lederna; elda endast där tillåtet. Halt i väta; bra skor, vatten, karta. Respektera naturen.",
+      "infoBox": [
+        {
+          "label": "Location",
+          "labelSv": "Läge",
+          "value": "Tiveden National Park (core)",
+          "valueSv": "Tivedens nationalpark (centralt)"
+        },
+        {
+          "label": "National Park",
+          "labelSv": "Nationalpark",
+          "value": "Founded 1983 · expanded 2017",
+          "valueSv": "Bildad 1983 · utvidgad 2017"
+        },
+        {
+          "label": "Trail",
+          "labelSv": "Led",
+          "value": "Trollkyrkerundan ~4.6 km (demanding)",
+          "valueSv": "Trollkyrkerundan ca 4,6 km (krävande)"
+        },
+        {
+          "label": "Folklore sources",
+          "labelSv": "Folklorekällor",
+          "value": "Carlshult ~1940 · Lidman 1972",
+          "valueSv": "Carlshult ca 1940 · Lidman 1972"
+        },
+        {
+          "label": "Ritual claims",
+          "labelSv": "Ritualpåståenden",
+          "value": "Documented folklore — not archaeology",
+          "valueSv": "Dokumenterad folklore — inte arkeologi"
+        },
+        {
+          "label": "Legal context (interpretive)",
+          "labelSv": "Rättskontext (tolkning)",
+          "value": "Death penalty era often cited 1604–1735",
+          "valueSv": "Dödsstraffstid ofta angiven 1604–1735"
+        },
+        {
+          "label": "Haunted Sweden",
+          "labelSv": "Haunted Sweden",
+          "value": "Score 9.8 · Premium EXTREMELY HIGH",
+          "valueSv": "Poäng 9.8 · Premium EXTREMT HÖG"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was Trollkyrka a proven Norse blót site?",
+          "questionSv": "Var Trollkyrka en bevisad fornnordisk blotplats?",
+          "answer": "No archaeological proof confirms continuous Norse blót here. The famous ritual description is a folk poem documented by Carlshult (~1940) and retold by Hans Lidman — documented folklore, not excavation evidence. Researchers stay cautious.",
+          "answerSv": "Inget arkeologiskt bevis bekräftar kontinuerligt fornnordiskt blot här. Den kända ritualbeskrivningen är ett folkligt kväde upptecknat av Carlshult (ca 1940) och återgivet av Hans Lidman — dokumenterad folklore, inte utgrävningsbevis. Forskare är försiktiga."
+        },
+        {
+          "question": "What is the death-penalty legend about?",
+          "questionSv": "Vad handlar dödsstrafflegenden om?",
+          "answer": "Folklore says outsiders who saw secret rites risked being killed (bog/forest) or forced into the brotherhood. Writers link that secrecy to Swedish laws that could punish non-Christian practice with death (often dated 1604–1735). It is interpretive context for the tradition — not a verified case file from Trollkyrka.",
+          "answerSv": "Folklore säger att oinvigda som såg hemliga riter riskerade att tystas (mosse/skog) eller tvingas in i brödraskapet. Skribenter kopplar sekretessen till lagar där icke-kristen praktik kunde ge dödsstraff (ofta 1604–1735). Det är tolkningskontext — inte en verifierad rättsakt från Trollkyrka."
+        },
+        {
+          "question": "How do I get there?",
+          "questionSv": "Hur tar jag mig dit?",
+          "answer": "Hike the marked Trollkyrkerundan (~4.6 km, demanding) from Tiveden National Park’s main entrance. Follow park maps and regulations; allow several hours.",
+          "answerSv": "Vandra markerade Trollkyrkerundan (ca 4,6 km, krävande) från nationalparkens huvudentré. Följ kartor och föreskrifter; räkna med flera timmar."
+        },
+        {
+          "question": "Who wrote about Trollkyrka’s rituals?",
+          "questionSv": "Vem skrev om Trollkyrkas riter?",
+          "answer": "Key folklore documentation: B. Gösta Carlshult (Undenäsbygden genom tiderna, ~1941) and Hans Lidman (Gudanatt, 1972). English summaries sometimes misspell Carshult; the author of Gudanatt is Hans Lidman.",
+          "answerSv": "Viktig folklore: B. Gösta Carlshult (Undenäsbygden genom tiderna, ca 1941) och Hans Lidman (Gudanatt, 1972)."
+        },
+        {
+          "question": "Has Haunted Sweden investigated Trollkyrka yet?",
+          "questionSv": "Har Haunted Sweden utrett Trollkyrka ännu?",
+          "answer": "Not yet. Planned: hike Trollkyrkerundan, fog photography, on-site folklore documentation, local historian interviews, compare oral tradition with sources, and a wilderness documentary episode.",
+          "answerSv": "Inte ännu. Planerat: vandra Trollkyrkerundan, dimfotografi, folklore på plats, lokalhistoriker, jämföra muntlig tradition med källor, och vildmarksokumentär."
+        }
+      ]
+    },
+    {
+      "id": "64",
+      "slug": "jungfrutornet",
+      "name": "Jungfrutornet",
+      "englishName": "Jungfrutornet – The Maiden Tower (Visby City Wall)",
+      "coverImage": "/places/jungfrutornet-cover.jpg",
+      "category": "Legend Site",
+      "city": "Visby",
+      "region": "Gotland",
+      "country": "Sweden",
+      "address": "Paviljongsgatan 8, 621 55 Visby, Gotland, Sweden",
+      "latitude": 57.638,
+      "longitude": 18.288,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-verified",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": false,
+      "hauntingLevel": 4,
+      "hauntedSwedenScore": 9.7,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "jungfrutornet",
+        "visby",
+        "gotland",
+        "visby_city_wall",
+        "unesco",
+        "valdemar_atterdag",
+        "battle_of_visby",
+        "walled_maiden",
+        "medieval_folklore",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Jungfrutornet is one of the most famous towers in Visby’s medieval city wall — the UNESCO World Heritage Hanseatic town of Visby (listed 1995). Built in the 1400s to strengthen the sea-facing Strandmuren, the limestone tower stands between Murfallet and Silverhättan with Baltic views along Strandpromenaden. Its fame rests on the legend of Nils Guldsmed’s daughter from Unghanse: she supposedly betrayed Visby to Valdemar Atterdag in 1361 — smuggling keys or signalling the Danes — and was walled in alive as punishment. That story cannot be historical fact: the tower did not exist in 1361. The documented dark history of that year is the Battle of Visby at Korsbetningen, where ~1,800 Gotlanders fell and mass graves were later excavated. Alternative etymology links the name to the old volume measure jungfru. Haunted Sweden keeps Riksantikvarieämbetet wall chronology separate from Medeltidsveckan folklore. Blue hour along the wall makes Jungfrutornet one of Gotland’s iconic mystery stops.",
+      "whyItFitsHauntedSweden": "UNESCO World Heritage wall tower; Sweden’s most famous walled-maiden legend; Valdemar 1361 national trauma nearby; outstanding atmosphere. Visual 10/10, historical 10/10, folklore 10/10, paranormal reputation 8.8/10, cultural significance 10/10 — Haunted Sweden Score 9.7. Essential Visby stop; premium EXTREMELY HIGH; research confidence VERY HIGH.",
+      "shortDescription": "1400s Visby sea-wall tower — UNESCO-listed Ringmuren — famous for the Unghanse maiden legend that cannot fit 1361 chronology, still told each Medieval Week.",
+      "history": "## DOCUMENTED: Visby ringmur and Hanseatic Visby\n\nVisby’s limestone **ringmur** (city wall) is Northern Europe’s best-preserved medieval town wall (~3.6 km). Construction of the first major phase — the **Strandmur** / sea wall (~1.400 m) — began around the mid-1200s as Visby rose as a Hanseatic Baltic trade hub; a full circuit followed. Packhouses, parish churches and the street grid express that Hanseatic boom. The wall and historic town form the core of UNESCO World Heritage **Hansestaden Visby** (inscribed **1995**). Region Gotland owns most of the wall; **Riksantikvarieämbetet** manages conservation (RAÄ Visby 105:1).\n\n## DOCUMENTED: Valdemar Atterdag and 1361\n\nIn July **1361** Danish king **Valdemar Atterdag** invaded Gotland. On **27 July** his professional army crushed a Gotlander peasant levy outside the walls (**Battle of Visby / Korsbetningen**). Contemporary tradition and later sources cite about **1,800** Gotlanders killed (c. 300 Danes in some accounts); mass graves at Solberga convent grounds were excavated in the early 1900s with extraordinary armour finds. Two days later Visby opened; Valdemar exacted tribute and symbolically breached the wall southeast of Söderport (rebuilt 1363). Rural Gotland suffered burning and depopulation; Visby remained a privileged town under Danish power for centuries. This is the documented catastrophe behind later betrayal legends — not a maiden walled into Jungfrutornet.\n\n## DOCUMENTED: Why Jungfrutornet was built (1400s)\n\n**Jungfrutornet** was erected in the **1400s** along Strandmuren between **Murfallet** and **Silverhättan**, both to stiffen sea defence and to brace a weaker stretch of wall (Mitt Visby / ringmur literature; RAÄ notes 1400s towers added along the sea wall). Remains of a wall-walk (skyttegång) survive beside the north side. It is decades after 1361 — so it cannot be the prison of a 1361 traitor.\n\n## DOCUMENTED: Name alternatives\n\nBesides the maiden legend, local scholarship often prefers the old volume measure **jungfru** (~8.2 cl) — a vessel wide at the base and tapering upward, like the tower’s silhouette (Wikipedia / Guteinfo).\n\n## Accessibility / heritage\n\nPublic exterior year-round along the wall and Strandpromenaden; easy walk from central Visby. Respect UNESCO protected fabric — no climbing fragile masonry, no graffiti.",
+      "legend": "## FOLKLORE: The walled maiden (not historical fact)\n\n**Classic telling:** Daughter of **Nils Guldsmed** of **Unghanse** (often called the Unghanse maiden) fell for Valdemar (disguised as a merchant) or a Danish soldier; she betrayed Visby — white cloth over the farm to spare it, and/or smuggling **city gate keys** by night. Captured after the conquest, she was sentenced to be **walled in alive** inside Jungfrutornet. The tale is performed each year during **Medeltidsveckan** (Medieval Week).\n\n**Chronology problem (critical):** Jungfrutornet dates to the **1400s**. Valdemar’s attack was **1361**. The punishment literally cannot have happened in this tower. Present the story as **medieval/early-modern folklore and tourism theatre**, not documented justice.\n\n**19th-century literary versions** (e.g. Svenska Familj-Journalen 1879) elaborate romance, betrayal and abandonment — further evidence of legend growth, not archival trial records.\n\n## MODERN WITNESS-STYLE REPORTS (anecdotal)\n\nTour and visitor motifs: young woman in white near the tower; evening cries; cold spots; sadness; unease along Strandmuren at dusk. No peer-reviewed paranormal investigation specific to Jungfrutornet was located. Record as subjective experience and ghost-walk atmosphere.\n\n## Special haunted areas (atmosphere + legend)\n\n1. **Jungfrutornet** — centre of the maiden legend.\n2. **Strandmuren** — historic sea defences.\n3. **Murfallet** — adjacent wall section.\n4. **Strandpromenaden** — evening Baltic light.\n\n## Atmosphere, investigation ideas, best conditions\n\nMedieval limestone, wall silhouette, Murfallet, sea views, Medeltidsveckan pageantry. Ideas: walled-maiden legend vs chronology; wall night photography; Medieval Week documentation; guide/historian interviews; history vs folklore documentary. Best: autumn evenings, blue hour, heavy fog, Medieval Week, winter evenings.",
+      "safetyNote": "UNESCO World Heritage city wall — publicly accessible exteriors year-round. Easy walking from central Visby; uneven cobbles and grass banks. Do not climb the wall or tower fabric, remove stones, or disturb conservation work. Respect residents along Paviljongsgatan / Strandpromenaden. Keep night noise low.",
+      "sourceLinks": [
+        "https://sv.wikipedia.org/wiki/Visby_ringmur",
+        "https://www.raa.se/om-riksantikvarieambetet/fragor-och-svar/visby-ringmur/",
+        "https://www.raa.se/evenemang-och-upplevelser/upplev-kulturarvet/varldsarv-i-sverige/alla-varldsarv-i-sverige/hansestaden-visby/",
+        "https://www.mittvisby.se/ringmuren/jungfrutornet/",
+        "http://www.guteinfo.com/?id=1265",
+        "https://sv.wikipedia.org/wiki/Slaget_vid_Visby",
+        "https://sv.wikipedia.org/wiki/Valdemar_Atterdags_invasion_av_Gotland"
+      ],
+      "paranormalType": [
+        "Apparition",
+        "Ghostly Lady",
+        "Voices",
+        "Temperature Changes",
+        "Heavy Atmosphere",
+        "Local Folklore"
+      ],
+      "accessType": "Public Landmark",
+      "familyFriendly": true,
+      "visitDifficulty": 1,
+      "nightAccess": true,
+      "parkingAvailable": true,
+      "guidedTours": true,
+      "publicAccess": true,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 1,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jungfrutornet,+Visby,+Gotland",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [
+        {
+          "url": "/places/jungfrutornet-cover.jpg",
+          "caption": "Jungfrutornet on Visby’s medieval city wall, Gotland",
+          "captionSv": "Jungfrutornet i Visby ringmur, Gotland",
+          "credit": "Wikimedia Commons",
+          "status": "approved"
+        }
+      ],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "1400-talstorn i Visby strandmur — UNESCO-listade ringmuren — känt för Unghanse-jungfrulegenden som inte kan stämma med 1361 års kronologi, men som återberättas varje Medeltidsvecka.",
+      "historySv": "## DOKUMENTERAT: Visby ringmur och hansestaden\n\nKalkstensringmur (~3,6 km), Nordeuropas bäst bevarade medeltida stadsmur. **Strandmuren** från mitten av 1200-talet; hansestadshandel. UNESCO **Hansestaden Visby** 1995. Region Gotland äger; **Riksantikvarieämbetet** förvaltar.\n\n## DOKUMENTERAT: Valdemar Atterdag 1361\n\n**27 juli 1361**: Slaget vid Visby / Korsbetningen — ca **1 800** gutar stupade; massgravar vid Solberga. Visby kapitulerade; brandskatt; symboliskt murbrott vid Söderport (åter 1363). Dokumenterad katastrof bakom senare förräderilegender.\n\n## DOKUMENTERAT: Jungfrutornet (1400-talet)\n\nUppfört under **1400-talet** längs Strandmuren mellan Murfallet och Silverhättan — förstärkning mot havet och stöd åt svagare murparti. **Fanns inte 1361.**\n\n## Namnalternativ\n\nÄldre rymdmått **jungfru** (~8,2 cl) — form lik tornets avsmalning.",
+      "legendSv": "## FOLKLORE: Den inmurade jungfrun (inte historisk fakta)\n\n**Nils Guldsmeds** dotter från **Unghanse** ska ha förrått Visby åt Valdemar 1361 (nycklar / vit duk) och murats in levande i Jungfrutornet. Spelas under **Medeltidsveckan**.\n\n**Kronologiproblem:** Tornet är från **1400-talet**; attacken **1361**. Kan inte vara historisk sanning om just detta torn. Märk som folklore.\n\n## MODERNA UPPLEVELSER (anekdotiska)\n\nKvinna i vitt, skrik, köld, sorg — ej peer-reviewed utredningar. OMRÅDEN: Jungfrutornet; Strandmuren; Murfallet; Strandpromenaden.",
+      "hauntedSwedenAppSummarySv": "Jungfrutornet är ett av de mest berömda tornen i Visby ringmur — UNESCO-världsarvet Hansestaden Visby (1995). Byggt på 1400-talet för att stärka Strandmuren står det mellan Murfallet och Silverhättan med utsikt över Östersjön. Ryktet vilar på legenden om Nils Guldsmeds dotter från Unghanse: hon ska ha förrått Visby åt Valdemar Atterdag 1361 och murats in levande. Det kan inte vara historisk fakta — tornet fanns inte 1361. Den dokumenterade mörka historien det året är slaget vid Korsbetningen med ca 1 800 stupade gutar. Alternativ etymologi pekar på rymdmåttet jungfru. Haunted Sweden håller isär ringmurens kronologi och Medeltidsveckans folklore.",
+      "safetyNoteSv": "UNESCO-världsarv — exteriör tillgänglig året runt. Lätt promenad från centrala Visby. Klättra inte på muren, ta inte stenar. Respektera boende. Håll låg volym nattetid.",
+      "infoBox": [
+        {
+          "label": "Built",
+          "labelSv": "Byggt",
+          "value": "1400s · Strandmuren reinforcement",
+          "valueSv": "1400-talet · förstärkning av Strandmuren"
+        },
+        {
+          "label": "UNESCO",
+          "labelSv": "UNESCO",
+          "value": "Hansestaden Visby · listed 1995",
+          "valueSv": "Hansestaden Visby · listad 1995"
+        },
+        {
+          "label": "Valdemar Atterdag",
+          "labelSv": "Valdemar Atterdag",
+          "value": "Conquered Visby July 1361",
+          "valueSv": "Intog Visby juli 1361"
+        },
+        {
+          "label": "Maiden legend",
+          "labelSv": "Jungfrulegenden",
+          "value": "Folklore — tower did not exist in 1361",
+          "valueSv": "Folklore — tornet fanns inte 1361"
+        },
+        {
+          "label": "Name alternative",
+          "labelSv": "Namnalternativ",
+          "value": "Volume measure jungfru (~8.2 cl)",
+          "valueSv": "Rymdmått jungfru (ca 8,2 cl)"
+        },
+        {
+          "label": "Nearby dark history",
+          "labelSv": "Närliggande mörk historia",
+          "value": "Battle of Visby / Korsbetningen",
+          "valueSv": "Slaget vid Visby / Korsbetningen"
+        },
+        {
+          "label": "Haunted Sweden",
+          "labelSv": "Haunted Sweden",
+          "value": "Score 9.7 · Premium EXTREMELY HIGH",
+          "valueSv": "Poäng 9.7 · Premium EXTREMT HÖG"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was a maiden really walled into Jungfrutornet in 1361?",
+          "questionSv": "Murades verkligen en jungfru in i Jungfrutornet 1361?",
+          "answer": "No. The famous Unghanse / Nils Guldsmed daughter story is folklore. Jungfrutornet was built in the 1400s — decades after Valdemar Atterdag’s 1361 conquest — so the punishment cannot have taken place in this tower.",
+          "answerSv": "Nej. Berättelsen om Unghanses / Nils Guldsmeds dotter är folklore. Jungfrutornet byggdes på 1400-talet — årtionden efter Valdemars erövring 1361 — så straffet kan inte ha skett i just detta torn."
+        },
+        {
+          "question": "What did happen in Visby in 1361?",
+          "questionSv": "Vad hände i Visby 1361?",
+          "answer": "Valdemar Atterdag invaded Gotland. On 27 July his army defeated a Gotlander force outside the walls (Battle of Visby / Korsbetningen); roughly 1,800 Gotlanders are traditionally said to have fallen and were buried in mass graves later excavated near Solberga. Visby then paid tribute.",
+          "answerSv": "Valdemar Atterdag invaderade Gotland. Den 27 juli besegrades en gutahär utanför murarna (slaget vid Visby / Korsbetningen); ca 1 800 gutar sägs ha stupat och begravdes i massgravar vid Solberga. Visby brandskattades."
+        },
+        {
+          "question": "Why is it called Jungfrutornet?",
+          "questionSv": "Varför heter det Jungfrutornet?",
+          "answer": "Popular tradition ties the name to the walled-maiden legend. Many local sources prefer the old volume measure jungfru (~8.2 cl), whose tapering shape resembles the tower.",
+          "answerSv": "Folklig tradition knyter namnet till den inmurade jungfrun. Många lokala källor föredrar rymdmåttet jungfru (ca 8,2 cl), vars avsmalnande form liknar tornet."
+        },
+        {
+          "question": "Is Jungfrutornet part of a UNESCO site?",
+          "questionSv": "Ingår Jungfrutornet i ett världsarv?",
+          "answer": "Yes — it is part of Visby’s ringmur within the Hanseatic Town of Visby World Heritage Site (UNESCO 1995), managed with Riksantikvarieämbetet involvement.",
+          "answerSv": "Ja — det ingår i Visby ringmur inom världsarvet Hansestaden Visby (UNESCO 1995), med Riksantikvarieämbetet som förvaltare av muren."
+        },
+        {
+          "question": "Has Haunted Sweden investigated yet?",
+          "questionSv": "Har Haunted Sweden utrett platsen ännu?",
+          "answer": "Not yet. Planned: night photography, wall walk after sunset, Medieval Week documentation, historian/guide interviews, legend-vs-history comparison, and a Visby documentary episode.",
+          "answerSv": "Inte ännu. Planerat: nattfotografi, murvandring efter solnedgång, Medeltidsveckan, historiker-/guideintervjuer, legend kontra historia, och Visbydokumentär."
         }
       ]
     }
