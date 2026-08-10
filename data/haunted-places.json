@@ -1,5 +1,5 @@
 {
-  "version": 64,
+  "version": 67,
   "places": [
     {
       "id": "1",
@@ -6312,6 +6312,514 @@
           "questionSv": "Har Haunted Sweden utrett platsen ännu?",
           "answer": "Not yet. Planned: night photography, wall walk after sunset, Medieval Week documentation, historian/guide interviews, legend-vs-history comparison, and a Visby documentary episode.",
           "answerSv": "Inte ännu. Planerat: nattfotografi, murvandring efter solnedgång, Medeltidsveckan, historiker-/guideintervjuer, legend kontra historia, och Visbydokumentär."
+        }
+      ]
+    },
+    {
+      "id": "65",
+      "slug": "eksjohovgard",
+      "name": "Eksjöhovgårds Slottsruin",
+      "englishName": "Eksjöhovgård Castle Ruin",
+      "coverImage": "/places/eksjohovgard-cover.jpg",
+      "category": "Castle / Castle Ruin",
+      "city": "Sävsjö",
+      "region": "Småland",
+      "country": "Sweden",
+      "address": "Eksjöhovgårdssjön, 576 91 Sävsjö, Sweden",
+      "latitude": 57.391947,
+      "longitude": 14.686944,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-verified",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": false,
+      "hauntingLevel": 2,
+      "hauntedSwedenScore": 8.4,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "eksjohovgard",
+        "eksjohovgards_slottsruin",
+        "savsjo",
+        "smaland",
+        "stureatten",
+        "lewenhaupt",
+        "castle_ruin",
+        "historic_estate",
+        "island_castle",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Eksjöhovgårds slottsruin stands on a small island in Eksjöhovgårdssjön just east of Sävsjö — reached by footbridge and framed by lake and trees. Written sources mention Ekesjö/Ekesio from 1287 (Cecilia Elofsdotter’s testament); the farm later passed to Nydala monastery, then by land exchange in 1420 to Sven Sture. Through 1420–1616 it was a hub of the younger Sture / Natt och Dag estate (up to 43 farms in 13 parishes). In the 1650s Field Marshal Carl Mauritz Lewenhaupt began a prestige three-storey stone residence with a party floor and Stockholm-inspired symmetry — unfinished at his death in 1666. The 1680s Reduction stripped heirs of most of the estate; the remainder sold in 1700 with roof barely on and no interiors, windows or façade décor. Magnus Julius De la Gardie altered the house after 1730; decay accelerated when the copper roof was removed in 1812. Conserved from the 1930s (again 2009), it is Sävsjö’s landmark and coat-of-arms motif. Haunted Sweden classifies it as a HISTORIC MYSTERY: romantic unfinished-castle atmosphere is exceptional, but no substantial ghost folklore or verified paranormal tradition was found in this research pass.",
+      "whyItFitsHauntedSweden": "700+ years of documented history, Sture–Lewenhaupt–De la Gardie lineages, unfinished Great Power–era castle, and a dramatic island ruin. Visual 9.5/10, historical 10/10, architectural 9.5/10, atmosphere 10/10 — but folklore strength LOW and paranormal reputation WEAK after targeted search. Haunted Sweden Score 8.4 (kept under 9.0). Premium HIGH for history photography and unfinished-castle storytelling; not marketed as one of Sweden’s most haunted sites.",
+      "shortDescription": "Island castle ruin outside Sävsjö — medieval Sture estate, Lewenhaupt’s unfinished 1600s stone palace, conserved ruin; historic mystery more than haunted folklore.",
+      "history": "## DOCUMENTED: Medieval origins (from 1287)\n\nFirst written reference to **Ekesjö / Ekesio** is **1287**, when **Cecilia Elofsdotter**’s testament mentions gifts to household people at Ekesio (Sävsjö kommun / place-name register tradition). The farm later passed to **Nydala monastery** (Cistercian), typical of large medieval donations. In the 1300s–early 1400s Ekesjö is noted as a **tingsplats** (assembly/court site) for Västra härad, with a strategic position on trade routes.\n\n## DOCUMENTED: Sture estate (1420–1616)\n\nIn **1420** a land exchange brought the estate to **Sven Sture**, who likely raised the first fortification on the lake island. It then passed through the younger Sture line / **Natt och Dag**: Bo Stensson, Nils Bosson (Sture), Svante Nilsson (Sture), Sten Sture the Younger, Svante Sture the Younger. By the late Middle Ages the island was the centre of one of Småland’s largest complexes — **43 farms in 13 parishes** (Jönköpings läns museum). Building fabric then was probably mostly timber; an early-1500s stone house is said to incorporate parts of an earlier defence tower. The Sture line’s hold ends **1616**; by then the family’s focus had shifted toward Stockholm.\n\n**Tradition (not proven residence):** Sten Sture the Younger used a building here as a **hunting lodge** — recorded as tradition by Wikipedia / local summaries; later named Stures are not documented as resident here.\n\n## DOCUMENTED: Lewenhaupt’s unfinished castle (1650s–1700)\n\nAround **1630** Field Marshal **Carl Mauritz (Karl Mauritz) Lewenhaupt** inherited; in the **1650s** he began the square three-storey stone house with rooftop terrace that forms today’s ruin — models from Stockholm, second floor planned for festivities, intended symmetry and wings. He died **1666** before completion; heirs could not finish it. The **1680s Reduction** cost the family most of the estate; the rest was **sold in 1700**. By then the steep roof with terrace was barely in place — **interiors, windows and façade decoration missing**, façades not even symmetrical (museum account). Erik Dahlbergh’s Suecia antiqua drawing (~1680) shows the unfinished ambition.\n\n## DOCUMENTED: De la Gardie, abandonment, conservation\n\nEmpty until the **1730s**, when **Magnus Julius De la Gardie** removed the top storey, changed room layout, moved the kitchen from a wing and finished some rooms — unclear whether the house was ever truly inhabited before his death **1741**. Decline followed; after the **copper roof was taken down in 1812**, ruin accelerated. **1930s** conservation found the south façade collapsed; further care including **2009**. Outdoor attraction via **footbridge**; motif of Sävsjö’s municipal coat of arms. RAÄ **Vallsjö 31:1**. Nearby manor/inn (1805 copper-works context) is separate from the ruin.\n\n## DOCUMENTED dark / political context (no invented tragedies)\n\nNoble power shifts (Sture extinction 1616); Great Power building ambition vs **Reduction** poverty; unfinished construction and roof stripping as economic failure — not ghost origin stories. No reliable sources in this pass document estate-specific fires, murders or hauntings as historical fact.",
+      "legend": "## FOLKLORE RESEARCH RESULT — HISTORIC MYSTERY\n\nTargeted search of Jönköpings läns museum, Sävsjö kommun, Wikipedia, regional tourism, and online ghost/folklore lists did **not** yield a substantial body of White Lady / Grey Lady stories, treasure legends, lake lights, or established local ghost traditions specifically attached to Eksjöhovgårds slottsruin.\n\n### Thin tradition only\n\n- **Sten Sture hunting-lodge tradition** — local/popular tradition that Sten Sture the Younger used a building here as a jaktslott. Mark as tradition, not verified continuous residence for the later Sture lords.\n- Wikipedia cites *Sällsamheter i Småland*, del 3, for background; that series mixes curiosities and history — Haunted Sweden did **not** locate an extractable, widely retold ghost cycle for this ruin online.\n\n### Paranormal reputation — WEAK\n\nNo credible visitor investigation reports, EVP claims, or newspaper-documented hauntings specific to this ruin were found in this research pass. Do not invent apparitions, footsteps or shadow figures. The site’s power is **romantic unfinished architecture + island isolation**, not a proven haunted reputation.\n\n### Classification\n\n**HISTORIC MYSTERY** within Haunted Sweden: exceptional atmosphere and noble history; folklore strength and paranormal reputation remain research gaps for a future verification mission (local historical society, newspaper archives, oral interviews).\n\n## Special areas (atmosphere — not verified hotspots)\n\n1. Castle ruin — unfinished Lewenhaupt stone shell.\n2. Island — isolation, footbridge approach.\n3. Interior voids — missing floors/finishes of the stalled project.\n4. Lakeshore — fog and reflections.\n5. Footbridge — arrival sequence.\n\n## Atmosphere, investigation ideas, best conditions\n\nMassive unfinished walls on water, mature trees, quiet countryside, fog over the lake. Ideas: unfinished-castle documentary; Sture legacy; night/blue-hour photography where legally permitted; folklore archive hunt; historian interviews. Best: autumn, fog, blue hour, rain, winter evenings. Respect heritage — no climbing unstable masonry.",
+      "safetyNote": "Outdoor cultural heritage site (RAÄ Vallsjö 31:1). Reach the island by footbridge. Verify current visitor access with Sävsjö kommun. Do not climb unstable walls or enter restricted/unsafe areas. Uneven stone and wet surfaces; lake edge caution. Respect conservation work.",
+      "sourceLinks": [
+        "https://jonkopingslansmuseum.se/se-och-gora/smultronstallen/savsjo/eksjohovgards-slottsruin/",
+        "https://savsjo.se/turism/nyhetsarkiv/nyheter/se-och-gora/2020-07-06-eksjohovgard.html",
+        "https://savsjo.se/turism/nyhetsarkiv/nyheter/se-och-gora/2019-04-12-eksjohovgards-slottsruin.html",
+        "https://sv.wikipedia.org/wiki/Eksj%C3%B6hovg%C3%A5rds_slottsruin",
+        "https://sv.wikipedia.org/wiki/Eksj%C3%B6hovg%C3%A5rd",
+        "https://jonkopingslansmuseum.se/wp-content/uploads/2017/12/2014-53.pdf"
+      ],
+      "paranormalType": [
+        "Local Folklore",
+        "Heavy Atmosphere"
+      ],
+      "accessType": "Public Landmark",
+      "familyFriendly": true,
+      "visitDifficulty": 2,
+      "nightAccess": false,
+      "parkingAvailable": true,
+      "guidedTours": false,
+      "publicAccess": true,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 1,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Eksj%C3%B6hovg%C3%A5rds+slottsruin,+S%C3%A4vsj%C3%B6",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [
+        {
+          "url": "/places/eksjohovgard-cover.jpg",
+          "caption": "Eksjöhovgårds slottsruin on the island in Eksjöhovgårdssjön",
+          "captionSv": "Eksjöhovgårds slottsruin på ön i Eksjöhovgårdssjön",
+          "credit": "Wikimedia Commons",
+          "status": "approved"
+        }
+      ],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Ö-ruin utanför Sävsjö — medeltida Sturegods, Lewenhaupts ofullbordade 1600-talspalats, konserverad ruin; historiskt mysterium mer än spökfolklore.",
+      "historySv": "## DOKUMENTERAT: Medeltid från 1287\n\nFörsta skriftliga belägget **1287** (Cecilia Elofsdotters testamente, Ekesio). Senare **Nydala kloster**; tingsplats i Västra härad under 1300-/tidigt 1400-tal.\n\n## DOKUMENTERAT: Sture 1420–1616\n\n**1420** bytte **Sven Sture** till sig gården (troligen första borgen på ön). Yngre Sture / Natt och Dag; vid medeltidens slut **43 gårdar i 13 socknar** (Jönköpings läns museum). Stureätten utgången **1616**. Tradition om Sten Sture d.y:s jaktslott — tradition, inte bevisad bostad för senare Sturar.\n\n## DOKUMENTERAT: Lewenhaupts ofullbordade slott\n\n**Carl Mauritz Lewenhaupt** började på **1650-talet** ett tresidigt stenhus i tre våningar (festvåning, Stockholmförlagor). Död **1666**; **reduktionen** på 1680-talet; resten såld **1700**. Tak med altan knappt på plats — **saknade inredning, fönster, fasaddekor**.\n\n## DOKUMENTERAT: De la Gardie, förfall, konservering\n\n**Magnus Julius De la Gardie** från **1730-talet** (övre våning riven, vissa rum inredda; oklart om bebott före 1741). **Koppartaket ner 1812** → snabb ruin. Konservering **1930-tal** (södra fasaden rasad), vård **2009**. Gångbro till ön; Sävsjös vapenmotiv. RAÄ Vallsjö 31:1.",
+      "legendSv": "## FOLKLORERESULTAT — HISTORISKT MYSTERIUM\n\nIngen substantiell Vita damen-/skatt-/spöktradition knuten till ruinen hittades i museum, kommun eller spöklistor i denna research.\n\n### Tunn tradition\n\nJaktslotts-tradition kring Sten Sture d.y. — märk som tradition.\n\n### Paranormalt rykte — SVAGT\n\nInga trovärdiga utredningsrapporter lokaliserade. Klassificering: **HISTORISKT MYSTERIUM** — stark atmosfär och ofullbordad arkitektur, inte bevisat “mest hemsökta” Sverige.\n\nOMRÅDEN (atmosfär): ruinen; ön; inre tomrum; sjökanten; gångbron.",
+      "hauntedSwedenAppSummarySv": "Eksjöhovgårds slottsruin står på en ö i Eksjöhovgårdssjön öster om Sävsjö — nås via gångbro. Skrift från 1287; Nydala kloster; från 1420 Stureätten (1420–1616) och ett av Smålands största godskomplex. På 1650-talet började fältmarskalk Carl Mauritz Lewenhaupt ett tresidigt stenhus som aldrig blev färdigt — reduktionen och försäljningen 1700 lämnade taket knappt på plats utan inredning. De la Gardie byggde om efter 1730; koppartaket togs ner 1812. Konserverad från 1930-talet. Haunted Sweden klassar platsen som HISTORISKT MYSTERIUM: exceptionell ruinatmosfär, men ingen substantiell spökfolklore eller verifierad paranormal tradition hittades i denna research.",
+      "safetyNoteSv": "Utomhus kulturmiljö (RAÄ Vallsjö 31:1). Nås via gångbro. Kontrollera aktuell tillträde hos Sävsjö kommun. Klättra inte på ostabila murar. Halt sten och sjökant. Respektera vårdarbeten.",
+      "infoBox": [
+        {
+          "label": "First written",
+          "labelSv": "Första skrift",
+          "value": "1287 · Ekesjö / Ekesio",
+          "valueSv": "1287 · Ekesjö / Ekesio"
+        },
+        {
+          "label": "Sture period",
+          "labelSv": "Stureperioden",
+          "value": "1420–1616",
+          "valueSv": "1420–1616"
+        },
+        {
+          "label": "Stone castle",
+          "labelSv": "Stenslottet",
+          "value": "1650s · C. M. Lewenhaupt (unfinished)",
+          "valueSv": "1650-tal · C. M. Lewenhaupt (ofullbordat)"
+        },
+        {
+          "label": "Roof removed",
+          "labelSv": "Taket ner",
+          "value": "1812 · rapid ruin",
+          "valueSv": "1812 · snabb ruin"
+        },
+        {
+          "label": "Conservation",
+          "labelSv": "Konservering",
+          "value": "1930s · care again 2009",
+          "valueSv": "1930-tal · vård igen 2009"
+        },
+        {
+          "label": "Classification",
+          "labelSv": "Klassificering",
+          "value": "Historic Mystery (weak folklore)",
+          "valueSv": "Historiskt mysterium (svag folklore)"
+        },
+        {
+          "label": "Haunted Sweden",
+          "labelSv": "Haunted Sweden",
+          "value": "Score 8.4 · Premium HIGH",
+          "valueSv": "Poäng 8.4 · Premium HÖG"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is Eksjöhovgård known as a haunted castle?",
+          "questionSv": "Är Eksjöhovgård känt som ett hemsökt slott?",
+          "answer": "Not in any substantial documented tradition found in this research. Official museum and municipal texts emphasise unfinished Great Power architecture and romantic ruin atmosphere. Haunted Sweden lists it as a historic mystery, not one of Sweden’s most haunted sites.",
+          "answerSv": "Inte enligt någon substantiell dokumenterad tradition i denna research. Museum och kommun betonar ofullbordad stormaktstidsarkitektur och romantisk ruin. Haunted Sweden listar platsen som historiskt mysterium, inte bland Sveriges mest hemsökta."
+        },
+        {
+          "question": "Why was the castle never finished?",
+          "questionSv": "Varför blev slottet aldrig färdigt?",
+          "answer": "Lewenhaupt died in 1666 mid-project; heirs lacked means. The 1680s Reduction seized much of the estate; by sale in 1700 the roof was barely on and interiors, windows and façade decoration were still missing. Later De la Gardie changes never restored the original three-storey ambition.",
+          "answerSv": "Lewenhaupt dog 1666 mitt i bygget; arvingarna saknade medel. Reduktionen på 1680-talet tog stora delar av godset; vid försäljningen 1700 satt taket knappt och inredning, fönster och fasaddekor saknades. De la Gardies ändringar återställde aldrig det ursprungliga tresidiga ambitionerna."
+        },
+        {
+          "question": "How do I visit?",
+          "questionSv": "Hur besöker jag platsen?",
+          "answer": "The ruin sits on an island in Eksjöhovgårdssjön about 1 km east of Sävsjö on road 127 toward Vetlanda, reached by footbridge. Confirm current access with Sävsjö kommun; do not climb unstable walls.",
+          "answerSv": "Ruinen ligger på en ö i Eksjöhovgårdssjön ca 1 km öster om Sävsjö vid väg 127 mot Vetlanda, nås via gångbro. Bekräfta tillträde hos Sävsjö kommun; klättra inte på ostabila murar."
+        },
+        {
+          "question": "What is the Sture connection?",
+          "questionSv": "Vad är Sturekopplingen?",
+          "answer": "From 1420 to 1616 the estate belonged to the younger Sture / Natt och Dag line and grew into a major Småland complex (43 farms in 13 parishes by the late Middle Ages). A popular tradition links Sten Sture the Younger to a hunting lodge here.",
+          "answerSv": "1420–1616 tillhörde godset den yngre Stureätten / Natt och Dag och växte till ett stort småländskt komplex (43 gårdar i 13 socknar). En folklig tradition knyter Sten Sture d.y. till ett jaktslott här."
+        },
+        {
+          "question": "Has Haunted Sweden investigated yet?",
+          "questionSv": "Har Haunted Sweden utrett platsen ännu?",
+          "answer": "Not yet. Planned: blue-hour photography, local historian and historical-society interviews, newspaper and folklore-archive search, and honest comparison of any oral stories against documented history.",
+          "answerSv": "Inte ännu. Planerat: blåtimmesfoto, lokalhistoriker och hembygdsförening, tidnings- och folklorearkiv, och ärlig jämförelse av eventuella muntliga berättelser mot dokumenterad historia."
+        }
+      ]
+    },
+    {
+      "id": "66",
+      "slug": "bona",
+      "name": "Bona – Statens uppfostringsanstalt & Västra Ny sjukhus",
+      "englishName": "Bona – State Reform School & Västra Ny Hospital",
+      "coverImage": "/places/bona-cover.jpg",
+      "category": "Abandoned Place",
+      "city": "Motala",
+      "region": "Östergötland",
+      "country": "Sweden",
+      "address": "Bona, 591 97 Motala, Östergötland, Sweden",
+      "latitude": 58.64917,
+      "longitude": 15.05444,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-verified",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": false,
+      "hauntingLevel": 5,
+      "hauntedSwedenScore": 9.6,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "bona",
+        "motala",
+        "vastra_ny",
+        "reform_school",
+        "mental_hospital",
+        "abandoned",
+        "institution",
+        "urban_exploration",
+        "ghosts",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Bona (pronounced Båna) north of Motala is one of Sweden’s most discussed abandoned institutional landscapes. A Grill ironworks estate from 1775, it was bought by the Swedish state in 1902 and opened in 1905 as Statens uppfostringsanstalt — a reform school for boys aged about 15–18 sentenced to tvångsuppfostran instead of prison. Life meant school, hard labour, military-style discipline, nightly lock-up and, until reforms under director Bertil Forsell from 1938, corporal punishment and isolation for breaches. After tvångsuppfostran was abolished, the site became Västra Ny sjukhus (1948–1981), a mental hospital — secondary sources often note care for men found not criminally responsible (straffriförklarade). Later came a refugee centre and Bona Folkhögskola (1984–1998 on site; the school continues in Motala). Buildings then emptied into prolonged decay and urbex fame. Haunted Sweden separates that documented institutional history from modern ghost-map folklore (unexplained sounds, voices, cold drafts on Spökkartan and similar). Private property — never trespass.",
+      "whyItFitsHauntedSweden": "Exceptional documented dark-institution history, national reform-school memory (“Är du inte snäll kommer du till Bona”), long psychiatric phase, abandoned brick campus, and strong modern urbex/ghost-map reputation. Visual 10/10, historical 10/10, dark history 10/10, folklore 9.2/10 (modern), paranormal reputation 9.0/10 (anecdotal) — Haunted Sweden Score 9.6. Premium EXTREMELY HIGH for exterior documentary and archive work — not for break-ins.",
+      "shortDescription": "Abandoned institutional campus north of Motala — state reform school 1905–1948, Västra Ny mental hospital 1948–1981, later folk high school; private property with modern urbex folklore.",
+      "history": "## DOCUMENTED: Estate and ironworks\n\nBona was originally a frälsehemman. In **1775** Jean Abraham Grill of Godegård bought the estate and founded a **stångjärn** ironworks (hammer and hearths). The Grill family ran **Bona bruk** until **1886** (bar iron, semi-finished goods, tools). Gustaf Grill kept a large Swedish wildlife collection here. Later owners included patrons Oskar Lundqvist and S. V. Lundborg (agriculture and forestry). Eric Lundqvist (1902–1978), author and forester, grew up linked to this family line.\n\n## DOCUMENTED: State purchase and Statens uppfostringsanstalt (1902–1948)\n\nThe Swedish state purchased Bona in **1902**. From **1905 to 1948** it operated as **Statens uppfostringsanstalt** for criminal / “vanartiga” youths — part of the **tvångsuppfostran** system (SFS 1902:72 in force 1905): boys roughly **15–18**, sentenced by court for an indeterminate stay instead of fine or prison (Riksarkivet forvaltningshistorik). Popular warning: *“Är du inte snäll kommer du till Bona.”* Placement was not only for theft/violence — contemporary categories also included moral “wildness,” defiance of authority, etc. (secondary historical essays).\n\nDaily life (documented in research and survivor literature such as Renée Frangeur’s work and Hans Möller’s *Bonagrabben!*): schooling, agricultural and industrial labour, military-like order, locked in at night. Misconduct punished with isolation; corporal punishment (aga) used until milder rules under director **Bertil Forsell** from **1938** (aga banned, letter censorship eased; he also resisted race-biology sterilisation pressure per secondary accounts). Architect **David Lundegårdh** is credited for institutional buildings. A C-section / further reform-school construction is noted during WWI-era expansion in secondary sources.\n\n## DOCUMENTED: Västra Ny sjukhus (1948–1981)\n\nWhen tvångsuppfostran was abolished, Bona became **Västra Ny sjukhus**, a **mentalsjukhus** (mental / psychiatric hospital). Secondary institutional histories often describe it as caring for **straffriförklarade** men — men found not criminally responsible under older Swedish criminal law (sinnessjukdom / related categories) and held for psychiatric care of indefinite length. Do **not** reduce the hospital phase to a vague “intellectual disability home” without that legal-medical context. Hospital closed **1981**.\n\n## DOCUMENTED: Folk high school, refugees, abandonment\n\n**Bona Folkhögskola** operated on site **1984–1998** (Left Party origins; later moved to Motala — still named Bona Folkhögskola). Refugee accommodation also used the buildings and was later closed. From the late 1990s onward many structures stood empty; vandalism and urbex interest grew. Media (Corren, EFN, Dagens PS ~2024) reported major building sales via auction platforms, noting severe decay and illegal entry problems; Motala Municipality has discussed ownership issues without necessarily buying the stock. Treat current ownership as **private / changing** — always verify before any visit.\n\n## DOCUMENTED dark history (no invented deaths)\n\nStrict reform-school discipline, isolation punishments, corporal punishment (pre-1938), total-institution control, and long psychiatric confinement for straffriförklarade men are historically attested themes. Specific named death/accident lists require primary archives (Riksarkivet / regional) — Haunted Sweden does not invent body counts. Survivor memoirs and academic studies are the proper sources for lived experience.",
+      "legend": "## FOLKLORE / URBAN LEGEND — source-labelled\n\nModern Swedish ghost-map and urbex writing (notably **Spökkartan**’s Bona page) frames the empty campus as haunted by its dual past: reform-school boys and psychiatric patients. Reported motifs on that and similar sites include **unexplained sounds**, **voices from nowhere**, and **cold drafts** through rooms. Media sales coverage casually calls Bona a “spökby” (ghost village) as atmosphere marketing — not archival folklore collection.\n\nHaunted Sweden treats these as **modern urban-exploration / internet folklore**, not proven hauntings and not equivalent to parish oral legends collected by ethnologists. No peer-reviewed paranormal investigation with scientific standing was located in this research pass.\n\n### Do not invent\n\nGhost-children lists, named chapel hauntings, or “service tunnel EVPs” appear in some explorer chatter online — only include after primary confirmation. This entry does **not** claim a verified chapel ghost or mapped tunnel hotspot.\n\n## Special atmospheric areas (history + decay — not verified paranormal zones)\n\n1. Main administration / central institutional blocks.\n2. Former reform-school wings (C-section era fabric where surviving).\n3. Former hospital wards.\n4. Forest edge and approach roads — exterior atmosphere.\n5. Basements / tunnels — **only with owner permission**; structural and legal hazards; do not encourage entry.\n\n## Atmosphere, investigation ideas, best conditions\n\nLarge brick institutional buildings, long corridors (interior only if lawfully allowed), forest setting, silence and decay. Ideas: exterior documentary; archive research (Riksarkivet); historian / hembygdsförening interviews; history vs urbex myth; *never* trespass shoots. Best exterior conditions: autumn, fog, rain, blue hour — from public roads only unless invited.",
+      "safetyNote": "PRIVATE / CHANGING OWNERSHIP. Buildings are not a public museum. Do NOT trespass, force doors, climb fences or enter interiors without explicit owner permission. Structures are decayed, vandalised and potentially hazardous (unstable floors, glass, mould, asbestos-era materials). Respect Motala Municipality guidance and police rules. Haunted Sweden will never encourage illegal urbex. Exterior photography from public roads only unless you have written access.",
+      "sourceLinks": [
+        "https://sv.wikipedia.org/wiki/Bona,_Motala_kommun",
+        "https://forvaltningshistorik.riksarkivet.se/33_Barn_Ungdom.htm",
+        "https://psykmuseet.se/2017/02/bona-vastra-ny-sjukhus/",
+        "https://www.lindelof.nu/bona-istallet-for-fangelse/",
+        "https://www.spokkartan.se/overgivna-platser/bona/",
+        "https://sv.wikipedia.org/wiki/Bona_folkh%C3%B6gskola",
+        "https://www.corren.se/nyheter/motala/artikel/bonahusen-ar-till-salu-sa-ser-kommunens-intresse-ut-for-en-affar/lyv5k6vl"
+      ],
+      "paranormalType": [
+        "Heavy Atmosphere",
+        "Voices",
+        "Temperature Changes",
+        "Local Folklore",
+        "Urban Legend"
+      ],
+      "accessType": "Restricted Access",
+      "familyFriendly": false,
+      "visitDifficulty": 3,
+      "nightAccess": false,
+      "parkingAvailable": true,
+      "guidedTours": false,
+      "publicAccess": false,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 1,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bona,+Motala,+Sweden",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [
+        {
+          "url": "/places/bona-cover.jpg",
+          "caption": "Bona folk high school buildings (historic institutional campus), Motala",
+          "captionSv": "Bona folkhögskolas byggnader (historiskt institutionsområde), Motala",
+          "credit": "Wikimedia Commons",
+          "status": "approved"
+        }
+      ],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Övergivet institutionsområde norr om Motala — statlig uppfostringsanstalt 1905–1948, Västra Ny mentalsjukhus 1948–1981, senare folkhögskola; privat mark med modern urbex-folklore.",
+      "historySv": "## DOKUMENTERAT: Bruk och gods\n\nFrälsehemman; **1775** Jean Abraham Grill anlade stångjärnsbruk. Grill till **1886**. Senare Lundqvist m.fl.\n\n## DOKUMENTERAT: Statens uppfostringsanstalt 1905–1948\n\nStaten köpte **1902**; anstalt **1905–1948** för pojkar ca 15–18 under **tvångsuppfostran**. Skola, arbete, militärisk disciplin, inlåsning; aga/isolering före mildare regler under **Bertil Forsell** från **1938**. Arkitekt **David Lundegårdh**.\n\n## DOKUMENTERAT: Västra Ny sjukhus 1948–1981\n\n**Mentalsjukhus** efter avskaffad tvångsuppfostran; sekundärkällor nämner ofta **straffriförklarade** män. Nedlagt **1981**.\n\n## DOKUMENTERAT: Folkhögskola, flyktingar, förfall\n\n**Bona Folkhögskola** på plats **1984–1998** (fortsätter i Motala). Flyktingförläggning senare nedlagd. Därefter långvarigt förfall; försäljningar/media ca 2024. **Privat mark — inget intrång.**",
+      "legendSv": "## FOLKLORE / URBAN LEGEND — källmärkt\n\nModerna spökkartor (t.ex. **Spökkartan**) och urbex-texter beskriver oförklarliga ljud, röster och kölddrag. Media kallar ibland Bona “spökby” i försäljningsvinkel. Haunted Sweden: **modern internet-/urbex-folklore**, inte bevisad hemsökelse och inte etnologisk sockensägen.\n\nPåhittade kapellspöken eller tunnel-EVP utan primärkälla tas inte in här.\n\nOMRÅDEN (atmosfär): administrationsblock; uppfostringsflyglar; sjukhusavdelningar; skogsinfart — interiör endast med ägartillstånd.",
+      "hauntedSwedenAppSummarySv": "Bona (Båna) norr om Motala är ett av Sveriges mest omtalade övergivna institutionslandskap. Grillbruk från 1775; staten köpte 1902 och öppnade 1905 Statens uppfostringsanstalt för pojkar under tvångsuppfostran. Hård disciplin, arbete och inlåsning — aga mildrades under Bertil Forsell från 1938. 1948–1981 Västra Ny mentalsjukhus (ofta kopplat till straffriförklarade män i sekundärlitteratur). Därefter flyktingförläggning och Bona Folkhögskola (1984–1998 på plats). Sedan förfall och urbex-rykte. Haunted Sweden skiljer dokumenterad institutionhistoria från moderna spökkartsberättelser. Privat mark — gör aldrig intrång.",
+      "safetyNoteSv": "PRIVAT / FÖRÄNDERLIGT ÄGANDE. Inte ett publikt museum. Gör INTE intrång, forcera inte dörrar eller klättra över stängsel. Förfallna, vandaliserade och farliga byggnader. Exteriörfoto från allmän väg endast utan skriftligt tillträde. Haunted Sweden uppmuntrar aldrig olaglig urbex.",
+      "infoBox": [
+        {
+          "label": "State purchase",
+          "labelSv": "Statens köp",
+          "value": "1902",
+          "valueSv": "1902"
+        },
+        {
+          "label": "Reform school",
+          "labelSv": "Uppfostringsanstalt",
+          "value": "1905–1948 · tvångsuppfostran",
+          "valueSv": "1905–1948 · tvångsuppfostran"
+        },
+        {
+          "label": "Hospital",
+          "labelSv": "Sjukhus",
+          "value": "Västra Ny · 1948–1981",
+          "valueSv": "Västra Ny · 1948–1981"
+        },
+        {
+          "label": "Folk high school on site",
+          "labelSv": "Folkhögskola på plats",
+          "value": "1984–1998 (now in Motala)",
+          "valueSv": "1984–1998 (nu i Motala)"
+        },
+        {
+          "label": "Access",
+          "labelSv": "Tillträde",
+          "value": "Private — no trespassing",
+          "valueSv": "Privat — inget intrång"
+        },
+        {
+          "label": "Folklore type",
+          "labelSv": "Folkloretyp",
+          "value": "Modern urbex / ghost-map",
+          "valueSv": "Modern urbex / spökkarta"
+        },
+        {
+          "label": "Haunted Sweden",
+          "labelSv": "Haunted Sweden",
+          "value": "Score 9.6 · Premium EXTREMELY HIGH",
+          "valueSv": "Poäng 9.6 · Premium EXTREMT HÖG"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can I go inside Bona’s abandoned buildings?",
+          "questionSv": "Kan jag gå in i Bonas övergivna byggnader?",
+          "answer": "No — not without explicit owner permission. The campus is private property with hazardous decay. Haunted Sweden does not support trespassing or illegal urbex. Exterior views from public roads only unless invited.",
+          "answerSv": "Nej — inte utan uttryckligt ägartillstånd. Området är privat mark med farligt förfall. Haunted Sweden stöder inte intrång eller olaglig urbex. Exteriör från allmän väg endast om du är inbjuden."
+        },
+        {
+          "question": "What was Statens uppfostringsanstalt?",
+          "questionSv": "Vad var Statens uppfostringsanstalt?",
+          "answer": "A state reform school (1905–1948) for boys roughly 15–18 sentenced to tvångsuppfostran instead of prison: education, labour and strict discipline under a total-institution regime.",
+          "answerSv": "En statlig uppfostringsanstalt (1905–1948) för pojkar ca 15–18 dömda till tvångsuppfostran i stället för fängelse: skola, arbete och sträng disciplin i en total institution."
+        },
+        {
+          "question": "What was Västra Ny sjukhus?",
+          "questionSv": "Vad var Västra Ny sjukhus?",
+          "answer": "After 1948 Bona became a mental hospital (mentalsjukhus) until 1981. Secondary sources often link it to psychiatric care of men found not criminally responsible (straffriförklarade) under older Swedish law — not merely a generic disability home.",
+          "answerSv": "Efter 1948 blev Bona mentalsjukhus till 1981. Sekundärkällor kopplar ofta verksamheten till vård av straffriförklarade män enligt äldre straffrätt — inte bara ett generellt ”funktionshinderhem”."
+        },
+        {
+          "question": "Are the ghost stories proven?",
+          "questionSv": "Är spökhistorierna bevisade?",
+          "answer": "No. Modern ghost-map and urbex sites report sounds, voices and cold drafts. Haunted Sweden labels these anecdotal modern folklore, separate from the well-documented institutional history.",
+          "answerSv": "Nej. Moderna spökkartor och urbex-sajter rapporterar ljud, röster och kölddrag. Haunted Sweden märker dem som anekdotisk modern folklore, skild från den väl dokumenterade institutionhistorien."
+        },
+        {
+          "question": "Has Haunted Sweden investigated Bona yet?",
+          "questionSv": "Har Haunted Sweden utrett Bona ännu?",
+          "answer": "Not yet. Planned: lawful exterior photography, Riksarkivet / local archive work, historian interviews, and a documentary that contrasts records with urbex myth — never illegal entry.",
+          "answerSv": "Inte ännu. Planerat: lagligt exteriörfoto, Riksarkivet/lokala arkiv, historikerintervjuer och dokumentär som kontrasterar akter mot urbex-myt — aldrig olagligt intrång."
+        }
+      ]
+    },
+    {
+      "id": "67",
+      "slug": "lowenstromska-lasarettet",
+      "name": "Löwenströmska lasarettet",
+      "englishName": "Löwenströmska Hospital (Historic Campus)",
+      "coverImage": "/places/lowenstromska-cover.jpg",
+      "category": "Abandoned Place",
+      "city": "Upplands Väsby",
+      "region": "Stockholm",
+      "country": "Sweden",
+      "address": "194 45 Upplands Väsby, Sweden",
+      "latitude": 59.54111,
+      "longitude": 17.91472,
+      "featured": true,
+      "verified": false,
+      "verificationLevel": "community-verified",
+      "verifiedByTeam": false,
+      "visitedByTeam": false,
+      "visitCount": 0,
+      "lastInvestigationDate": null,
+      "investigationPhotos": [],
+      "investigationVideos": [],
+      "overnightInvestigation": false,
+      "hauntingLevel": 4,
+      "hauntedSwedenScore": 9.5,
+      "hauntedSwedenInvestigation": {
+        "status": "not_investigated_yet"
+      },
+      "suggestedHauntedSwedenTags": [
+        "lowenstromska_lasarettet",
+        "upplands_vasby",
+        "abandoned_hospital",
+        "psychiatric_hospital",
+        "urban_exploration",
+        "gustav_iii",
+        "anckarstrom",
+        "ghost_hospital",
+        "stockholm",
+        "haunted_sweden"
+      ],
+      "hauntedSwedenAppSummary": "Löwenströmska lasarettet in Upplands Väsby is one of Sweden’s best-known historic hospital campuses — and a flagship abandoned-medical atmosphere site. After Jacob Johan Anckarström murdered King Gustav III at the Stockholm Opera masquerade in 1792, his brother Gustaf Adolf (Anckarström) took the name Löwenström. In 1808–1811 he commissioned Stockholm city architect Carl Christoffer Gjörwell and endowed a charitable hospital near Hammarby / Lake Fysingen; gift deed and will of 1811 placed it under Serafimergillet. Svenskt Biografiskt Lexikon notes the famous atonement motive is not written into the deed but is supported by local oral tradition, alongside his own illness and wartime need for care (1808 Finland war). Stockholms läns landsting took over in 1876; a sanatorium rose in 1910; an 1884 “idiotanstalt” / later Klockbacka special school expanded care for people then labelled sinnesslöa. A new hospital (c. 1964–1968) shifted acute care; historic buildings served long-term care into the early 1990s (often cited closed 1993) before emptying, vandalism and stalled redevelopment (Arlanda noise). A modern Löwenströmska sjukhus still operates nearby. Haunted Sweden separates that medical history from Mitt i / urbex ghost rumours. Private property — never trespass.",
+      "whyItFitsHauntedSweden": "Unique national story (Gustav III / Anckarström / atonement tradition), 180+ years of medical and care history, large mixed campus of ruin and reuse, strong urbex fame. Visual 9.8/10, historical 10/10, urbex value 10/10, folklore 8.8/10 (modern), paranormal reputation 9.2/10 (anecdotal) — Haunted Sweden Score 9.5. Premium EXTREMELY HIGH for exterior documentary and archive research — not illegal entry.",
+      "shortDescription": "Historic Upplands Väsby hospital campus founded c. 1810 by Gustaf Adolf Löwenström after the Anckarström regicide — later sanatorium and care schools; many older buildings abandoned after 1993.",
+      "history": "## DOCUMENTED: Gustav III, Anckarström and the Löwenström name\n\nOn **16 March 1792** King **Gustav III** was shot at the Opera masquerade by **Jacob Johan Anckarström** and died of wounds on 29 March. The family name Anckarström was stained; brother **Gustaf Adolf** adopted **Löwenström**. He later bought/leased land at Torsåker, Hammarby and Holmen near the Stockholm–Uppsala road and Lake Fysingen.\n\n## DOCUMENTED: Founding the hospital (1808–1811)\n\nOn **12 November 1808** Löwenström asked Stockholm city architect **Carl Christoffer Gjörwell the Younger** for drawings for a hospital on the Holmen property. Care began in an existing building before the purpose-built house north of Hammarby church was ready (**1810**). By gift deed and testament **1811** he endowed **Löwenströmska lasarettet**, to be administered by **Serafimergillet** (Seraphim Order chapter). First long-serving medical head: Christian Ziegert (German), aided by Beata Westerberg — both commemorated in local street names.\n\n**Atonement motive:** Popular and Wikipedia accounts present the endowment as penance for the brother’s regicide. **Svenskt Biografiskt Lexikon** states the motive is **not explicit in writing** but is **supported by local oral tradition**, while also citing Löwenström’s own illness and the wartime need for regional care after 1808. Haunted Sweden reports both layers — do not treat atonement as a signed confession in the deed.\n\nThe original Gjörwell pavilion no longer stands intact; later fabric incorporated older masonry (Locum / SVT note remains in long-care structures).\n\n## DOCUMENTED: County hospital, sanatorium, care institutions\n\n**1876:** Stockholms läns landsting (today Region Stockholm lineage) took over from Serafimerorden. Mid-1800s rebuilds expanded beds (Locum: ~16 then ~54). **1884:** county “idiotanstalt” / early special care and schooling on the campus — historically harsh terminology; later **Klockbacka** school and related homes (care/teaching of people then called sinnesslöa, roughly 1884–1984 in Locum overview). **1910:** **Sanatorium** (TB / Hammarby sanatorium) on the hill. Operations culture of early medicine: instruments used for decades, anaesthesia only from 1858 (Locum heritage text).\n\n## DOCUMENTED: New hospital, long-term care, abandonment of historic stock\n\nNew **Löwenströmska sjukhuset** rose in the **1960s** (often **1968** / Locum mid-1960s). Historic buildings served **långvård** (long-term care) into the early 1990s — English Wikipedia and urbex sources commonly say historic hospital functions ceased **1993**; Swedish Wikipedia notes emptiness after the new complex, with landsting sale of older stock to a property company in **2009**. Redevelopment (Savana / Arkitema etc.) repeatedly stalled by **Arlanda airport noise**. Some buildings have been reused or converted (e.g. sanatorium → dementia housing in owner materials); others remain empty, vandalised and photogenic for urbex. A **1985** psychiatric building and modern forensic/psychiatric wards belong to the **active** hospital campus — not the abandoned ruin narrative.\n\n## DOCUMENTED dark / medical context (no invented epidemics)\n\nNineteenth-century hospital care meant high mortality risk, limited anaesthesia, contagion including tuberculosis at the 1910 sanatorium, and institutionalisation of psychiatric / intellectual disability populations under period labels. Do not invent specific plague years or named mass-death events without archival proof.",
+      "legend": "## FOLKLORE / URBAN LEGEND — source-labelled\n\nAbandoned hospitals attract ghost stories almost automatically — Haunted Sweden states that explicitly. Local media (**Mitt i**, Halloween features) report rumours of adventurous locals attempting overnight stays and leaving after **mysterious sights and sounds**. Urbex blogs (Schtaie, Utforskat, Oskyltat) emphasise decay, smashed windows and “spooky aura,” usually without controlled investigation data.\n\nTreat shadow figures, corridor footsteps, voices and cold spots circulating online as **modern urban-exploration / newspaper atmosphere folklore**, not verified hauntings. No peer-reviewed paranormal study was located.\n\n### Atonement storytelling\n\nThe Anckarström–atonement narrative is itself partly **oral tradition** (SBL) amplified into founding myth — historically powerful, but distinguish oral tradition from signed deed language.\n\n## Special atmospheric areas (history + decay — not verified hotspots)\n\n1. Historic / “Gamla” lasarett fabric (Gamla Lasarettsvägen area).\n2. Former psychiatric / care buildings in the old park (many empty; some active psych elsewhere).\n3. Old sanatorium hill (Hammarby / 1910) — partly reused.\n4. Long corridors and façades of abandoned stock.\n5. Cemetery/chapel — only if documented on a lawful visit; do not invent.\n\n## Atmosphere, investigation ideas, best conditions\n\nCrumbling brick, long empty wings, forest and Fysingen edge, Arlanda rumble in the distance. Ideas: exterior documentary; archive research (Regionarkivet Stockholm / SBL); historian interviews; atonement myth vs deed; history vs urbex legend. Best: fog, autumn, rain, blue hour — **from lawful vantage points only**.",
+      "safetyNote": "MIXED CAMPUS: a modern Löwenströmska sjukhus and some care homes are ACTIVE. Historic empty buildings are private property (developer ownership). Do NOT trespass, force entry, or film interiors without permission. Structural hazards, vandalism and security apply. Respect patients, staff and residents. Haunted Sweden never encourages illegal urbex. Prefer public roads and lawful exterior photography.",
+      "sourceLinks": [
+        "https://sv.wikipedia.org/wiki/L%C3%B6wenstr%C3%B6mska_lasarettet",
+        "https://sok.riksarkivet.se/sbl/Presentation.aspx?id=10126",
+        "https://www.locum.se/husen/lowenstromska-sjukhuset/hander-i-huset/nyheter/lowenstromska-ett-sjukhus-med-kungliga-anor/",
+        "https://www.svt.se/nyheter/lokalt/stockholm/sinnessjukhus-i-upplands-vasby-har-statt-tomt-i-30-ar",
+        "https://www.mitti.se/nyheter/platserna-i-vasby-som-ger-kalla-karar-6.3.181014.c636fc5ee1",
+        "https://www.oskyltat.se/2021/10/19/hostpromenad-i-sjukhusens-skugga/",
+        "https://www.savana.se/sv/fastighetsforvaltning/fastigheter/hammarby-116-upplands-vasby"
+      ],
+      "paranormalType": [
+        "Heavy Atmosphere",
+        "Footsteps",
+        "Voices",
+        "Shadow Figures",
+        "Temperature Changes",
+        "Local Folklore",
+        "Urban Legend"
+      ],
+      "accessType": "Restricted Access",
+      "familyFriendly": false,
+      "visitDifficulty": 2,
+      "nightAccess": false,
+      "parkingAvailable": true,
+      "guidedTours": false,
+      "publicAccess": false,
+      "evidenceCount": 0,
+      "reportCount": 0,
+      "photoCount": 1,
+      "videoCount": 0,
+      "googlePlaceId": null,
+      "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=L%C3%B6wenstr%C3%B6mska+lasarettet,+Upplands+V%C3%A4sby",
+      "googleRating": null,
+      "googleReviewsEnabled": false,
+      "images": [
+        {
+          "url": "/places/lowenstromska-cover.jpg",
+          "caption": "Gamla Löwenströmska lasarettet — historic hospital fabric, Upplands Väsby",
+          "captionSv": "Gamla Löwenströmska lasarettet — historisk sjukhusbyggnad, Upplands Väsby",
+          "credit": "Wikimedia Commons",
+          "status": "approved"
+        }
+      ],
+      "videos": [],
+      "status": "approved",
+      "shortDescriptionSv": "Historiskt sjukhusområde i Upplands Väsby grundat ca 1810 av Gustaf Adolf Löwenström efter Anckarströms kungamord — senare sanatorium och omsorgsskolor; många äldre hus tomma efter 1993.",
+      "historySv": "## DOKUMENTERAT: Gustav III och Anckarström\n\n**1792** mördades Gustav III av **Jacob Johan Anckarström**. Brodern **Gustaf Adolf** antog namnet **Löwenström**.\n\n## DOKUMENTERAT: Lasarettet 1808–1811\n\nRitningar av **Carl Christoffer Gjörwell**; byggnad klar **1810**; gåvobrev/testamente **1811** under **Serafimergillet**. **SBL:** soningsmotivet är **inte utskrivet** men stöds av **lokal muntlig tradition**; även egen sjukdom och krigsbehov 1808.\n\n## DOKUMENTERAT: Expansion\n\n**1876** landstinget. **1884** “idiotanstalt”/senare Klockbacka. **1910** sanatorium. Nytt sjukhus **1960-tal (ca 1968)**. Historiska hus i långvård till tidigt **1990-tal (ofta 1993)**; sålda **2009**. Modernt sjukhus och viss psykiatri **aktiva**.",
+      "legendSv": "## FOLKLORE / URBAN LEGEND — källmärkt\n\nÖvergivna sjukhus genererar spökhistorier. **Mitt i** m.fl. återger rykten om syner/ljud vid övernattningsförsök. Urbexbloggar betonar förfall. Märk som **modern urbex-/mediefolklore**, inte bevisad hemsökelse.\n\nSoningsberättelsen är delvis **muntlig tradition** (SBL) — kraftfull, men skilj från gåvobrevets ordalydelse.\n\nInget intrång.",
+      "hauntedSwedenAppSummarySv": "Löwenströmska lasarettet i Upplands Väsby är ett av Sveriges mest kända historiska sjukhusområden — och ett flaggskepp för övergiven medicinsk atmosfär. Efter Jacob Johan Anckarströms mord på Gustav III 1792 tog brodern namnet Löwenström och lät 1808–1811 bygga ett välgörenhetslasarett (Gjörwell; Serafimergillet 1811). SBL noterar att soningsmotivet främst vilar på lokal tradition, parallellt med sjukdoms- och krigsbehov. Landstinget 1876; sanatorium 1910; omsorg/skola från 1884; nytt sjukhus ca 1968; historiska hus tömdes efter långvård in på 1990-talet. Modernt sjukhus finns kvar. Haunted Sweden skiljer medicinhistoria från urbex-spökrykten. Privat mark — gör aldrig intrång.",
+      "safetyNoteSv": "BLANDAT OMRÅDE: modernt sjukhus och vissa boenden är AKTIVA. Tomma historiska hus är privatägda. Gör INTE intrång. Respektera patienter och personal. Haunted Sweden uppmuntrar aldrig olaglig urbex.",
+      "infoBox": [
+        {
+          "label": "Founded",
+          "labelSv": "Grundat",
+          "value": "1810 building · 1811 endowment",
+          "valueSv": "Byggnad 1810 · donation 1811"
+        },
+        {
+          "label": "Architect",
+          "labelSv": "Arkitekt",
+          "value": "Carl Christoffer Gjörwell",
+          "valueSv": "Carl Christoffer Gjörwell"
+        },
+        {
+          "label": "Founder",
+          "labelSv": "Grundare",
+          "value": "Gustaf Adolf Löwenström",
+          "valueSv": "Gustaf Adolf Löwenström"
+        },
+        {
+          "label": "Atonement story",
+          "labelSv": "Soningsberättelsen",
+          "value": "Oral tradition (SBL) + popular history",
+          "valueSv": "Muntlig tradition (SBL) + populärhistoria"
+        },
+        {
+          "label": "Historic stock empty",
+          "labelSv": "Historiska hus tömda",
+          "value": "Often cited from 1993 · sold 2009",
+          "valueSv": "Ofta angivet från 1993 · sålt 2009"
+        },
+        {
+          "label": "Access",
+          "labelSv": "Tillträde",
+          "value": "Mixed campus — no trespassing",
+          "valueSv": "Blandat område — inget intrång"
+        },
+        {
+          "label": "Haunted Sweden",
+          "labelSv": "Haunted Sweden",
+          "value": "Score 9.5 · Premium EXTREMELY HIGH",
+          "valueSv": "Poäng 9.5 · Premium EXTREMT HÖG"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Was the hospital really built as atonement for Gustav III’s murder?",
+          "questionSv": "Byggdes sjukhuset verkligen som soning för mordet på Gustav III?",
+          "answer": "It is the dominant popular story: Gustaf Adolf Löwenström endowed the hospital after his brother Jacob Johan Anckarström killed the king. Svenskt Biografiskt Lexikon says the atonement motive is not written into the deed but is backed by local oral tradition, alongside his own illness and regional wartime need.",
+          "answerSv": "Det är den dominerande populära berättelsen: Gustaf Adolf Löwenström donerade lasarettet efter brodern Jacob Johan Anckarströms kungamord. Svenskt Biografiskt Lexikon säger att soningsmotivet inte står i gåvobrevet men stöds av lokal muntlig tradition, parallellt med egen sjukdom och regionalt krigsbehov."
+        },
+        {
+          "question": "Can I explore the abandoned buildings?",
+          "questionSv": "Kan jag utforska de övergivna byggnaderna?",
+          "answer": "No without owner permission. Empty historic buildings are private; the modern hospital and some care homes are active. Haunted Sweden forbids promoting trespass. Exterior photography from lawful public vantage points only.",
+          "answerSv": "Nej utan ägartillstånd. Tomma historiska hus är privata; moderna sjukhuset och vissa boenden är aktiva. Haunted Sweden förbjuder att uppmuntra intrång. Exteriörfoto endast från lagliga publika lägen."
+        },
+        {
+          "question": "When did the old hospital close?",
+          "questionSv": "När stängde det gamla lasarettet?",
+          "answer": "Acute care moved to the 1960s complex; historic buildings continued as long-term care into the early 1990s (commonly cited 1993), then stood largely empty until sold around 2009. Redevelopment has been repeatedly delayed.",
+          "answerSv": "Akutsjukvården flyttade till 1960-talskomplexet; historiska hus fortsatte som långvård in på tidigt 1990-tal (ofta 1993), stod sedan mest tomma till försäljning ca 2009. Ombyggnad har upprepade gånger fördröjts."
+        },
+        {
+          "question": "Are the ghost stories proven?",
+          "questionSv": "Är spökhistorierna bevisade?",
+          "answer": "No. Local media and urbex writers report mysterious sounds and sights. Abandoned hospitals naturally spawn such tales. Haunted Sweden labels them anecdotal modern folklore.",
+          "answerSv": "Nej. Lokalmedia och urbexskribenter rapporterar mystiska ljud och syner. Övergivna sjukhus ger nästan automatiskt sådana berättelser. Haunted Sweden märker dem som anekdotisk modern folklore."
+        },
+        {
+          "question": "Has Haunted Sweden investigated yet?",
+          "questionSv": "Har Haunted Sweden utrett platsen ännu?",
+          "answer": "Not yet. Planned: lawful exterior photography, Regionarkivet / SBL research, historian interviews, and a documentary comparing the atonement tradition with deeds and medical records.",
+          "answerSv": "Inte ännu. Planerat: lagligt exteriörfoto, Regionarkivet/SBL, historikerintervjuer och dokumentär som jämför soningstraditionen med gåvobrev och medicinska akter."
         }
       ]
     }
