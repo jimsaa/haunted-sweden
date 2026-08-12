@@ -1,6 +1,8 @@
 # Supabase — Book Archive
 
-Required for newsletter subscriptions and community story submissions.
+Required for newsletter subscriptions and community story submissions when using Supabase.
+
+**Production without Supabase:** email signups are stored in Vercel Blob at `email-signups/waitlist.json` (same `BLOB_READ_WRITE_TOKEN` as submissions). Supabase is optional and used when env vars are set.
 
 ## Environment variables (Vercel + local `.env.local`)
 

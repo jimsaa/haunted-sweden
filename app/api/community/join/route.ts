@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 import { COMMUNITY_SOURCE } from "@/lib/community/landing";
-import { upsertCommunityWaitlistEmail } from "@/lib/email-signups/waitlist";
+import { upsertCommunityWaitlistEmail, isEmailSignupStorageReady } from "@/lib/email-signups/waitlist";
 import { isCommunityEnabled } from "@/lib/features";
-import { isSupabaseConfigured } from "@/lib/supabase/admin";
 
 type Body = {
   email?: string;
@@ -19,8 +18,8 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Not found." }, { status: 404 });
     }
 
-    if (!isSupabaseConfigured()) {
-      console.error("[community/join] Supabase not configured");
+    if (!isEmailSignupStorageReady()) {
+      console.error("[community/join] Email storage not configured");
       return NextResponse.json(
         {
           error: "Community signup is temporarily unavailable.",

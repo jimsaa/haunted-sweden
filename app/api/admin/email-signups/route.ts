@@ -1,15 +1,18 @@
 import { NextResponse } from "next/server";
 import { requireAdminUser } from "@/lib/admin/api-auth";
-import { getSupabaseAdmin, isSupabaseConfigured } from "@/lib/supabase/admin";
+import {
+  getEmailSignupStats,
+  isEmailSignupStorageReady,
+} from "@/lib/email-signups/waitlist";
 
 export async function GET(request: Request) {
   const auth = await requireAdminUser(request, "view_analytics");
   if (!auth.ok) return auth.response;
 
-  if (!isSupabaseConfigured()) {
+  if (!isEmailSignupStorageReady()) {
     return NextResponse.json(
       {
-        error: "Supabase is not configured.",
+        error: "Email storage is not configured.",
         stats: null,
       },
       { status: 503 }
@@ -17,59 +20,8 @@ export async function GET(request: Request) {
   }
 
   try {
-    const supabase = getSupabaseAdmin();
-
-    const [
-      communityRes,
-      newsletterRes,
-      archiveEmailRes,
-    ] = await Promise.all([
-      supabase
-        .from("community_members")
-        .select("email")
-        .eq("status", "active"),
-      supabase
-        .from("newsletter_subscribers")
-        .select("email")
-        .eq("status", "active"),
-      supabase
-        .from("archive_community_responses")
-        .select("email")
-        .not("email", "is", null),
-    ]);
-
-    if (communityRes.error) throw communityRes.error;
-    if (newsletterRes.error) throw newsletterRes.error;
-    if (archiveEmailRes.error) throw archiveEmailRes.error;
-
-    const communityEmails = (communityRes.data ?? []).map((r) =>
-      r.email.toLowerCase()
-    );
-    const newsletterEmails = (newsletterRes.data ?? []).map((r) =>
-      r.email.toLowerCase()
-    );
-    const archiveEmails = (archiveEmailRes.data ?? [])
-      .map((r) => r.email?.toLowerCase())
-      .filter(Boolean) as string[];
-
-    const uniqueEmails = new Set([
-      ...communityEmails,
-      ...newsletterEmails,
-      ...archiveEmails,
-    ]);
-
-    return NextResponse.json({
-      stats: {
-        communityWaitlist: communityEmails.length,
-        bookNewsletter: newsletterEmails.length,
-        archiveStoryEmails: archiveEmails.length,
-        totalListRows:
-          communityEmails.length +
-          newsletterEmails.length +
-          archiveEmails.length,
-        uniqueEmails: uniqueEmails.size,
-      },
-    });
+    const stats = await getEmailSignupStats();
+    return NextResponse.json({ stats });
   } catch (err) {
     console.error("[admin/email-signups GET]", err);
     return NextResponse.json(
