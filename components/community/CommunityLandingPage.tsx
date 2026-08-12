@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import type { CommunityLandingContent } from "@/lib/types/community-landing";
 import { CommunitySignupForm } from "@/components/community/CommunitySignupForm";
@@ -146,6 +147,18 @@ export function CommunityLandingPage({
         <div className="community-books-grid">
           {content.books.items.map((book) => (
             <article key={book.id} className="community-book-card">
+              {book.coverImage ? (
+                <div className="community-book-cover">
+                  <Image
+                    src={book.coverImage}
+                    alt={tx(locale, book.title)}
+                    width={400}
+                    height={600}
+                    className="community-book-cover-img"
+                    sizes="(max-width: 640px) 100vw, 33vw"
+                  />
+                </div>
+              ) : null}
               <span className="community-book-num">
                 {locale === "sv" ? "Bok" : "Book"} {book.number}
               </span>

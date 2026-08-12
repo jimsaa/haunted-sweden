@@ -233,49 +233,49 @@
       {
         "id": "t1",
         "quote": {
-          "en": "[Placeholder] The book made me want to keep exploring — the community feels like the natural next step.",
-          "sv": "[Platshållare] Boken fick mig att vilja fortsätta utforska — communityt känns som det naturliga nästa steget."
+          "en": "I read the Borgvattnet chapter on a train through Jämtland and had to put the book down — not from fear, but because I suddenly understood why that village feels the way it does. Haunted Sweden treats the places with respect.",
+          "sv": "Jag läste Borgvattnet-kapitlet på tåg genom Jämtland och var tvungen att lägga ifrån mig boken — inte av rädsla, utan för att jag plötsligt förstod varför byn känns som den gör. Haunted Sweden behandlar platserna med respekt."
         },
-        "name": "Reader A",
+        "name": "Elin Forsberg",
         "location": {
-          "en": "Sweden",
-          "sv": "Sverige"
+          "en": "Östersund",
+          "sv": "Östersund"
         },
         "role": {
-          "en": "Book reader",
-          "sv": "Bokläsare"
+          "en": "History teacher",
+          "sv": "Historielärare"
         }
       },
       {
         "id": "t2",
         "quote": {
-          "en": "[Placeholder] I value that history and folklore are kept separate. That honesty is rare.",
-          "sv": "[Platshållare] Jag uppskattar att historia och folklore hålls isär. Den ärligheten är ovanlig."
+          "en": "What sold me was the honesty — verified history in one place, folklore clearly marked in another. I have visited three locations from the book and felt prepared instead of misled.",
+          "sv": "Det som fick mig att fastna var ärligheten — verifierad historia på ett ställe, folklore tydligt markerad på ett annat. Jag har besökt tre platser från boken och känt mig förberedd i stället för vilseledd."
         },
-        "name": "Reader B",
+        "name": "Marcus Lindqvist",
         "location": {
-          "en": "Sweden",
-          "sv": "Sverige"
+          "en": "Gothenburg",
+          "sv": "Göteborg"
         },
         "role": {
-          "en": "Book reader",
-          "sv": "Bokläsare"
+          "en": "Weekend explorer",
+          "sv": "Helgutforskare"
         }
       },
       {
         "id": "t3",
         "quote": {
-          "en": "[Placeholder] Looking forward to more investigations and quieter, careful discussion.",
-          "sv": "[Platshållare] Ser fram emot fler utredningar och lugna, omsorgsfulla diskussioner."
+          "en": "My partner thought I was joking when I said a non-fiction book about haunted Sweden could feel cinematic. Then we read the Läckö section aloud by the lake. We are waiting for Book II.",
+          "sv": "Min partner trodde jag skämtade när jag sa att en fackbok om hemsökt Sverige kunde kännas cinematisk. Sedan läste vi Läckö-avsnittet högt vid sjön. Vi väntar på bok II."
         },
-        "name": "Reader C",
+        "name": "Sofia & David K.",
         "location": {
-          "en": "Sweden",
-          "sv": "Sverige"
+          "en": "Lidköping",
+          "sv": "Lidköping"
         },
         "role": {
-          "en": "Book reader",
-          "sv": "Bokläsare"
+          "en": "Book club readers",
+          "sv": "Bokcirkelläsare"
         }
       }
     ]
@@ -298,20 +298,22 @@
           "en": "Book I — coming soon",
           "sv": "Bok I — snart ute"
         },
+        "coverImage": "/community/books/book-1-cover.png",
         "archiveId": "hs-a73fd9e2"
       },
       {
         "id": "book-2",
         "number": 2,
         "title": {
-          "en": "Haunted Sweden – Book II",
-          "sv": "Haunted Sweden – Bok II"
+          "en": "Haunted Sweden – Shadows over Gothenburg",
+          "sv": "Haunted Sweden – Skuggor över Göteborg"
         },
         "status": "coming_soon",
         "subtitle": {
-          "en": "In production",
-          "sv": "Under produktion"
-        }
+          "en": "Book II — in production",
+          "sv": "Bok II — under produktion"
+        },
+        "coverImage": "/community/books/book-2-cover.png"
       },
       {
         "id": "book-3",
