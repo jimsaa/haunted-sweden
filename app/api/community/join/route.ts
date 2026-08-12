@@ -1,12 +1,14 @@
 import { NextResponse } from "next/server";
 import { COMMUNITY_SOURCE } from "@/lib/community/landing";
+import { upsertCommunityWaitlistEmail } from "@/lib/email-signups/waitlist";
 import { isCommunityEnabled } from "@/lib/features";
-import { getSupabaseAdmin, isSupabaseConfigured } from "@/lib/supabase/admin";
+import { isSupabaseConfigured } from "@/lib/supabase/admin";
 
 type Body = {
   email?: string;
   consent?: boolean;
   interests?: string[];
+  source?: string;
 };
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -51,23 +53,10 @@ export async function POST(request: Request) {
       );
     }
 
-    const interests = Array.isArray(body.interests)
-      ? body.interests.map((i) => String(i).trim()).filter(Boolean).slice(0, 20)
-      : [];
+    const source =
+      body.source?.trim().slice(0, 120) || COMMUNITY_SOURCE;
 
-    const supabase = getSupabaseAdmin();
-    const { error } = await supabase.from("community_members").upsert(
-      {
-        email,
-        source: COMMUNITY_SOURCE,
-        status: "active",
-        verified: false,
-        consent: true,
-        interests,
-        membership_tier: "free",
-      },
-      { onConflict: "email" }
-    );
+    const { error } = await upsertCommunityWaitlistEmail(email, source);
 
     if (error) {
       console.error("[community/join]", error);

@@ -26,6 +26,8 @@ const EMPTY_SUMMARY: CoverAuditSummary = {
   hasCover: 0,
   missingCover: 0,
   brokenImages: 0,
+  remoteOnly: 0,
+  needsCover: 0,
   coveragePercent: 0,
 };
 
@@ -37,11 +39,13 @@ function googleImagesSearchUrl(placeName: string, region?: string): string {
 function statusLabel(status: CoverAuditStatus): string {
   switch (status) {
     case "has":
-      return "✅ Has cover";
+      return "✅ Hosted cover";
     case "missing":
-      return "❌ Missing cover";
+      return "❌ No cover URL";
     case "broken":
-      return "⚠ Broken image";
+      return "⚠ Broken local file";
+    case "remote":
+      return "🔗 Remote URL only";
   }
 }
 
@@ -53,6 +57,8 @@ function statusClass(status: CoverAuditStatus): string {
       return "text-red-300";
     case "broken":
       return "text-amber-300";
+    case "remote":
+      return "text-sky-300";
   }
 }
 
@@ -118,7 +124,7 @@ export function AdminCoverAuditPanel() {
   const handleCopyMissing = async () => {
     const text = formatMissingLocationsList(rows);
     if (!text.trim()) {
-      setCopyMessage("No missing covers to copy.");
+      setCopyMessage("No locations need cover work.");
       return;
     }
     try {
@@ -243,7 +249,7 @@ export function AdminCoverAuditPanel() {
             type="button"
             onClick={() => void handleCopyMissing()}
             className="admin-btn admin-btn--primary"
-            disabled={loading || summary.missingCover === 0}
+            disabled={loading || summary.needsCover === 0}
           >
             <Copy className="h-4 w-4" aria-hidden />
             Copy Missing Locations
@@ -260,25 +266,30 @@ export function AdminCoverAuditPanel() {
         </div>
       </div>
 
-      <div className="mb-4 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
+      <div className="mb-4 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
         <StatCard label="Total locations" value={String(summary.total)} />
         <StatCard
-          label="Has cover"
+          label="Hosted cover"
           value={String(summary.hasCover)}
           icon={<CheckCircle2 className="h-4 w-4 text-emerald-400" />}
         />
         <StatCard
-          label="Missing cover"
-          value={String(summary.missingCover)}
+          label="Needs cover"
+          value={String(summary.needsCover)}
           icon={<ImageOff className="h-4 w-4 text-red-400" />}
         />
         <StatCard
-          label="Broken images"
+          label="Remote URL only"
+          value={String(summary.remoteOnly)}
+          icon={<ExternalLink className="h-4 w-4 text-sky-400" />}
+        />
+        <StatCard
+          label="Broken local file"
           value={String(summary.brokenImages)}
           icon={<AlertTriangle className="h-4 w-4 text-amber-400" />}
         />
         <StatCard
-          label="Coverage"
+          label="Hosted coverage"
           value={`${summary.coveragePercent}%`}
         />
       </div>
@@ -292,9 +303,10 @@ export function AdminCoverAuditPanel() {
             className="rounded border border-white/15 bg-black/40 px-2 py-1.5 text-sm text-white"
           >
             <option value="all">All</option>
-            <option value="missing">Missing covers only</option>
-            <option value="broken">Broken covers only</option>
-            <option value="complete">Complete only</option>
+            <option value="missing">Needs cover (missing, remote, or broken)</option>
+            <option value="remote">Remote URL only</option>
+            <option value="broken">Broken local file only</option>
+            <option value="complete">Hosted covers only</option>
           </select>
         </label>
         <label className="flex flex-col gap-1 text-xs text-white/50">
@@ -401,7 +413,9 @@ export function AdminCoverAuditPanel() {
                     ) : null}
                   </td>
                   <td className={`px-3 py-2 whitespace-nowrap ${statusClass(row.status)}`}>
-                    {row.status === "missing" || row.status === "broken" ? (
+                    {row.status === "missing" ||
+                    row.status === "broken" ||
+                    row.status === "remote" ? (
                       <a
                         href={googleImagesSearchUrl(row.name, row.region)}
                         target="_blank"

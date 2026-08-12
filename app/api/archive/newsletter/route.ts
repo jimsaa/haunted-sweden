@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getBookArchiveById } from "@/lib/book-archive/load-books";
+import { upsertCommunityWaitlistEmail } from "@/lib/email-signups/waitlist";
 import { isSupabaseConfigured, getSupabaseAdmin } from "@/lib/supabase/admin";
 
 type Body = {
@@ -87,6 +88,14 @@ export async function POST(request: Request) {
         },
         { status: 500 }
       );
+    }
+
+    const waitlist = await upsertCommunityWaitlistEmail(
+      email,
+      `Book Archive Newsletter (${archiveId})`
+    );
+    if (waitlist.error) {
+      console.error("[archive/newsletter] waitlist upsert", waitlist.error);
     }
 
     return NextResponse.json({ ok: true });

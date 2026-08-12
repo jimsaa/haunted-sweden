@@ -1521,6 +1521,73 @@ body.sweden-view-modal-open {
   color: #fca5a5;
 }
 
+.admin-email-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(16, 185, 129, 0.25);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 78, 59, 0.35),
+    rgba(8, 8, 16, 0.95)
+  );
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.875rem;
+}
+
+.admin-email-banner--loading,
+.admin-email-banner--error {
+  background: rgba(8, 8, 16, 0.95);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.admin-email-banner--error {
+  border-bottom-color: rgba(239, 68, 68, 0.25);
+}
+
+.admin-email-banner-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.admin-email-banner-body strong {
+  color: #6ee7b7;
+  font-weight: 600;
+}
+
+.admin-email-banner-detail {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.8125rem;
+}
+
+.admin-email-banner-note {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.75rem;
+}
+
+.admin-email-banner-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.375rem;
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.admin-email-banner-btn:hover {
+  border-color: rgba(16, 185, 129, 0.35);
+  color: #fff;
+}
+
 .admin-sidebar {
   min-height: 280px;
   max-height: calc(100vh - 8rem);
@@ -2087,6 +2154,21 @@ body.sweden-view-modal-open {
 
 .book-archive-download:hover {
   background: rgba(245, 240, 232, 0.05);
+}
+
+.book-archive-waitlist {
+  margin: 2rem 0 2.5rem;
+  padding: 1.35rem 1.25rem;
+  border: 1px solid rgba(167, 139, 250, 0.18);
+  border-radius: 0.5rem;
+  background: rgba(88, 28, 135, 0.08);
+}
+
+.book-archive-waitlist-body {
+  font-size: 0.92rem;
+  color: rgba(232, 224, 212, 0.68);
+  margin: 0.5rem 0 1rem;
+  line-height: 1.55;
 }
 
 .book-archive-next {

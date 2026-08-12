@@ -55,7 +55,7 @@ export function SiteHeader() {
           {showCommunity ? (
             <Link
               href="/community"
-              className="text-sm text-white/70 hover:text-white transition-colors hidden sm:inline"
+              className="text-sm text-white/70 hover:text-white transition-colors"
             >
               {labels.navCommunity}
             </Link>

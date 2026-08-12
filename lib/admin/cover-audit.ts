@@ -1,7 +1,7 @@
 import type { HauntedPlace } from "@/lib/types/place";
 import { isRemoteCoverUrl } from "@/lib/place-cover";
 
-export type CoverAuditStatus = "has" | "missing" | "broken";
+export type CoverAuditStatus = "has" | "missing" | "broken" | "remote";
 
 export type CoverAuditRow = {
   id: string;
@@ -18,12 +18,18 @@ export type CoverAuditRow = {
 export type CoverAuditSummary = {
   total: number;
   hasCover: number;
+  /** Empty coverImage field */
   missingCover: number;
+  /** Local /places/… path but file missing on disk */
   brokenImages: number;
+  /** Hotlinked http(s) URL — not self-hosted under public/ */
+  remoteOnly: number;
+  /** missing + broken + remote — locations that still need a hosted cover */
+  needsCover: number;
   coveragePercent: number;
 };
 
-export type CoverAuditFilter = "all" | "missing" | "broken" | "complete";
+export type CoverAuditFilter = "all" | "missing" | "broken" | "remote" | "complete";
 export type CoverAuditSort = "name" | "region" | "dateAdded";
 
 /** Strip query/hash; return last path segment for display. */
@@ -65,7 +71,7 @@ export function classifyCoverStatus(
 ): CoverAuditStatus {
   const raw = coverImage?.trim() ?? "";
   if (!raw) return "missing";
-  if (isRemoteCoverUrl(raw)) return "has";
+  if (isRemoteCoverUrl(raw)) return "remote";
   // Local public path: use filesystem result
   if (localFileExists === false) return "broken";
   if (localFileExists === true) return "has";
@@ -88,7 +94,10 @@ export function buildCoverAuditRow(
     coverImage,
     coverFilename: coverImageFilename(coverImage),
     status,
-    thumbnailSrc: status === "has" && coverImage ? coverImage : null,
+    thumbnailSrc:
+      coverImage && status !== "missing" && status !== "broken"
+        ? coverImage
+        : null,
   };
 }
 
@@ -97,9 +106,19 @@ export function summarizeCoverAudit(rows: CoverAuditRow[]): CoverAuditSummary {
   const hasCover = rows.filter((r) => r.status === "has").length;
   const missingCover = rows.filter((r) => r.status === "missing").length;
   const brokenImages = rows.filter((r) => r.status === "broken").length;
+  const remoteOnly = rows.filter((r) => r.status === "remote").length;
+  const needsCover = missingCover + brokenImages + remoteOnly;
   const coveragePercent =
     total === 0 ? 0 : Math.round((hasCover / total) * 1000) / 10;
-  return { total, hasCover, missingCover, brokenImages, coveragePercent };
+  return {
+    total,
+    hasCover,
+    missingCover,
+    brokenImages,
+    remoteOnly,
+    needsCover,
+    coveragePercent,
+  };
 }
 
 export function filterCoverAuditRows(
@@ -108,9 +127,17 @@ export function filterCoverAuditRows(
 ): CoverAuditRow[] {
   switch (filter) {
     case "missing":
-      return rows.filter((r) => r.status === "missing");
+      // User-facing “needs cover work”: no URL, broken file, or remote hotlink only
+      return rows.filter(
+        (r) =>
+          r.status === "missing" ||
+          r.status === "broken" ||
+          r.status === "remote"
+      );
     case "broken":
       return rows.filter((r) => r.status === "broken");
+    case "remote":
+      return rows.filter((r) => r.status === "remote");
     case "complete":
       return rows.filter((r) => r.status === "has");
     default:
@@ -141,11 +168,24 @@ export function sortCoverAuditRows(
   return copy;
 }
 
-/** Bullet list of location names with no cover (for paste into artwork prompts). */
+/** Bullet list of locations still needing a self-hosted cover (for paste into artwork prompts). */
 export function formatMissingLocationsList(rows: CoverAuditRow[]): string {
   return rows
-    .filter((r) => r.status === "missing")
+    .filter(
+      (r) =>
+        r.status === "missing" ||
+        r.status === "broken" ||
+        r.status === "remote"
+    )
     .sort((a, b) => a.name.localeCompare(b.name, "sv"))
-    .map((r) => `- ${r.name}`)
+    .map((r) => {
+      const tag =
+        r.status === "remote"
+          ? "remote URL"
+          : r.status === "broken"
+            ? "broken file"
+            : "no URL";
+      return `- ${r.name} (${tag})`;
+    })
     .join("\n");
 }

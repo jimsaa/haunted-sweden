@@ -37,7 +37,11 @@ export function CommunityLandingPage({
     <div className="community-page">
       <section className="community-hero">
         <div className="community-hero-inner">
-          <p className="community-eyebrow">Haunted Sweden Community</p>
+          <p className="community-eyebrow">
+            {locale === "sv"
+              ? "Haunted Sweden · Väntelista"
+              : "Haunted Sweden · Waitlist"}
+          </p>
           <h1 className="community-hero-title">
             {tx(locale, content.hero.headline)}
           </h1>

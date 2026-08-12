@@ -15,7 +15,7 @@ This file is imported at build time by `lib/places.ts` and powers:
 2. Set **`"status": "approved"`** — only approved places are public.
 3. Set **`latitude`** and **`longitude`** — required for the map.
 4. Add **`shortDescriptionSv`**, **`historySv`**, **`legendSv`**, **`safetyNoteSv`** (or run `npx tsx scripts/apply-safety-sv.ts` after updating `place-safety-sv.json`).
-5. Optional cover: `public/places/{slug}-cover.png` and `"coverImage": "/places/{slug}-cover.png"`.
+5. **Hosted cover (required):** `public/places/{slug}-cover.jpg` + `"coverImage": "/places/…"` — download via `scripts/add-*.mjs` (Wikimedia preferred). Avoid remote-only URLs for new entries.
 6. Bump top-level **`version`** to match place count (convention).
 7. Run **`npm run validate:places`** then **`npm run build`**.
 8. Deploy the repo so hauntedsweden.se picks up the new JSON and assets.

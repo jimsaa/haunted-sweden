@@ -3,6 +3,7 @@
 import type { BookArchive } from "@/lib/types/book-archive";
 import { BookArchiveHeader } from "@/components/book-archive/BookArchiveHeader";
 import { BookArchiveNextBook } from "@/components/book-archive/BookArchiveNextBook";
+import { BookArchiveWaitlistSignup } from "@/components/book-archive/BookArchiveWaitlistSignup";
 import { InvestigationSection } from "@/components/book-archive/InvestigationSection";
 import { LanguageToggle } from "@/components/LanguageToggle";
 
@@ -21,6 +22,8 @@ export function BookArchivePage({ book }: { book: BookArchive }) {
 
       <main className="book-archive-main">
         <BookArchiveHeader book={book} />
+
+        <BookArchiveWaitlistSignup archiveId={book.archiveId} />
 
         <div className="book-archive-investigations">
           {book.investigations.map((inv) => (

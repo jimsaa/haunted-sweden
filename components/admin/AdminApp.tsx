@@ -33,6 +33,7 @@ import { AdminUsersPanel } from "@/components/admin/AdminUsersPanel";
 import { AdminNewsletterPanel } from "@/components/admin/AdminNewsletterPanel";
 import { AdminCommunityMembersPanel } from "@/components/admin/AdminCommunityMembersPanel";
 import { AdminMembersPanel } from "@/components/admin/AdminMembersPanel";
+import { AdminEmailSignupBanner } from "@/components/admin/AdminEmailSignupBanner";
 import { AdminCoverAuditPanel } from "@/components/admin/AdminCoverAuditPanel";
 import { AdminSeoPanel } from "@/components/admin/AdminSeoPanel";
 import { getTranslations } from "@/lib/i18n";
@@ -320,6 +321,8 @@ export function AdminApp() {
           </button>
         </div>
       </header>
+
+      {showNewsletterTab ? <AdminEmailSignupBanner /> : null}
 
       {message ? (
         <p className="px-4 py-2 text-sm text-violet-200/90 bg-violet-950/30 border-b border-violet-500/20">

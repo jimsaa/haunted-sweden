@@ -5,4 +5,4 @@ export function getCommunityLandingContent(): CommunityLandingContent {
   return landing as CommunityLandingContent;
 }
 
-export const COMMUNITY_SOURCE = "Community Landing Page";
+export const COMMUNITY_SOURCE = "Community Waitlist";

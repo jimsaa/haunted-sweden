@@ -1,16 +1,16 @@
 {
   "hero": {
     "headline": {
-      "en": "Become part of Haunted Sweden.",
-      "sv": "Bli en del av Haunted Sweden."
+      "en": "Join the Haunted Sweden waitlist.",
+      "sv": "Gå med på Haunted Swedens väntelista."
     },
     "subheadline": {
-      "en": "The books are only the beginning.\n\nContinue the investigations together with thousands of readers who share an interest in Swedish history, folklore and haunted places.",
-      "sv": "Böckerna är bara början.\n\nFortsätt utredningarna tillsammans med tusentals läsare som delar intresset för svensk historia, folklore och hemsökta platser."
+      "en": "The Members area is coming soon.\n\nLeave your email to be first in line when we open the community — books, archives, and investigations continue there.",
+      "sv": "Medlemsområdet kommer snart.\n\nLämna din e-post och var först när vi öppnar communityt — böcker, arkiv och utredningar fortsätter där."
     },
     "primaryCta": {
-      "en": "Join the Community",
-      "sv": "Gå med i communityt"
+      "en": "Join the waitlist",
+      "sv": "Gå med på väntelistan"
     },
     "secondaryCta": {
       "en": "Read more",
@@ -330,28 +330,28 @@
   },
   "signup": {
     "title": {
-      "en": "Join the ongoing investigation",
-      "sv": "Gå med i den pågående utredningen"
+      "en": "Get notified when Members opens",
+      "sv": "Få besked när medlemsområdet öppnar"
     },
     "body": {
-      "en": "Join the Haunted Sweden Community and stay connected as new books, archives and research are released.",
-      "sv": "Gå med i Haunted Sweden Community och håll dig uppdaterad när nya böcker, arkiv och research publiceras."
+      "en": "We are building the Haunted Sweden Members area. Join the waitlist — we will email you when it launches. No spam, unsubscribe anytime.",
+      "sv": "Vi bygger Haunted Swedens medlemsområde. Gå med på väntelistan — vi mailar när det lanseras. Ingen spam, avprenumerera när som helst."
     },
     "emailPlaceholder": {
       "en": "Your email address",
       "sv": "Din e-postadress"
     },
     "button": {
-      "en": "Join the Community",
-      "sv": "Gå med i communityt"
+      "en": "Join the waitlist",
+      "sv": "Gå med på väntelistan"
     },
     "consent": {
       "en": "I agree to receive updates from Haunted Sweden. I can unsubscribe at any time.",
       "sv": "Jag godkänner att få uppdateringar från Haunted Sweden. Jag kan avprenumerera när som helst."
     },
     "success": {
-      "en": "Welcome. You are now part of the Haunted Sweden Community.",
-      "sv": "Välkommen. Du är nu en del av Haunted Sweden Community."
+      "en": "You are on the list. We will email you when the Members area opens.",
+      "sv": "Du står på listan. Vi mailar när medlemsområdet öppnar."
     }
   },
   "social": {

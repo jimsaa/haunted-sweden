@@ -20,7 +20,7 @@ function getIndexNowKeyForRewrite(): string | null {
 const nextConfig: NextConfig = {
   env: {
     // Mirror ENABLE_COMMUNITY for client bundles (SiteHeader, etc.)
-    NEXT_PUBLIC_ENABLE_COMMUNITY: process.env.ENABLE_COMMUNITY ?? "false",
+    NEXT_PUBLIC_ENABLE_COMMUNITY: process.env.ENABLE_COMMUNITY ?? "true",
   },
   images: {
     remotePatterns: [
