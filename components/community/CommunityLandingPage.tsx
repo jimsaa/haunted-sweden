@@ -18,7 +18,7 @@ function statusLabel(
 ): string {
   if (status === "published") return locale === "sv" ? "Ute nu" : "Available";
   if (status === "coming_soon")
-    return locale === "sv" ? "Kommer snart" : "Coming soon";
+    return locale === "sv" ? "Snart ute" : "Coming soon";
   return locale === "sv" ? "Planerad" : "Planned";
 }
 
