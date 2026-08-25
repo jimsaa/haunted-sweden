@@ -1,0 +1,487 @@
+HAUNTED SWEDEN — NEXT 56 RESEARCH TARGETS
+==========================================
+Goal: grow from 44 → 100 approved places.
+Generated: 2026-08-03
+Rule: NONE of these are already in data/haunted-places.json.
+Always separate DOCUMENTED HISTORY vs FOLKLORE vs WITNESS REPORTS.
+
+How to use this list
+--------------------
+1. Start with PRIORITY A (highest folklore + public recognition).
+2. Then PRIORITY B (strong overnight / castle-manor tourism).
+3. Then PRIORITY C (historic + regional coverage / folklore sites).
+4. For each entry, research: building history, ownership, dark history,
+   named legends, media/hotel sources, access rules, coordinates.
+5. Skip or downgrade if private with no public viewpoint / no verifiable hook.
+
+
+================================================================================
+PRIORITY A — Flagship haunted / must-research first (16)
+================================================================================
+These close the biggest gaps vs popular “Sveriges mest hemsökta” lists
+and Strawberry / Visit Sweden haunted-hotel coverage.
+
+01. Schefflerska Palatset ("Spökslottet")
+    Region: Stockholm (Norrmalm / Drottninggatan area)
+    Type: Urban legend / historic palace (now university-related use)
+    Hook: Stockholm’s classic “Spökslottet”; occultist Scheffler lore;
+          skeletons/treasure folklore; student/staff anecdotes
+    Access: Limited / institutional — exterior + archive research critical
+    Why next: Highest-profile Stockholm gap in the DB
+
+02. Häringe Slott
+    Region: Västerhaninge, Stockholm
+    Type: Haunted castle hotel
+    Hook: Little Axel (count’s son), Agneta Wrede, monk lore; Sjöflygeln
+    Access: Hotel / events — excellent overnight potential
+    Why next: Top-tier haunted castle missing from DB
+
+03. Gripsholms Slott
+    Region: Mariefred, Södermanland
+    Type: Royal / historic castle (separate from Gripsholms Värdshus #35)
+    Hook: Royal prison history; White Lady / palace folklore traditions;
+          strong documented Vasasera history
+    Access: Museum / guided tours
+    Why next: Complements existing värdshus entry; huge historic value
+
+04. Glimmingehus
+    Region: Simrishamn area, Skåne
+    Type: Medieval fortress
+    Hook: Best-preserved medieval castle in Scandinavia; ghost walks;
+          “girl in blue” type folklore appears in tourist ghost coverage
+    Access: Public museum (RAÄ / SHM network)
+    Why next: Skåne flagship fortress; huge visual + history score
+
+05. Kalmar Slott
+    Region: Kalmar, Småland
+    Type: Castle
+    Hook: Kalmar Union, prisons, executions; official autumn ghost walks
+          (“Svarta Damen” / dark-history tours)
+    Access: Public castle museum + ticketed night walks
+    Why next: Major brand destination + active paranormal tourism
+
+06. Furunäset Hotell (Piteå Hospital / Asyl site)
+    Region: Piteå, Norrbotten
+    Type: Haunted accommodation / former psychiatric hospital
+    Hook: Large asylum history; lobotomy/ECT era context; strong
+          modern witness tradition in haunted-hotel lists
+    Access: Hotel/conference — overnight investigation potential
+    Why next: Best northern “dark institution” hotel not yet covered
+          (also fills Norrbotten gap)
+
+07. Home Hotel Victoria (Ebba Ramsay)
+    Region: Jönköping, Småland
+    Type: Haunted hotel
+    Hook: Benefactress Ebba Ramsay / Victoriahemmet; room 426 lore;
+          Strawberry haunted-hotels series
+    Access: Paid hotel stay
+    Why next: Easy Strawberry companion to Bilan + Grand Helsingborg
+
+08. Clarion Hotel Winn (Julia)
+    Region: Gävle, Gästrikland
+    Type: Haunted hotel
+    Hook: “Julia” / fire of 1869 folklore; rooms 178–179 / corridor C;
+          restaurant armchair tradition
+    Access: Paid hotel stay
+    Why next: Strong modern marketing legend; fills Gävleborg gap
+
+09. Wiks Slott (Viks slott)
+    Region: Uppsala / Vik, Uppland
+    Type: Medieval castle + hotel
+    Hook: White Lady / Black Lady / tower lights in Visit Sweden haunted list
+    Access: Hotel + public grounds (confirm openings)
+    Why next: Medieval Uppland castle with overnight option
+
+10. Görvälns Slott
+    Region: Järfälla, Stockholm
+    Type: Castle hotel / manor
+    Hook: Recurring haunted-hotel lists; lakeside atmosphere
+    Access: Hotel / park
+    Why next: Stockholm-region overnight manor gap
+
+11. Gimo Herrgård
+    Region: Gimo, Uppland
+    Type: Gustavian manor hotel
+    Hook: First Gustavian manor branding; former-owner watchfulness lore;
+          lights in empty windows
+    Access: Countryside Hotels overnight
+    Why next: Strong “history + soft haunting” overnight entry
+
+12. Sundbyholms Slott
+    Region: Eskilstuna, Södermanland
+    Type: Castle hotel
+    Hook: Lady of the manor still watching; doors opening; candlelight
+          restaurant atmosphere (Countryside Hotels)
+    Access: Hotel
+    Why next: Reliable overnight haunted-castle product
+
+13. Teleborgs Slott
+    Region: Växjö, Småland
+    Type: Castle / university-adjacent historic building
+    Hook: Appears on haunted manor/castle overnight lists
+    Access: Confirm current lodging/events
+    Why next: Småland castle coverage beyond Toftaholm/Hörle/Berga
+
+14. Färna Herrgård
+    Region: Kolsva / Skinnskatteberg area, Västmanland
+    Type: Manor hotel
+    Hook: Swedish Passport haunted list; watched feeling / corridor lore
+    Access: Hotel
+    Why next: Fills Västmanland gap with overnight potential
+
+15. Blå Jungfrun (Blåkulla)
+    Region: Kalmarsund (Oskarshamn / Öland waters)
+    Type: Legend site / nature reserve island
+    Hook: Witch Sabbath / Blåkulla folklore; cursed stones returned by post;
+          national-park mystique
+    Access: Boat day trips / strict nature rules — no overnight camping typically
+    Why next: Sweden’s premier witch-island brand for Haunted Sweden
+
+16. Borgholms Slottsruin
+    Region: Borgholm, Öland
+    Type: Castle ruin
+    Hook: “Mightiest ruin in the Nordics”; fire 1806; White Lady / ruin lore;
+          pairs with Gråborg already in DB
+    Access: Public ruin museum/park
+    Why next: Öland flagship visual destination
+
+
+================================================================================
+PRIORITY B — Strong haunted hotels, castles & manors (20)
+================================================================================
+Excellent Haunted Sweden fits; slightly less “must-have” than A, but
+still high score potential.
+
+17. Krusenberg Herrgård
+    Region: Knivsta, Uppland
+    Type: Manor hotel
+    Hook: Expressen haunted overnight lists
+    Access: Hotel
+
+18. Ekenäs Slott
+    Region: Linköping area, Östergötland
+    Type: Renaissance castle / hotel events
+    Hook: Expressen haunted castles list; dramatic lakeside setting
+    Access: Confirm tours/overnight
+
+19. Södertuna Slott
+    Region: Gnesta, Södermanland
+    Type: Castle hotel
+    Hook: ELLE / haunted-hotel roundups
+    Access: Hotel
+
+20. Örenäs Slott
+    Region: Glumslöv, Skåne
+    Type: Castle hotel
+    Hook: Expressen haunted overnight list; Öresund views
+    Access: Hotel
+
+21. Häckeberga Slott
+    Region: Genarp / Lund area, Skåne
+    Type: Castle hotel
+    Hook: Slottsbokning “spökslott” mentions; lakeside castle
+    Access: Hotel / restaurant
+
+22. Home Hotel Uman (Gerda the nurse)
+    Region: Umeå, Västerbotten
+    Type: Haunted hotel (former doctor’s villa 1921)
+    Hook: Nurse Gerda walks through wall where door once was;
+          Strawberry haunted series
+    Access: Hotel — fills Västerbotten + pairs with Stora Hotellet lore
+
+23. Stora Hotellet Umeå
+    Region: Umeå, Västerbotten
+    Type: Historic city hotel
+    Hook: Appears on Swedish Passport haunted list (verify distinct legends
+          vs Home Hotel Uman; may combine research notes)
+    Access: Hotel
+
+24. Hjortsberga Prästgård
+    Region: Blekinge / Ronneby area (confirm parish)
+    Type: Haunted vicarage / folklore house
+    Hook: Swedish Nomad haunted-houses list (prästgård tradition after Borgvattnet)
+    Access: Confirm public/overnight status carefully
+
+25. Kårsavagge Fjällstuga
+    Region: Kiruna / Abisko area, Lappland
+    Type: Mountain hut / legend site
+    Hook: Appears on “most haunted Sweden” top-10 lists; isolated alpine fear lore
+    Access: STF / hiking hut rules — research access + ethics
+
+26. Nyköpingshus
+    Region: Nyköping, Södermanland
+    Type: Castle ruin / museum
+    Hook: Nyköpings gästabud (1317) — documented starvation of dukes;
+          dungeon dark history; ghost-walk tourism potential
+    Access: Public historic site
+    Why: Documented atrocity + castle atmosphere = high historical value
+
+27. Vadstena Slott
+    Region: Vadstena, Östergötland
+    Type: Vasa Renaissance castle (separate from Klosterhotell #27)
+    Hook: Complements monastery hotel; royal prison / Renaissance lore
+    Access: Museum
+
+28. Alvastra Kloster
+    Region: Ödeshög / Omberg, Östergötland
+    Type: Monastery ruin / legend landscape
+    Hook: Cistercian ruins; Omberg folklore (Blue Lady / mountain legends nearby)
+    Access: Public ruin + nature
+
+29. Tjolöholms Slott
+    Region: Kungsbacka, Halland
+    Type: Arts & Crafts castle / museum
+    Hook: Dramatic coastal estate; servant/class history; atmospheric interiors
+          (research specific ghost claims carefully)
+    Access: Public museum + park
+
+30. Varbergs Fästning
+    Region: Varberg, Halland
+    Type: Fortress / museum / prison history
+    Hook: Long fortification + prison layers; coastal fortress atmosphere
+    Access: Museum (incl. Bockstensmannen context nearby in Halland museums)
+
+31. Malmöhus / Malmö Castle
+    Region: Malmö, Skåne
+    Type: Fortress / museum
+    Hook: Danish–Swedish fortress wars; prison history; urban castle brand
+    Access: Malmö Museer
+
+32. Landskrona Citadell
+    Region: Landskrona, Skåne
+    Type: Fortress
+    Hook: 16th-century citadel; prison lore; moat atmosphere
+    Access: Public historic site
+
+33. Karlsborgs Fästning
+    Region: Karlsborg, Västergötland
+    Type: 19th-century fortress
+    Hook: “Central defence” mega-fort; long corridors; military ghost anecdotes
+          (verify folklore vs tourism)
+    Access: Guided fortress visits
+
+34. Vaxholms Fästning
+    Region: Vaxholm, Stockholm archipelago
+    Type: Fortress / museum
+    Hook: Archipelago defence; prison cells; ferry-access atmosphere
+    Access: Museum island
+
+35. Ängsö / Engelsbergs / Forsmark cluster pick — Ängsö Slott
+    Region: Västerås area / Mälaren, Västmanland
+    Type: Castle / nature reserve island
+    Hook: Baroque castle in nature reserve; strong visual manor landscape
+    Access: Boat / park seasonality
+
+36. Tidö Slott
+    Region: Västerås area, Västmanland
+    Type: Castle museum
+    Hook: Oxenstierna palace; toy museum + dark aristocratic history layers
+    Access: Museum
+
+37. Christinehofs / Christinehof Slott
+    Region: Andrarum, Skåne
+    Type: Baroque manor / estate
+    Hook: Christina Piper industrial-manor history; estate folklore potential
+    Access: Confirm openings / park
+
+38. Vittskövle / Gärsnäs / Krapperup — pick Krapperups Slott
+    Region: Nyhamnsläge / Kullabygden, Skåne
+    Type: Castle + park (near Kullaberg #26 already in DB)
+    Hook: Medieval–Renaissance estate; park legends; pairs with Kullaberg trip
+    Access: Park / café / limited castle access
+
+39. Svaneholms Slott
+    Region: Skurup area, Skåne
+    Type: Castle museum
+    Hook: Enlightenment reform history (Rutger Maclean); manor museum atmosphere
+    Access: Museum
+    Note: Near Näsby Slott (#23) — good Skåne cluster research
+
+40. Hovdala Slott
+    Region: Hässleholm area, Skåne
+    Type: Castle / fortress manor
+    Hook: Scanian War damage lore; dramatic ruin-adjacent atmosphere
+    Access: Public historic site / park
+
+
+================================================================================
+PRIORITY C — Folklore, tragedy sites & geographic fill (20)
+================================================================================
+Raise national coverage (Gotland, Dalarna, Norrland, sacred sites)
+and classic Swedish legend landscapes.
+
+41. Visby ringmur + Hansestaden ghost walks
+    Region: Visby, Gotland
+    Type: Urban legend / medieval city
+    Hook: Hanseatic walls; plague, executions, white ladies of Visby tours
+    Access: Public old town (pick 1–2 named hotspots for DB entries later)
+
+42. Stora Karlsö / Lilla Karlsö (choose Stora Karlsö)
+    Region: Gotland waters
+    Type: Nature / legend island
+    Hook: Seabird cliffs; shipwreck & isolation folklore
+    Access: Boat / guided nature visits
+
+43. Roma Kloster (Gotland)
+    Region: Roma, Gotland
+    Type: Monastery ruin
+    Hook: Cistercian ruins; Gotland monastic folklore
+    Access: Public ruin / kulturmiljö
+
+44. Gamla Uppsala (högarna + kyrka)
+    Region: Uppsala, Uppland
+    Type: Legend / sacred historic landscape
+    Hook: Royal mounds; pagan cult centre folklore; early Christian overlay
+    Access: Public museum landscape
+    Note: Distinguish archaeology from “haunting” claims carefully
+
+45. Uppsala Domkyrka (crypt / historic layers)
+    Region: Uppsala
+    Type: Church / cemetery-adjacent historic site
+    Hook: National sanctuary; royal tombs; cathedral ghost anecdotes (soft)
+    Access: Public church
+
+46. Sala Silvergruva
+    Region: Sala, Västmanland
+    Type: Historic mine / tragedy site
+    Hook: Centuries of mining deaths; underground tours; heavy atmosphere
+    Access: Guided mine tours (excellent investigation-adjacent content)
+
+47. Falu Gruva (Falun Mine)
+    Region: Falun, Dalarna
+    Type: UNESCO mine / industrial tragedy
+    Hook: Mining disasters; Fet-Mats folklore (preserved miner body legend)
+    Access: Mine museum tours — fills Dalarna gap hard
+
+48. Gammelstads Kyrkstad
+    Region: Luleå, Norrbotten
+    Type: Church town UNESCO site
+    Hook: 15th-century church cottages; winter darkness; soft folklore potential
+    Access: Public heritage site
+    Note: Pair research with Furunäset for a Norrbotten trip
+
+49. Bodens Fästning
+    Region: Boden, Norrbotten
+    Type: Fortress
+    Hook: “Gibraltar of the North”; secret fort lore; cold military corridors
+    Access: Guided fortress experiences
+
+50. Skansen Kronan
+    Region: Göteborg, Västra Götaland
+    Type: Fortress / city landmark
+    Hook: 17th-century fort; hilltop city ghost-walk circuit potential
+    Access: Public / events (Göteborg already well covered — still useful landmark)
+
+51. Husaby Kyrka + Kinnekulle landscape
+    Region: Götene, Västra Götaland
+    Type: Church / legend landscape
+    Hook: Olof Skötkonung baptism tradition; sacred mountain folklore nearby
+    Access: Public church + trails
+
+52. Trollkyrka (Tiveden)
+    Region: Tiveden National Park, Västergötland / Närke border
+    Type: Forest / pagan legend site
+    Hook: Forbidden forest chapel folklore; deep woods atmosphere
+    Access: Hiking (respect park rules)
+
+53. Omberg / Stocklycke (Blue Lady landscape)
+    Region: Ödeshög, Östergötland
+    Type: Forest / nature legend
+    Hook: Omberg “Blue Maiden” / mountain spirit traditions; pairs with Alvastra
+    Access: Nature reserve trails
+
+54. Ales Stenar
+    Region: Kåseberga, Skåne
+    Type: Legend / prehistoric monument
+    Hook: Ship setting; solstice folklore; cliff atmosphere after dark (from public paths)
+    Access: Public archaeological site
+
+55. Stegeborgs Slottsruin
+    Region: Söderköping area, Östergötland
+    Type: Castle ruin
+    Hook: Archipelago gate fortress; Vasa-era drama; ruin photography
+    Access: Public ruin / boat access context
+
+56. Stockholm Palace folklore pick — Kungliga Slottet (Vita Frun / Brita Bråt tradition)
+    OR alternative if palace access too constrained:
+    Djurgården / Kastellet / Galärvarvet dark maritime history
+    Region: Stockholm
+    Type: Royal historic site / urban legend
+    Hook: Classic Swedish palace ghosts (Vita Frun, Brita Bråt) appear in
+          popular folklore summaries — MUST mark as folklore vs court history
+    Access: Museum tours / exterior
+    Note: Research carefully; prefer Schefflerska (#01) first for Stockholm “spökslott”
+
+
+================================================================================
+RESEARCH BATCH SUGGESTIONS (trip-efficient clusters)
+================================================================================
+Stockholm weekend:
+  Schefflerska, Häringe, Görväln, Gripsholm Slott (+ already have värdshus),
+  Vaxholm, (optional palace folklore)
+
+Skåne coastal / Österlen:
+  Glimmingehus, Örenäs, Häckeberga, Krapperup (+ Kullaberg), Malmöhus,
+  Landskrona, Svaneholm, Hovdala, Ales Stenar
+
+Småland / Kalmar Strait:
+  Kalmar Slott, Borgholm ruin, Blå Jungfrun, Teleborg, Home Hotel Victoria,
+  (+ already: Toftaholm, Hörle, Berga, Brahehus)
+
+Mälaren / Uppland:
+  Wik, Gimo, Krusenberg, Sundbyholm, Tidö, Ängsö, Gamla Uppsala
+
+Östergötland:
+  Ekenäs, Vadstena Slott (+ hotel already), Alvastra, Omberg, Stegeborg, Nyköpingshus
+
+Norrland road:
+  Furunäset (Piteå), Gammelstad, Boden, Home Hotel Uman / Stora Hotellet (Umeå),
+  Kårsavagge (if hiking season)
+
+Gotland weekend:
+  Visby walls/ghost walk hotspot, Roma kloster, Karlsö
+
+Dalarna / Bergslagen:
+  Falu Gruva, Sala Silvergruva, Färna
+
+
+================================================================================
+COVERAGE NOTES AFTER THESE 56
+================================================================================
+Current DB is heavy in Västra Götaland + Skåne hotels/manors.
+These 56 especially add:
+  - Stockholm city “Spökslottet” + archipelago fortress
+  - Öland ruin + Blåkulla witch island
+  - Kalmar flagship castle
+  - Norrbotten / Västerbotten / Lappland
+  - Gotland
+  - Dalarna mine tragedy folklore
+  - More overnight Strawberry / Countryside Hotels products
+
+Still thin after 100 (future backlog ideas):
+  - More Gotland named haunted houses
+  - Jämtland beyond Borgvattnet
+  - Härjedalen / Medelpad
+  - More Blekinge (Karlskrona örlogsstad)
+  - Åland is not Sweden — skip for Haunted Sweden DB
+
+
+================================================================================
+QUICK SCORING HEURISTIC (when researching)
+================================================================================
+Prioritize entries that score well on MOST of:
+  [ ] Documented historic fabric (castle/manor/fort/church/mine)
+  [ ] Named folklore figure or legend (White Lady, named ghost, Blåkulla, etc.)
+  [ ] Modern witness / media / hotel marketing trail
+  [ ] Public access OR bookable overnight
+  [ ] Photography / atmosphere
+  [ ] Regional gap fill
+
+Avoid / deprioritize:
+  - Purely private homes with no folklore sources and no public viewpoint
+  - Duplicate “same legend, adjacent building” unless clearly distinct (e.g. Gripsholm
+    Slott vs Värdshus is OK; don’t double-count the same hotel brand story)
+
+
+END OF LIST — 56 places
+==========================================
