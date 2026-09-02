@@ -57,8 +57,18 @@ export function getCommunityDescription(locale: "sv" | "en" = "sv"): string {
   return locale === "en" ? COMMUNITY_DESCRIPTION_EN : COMMUNITY_DESCRIPTION_SV;
 }
 
+/** Place-specific meta description overrides (keep SERP length ~150–160). */
+const PLACE_META_DESCRIPTION_OVERRIDES: Record<string, string> = {
+  // GSC: "frammegården" / "frammegården sverige" — Sverige + famous farm hook, under ~160 chars
+  frammegarden:
+    "Frammegården i Värmland, Sverige — legendarisk spökgård där många övernattare lämnar före midnatt. Historia, folklore och besöksinfo på Haunted Sweden.",
+};
+
 /** Auto-generated place meta description (SV-first, CTR-oriented). */
 export function getPlaceMetaDescription(place: HauntedPlace): string {
+  const override = PLACE_META_DESCRIPTION_OVERRIDES[place.slug];
+  if (override) return override;
+
   const name = place.name;
   const city = place.city;
   const region = place.region;
